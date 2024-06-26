@@ -1,7 +1,7 @@
 name: update sphinx
 on: workflow_dispatch
 jobs:
-  clone:
+  documentation:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v4
@@ -16,9 +16,11 @@ jobs:
             channel-priority: flexible
             allow-softlinks: true
             show-channel-urls: true
-        - run: conda activate deepfold2-dev
-        - run: pip install .
-        - run: conda install sphinx
-        - run: pip install furo
-        - run: cd docs
-        - run: make html
+        - shell: bash -el {0}
+          run: |
+            conda activate deepfold2-dev
+            pip install .
+            conda install sphinx
+            pip install furo
+            cd docs
+            make html
