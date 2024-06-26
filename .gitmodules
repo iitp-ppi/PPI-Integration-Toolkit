@@ -1,0 +1,3 @@
+[submodule "backbone/DeepFoldPublic"]
+	path = backbone/DeepFoldPublic
+	url = https://github.com/iitp-ppi/DeepFoldPublic
