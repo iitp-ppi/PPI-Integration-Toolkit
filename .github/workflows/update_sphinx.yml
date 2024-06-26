@@ -19,8 +19,9 @@ jobs:
         - shell: bash -el {0}
           run: |
             conda activate deepfold2-dev
+            cd backbone/DeepFoldPublic
             pip install .
             conda install sphinx
             pip install furo
-            cd docs
+            cd ../../docs
             make html
