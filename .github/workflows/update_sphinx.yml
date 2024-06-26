@@ -19,8 +19,11 @@ jobs:
           with:
             activate-environment: anaconda-client-env
             environment-file: backbone/DeepFoldPublic/dev.yml
-            use-only-tar-bz2: true
             auto-activate-base: true
+            channel-priority: flexible
+            allow-softlinks: true
+            show-channel-urls: true
+            use-only-tar-bz2: true
         - run: conda activate deepfold2-dev
         - run: pip install .
         - run: conda install sphinx
