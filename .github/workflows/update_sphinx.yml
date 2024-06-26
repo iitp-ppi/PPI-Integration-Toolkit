@@ -20,7 +20,8 @@ jobs:
             auto-activate-base: true
             activate-environment: "deepfold2-dev"
             environment-file: backbone/DeepFoldPublic/dev.yml
-            channel-priority: strict
+            channels: pytorch, nvidia, bioconda, conda-forge, defaults
+            channel-priority: flexible
             allow-softlinks: true
             show-channel-urls: true
             use-only-tar-bz2: true
