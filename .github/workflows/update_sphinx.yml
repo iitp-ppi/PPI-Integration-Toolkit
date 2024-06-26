@@ -17,9 +17,10 @@ jobs:
               hashFiles('backbone/DeepFoldPublic/dev.yml') }}
         - uses: conda-incubator/setup-miniconda@v3
           with:
-            activate-environment: anaconda-client-env
-            environment-file: backbone/DeepFoldPublic/dev.yml
             auto-activate-base: true
+            activate-environment: ""
+            environment-file: backbone/DeepFoldPublic/dev.yml
+            channels: pytorch, nvidia, bioconda, conda-forge, defaults
             channel-priority: flexible
             allow-softlinks: true
             show-channel-urls: true
