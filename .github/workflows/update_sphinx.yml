@@ -14,4 +14,4 @@ jobs:
         - run: pip install .
         - run: conda install sphinx
         - run: cd docs
-     	- run: make html
+        - run: make html
