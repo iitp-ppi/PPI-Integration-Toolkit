@@ -18,7 +18,7 @@ jobs:
         - uses: conda-incubator/setup-miniconda@v3
           with:
             auto-activate-base: true
-            activate-environment: ""
+            activate-environment: "anaconda-client-env"
             environment-file: backbone/DeepFoldPublic/dev.yml
             channels: pytorch, nvidia, bioconda, conda-forge, defaults
             channel-priority: flexible
