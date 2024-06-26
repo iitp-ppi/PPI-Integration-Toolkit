@@ -1,0 +1,17 @@
+name: clone-private-to-public
+on: workflow_dispatch
+jobs:
+  clone:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+          with:
+            fetch-depth:
+        - uses: conda-incubator/setup-miniconda@v3
+          with:
+            environment-file: backbone/DeepFoldPublic/dev.yml
+        - run: conda activate deepfold2-dev
+        - run: pip install .
+        - run: conda install sphinx
+        - run: cd docs
+     	- run: make html
