@@ -6,7 +6,7 @@ jobs:
       steps:
         - uses: actions/checkout@v4
           with:
-            fetch-depth:
+            submodules: true
         - uses: conda-incubator/setup-miniconda@v3
           with:
             environment-file: /backbone/DeepFoldPublic/dev.yml
