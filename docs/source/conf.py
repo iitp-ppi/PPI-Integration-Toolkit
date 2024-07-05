@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'doc-test'
-copyright = '2024, kim'
-author = 'kim'
+project = 'IITP PPI'
+copyright = '2024, Paek et al.'
+author = 'Paek et al.'
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
