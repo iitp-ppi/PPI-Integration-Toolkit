@@ -26,7 +26,7 @@ jobs:
             conda install sphinx
             pip install furo
             cd ../../
-            sphinx-apidoc -F -o docs/source/deepfold backbone/DeepFoldPublic/deepfold
+            sphinx-apidoc -d 8 -F -o docs/source/deepfold backbone/DeepFoldPublic/deepfold
             cd docs
             make html
         - uses: peaceiris/actions-gh-pages@v4
