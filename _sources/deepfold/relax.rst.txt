@@ -1,7 +1,0 @@
-relax module
-============
-
-.. automodule:: relax
-   :members:
-   :undoc-members:
-   :show-inheritance:
