@@ -12,7 +12,7 @@ jobs:
         - uses: conda-incubator/setup-miniconda@v3
           with:
             auto-activate-base: true
-            activate-environment: "deepfold2-dev"
+            activate-environment: "ppi-env"
             environment-file: backbone/DeepFoldPublic/dev.yml
             channels: pytorch, nvidia, bioconda, conda-forge, defaults
             channel-priority: flexible
@@ -20,7 +20,7 @@ jobs:
             show-channel-urls: true
         - shell: bash -el {0}
           run: |
-            conda activate deepfold2-dev
+            conda activate ppi-env
             cd backbone/DeepFoldPublic
             pip install .
             conda install sphinx
