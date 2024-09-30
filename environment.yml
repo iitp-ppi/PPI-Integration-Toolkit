@@ -30,10 +30,11 @@ dependencies:
   - accelerate
   - huggingface_hub
   - safetensors
+  - lightning
+  - torchmetrics
   - pip
   - pip:
       - deepspeed
-      - lightning
       - hydra-core
       - networkx
       - biopython==1.84
@@ -41,6 +42,7 @@ dependencies:
       - setuptools==75.1.0
       - pybel==0.15.5
       - mkdocs
+      - easydict
       - -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
       - pyg_lib
       - torch_scatter
