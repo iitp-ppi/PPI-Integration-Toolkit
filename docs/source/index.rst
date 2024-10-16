@@ -7,8 +7,11 @@ Welcome to doc-test's documentation!
 ====================================
 
 .. toctree::
-   api.rst
+   :maxdepth: 4
 
+   api.rst
+   backbone/backbone_api.rst
+   tool/tool_api.rst
 
 
 Indices and tables
