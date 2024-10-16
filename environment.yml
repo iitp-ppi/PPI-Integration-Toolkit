@@ -32,6 +32,8 @@ dependencies:
   - safetensors
   - lightning
   - torchmetrics
+  - dacite
+  - ply
   - pip
   - pip:
       - deepspeed
