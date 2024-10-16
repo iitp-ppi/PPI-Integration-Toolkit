@@ -44,11 +44,11 @@ dependencies:
       - mkdocs
       - easydict
       - -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
-      - pyg_lib
-      - torch_scatter
-      - torch_sparse
-      - torch_cluster
-      - torch_spline_conv
+      - pyg-lib
+      - torch-scatter
+      - torch-sparse
+      - torch-cluster
+      - torch-spline-conv
       - torch-geometric
       - git+https://github.com/Dao-AILab/flash-attention.git@5b838a8
       - git+https://github.com/NVIDIA/dllogger.git

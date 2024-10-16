@@ -10,8 +10,6 @@ Welcome to doc-test's documentation!
    :maxdepth: 4
 
    api.rst
-   backbone/backbone_api.rst
-   tool/tool_api.rst
 
 
 Indices and tables
