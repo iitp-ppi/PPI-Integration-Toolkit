@@ -7,7 +7,7 @@ Welcome to doc-test's documentation!
 ====================================
 
 .. toctree::
-   deepfold/index.rst
+   api.rst
 
 
 
