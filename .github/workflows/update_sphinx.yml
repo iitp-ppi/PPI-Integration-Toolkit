@@ -12,8 +12,8 @@ jobs:
         - uses: conda-incubator/setup-miniconda@v3
           with:
             auto-activate-base: true
-            activate-environment: "ppi-env"
-            environment-file: environment.yml
+            activate-environment: "ppi-toolkit-doc"
+            environment-file: docs/environment.yml
             channels: pytorch, nvidia, bioconda, conda-forge, defaults
             channel-priority: flexible
             allow-softlinks: true
