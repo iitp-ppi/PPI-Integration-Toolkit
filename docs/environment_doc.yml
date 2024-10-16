@@ -49,5 +49,3 @@ dependencies:
       - torch_cluster
       - torch_spline_conv
       - torch-geometric
-      - git+https://github.com/Dao-AILab/flash-attention.git@5b838a8
-      - git+https://github.com/NVIDIA/dllogger.git
