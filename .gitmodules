@@ -1,9 +1,12 @@
 [submodule "backbone/DeepFoldPublic"]
 	path = backbone/DeepFoldPublic
 	url = https://github.com/iitp-ppi/DeepFoldPublic
-[submodule "tool/RoseTTAFold2"]
-	path = tool/RoseTTAFold2
-	url = https://github.com/iitp-ppi/RoseTTAFold2.git
 [submodule "tool/BIS-ProteinStructure-libraries"]
 	path = tool/BIS-ProteinStructure-libraries
 	url = https://github.com/iitp-ppi/BIS-ProteinStructure-libraries.git
+[submodule "tool/galaxydock_dl"]
+	path = tool/galaxydock_dl
+	url = https://github.com/iitp-ppi/galaxydock_dl.git
+[submodule "backbone/RoseTTAFold2"]
+	path = backbone/RoseTTAFold2
+	url = https://github.com/iitp-ppi/RoseTTAFold2.git
