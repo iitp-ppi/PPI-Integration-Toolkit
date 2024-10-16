@@ -4,5 +4,5 @@ API
    :toctree: _autosummary
    :recursive:
 
-   deepfold
-   RoseTTAFold2
+   deepfold/index.rst
+   RoseTTAFold2/index.rst
