@@ -13,7 +13,7 @@ jobs:
           with:
             auto-activate-base: true
             activate-environment: "ppi-toolkit-doc"
-            environment-file: docs/environment.yml
+            environment-file: docs/environment_doc.yml
             channels: pytorch, nvidia, bioconda, conda-forge, defaults
             channel-priority: flexible
             allow-softlinks: true
