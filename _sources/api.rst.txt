@@ -1,8 +1,6 @@
 API
 =====================================
-.. autosummary::
-   :toctree: _autosummary
-   :recursive:
+.. toctree::
 
    backbone/backbone_api.rst
    tool/tool_api.rst
