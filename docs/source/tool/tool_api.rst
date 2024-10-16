@@ -4,5 +4,5 @@ API
    :toctree: _autosummary
    :recursive:
 
-   backbone/backbone_api.rst
-   tool/tool_api.rst
+   BIS-ProteinStructure-libraries
+   galaxydock_dl
