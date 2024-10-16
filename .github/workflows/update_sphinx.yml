@@ -13,7 +13,7 @@ jobs:
           with:
             auto-activate-base: true
             activate-environment: "ppi-env"
-            environment-file: backbone/DeepFoldPublic/dev.yml
+            environment-file: environment.yml
             channels: pytorch, nvidia, bioconda, conda-forge, defaults
             channel-priority: flexible
             allow-softlinks: true
@@ -21,12 +21,12 @@ jobs:
         - shell: bash -el {0}
           run: |
             conda activate ppi-env
-            cd backbone/DeepFoldPublic
-            pip install .
             conda install sphinx
             pip install furo
-            cd ../../
-            sphinx-apidoc -d 8 -F -o docs/source/deepfold backbone/DeepFoldPublic/deepfold
+            sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
+            sphinx-apidoc -d 8 -F -o docs/source/backbone/RoseTTAFold2 backbone/RoseTTAFold2
+            sphinx-apidoc -d 8 -F -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
+            sphinx-apidoc -d 8 -F -o docs/source/tool/galaxydock_dl tool/galaxydock_dl
             cd docs
             make html
         - uses: peaceiris/actions-gh-pages@v4
