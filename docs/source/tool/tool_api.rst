@@ -5,4 +5,4 @@ API/Tool
    :recursive:
 
    BIS-ProteinStructure-libraries
-   galaxydock_dl 
+   gd_dl 
