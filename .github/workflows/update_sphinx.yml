@@ -2,38 +2,38 @@ name: update sphinx
 on: workflow_dispatch
 jobs:
   documentation:
-      runs-on: ubuntu-latest
-      permissions:
-        contents: write
-      steps:
-        - uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-activate-base: true
+          activate-environment: "ppi-toolkit-doc"
+          environment-file: docs/environment_doc.yml
+          channels: pytorch, nvidia, bioconda, conda-forge, pyg, defaults
+          channel-priority: flexible
+          allow-softlinks: true
+          show-channel-urls: true
+      - shell: bash -el {0}
+        run: |
+          conda activate ppi-toolkit-doc
+          conda install pyg -c pyg
+      - shell: bash -el {0}
+        run: |
+          conda install sphinx
+          pip install furo
+          sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
+          sphinx-apidoc -d 8 -F -o docs/source/backbone/RoseTTAFold2 backbone/RoseTTAFold2
+          sphinx-apidoc -d 8 -F -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
+          sphinx-apidoc -d 8 -F -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
+          cd docs
+          make html
+          - uses: peaceiris/actions-gh-pages@v4
           with:
-            submodules: true
-        - uses: conda-incubator/setup-miniconda@v3
-          with:
-            auto-activate-base: true
-            activate-environment: "ppi-toolkit-doc"
-            environment-file: docs/environment_doc.yml
-            channels: pytorch, nvidia, bioconda, conda-forge, pyg, defaults
-            channel-priority: flexible
-            allow-softlinks: true
-            show-channel-urls: true
-        - shell: bash -el {0}
-          run: |
-            conda activate ppi-toolkit-doc
-            conda install pyg -c pyg
-        - shell: bash -el {0}
-          run: |
-                conda install sphinx
-                pip install furo
-                sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
-                sphinx-apidoc -d 8 -F -o docs/source/backbone/RoseTTAFold2 backbone/RoseTTAFold2
-                sphinx-apidoc -d 8 -F -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
-                sphinx-apidoc -d 8 -F -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
-                cd docs
-                make html
-            - uses: peaceiris/actions-gh-pages@v4
-              with:
-                github_token: ${{ secrets.GH_TOKEN }}
-                publish_dir: docs/build/html
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: docs/build/html
               
