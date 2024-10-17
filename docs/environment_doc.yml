@@ -1,4 +1,4 @@
-name: ppi-toolkit-doc
+name: ppi-toolkit
 channels:
   - pytorch
   - dglteam/label/th24_cu121
@@ -6,6 +6,7 @@ channels:
   - defaults
   - conda-forge
   - nvidia
+  - pyg
 dependencies:
   - python=3.10
   - pytorch=2.4.1
@@ -33,6 +34,7 @@ dependencies:
   - torchmetrics
   - dacite
   - ply
+  - pyg
   - pip
   - pip:
       - deepspeed
@@ -44,10 +46,3 @@ dependencies:
       - pybel==0.15.5
       - mkdocs
       - easydict
-      - -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
-      - pyg-lib
-      - torch-scatter
-      - torch-sparse
-      - torch-cluster
-      - torch-spline-conv
-      - torch-geometric
