@@ -50,4 +50,3 @@ dependencies:
       - pynvml
       - wandb
       - git+https://github.com/NVIDIA/dllogger.git
-      - git+https://github.com/NVIDIA/apex.git -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
