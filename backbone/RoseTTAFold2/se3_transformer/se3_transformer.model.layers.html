@@ -431,23 +431,278 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="se3-transformer-model-layers-attention-module">
-<h2>se3_transformer.model.layers.attention module<a class="headerlink" href="#se3-transformer-model-layers-attention-module" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.model.layers.attention">
+<span id="se3-transformer-model-layers-attention-module"></span><h2>se3_transformer.model.layers.attention module<a class="headerlink" href="#module-se3_transformer.model.layers.attention" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.attention.AttentionBlockSE3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.attention.</span></span><span class="sig-name descname"><span class="pre">AttentionBlockSE3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fiber_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fiber_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fiber_edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_heads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels_div</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_layer_norm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_degree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuse_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel" title="se3_transformer.model.layers.convolution.ConvSE3FuseLevel"><span class="pre">ConvSE3FuseLevel</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">ConvSE3FuseLevel.FULL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.attention.AttentionBlockSE3" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Multi-headed sparse graph self-attention block with skip connection, linear projection (SE(3)-equivariant)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.attention.AttentionBlockSE3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.attention.AttentionBlockSE3.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.attention.AttentionSE3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.attention.</span></span><span class="sig-name descname"><span class="pre">AttentionSE3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_heads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_fiber</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_fiber</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.attention.AttentionSE3" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Multi-headed sparse graph self-attention (SE(3)-equivariant)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.attention.AttentionSE3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLGraph</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.attention.AttentionSE3.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="se3-transformer-model-layers-convolution-module">
-<h2>se3_transformer.model.layers.convolution module<a class="headerlink" href="#se3-transformer-model-layers-convolution-module" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.model.layers.convolution">
+<span id="se3-transformer-model-layers-convolution-module"></span><h2>se3_transformer.model.layers.convolution module<a class="headerlink" href="#module-se3_transformer.model.layers.convolution" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.ConvSE3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.convolution.</span></span><span class="sig-name descname"><span class="pre">ConvSE3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fiber_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fiber_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fiber_edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_layer_norm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">self_interaction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_degree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuse_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel" title="se3_transformer.model.layers.convolution.ConvSE3FuseLevel"><span class="pre">ConvSE3FuseLevel</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">ConvSE3FuseLevel.FULL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_fused_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.convolution.ConvSE3" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>SE(3)-equivariant graph convolution (Tensor Field Network convolution).
+This convolution can map an arbitrary input Fiber to an arbitrary output Fiber, while preserving equivariance.
+Features of different degrees interact together to produce output features.</p>
+<dl class="simple">
+<dt>Note 1:</dt><dd><p>The option is given to not pool the output. This means that the convolution sum over neighbors will not be
+done, and the returned features will be edge features instead of node features.</p>
+</dd>
+<dt>Note 2:</dt><dd><p>Unlike the original paper and implementation, this convolution can handle edge feature of degree greater than 0.
+Input edge features are concatenated with input source node features before the kernel is applied.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.ConvSE3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_feats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_feats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.convolution.ConvSE3.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.ConvSE3FuseLevel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.convolution.</span></span><span class="sig-name descname"><span class="pre">ConvSE3FuseLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum to select a maximum level of fusing optimizations that will be applied when certain conditions are met.
+If a desired level L is picked and the level L cannot be applied to a level, other fused ops &lt; L are considered.
+A higher level means faster training, but also more memory usage.
+If you are tight on memory and want to feed large inputs to the network, choose a low value.
+If you want to train fast, choose a high value.
+Recommended value is FULL with AMP.</p>
+<p>Fully fused TFN convolutions requirements:
+- all input channels are the same
+- all output channels are the same
+- input degrees span the range [0, …, max_degree]
+- output degrees span the range [0, …, max_degree]</p>
+<p>Partially fused TFN convolutions requirements:
+* For fusing by output degree:
+- all input channels are the same
+- input degrees span the range [0, …, max_degree]
+* For fusing by input degree:
+- all output channels are the same
+- output degrees span the range [0, …, max_degree]</p>
+<p>Original TFN pairwise convolutions: no requirements</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.ConvSE3FuseLevel.FULL">
+<span class="sig-name descname"><span class="pre">FULL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel.FULL" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.ConvSE3FuseLevel.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel.NONE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.ConvSE3FuseLevel.PARTIAL">
+<span class="sig-name descname"><span class="pre">PARTIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel.PARTIAL" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.RadialProfile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.convolution.</span></span><span class="sig-name descname"><span class="pre">RadialProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_freq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_layer_norm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.convolution.RadialProfile" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Radial profile function.
+Outputs weights used to weigh basis matrices in order to get convolution kernels.
+In TFN notation: $R^{l,k}$
+In SE(3)-Transformer notation: $phi^{l,k}$</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the original papers, this function only depends on relative node distances ||x||.
+Here, we allow this function to also take as input additional invariant edge features.
+This does not break equivariance and adds expressive power to the model.</p>
+</div>
+<dl class="simple">
+<dt>Diagram:</dt><dd><p>invariant edge features (node distances included) ───&gt; MLP layer (shared across edges) ───&gt; radial weights</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.RadialProfile.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#se3_transformer.model.layers.convolution.RadialProfile.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.VersatileConvSE3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.convolution.</span></span><span class="sig-name descname"><span class="pre">VersatileConvSE3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">freq_sum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_layer_norm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fuse_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel" title="se3_transformer.model.layers.convolution.ConvSE3FuseLevel"><span class="pre">ConvSE3FuseLevel</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.convolution.VersatileConvSE3" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Building block for TFN convolutions.
+This single module can be used for fully fused convolutions, partially fused convolutions, or pairwise convolutions.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.convolution.VersatileConvSE3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariant_edge_feats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.convolution.VersatileConvSE3.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="se3-transformer-model-layers-linear-module">
-<h2>se3_transformer.model.layers.linear module<a class="headerlink" href="#se3-transformer-model-layers-linear-module" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.model.layers.linear">
+<span id="se3-transformer-model-layers-linear-module"></span><h2>se3_transformer.model.layers.linear module<a class="headerlink" href="#module-se3_transformer.model.layers.linear" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.linear.LinearSE3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.linear.</span></span><span class="sig-name descname"><span class="pre">LinearSE3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fiber_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fiber_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.linear.LinearSE3" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Graph Linear SE(3)-equivariant layer, equivalent to a 1x1 convolution.
+Maps a fiber to a fiber with the same degrees (channels may be different).
+No interaction between degrees, but interaction between channels.</p>
+<p>type-0 features (C_0 channels) ────&gt; Linear(bias=False) ────&gt; type-0 features (C’_0 channels)
+type-1 features (C_1 channels) ────&gt; Linear(bias=False) ────&gt; type-1 features (C’_1 channels)</p>
+<blockquote>
+<div><p>:</p>
+</div></blockquote>
+<p>type-k features (C_k channels) ────&gt; Linear(bias=False) ────&gt; type-k features (C’_k channels)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.linear.LinearSE3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#se3_transformer.model.layers.linear.LinearSE3.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="se3-transformer-model-layers-norm-module">
-<h2>se3_transformer.model.layers.norm module<a class="headerlink" href="#se3-transformer-model-layers-norm-module" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.model.layers.norm">
+<span id="se3-transformer-model-layers-norm-module"></span><h2>se3_transformer.model.layers.norm module<a class="headerlink" href="#module-se3_transformer.model.layers.norm" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.norm.NormSE3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.norm.</span></span><span class="sig-name descname"><span class="pre">NormSE3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fiber</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="se3_transformer.model.html#se3_transformer.model.fiber.Fiber" title="se3_transformer.model.fiber.Fiber"><span class="pre">Fiber</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonlinearity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Module</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">ReLU()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.norm.NormSE3" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Norm-based SE(3)-equivariant nonlinearity.</p>
+<blockquote>
+<div><p>┌──&gt; feature_norm ──&gt; LayerNorm() ──&gt; ReLU() ──┐</p>
+</div></blockquote>
+<dl class="simple">
+<dt>feature_in ──┤                                              * ──&gt; feature_out</dt><dd><p>└──&gt; feature_phase ────────────────────────────┘</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.norm.NormSE3.NORM_CLAMP">
+<span class="sig-name descname"><span class="pre">NORM_CLAMP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5.960464477539063e-08</span></em><a class="headerlink" href="#se3_transformer.model.layers.norm.NormSE3.NORM_CLAMP" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.norm.NormSE3.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#se3_transformer.model.layers.norm.NormSE3.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="se3-transformer-model-layers-pooling-module">
-<h2>se3_transformer.model.layers.pooling module<a class="headerlink" href="#se3-transformer-model-layers-pooling-module" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.model.layers.pooling">
+<span id="se3-transformer-model-layers-pooling-module"></span><h2>se3_transformer.model.layers.pooling module<a class="headerlink" href="#module-se3_transformer.model.layers.pooling" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.pooling.GPooling">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.model.layers.pooling.</span></span><span class="sig-name descname"><span class="pre">GPooling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feat_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'max'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'avg'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'max'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.model.layers.pooling.GPooling" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Graph max/average pooling on a given feature type.
+The average can be taken for any feature type, and equivariance will be maintained.
+The maximum can only be taken for invariant features (type 0).
+If you want max-pooling for type &gt; 0 features, look into Vector Neurons.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.model.layers.pooling.GPooling.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLGraph</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#se3_transformer.model.layers.pooling.GPooling.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.model.layers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-se3_transformer.model.layers" title="Link to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -490,12 +745,61 @@
             <ul>
 <li><a class="reference internal" href="#">se3_transformer.model.layers package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#se3-transformer-model-layers-attention-module">se3_transformer.model.layers.attention module</a></li>
-<li><a class="reference internal" href="#se3-transformer-model-layers-convolution-module">se3_transformer.model.layers.convolution module</a></li>
-<li><a class="reference internal" href="#se3-transformer-model-layers-linear-module">se3_transformer.model.layers.linear module</a></li>
-<li><a class="reference internal" href="#se3-transformer-model-layers-norm-module">se3_transformer.model.layers.norm module</a></li>
-<li><a class="reference internal" href="#se3-transformer-model-layers-pooling-module">se3_transformer.model.layers.pooling module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-se3_transformer.model.layers.attention">se3_transformer.model.layers.attention module</a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.attention.AttentionBlockSE3"><code class="docutils literal notranslate"><span class="pre">AttentionBlockSE3</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.attention.AttentionBlockSE3.forward"><code class="docutils literal notranslate"><span class="pre">AttentionBlockSE3.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.attention.AttentionSE3"><code class="docutils literal notranslate"><span class="pre">AttentionSE3</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.attention.AttentionSE3.forward"><code class="docutils literal notranslate"><span class="pre">AttentionSE3.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-se3_transformer.model.layers.convolution">se3_transformer.model.layers.convolution module</a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3"><code class="docutils literal notranslate"><span class="pre">ConvSE3</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3.forward"><code class="docutils literal notranslate"><span class="pre">ConvSE3.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel"><code class="docutils literal notranslate"><span class="pre">ConvSE3FuseLevel</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel.FULL"><code class="docutils literal notranslate"><span class="pre">ConvSE3FuseLevel.FULL</span></code></a></li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel.NONE"><code class="docutils literal notranslate"><span class="pre">ConvSE3FuseLevel.NONE</span></code></a></li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.ConvSE3FuseLevel.PARTIAL"><code class="docutils literal notranslate"><span class="pre">ConvSE3FuseLevel.PARTIAL</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.RadialProfile"><code class="docutils literal notranslate"><span class="pre">RadialProfile</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.RadialProfile.forward"><code class="docutils literal notranslate"><span class="pre">RadialProfile.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.VersatileConvSE3"><code class="docutils literal notranslate"><span class="pre">VersatileConvSE3</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.convolution.VersatileConvSE3.forward"><code class="docutils literal notranslate"><span class="pre">VersatileConvSE3.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-se3_transformer.model.layers.linear">se3_transformer.model.layers.linear module</a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.linear.LinearSE3"><code class="docutils literal notranslate"><span class="pre">LinearSE3</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.linear.LinearSE3.forward"><code class="docutils literal notranslate"><span class="pre">LinearSE3.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-se3_transformer.model.layers.norm">se3_transformer.model.layers.norm module</a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.norm.NormSE3"><code class="docutils literal notranslate"><span class="pre">NormSE3</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.norm.NormSE3.NORM_CLAMP"><code class="docutils literal notranslate"><span class="pre">NormSE3.NORM_CLAMP</span></code></a></li>
+<li><a class="reference internal" href="#se3_transformer.model.layers.norm.NormSE3.forward"><code class="docutils literal notranslate"><span class="pre">NormSE3.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-se3_transformer.model.layers.pooling">se3_transformer.model.layers.pooling module</a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.pooling.GPooling"><code class="docutils literal notranslate"><span class="pre">GPooling</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.model.layers.pooling.GPooling.forward"><code class="docutils literal notranslate"><span class="pre">GPooling.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-se3_transformer.model.layers">Module contents</a></li>
 </ul>
 </li>
 </ul>

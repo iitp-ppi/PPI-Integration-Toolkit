@@ -462,11 +462,59 @@
 </dd></dl>
 
 </section>
-<section id="se3-transformer-data-loading-qm9-module">
-<h2>se3_transformer.data_loading.qm9 module<a class="headerlink" href="#se3-transformer-data-loading-qm9-module" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.data_loading.qm9">
+<span id="se3-transformer-data-loading-qm9-module"></span><h2>se3_transformer.data_loading.qm9 module<a class="headerlink" href="#module-se3_transformer.data_loading.qm9" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.CachedBasesQM9EdgeDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.data_loading.qm9.</span></span><span class="sig-name descname"><span class="pre">CachedBasesQM9EdgeDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bases_kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_workers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.data_loading.qm9.CachedBasesQM9EdgeDataset" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QM9EdgeDataset</span></code></p>
+<p>Dataset extending the QM9 dataset from DGL with precomputed (cached in RAM) pairwise bases</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.CachedBasesQM9EdgeDataset.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.data_loading.qm9.CachedBasesQM9EdgeDataset.load" title="Link to this definition">¶</a></dt>
+<dd><p>Overwite to realize your own logic of
+loading the saved dataset from files.</p>
+<p>It is recommended to use <code class="docutils literal notranslate"><span class="pre">dgl.data.utils.load_graphs</span></code>
+to load dgl graph from files and use
+<code class="docutils literal notranslate"><span class="pre">dgl.data.utils.load_info</span></code> to load extra information
+into python dict object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.QM9DataModule">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">se3_transformer.data_loading.qm9.</span></span><span class="sig-name descname"><span class="pre">QM9DataModule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'homo'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">240</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_workers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_degrees</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precompute_bases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.data_loading.qm9.QM9DataModule" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#se3_transformer.data_loading.data_module.DataModule" title="se3_transformer.data_loading.data_module.DataModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataModule</span></code></a></p>
+<p>Datamodule wrapping <a class="reference external" href="https://docs.dgl.ai/en/latest/api/python/dgl.data.html#qm9edge-dataset">https://docs.dgl.ai/en/latest/api/python/dgl.data.html#qm9edge-dataset</a>
+Training set is 100k molecules. Test set is 10% of the dataset. Validation set is the rest.
+This includes all the molecules from QM9 except the ones that are uncharacterized.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.QM9DataModule.EDGE_FEATURE_DIM">
+<span class="sig-name descname"><span class="pre">EDGE_FEATURE_DIM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#se3_transformer.data_loading.qm9.QM9DataModule.EDGE_FEATURE_DIM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.QM9DataModule.NODE_FEATURE_DIM">
+<span class="sig-name descname"><span class="pre">NODE_FEATURE_DIM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#se3_transformer.data_loading.qm9.QM9DataModule.NODE_FEATURE_DIM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.QM9DataModule.add_argparse_args">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">add_argparse_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.data_loading.qm9.QM9DataModule.add_argparse_args" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="se3_transformer.data_loading.qm9.QM9DataModule.prepare_data">
+<span class="sig-name descname"><span class="pre">prepare_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#se3_transformer.data_loading.qm9.QM9DataModule.prepare_data" title="Link to this definition">¶</a></dt>
+<dd><p>Method called only once per node. Put here any downloading or preprocessing</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<section id="module-se3_transformer.data_loading">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-se3_transformer.data_loading" title="Link to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -519,8 +567,21 @@
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#se3-transformer-data-loading-qm9-module">se3_transformer.data_loading.qm9 module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-se3_transformer.data_loading.qm9">se3_transformer.data_loading.qm9 module</a><ul>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.CachedBasesQM9EdgeDataset"><code class="docutils literal notranslate"><span class="pre">CachedBasesQM9EdgeDataset</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.CachedBasesQM9EdgeDataset.load"><code class="docutils literal notranslate"><span class="pre">CachedBasesQM9EdgeDataset.load()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.QM9DataModule"><code class="docutils literal notranslate"><span class="pre">QM9DataModule</span></code></a><ul>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.QM9DataModule.EDGE_FEATURE_DIM"><code class="docutils literal notranslate"><span class="pre">QM9DataModule.EDGE_FEATURE_DIM</span></code></a></li>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.QM9DataModule.NODE_FEATURE_DIM"><code class="docutils literal notranslate"><span class="pre">QM9DataModule.NODE_FEATURE_DIM</span></code></a></li>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.QM9DataModule.add_argparse_args"><code class="docutils literal notranslate"><span class="pre">QM9DataModule.add_argparse_args()</span></code></a></li>
+<li><a class="reference internal" href="#se3_transformer.data_loading.qm9.QM9DataModule.prepare_data"><code class="docutils literal notranslate"><span class="pre">QM9DataModule.prepare_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-se3_transformer.data_loading">Module contents</a></li>
 </ul>
 </li>
 </ul>

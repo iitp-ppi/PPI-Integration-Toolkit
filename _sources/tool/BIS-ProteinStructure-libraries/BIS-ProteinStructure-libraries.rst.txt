@@ -1,0 +1,18 @@
+BIS\-ProteinStructure\-libraries package
+========================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 8
+
+   BIS-ProteinStructure-libraries.Libraries
+
+Module contents
+---------------
+
+.. automodule:: BIS-ProteinStructure-libraries
+   :members:
+   :undoc-members:
+   :show-inheritance:
