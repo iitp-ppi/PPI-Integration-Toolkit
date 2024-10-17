@@ -8,11 +8,5 @@ deepfold.ops.evoformer\_attention
 
    .. autosummary::
    
-      evoformer_attention_core
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      EvoformerFusedAttention
+      deepspeed_evo_attn
    

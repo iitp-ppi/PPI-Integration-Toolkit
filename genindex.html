@@ -632,8 +632,6 @@
 </li>
           <li><a href="backbone/deepfold/deepfold.losses.html#deepfold.losses.procrustes.Procrustes.backward">(deepfold.losses.procrustes.Procrustes static method)</a>
 </li>
-          <li><a href="backbone/deepfold/deepfold.ops.html#deepfold.ops.evoformer_attention.EvoformerFusedAttention.backward">(deepfold.ops.evoformer_attention.EvoformerFusedAttention static method)</a>
-</li>
         </ul></li>
         <li><a href="backbone/deepfold/deepfold.utils.html#deepfold.utils.tensor_utils.batched_gather">batched_gather() (in module deepfold.utils.tensor_utils)</a>
 </li>
@@ -643,10 +641,10 @@
 </li>
         <li><a href="backbone/deepfold/deepfold.eval.html#deepfold.eval.distogram.bin_edges_np">bin_edges_np() (in module deepfold.eval.distogram)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="backbone/deepfold/deepfold.html#deepfold.config.FeaturePipelineConfig.block_delete_msa_enabled">block_delete_msa_enabled (deepfold.config.FeaturePipelineConfig attribute)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="backbone/deepfold/deepfold.data.multimer.html#deepfold.data.multimer.msa_pairing.block_diag">block_diag() (in module deepfold.data.multimer.msa_pairing)</a>
 </li>
         <li><a href="backbone/deepfold/deepfold.html#deepfold.config.EvoformerStackConfig.block_size_tri_mul">block_size_tri_mul (deepfold.config.EvoformerStackConfig attribute)</a>
@@ -1994,6 +1992,8 @@
           <li><a href="_autosummary/deepfold.utils.tensor_utils.html#module-deepfold.utils.tensor_utils">module</a>, <a href="backbone/_autosummary/deepfold.utils.tensor_utils.html#module-deepfold.utils.tensor_utils">[1]</a>, <a href="backbone/deepfold/deepfold.utils.html#module-deepfold.utils.tensor_utils">[2]</a>
 </li>
         </ul></li>
+        <li><a href="backbone/deepfold/deepfold.ops.html#deepfold.ops.evoformer_attention.deepspeed_evo_attn">deepspeed_evo_attn() (in module deepfold.ops.evoformer_attention)</a>
+</li>
         <li><a href="backbone/deepfold/deepfold.data.html#deepfold.data.pdbx_parsing.PDBxHeader.deposition_date">deposition_date (deepfold.data.pdbx_parsing.PDBxHeader attribute)</a>
 </li>
         <li><a href="backbone/deepfold/deepfold.data.multimer.html#deepfold.data.multimer.input_features.ComplexInfo.descriptions">descriptions (deepfold.data.multimer.input_features.ComplexInfo attribute)</a>
@@ -2164,10 +2164,10 @@
           <li><a href="backbone/deepfold/deepfold.html#deepfold.config.ExtraMSAStackConfig.eps_opm">(deepfold.config.ExtraMSAStackConfig attribute)</a>
 </li>
         </ul></li>
-        <li><a href="backbone/deepfold/deepfold.data.html#deepfold.data.errors.Error">Error</a>
-</li>
     </ul></td>
     <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="backbone/deepfold/deepfold.data.html#deepfold.data.errors.Error">Error</a>
+</li>
         <li><a href="backbone/deepfold/deepfold.data.search.html#deepfold.data.search.templates.TemplateFeaturesResult.error">error (deepfold.data.search.templates.TemplateFeaturesResult attribute)</a>
 </li>
         <li><a href="backbone/deepfold/deepfold.data.html#deepfold.data.pdbx_parsing.ParsingResult.errors">errors (deepfold.data.pdbx_parsing.ParsingResult attribute)</a>
@@ -2178,19 +2178,11 @@
           <li><a href="backbone/deepfold/deepfold.utils.geometry.html#deepfold.utils.geometry.vector.euclidean_distance">(in module deepfold.utils.geometry.vector)</a>
 </li>
         </ul></li>
-        <li><a href="backbone/deepfold/deepfold.ops.html#deepfold.ops.evoformer_attention_core">evoformer_attention_core() (in module deepfold.ops)</a>
-
-        <ul>
-          <li><a href="backbone/deepfold/deepfold.ops.html#deepfold.ops.evoformer_attention.evoformer_attention_core">(in module deepfold.ops.evoformer_attention)</a>
-</li>
-        </ul></li>
         <li><a href="backbone/deepfold/deepfold.html#deepfold.config.AlphaFoldConfig.evoformer_stack_config">evoformer_stack_config (deepfold.config.AlphaFoldConfig attribute)</a>
 </li>
         <li><a href="backbone/deepfold/deepfold.modules.html#deepfold.modules.evoformer_block.EvoformerBlock">EvoformerBlock (class in deepfold.modules.evoformer_block)</a>
 </li>
         <li><a href="backbone/deepfold/deepfold.modules.html#deepfold.modules.evoformer_block_pair_core.EvoformerBlockPairCore">EvoformerBlockPairCore (class in deepfold.modules.evoformer_block_pair_core)</a>
-</li>
-        <li><a href="backbone/deepfold/deepfold.ops.html#deepfold.ops.evoformer_attention.EvoformerFusedAttention">EvoformerFusedAttention (class in deepfold.ops.evoformer_attention)</a>
 </li>
         <li><a href="backbone/deepfold/deepfold.modules.html#deepfold.modules.evoformer_stack.EvoformerStack">EvoformerStack (class in deepfold.modules.evoformer_stack)</a>
 </li>
@@ -2372,8 +2364,6 @@
           <li><a href="backbone/deepfold/deepfold.modules.html#deepfold.modules.triangular_attention.TriangleAttention.forward">(deepfold.modules.triangular_attention.TriangleAttention method)</a>
 </li>
           <li><a href="backbone/deepfold/deepfold.modules.html#deepfold.modules.triangular_multiplicative_update.TriangleMultiplicativeUpdate.forward">(deepfold.modules.triangular_multiplicative_update.TriangleMultiplicativeUpdate method)</a>
-</li>
-          <li><a href="backbone/deepfold/deepfold.ops.html#deepfold.ops.evoformer_attention.EvoformerFusedAttention.forward">(deepfold.ops.evoformer_attention.EvoformerFusedAttention static method)</a>
 </li>
           <li><a href="backbone/deepfold/deepfold.utils.geometry.html#deepfold.utils.geometry.quat_rigid.QuatRigid.forward">(deepfold.utils.geometry.quat_rigid.QuatRigid method)</a>
 </li>
