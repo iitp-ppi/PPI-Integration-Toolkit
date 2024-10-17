@@ -48,4 +48,6 @@ dependencies:
       - easydict
       - e3nn
       - pynvml
+      - wandb
       - git+https://github.com/NVIDIA/dllogger.git
+      - git+https://github.com/NVIDIA/apex
