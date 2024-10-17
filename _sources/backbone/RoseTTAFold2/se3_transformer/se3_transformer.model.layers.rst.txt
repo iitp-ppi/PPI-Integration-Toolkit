@@ -1,0 +1,53 @@
+se3\_transformer.model.layers package
+=====================================
+
+Submodules
+----------
+
+se3\_transformer.model.layers.attention module
+----------------------------------------------
+
+.. automodule:: se3_transformer.model.layers.attention
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+se3\_transformer.model.layers.convolution module
+------------------------------------------------
+
+.. automodule:: se3_transformer.model.layers.convolution
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+se3\_transformer.model.layers.linear module
+-------------------------------------------
+
+.. automodule:: se3_transformer.model.layers.linear
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+se3\_transformer.model.layers.norm module
+-----------------------------------------
+
+.. automodule:: se3_transformer.model.layers.norm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+se3\_transformer.model.layers.pooling module
+--------------------------------------------
+
+.. automodule:: se3_transformer.model.layers.pooling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: se3_transformer.model.layers
+   :members:
+   :undoc-members:
+   :show-inheritance:

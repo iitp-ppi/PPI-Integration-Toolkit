@@ -1,0 +1,20 @@
+se3\_transformer package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 8
+
+   se3_transformer.data_loading
+   se3_transformer.model
+   se3_transformer.runtime
+
+Module contents
+---------------
+
+.. automodule:: se3_transformer
+   :members:
+   :undoc-members:
+   :show-inheritance:
