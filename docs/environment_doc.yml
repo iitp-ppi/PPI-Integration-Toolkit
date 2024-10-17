@@ -46,3 +46,4 @@ dependencies:
       - pybel==0.15.5
       - mkdocs
       - easydict
+      - e3nn

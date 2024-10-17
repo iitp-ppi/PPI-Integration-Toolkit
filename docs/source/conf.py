@@ -37,5 +37,5 @@ import sys
 sys.path.insert(0, os.path.abspath('../../backbone/DeepFoldPublic'))
 sys.path.insert(0, os.path.abspath('../../backbone/RoseTTAFold2/SE3Transformer'))
 sys.path.insert(0, os.path.abspath('../../backbone/RoseTTAFold2'))
-sys.path.insert(0, os.path.abspath('../../tool/BIS-ProteinStructure-libraries'))
+sys.path.insert(0, os.path.abspath('../../tool'))
 sys.path.insert(0, os.path.abspath('../../tool/galaxydock_dl/src'))
