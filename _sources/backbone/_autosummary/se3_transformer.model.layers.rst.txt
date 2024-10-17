@@ -1,0 +1,17 @@
+se3\_transformer.model.layers
+=============================
+
+.. automodule:: se3_transformer.model.layers
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   attention
+   convolution
+   linear
+   norm
+   pooling

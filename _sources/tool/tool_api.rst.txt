@@ -4,5 +4,5 @@ API/Tool
    :toctree: _autosummary
    :recursive:
 
-   BIS-ProteinStructure-libraries
+   bis_protein_structure
    gd_dl 

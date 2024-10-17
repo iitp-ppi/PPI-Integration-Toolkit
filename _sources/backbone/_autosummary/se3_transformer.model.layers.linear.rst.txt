@@ -1,0 +1,12 @@
+se3\_transformer.model.layers.linear
+====================================
+
+.. automodule:: se3_transformer.model.layers.linear
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      LinearSE3
+   

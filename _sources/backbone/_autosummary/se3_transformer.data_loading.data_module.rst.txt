@@ -1,0 +1,12 @@
+se3\_transformer.data\_loading.data\_module
+===========================================
+
+.. automodule:: se3_transformer.data_loading.data_module
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      DataModule
+   

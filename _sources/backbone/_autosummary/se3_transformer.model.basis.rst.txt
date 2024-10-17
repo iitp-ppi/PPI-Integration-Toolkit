@@ -1,0 +1,15 @@
+se3\_transformer.model.basis
+============================
+
+.. automodule:: se3_transformer.model.basis
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_all_clebsch_gordon
+      get_basis
+      get_clebsch_gordon
+      get_spherical_harmonics
+   

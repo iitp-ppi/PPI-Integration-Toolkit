@@ -1,0 +1,20 @@
+se3\_transformer.model.transformer
+==================================
+
+.. automodule:: se3_transformer.model.transformer
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_populated_edge_features
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      SE3Transformer
+      SE3TransformerPooled
+      Sequential
+   

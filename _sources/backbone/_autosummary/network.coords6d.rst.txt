@@ -1,0 +1,14 @@
+network.coords6d
+================
+
+.. automodule:: network.coords6d
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_angles
+      get_coords6d
+      get_dihedrals
+   

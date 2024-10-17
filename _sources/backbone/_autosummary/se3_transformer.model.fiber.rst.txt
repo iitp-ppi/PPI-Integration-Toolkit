@@ -1,0 +1,13 @@
+se3\_transformer.model.fiber
+============================
+
+.. automodule:: se3_transformer.model.fiber
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Fiber
+      FiberEl
+   

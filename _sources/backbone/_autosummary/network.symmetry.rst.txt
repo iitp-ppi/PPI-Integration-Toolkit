@@ -1,0 +1,21 @@
+network.symmetry
+================
+
+.. automodule:: network.symmetry
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      find_symm_subs
+      generateC
+      generateD
+      get_angle
+      get_symm_map
+      get_symmetry
+      intersect
+      kabsch
+      rotation_from_matrix
+      symm_subunit_matrix
+   

@@ -1,0 +1,29 @@
+se3\_transformer.runtime.gpu\_affinity
+======================================
+
+.. automodule:: se3_transformer.runtime.gpu_affinity
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      build_thread_siblings_dict
+      check_affinities
+      get_affinities
+      get_grouped_affinities
+      get_thread_siblings_list
+      group_list_by_key
+      set_affinity
+      set_all
+      set_single
+      set_single_unique
+      set_unique
+      ungroup_affinities
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Device
+   

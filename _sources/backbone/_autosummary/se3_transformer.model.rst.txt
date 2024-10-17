@@ -1,0 +1,16 @@
+se3\_transformer.model
+======================
+
+.. automodule:: se3_transformer.model
+
+   
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   basis
+   fiber
+   layers
+   transformer

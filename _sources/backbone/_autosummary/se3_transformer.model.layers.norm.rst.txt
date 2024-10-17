@@ -1,0 +1,12 @@
+se3\_transformer.model.layers.norm
+==================================
+
+.. automodule:: se3_transformer.model.layers.norm
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NormSE3
+   

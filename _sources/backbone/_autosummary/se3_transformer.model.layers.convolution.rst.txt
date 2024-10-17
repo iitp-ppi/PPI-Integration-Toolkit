@@ -1,0 +1,15 @@
+se3\_transformer.model.layers.convolution
+=========================================
+
+.. automodule:: se3_transformer.model.layers.convolution
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      ConvSE3
+      ConvSE3FuseLevel
+      RadialProfile
+      VersatileConvSE3
+   

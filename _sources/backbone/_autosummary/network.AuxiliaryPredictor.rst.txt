@@ -1,0 +1,17 @@
+network.AuxiliaryPredictor
+==========================
+
+.. automodule:: network.AuxiliaryPredictor
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      BinderNetwork
+      DistanceNetwork
+      ExpResolvedNetwork
+      LDDTNetwork
+      MaskedTokenNetwork
+      PAENetwork
+   

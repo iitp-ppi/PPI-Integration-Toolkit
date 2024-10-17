@@ -1,0 +1,12 @@
+network.memory
+==============
+
+.. automodule:: network.memory
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      mem_report
+   
