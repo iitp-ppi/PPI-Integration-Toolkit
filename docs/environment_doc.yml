@@ -47,3 +47,5 @@ dependencies:
       - mkdocs
       - easydict
       - e3nn
+      - pynvml
+      - git+https://github.com/NVIDIA/dllogger.git

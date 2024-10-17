@@ -5,5 +5,5 @@ API/Backbone
    :recursive:
 
    deepfold
-   RoseTTAFold2/network
-   RoseTTAFold2/se3_transformer
+   network
+   se3_transformer
