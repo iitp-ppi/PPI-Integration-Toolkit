@@ -21,12 +21,9 @@ jobs:
       - shell: bash -el {0}
         run: |
           conda activate ppi-toolkit-doc
-          git clone https://github.com/NVIDIA/apex
-          cd apex
-          pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
-          cd ../
           conda install -y sphinx
           pip install furo
+          pip install git+https://github.com/NVIDIA/apex.git
           pip install git+https://github.com/google-deepmind/alphafold.git
           sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
           sphinx-apidoc -d 8 -F -o docs/source/backbone/se3_transformer backbone/RoseTTAFold2/SE3Transformer/se3_transformer
