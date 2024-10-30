@@ -23,7 +23,6 @@ jobs:
           conda activate ppi-toolkit-doc
           conda install -y sphinx
           pip install furo
-          pip install git+https://github.com/NVIDIA/apex.git
           pip install git+https://github.com/google-deepmind/alphafold.git
           sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
           sphinx-apidoc -d 8 -F -o docs/source/backbone/se3_transformer backbone/RoseTTAFold2/SE3Transformer/se3_transformer
