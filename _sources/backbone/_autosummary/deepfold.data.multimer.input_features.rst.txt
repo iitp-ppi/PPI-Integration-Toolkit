@@ -11,6 +11,7 @@ deepfold.data.multimer.input\_features
       add_assembly_features
       convert_monomer_features
       create_all_seq_msa_features
+      create_all_seq_msa_features_from_a3m
       create_multimer_features
       crop_chains
       int_id_to_str_id

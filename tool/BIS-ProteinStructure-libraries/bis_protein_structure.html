@@ -405,7 +405,10 @@
 </li>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.html">se3_transformer.runtime</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of se3_transformer.runtime</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.arguments.html">se3_transformer.runtime.arguments</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.callbacks.html">se3_transformer.runtime.callbacks</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.gpu_affinity.html">se3_transformer.runtime.gpu_affinity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.inference.html">se3_transformer.runtime.inference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.loggers.html">se3_transformer.runtime.loggers</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.metrics.html">se3_transformer.runtime.metrics</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.utils.html">se3_transformer.runtime.utils</a></li>
 </ul>
@@ -415,7 +418,17 @@
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../tool_api.html">API/Tool</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/bis_protein_structure.html">bis_protein_structure</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.data.html">gd_dl.data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.path_setting.html">gd_dl.path_setting</a></li>
@@ -471,41 +484,991 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="bis-protein-structure-basic-info-module">
-<h2>bis_protein_structure.BASIC_INFO module<a class="headerlink" href="#bis-protein-structure-basic-info-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.CROSSLINK">
+<span id="bis-protein-structure-crosslink-module"></span><h2>bis_protein_structure.CROSSLINK module<a class="headerlink" href="#module-bis_protein_structure.CROSSLINK" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.calculate_calpha_distogram">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">calculate_calpha_distogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.calculate_calpha_distogram" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the C-alpha distogram for a protein chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_id</strong> (<em>str</em>) – Chain identifier.</p></li>
+<li><p><strong>chain</strong> (<em>Bio.PDB.Chain</em>) – Chain object from the parsed structure.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping chain IDs to residues and their positions.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>residue_length</strong> (<em>int</em>) – Number of residues in the chain.</p></li>
+<li><p><strong>distogram</strong> (<em>numpy.ndarray</em>) – A 2D matrix representing the pairwise C-alpha distances.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.calculate_lys_leu_map">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">calculate_lys_leu_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.calculate_lys_leu_map" title="Link to this definition">¶</a></dt>
+<dd><p>Generates a binary map indicating the presence of Lysine (LYS) or Leucine (LEU) residues.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_id</strong> (<em>str</em>) – Chain identifier.</p></li>
+<li><p><strong>chain</strong> (<em>Bio.PDB.Chain</em>) – Chain object from the parsed structure.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping chain IDs to residues and their positions.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>residue_length</strong> (<em>int</em>) – Number of residues in the chain.</p></li>
+<li><p><strong>lys_leu_map</strong> (<em>numpy.ndarray</em>) – A 2D boolean array where True indicates the presence of LYS or LEU at corresponding residue positions.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.calculate_sa_map">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">calculate_sa_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solvent_raw_datas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.calculate_sa_map" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the solvent accessibility (SA) map for a protein chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_id</strong> (<em>str</em>) – Chain identifier.</p></li>
+<li><p><strong>chain</strong> (<em>Bio.PDB.Chain</em>) – Chain object from the parsed structure.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping chain IDs to residues and their positions.</p></li>
+<li><p><strong>solvent_raw_datas</strong> (<em>list</em>) – List containing raw solvent accessibility data for each residue.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>residue_length</strong> (<em>int</em>) – Number of residues in the chain.</p></li>
+<li><p><strong>sa_map</strong> (<em>numpy.ndarray</em>) – A 2D array representing the solvent accessibility map, with values between 0 and 1.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.calculate_tryptic_map">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">calculate_tryptic_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.calculate_tryptic_map" title="Link to this definition">¶</a></dt>
+<dd><p>Generates a tryptic map based on the presence of Lysine (LYS) or Arginine (ARG).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_id</strong> (<em>str</em>) – Chain identifier.</p></li>
+<li><p><strong>chain</strong> (<em>Bio.PDB.Chain</em>) – Chain object from the parsed structure.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping chain IDs to residues and their positions.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>residue_length</strong> (<em>int</em>) – Number of residues in the chain.</p></li>
+<li><p><strong>tryptic_map</strong> (<em>numpy.ndarray</em>) – A 2D boolean array where True indicates tryptic cleavage points between residues.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.load_list_from_file">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">load_list_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.load_list_from_file" title="Link to this definition">¶</a></dt>
+<dd><p>Loads a list from a pickle file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>str</em>) – Path to the pickle file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>data_list</strong> – List of data loaded from the pickle file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.plot_cross_link">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">plot_cross_link</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">residue_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distogram</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lys_leu_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sa_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tryptic_map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.plot_cross_link" title="Link to this definition">¶</a></dt>
+<dd><p>Plots cross-linking analysis based on distance, LYS_LEU map, solvent accessibility, and tryptic map.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>residue_length</strong> (<em>int</em>) – Number of residues in the chain.</p></li>
+<li><p><strong>distogram</strong> (<em>numpy.ndarray</em>) – Pairwise C-alpha distance matrix.</p></li>
+<li><p><strong>lys_leu_map</strong> (<em>numpy.ndarray</em>) – LYS and LEU residue map.</p></li>
+<li><p><strong>sa_map</strong> (<em>numpy.ndarray</em>) – Solvent accessibility map.</p></li>
+<li><p><strong>tryptic_map</strong> (<em>numpy.ndarray</em>) – Tryptic cleavage map.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.readMMCIF">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">readMMCIF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mmcif_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.readMMCIF" title="Link to this definition">¶</a></dt>
+<dd><p>Reads an MMCIF file and extracts chain and residue information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mmcif_path</strong> (<em>str</em>) – Path to the MMCIF file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>model</strong> (<em>Bio.PDB.Model</em>) – The first model from the parsed MMCIF file.</p></li>
+<li><p><strong>chains</strong> (<em>list of str</em>) – List of chain identifiers.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping chain IDs to residues and their positions.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.CROSSLINK.readPDB">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.CROSSLINK.</span></span><span class="sig-name descname"><span class="pre">readPDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.CROSSLINK.readPDB" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a PDB file and extracts chain and residue information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pdb_dir</strong> (<em>str</em>) – Path to the PDB file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>model</strong> (<em>Bio.PDB.Model</em>) – The first model from the parsed PDB file.</p></li>
+<li><p><strong>chains</strong> (<em>list of str</em>) – List of chain identifiers.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping chain IDs to residues and their positions.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="bis-protein-structure-crosslink-module">
-<h2>bis_protein_structure.CROSSLINK module<a class="headerlink" href="#bis-protein-structure-crosslink-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.DATAGEN">
+<span id="bis-protein-structure-datagen-module"></span><h2>bis_protein_structure.DATAGEN module<a class="headerlink" href="#module-bis_protein_structure.DATAGEN" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.AllResiduesSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">AllResiduesSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_chain_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.AllResiduesSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Select</span></code></p>
+<p>Selector class for PDBIO to select all residues in a specific chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>target_chain_id</strong> (<em>str</em>) – The ID of the target chain to select residues from.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.AllResiduesSelector.accept_residue">
+<span class="sig-name descname"><span class="pre">accept_residue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">residue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.AllResiduesSelector.accept_residue" title="Link to this definition">¶</a></dt>
+<dd><p>Returns True if the residue belongs to the target chain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">accept_residue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">residue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd><p>Overload this to reject residues for output.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.create_structure_from_feature">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">create_structure_from_feature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_atom_positions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_atom_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pred'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'A'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.create_structure_from_feature" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a structure from sequence and atomic position information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> (<em>str</em>) – Amino acid sequence of the protein.</p></li>
+<li><p><strong>all_atom_positions</strong> (<em>numpy.ndarray</em>) – Array of atomic positions for the protein.</p></li>
+<li><p><strong>all_atom_mask</strong> (<em>numpy.ndarray</em>) – Mask indicating valid atoms in the structure.</p></li>
+<li><p><strong>structure_id</strong> (<em>str</em><em>, </em><em>optional</em>) – Identifier for the structure (default is ‘pred’).</p></li>
+<li><p><strong>model_id</strong> (<em>int</em><em>, </em><em>optional</em>) – Model ID for the structure (default is 0).</p></li>
+<li><p><strong>chain_id</strong> (<em>str</em><em>, </em><em>optional</em>) – Chain ID for the structure (default is ‘A’).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>structure</strong> – Generated structure object containing atomic coordinates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Bio.PDB.Structure.Structure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.generate_feature_dict">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">generate_feature_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasta_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alignment_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.generate_feature_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Generates a feature dictionary from the given sequence and alignment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> (<em>str</em>) – Sequence identifier tag.</p></li>
+<li><p><strong>seq</strong> (<em>str</em>) – The amino acid sequence.</p></li>
+<li><p><strong>fasta_path</strong> (<em>str</em>) – Path to the FASTA file.</p></li>
+<li><p><strong>alignment_dir</strong> (<em>str</em>) – Directory where alignments are stored.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>feature_dict</strong> – Dictionary of sequence features.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.mmcif_to_pdbs">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">mmcif_to_pdbs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mmcif_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_pdb_root</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.mmcif_to_pdbs" title="Link to this definition">¶</a></dt>
+<dd><p>Converts an MMCIF file to separate PDB files for each chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mmcif_file</strong> (<em>str</em>) – Path to the input MMCIF file.</p></li>
+<li><p><strong>output_pdb_root</strong> (<em>str</em>) – Directory where the output PDB files will be stored.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.parallel_processing">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">parallel_processing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mmcifs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mmcif_root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_root</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.parallel_processing" title="Link to this definition">¶</a></dt>
+<dd><p>Processes multiple MMCIF files in parallel and converts them to PDB files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mmcifs</strong> (<em>list</em><em> of </em><em>str</em>) – List of MMCIF file names to process.</p></li>
+<li><p><strong>mmcif_root</strong> (<em>str</em>) – Directory where the MMCIF files are stored.</p></li>
+<li><p><strong>output_root</strong> (<em>str</em>) – Directory where the PDB files will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.parse_fasta">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">parse_fasta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.parse_fasta" title="Link to this definition">¶</a></dt>
+<dd><p>Parses the contents of a FASTA file and extracts sequence tags and sequences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>str</em>) – String content of the FASTA file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>tags</strong> (<em>list of str</em>) – List of sequence tags.</p></li>
+<li><p><strong>seqs</strong> (<em>list of str</em>) – List of sequences corresponding to the tags.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.parse_mmcif">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">parse_mmcif</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alignment_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.parse_mmcif" title="Link to this definition">¶</a></dt>
+<dd><p>Parses an MMCIF file and processes it into structured data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – Path to the MMCIF file.</p></li>
+<li><p><strong>file_id</strong> (<em>str</em>) – Unique identifier for the MMCIF file.</p></li>
+<li><p><strong>chain_id</strong> (<em>str</em>) – Chain ID to process from the MMCIF file.</p></li>
+<li><p><strong>alignment_dir</strong> (<em>str</em>) – Directory where the alignments are stored.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>data</strong> – Processed data from the MMCIF file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> – If an error occurs during parsing or if the MMCIF object is None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.process_mmcif_to_pdbs">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">process_mmcif_to_pdbs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mmcif</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mmcif_root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_root</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.process_mmcif_to_pdbs" title="Link to this definition">¶</a></dt>
+<dd><p>Processes an MMCIF file and converts it to PDB format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mmcif</strong> (<em>str</em>) – Name of the MMCIF file.</p></li>
+<li><p><strong>mmcif_root</strong> (<em>str</em>) – Directory where the MMCIF files are stored.</p></li>
+<li><p><strong>output_root</strong> (<em>str</em>) – Directory where the PDB files will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DATAGEN.read_fasta">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DATAGEN.</span></span><span class="sig-name descname"><span class="pre">read_fasta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DATAGEN.read_fasta" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a FASTA file and prints out each sequence ID and sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>str</em>) – Path to the FASTA file.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="bis-protein-structure-datagen-module">
-<h2>bis_protein_structure.DATAGEN module<a class="headerlink" href="#bis-protein-structure-datagen-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.DISULFIDE">
+<span id="bis-protein-structure-disulfide-module"></span><h2>bis_protein_structure.DISULFIDE module<a class="headerlink" href="#module-bis_protein_structure.DISULFIDE" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DISULFIDE.get_SS_ver5">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DISULFIDE.</span></span><span class="sig-name descname"><span class="pre">get_SS_ver5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_idx_edit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criteria</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DISULFIDE.get_SS_ver5" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the spatial coordinates of the alpha carbon (CA) or sulfur gamma (SG) atoms of residues
+in a protein chain and computes pairwise distances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_id</strong> (<em>str</em>) – Chain ID to process.</p></li>
+<li><p><strong>chain</strong> (<em>Bio.PDB.Chain</em>) – The chain object containing residues to process.</p></li>
+<li><p><strong>res_length</strong> (<em>int</em>) – The total number of residues in the chain.</p></li>
+<li><p><strong>residue_idx_edit</strong> (<em>dict</em>) – A dictionary mapping residue numbers to indices for the chain.</p></li>
+<li><p><strong>criteria</strong> (<em>str</em>) – The atom type to use for distance calculations. Valid options are ‘CA’ (alpha carbon)
+and ‘SG’ (sulfur gamma).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>filter_disto</strong> (<em>numpy.ndarray</em>) – A filtered distogram (distance matrix) that contains distances between Cysteine residues
+that meet the distance criteria. The shape is (res_length, res_length, 1).</p></li>
+<li><p><strong>pair_list</strong> (<em>numpy.ndarray</em>) – List of residue index pairs where the distance between Cysteine residues satisfies the
+specified distance criteria.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>The function computes the pairwise Euclidean distance between alpha carbons (CA) or sulfur
+gamma atoms (SG) in the given chain.</p></li>
+<li><p>For the ‘CA’ criteria, the distance threshold is set between 3.0 and 7.5 Å, while for ‘SG’
+criteria, it is set between 2.0 and 3.0 Å.</p></li>
+<li><p>Only Cysteine residues are considered for the distance calculation in the case of ‘SG’ criteria.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.DISULFIDE.readMMCIF_label">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.DISULFIDE.</span></span><span class="sig-name descname"><span class="pre">readMMCIF_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mmcif_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.DISULFIDE.readMMCIF_label" title="Link to this definition">¶</a></dt>
+<dd><p>Reads an MMCIF file and extracts chain and residue information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mmcif_path</strong> (<em>str</em>) – Path to the MMCIF file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>model</strong> (<em>Bio.PDB.Model</em>) – The first model from the parsed structure.</p></li>
+<li><p><strong>chains</strong> (<em>list of str</em>) – List of chain IDs present in the structure.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary mapping each chain to a dictionary of residue numbers and residue names.
+Format: {chain_id: {res_num: res_name}}.</p></li>
+<li><p><strong>residue_idx_edit</strong> (<em>dict</em>) – Dictionary that maps chain IDs to dictionaries which map residue numbers to indices
+based on their sequence order.
+Format: {chain_id: {res_num: index}}.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The function parses the MMCIF file, extracts chain and residue information, and then aligns
+the residue numbering with the label sequence identifiers provided in the MMCIF file. Only
+standard amino acids are included, and the sequence numbering is adjusted to fit a zero-based
+index for further processing.</p>
+</dd></dl>
+
 </section>
-<section id="bis-protein-structure-disulfide-module">
-<h2>bis_protein_structure.DISULFIDE module<a class="headerlink" href="#bis-protein-structure-disulfide-module" title="Link to this heading">¶</a></h2>
-</section>
-<section id="bis-protein-structure-mmeval-module">
-<h2>bis_protein_structure.MMEVAL module<a class="headerlink" href="#bis-protein-structure-mmeval-module" title="Link to this heading">¶</a></h2>
-</section>
-<section id="bis-protein-structure-ramachandran-module">
-<h2>bis_protein_structure.RAMACHANDRAN module<a class="headerlink" href="#bis-protein-structure-ramachandran-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.MMEVAL">
+<span id="bis-protein-structure-mmeval-module"></span><h2>bis_protein_structure.MMEVAL module<a class="headerlink" href="#module-bis_protein_structure.MMEVAL" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.convert_string">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">convert_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.convert_string" title="Link to this definition">¶</a></dt>
+<dd><p>Converts a string of alphabets into a corresponding string of numbers
+based on alphabet position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>s</strong> (<em>str</em>) – Input string consisting of alphabets.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>result</strong> – String where each letter is replaced by its corresponding
+position (A=0, B=1, …, Z=23).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.eval_interface">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">eval_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">native_pdb_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_pdb_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.eval_interface" title="Link to this definition">¶</a></dt>
+<dd><p>Evaluates the similarity between the native and predicted interfaces
+based on contact maps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>native_pdb_path</strong> (<em>str</em>) – Path to the native PDB file.</p></li>
+<li><p><strong>pred_pdb_path</strong> (<em>str</em>) – Path to the predicted PDB file.</p></li>
+<li><p><strong>show</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to display the contact maps (default is False).</p></li>
+<li><p><strong>interface</strong> (<em>str</em><em>, </em><em>optional</em>) – Specifies the chains for which the contact map should be evaluated
+(default is ‘all’).</p></li>
+<li><p><strong>print</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to print the evaluation results (default is False).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>ICS</strong> (<em>float</em>) – The Interface Similarity Score (ICS).</p></li>
+<li><p><strong>IPS</strong> (<em>float</em>) – The Interface Patch Score (IPS).</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.get_ICS">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">get_ICS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">native_contact_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_contact_map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.get_ICS" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the Interface Similarity Score (ICS) between two contact maps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>native_contact_map</strong> (<em>numpy.ndarray</em>) – Native contact map.</p></li>
+<li><p><strong>pred_contact_map</strong> (<em>numpy.ndarray</em>) – Predicted contact map.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>interface_similarity_score</strong> – The interface similarity score, based on the F1 score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.get_IPS">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">get_IPS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">native_contact_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_contact_map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.get_IPS" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the Interface Patch Score (IPS) between two contact maps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>native_contact_map</strong> (<em>numpy.ndarray</em>) – Native contact map.</p></li>
+<li><p><strong>pred_contact_map</strong> (<em>numpy.ndarray</em>) – Predicted contact map.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>interface_patch_similarity</strong> – The interface patch similarity score, calculated as the ratio of
+the intersection to the union of the patches.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.get_contact">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">get_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_masks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.get_contact" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the contact map between residues in a PDB file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pdb_path</strong> (<em>str</em>) – Path to the PDB file.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em><em>, </em><em>optional</em>) – Predefined residue dictionary (default is None).</p></li>
+<li><p><strong>coord_masks</strong> (<em>numpy.ndarray</em><em>, </em><em>optional</em>) – Mask of residue coordinates (default is None).</p></li>
+<li><p><strong>interface</strong> (<em>str</em><em>, </em><em>optional</em>) – Specifies the chains for which the contact map should be calculated.
+If ‘all’, contacts across all chains are calculated (default is ‘all’).</p></li>
+<li><p><strong>show</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to display the contact map (default is True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>contact_map</strong> (<em>numpy.ndarray</em>) – The contact map where values represent the number of contacting atoms.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Residue dictionary mapping chain IDs to residue names.</p></li>
+<li><p><strong>coord_masks</strong> (<em>numpy.ndarray</em>) – Residue coordinate masks.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.readPDB">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">readPDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.readPDB" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a PDB file and returns the structure, chains, and residue dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pdb_dir</strong> (<em>str</em>) – Path to the PDB file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>model</strong> (<em>Bio.PDB.Model.Model</em>) – The PDB model object.</p></li>
+<li><p><strong>chains</strong> (<em>list of str</em>) – List of chain identifiers.</p></li>
+<li><p><strong>residue_dict</strong> (<em>dict</em>) – Dictionary where keys are chain IDs and values are dictionaries
+mapping residue numbers to residue names.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.MMEVAL.restype_refer_atoms">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.MMEVAL.</span></span><span class="sig-name descname"><span class="pre">restype_refer_atoms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">restype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.MMEVAL.restype_refer_atoms" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the list of atom indices for a given residue type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>restype</strong> (<em>str</em>) – The three-letter code for the residue (e.g., ‘ALA’, ‘ARG’).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>atoms</strong> – List of atom indices corresponding to the residue type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of int</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 <section id="bis-protein-structure-solventacc-module">
 <h2>bis_protein_structure.SOLVENTACC module<a class="headerlink" href="#bis-protein-structure-solventacc-module" title="Link to this heading">¶</a></h2>
 </section>
-<section id="bis-protein-structure-torsion2-module">
-<h2>bis_protein_structure.TORSION2 module<a class="headerlink" href="#bis-protein-structure-torsion2-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.TORSION2">
+<span id="bis-protein-structure-torsion2-module"></span><h2>bis_protein_structure.TORSION2 module<a class="headerlink" href="#module-bis_protein_structure.TORSION2" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.angles_to_sincos">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">angles_to_sincos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tor_angles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.angles_to_sincos" title="Link to this definition">¶</a></dt>
+<dd><p>Convert angles to sine and cosine values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tor_angles</strong> (<em>torch.Tensor</em>) – A tensor of shape (n, m) containing angles in degrees.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tensor of shape (n, m, 2) where the last dimension contains the sine and cosine of the angles.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>torch.Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.getDistogram">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">getDistogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">residues</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_mask</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.getDistogram" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the pairwise distance matrix for atom positions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>residues</strong> (<em>dict</em>) – A dictionary mapping residue IDs to residue names.</p></li>
+<li><p><strong>atom_pos</strong> (<em>np.ndarray</em>) – An array containing the coordinates of the atoms.</p></li>
+<li><p><strong>atom_mask</strong> (<em>np.ndarray</em>) – An array indicating which atoms have valid coordinates.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>pairwise_dist</strong> – A square matrix of shape (n_atoms, n_atoms) containing pairwise distances.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.getTorsion_acc">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">getTorsion_acc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_residues</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tor_masks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">native_angles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_angles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_alter_angles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thres</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chi_dependent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.getTorsion_acc" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the accuracy of torsion angles by comparing native angles with target angles and optional alternative angles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target_residues</strong> (<em>dict</em>) – A dictionary containing the target residues indexed by their residue numbers.</p></li>
+<li><p><strong>tor_masks</strong> (<em>np.ndarray</em>) – A boolean array indicating the availability of torsion angles for each residue.</p></li>
+<li><p><strong>native_angles</strong> (<em>np.ndarray</em>) – An array of native torsion angles.</p></li>
+<li><p><strong>target_angles</strong> (<em>np.ndarray</em>) – An array of target torsion angles for comparison.</p></li>
+<li><p><strong>target_alter_angles</strong> (<em>np.ndarray</em>) – An array of alternative target torsion angles for comparison.</p></li>
+<li><p><strong>thres</strong> (<em>int</em><em>, </em><em>optional</em>) – The threshold for considering an angle correct. Default is 10 degrees.</p></li>
+<li><p><strong>chi_dependent</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, ensures that only the first valid chi angle is counted as correct. Default is True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary containing the total, correct counts, and accuracy for each angle type (backbone and sidechain).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.get_bondangle">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">get_bondangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.get_bondangle" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate the bond angle formed by three points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>np.ndarray</em>) – An array of shape (3, 3) representing the coordinates of the three points.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The bond angle in degrees formed by the three points.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.get_coordinates">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">get_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">final_residue</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residues</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.get_coordinates" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves the coordinates of atoms from the residues in a chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>final_residue</strong> (<em>int</em>) – The total number of residues to be considered.</p></li>
+<li><p><strong>residues</strong> (<em>dict</em>) – A dictionary mapping residue IDs to residue names.</p></li>
+<li><p><strong>chain</strong> (<em>Chain</em>) – The chain object containing the residues.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>coord</strong> (<em>np.ndarray</em>) – An array of shape (final_residue, 37, 3) containing the coordinates of the atoms.</p></li>
+<li><p><strong>coord_mask</strong> (<em>np.ndarray</em>) – An array of shape (final_residue, 37, 1) indicating which atoms have valid coordinates.</p></li>
+<li><p><strong>unexpected_atoms</strong> (<em>dict</em>) – A dictionary mapping residue IDs to unexpected atom IDs found during processing.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.get_refer_atoms">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">get_refer_atoms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">restype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angletype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.get_refer_atoms" title="Link to this definition">¶</a></dt>
+<dd><p>Get reference atom indices based on residue type and angle type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>restype</strong> (<em>str</em>) – The residue type (e.g., ‘ARG’, ‘GLY’).</p></li>
+<li><p><strong>angletype</strong> (<em>int</em>) – The angle type index (0-6).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of indices representing reference atoms for the given residue and angle types.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.get_torsion">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">get_torsion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residues</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_tensor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.get_torsion" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the torsion angles for a set of residues.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>atom_mask</strong> (<em>np.ndarray</em>) – An array indicating which atoms have valid coordinates.</p></li>
+<li><p><strong>atom_pos</strong> (<em>np.ndarray</em>) – An array containing the coordinates of the atoms.</p></li>
+<li><p><strong>residues</strong> (<em>dict</em>) – A dictionary mapping residue IDs to residue names.</p></li>
+<li><p><strong>as_tensor</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, returns the angles and masks as PyTorch tensors (default is False).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>tor_masks</strong> (<em>np.ndarray</em>) – A boolean array of shape (n_residues, 7) indicating valid torsion angles.</p></li>
+<li><p><strong>tor_angles</strong> (<em>np.ndarray</em>) – An array of shape (n_residues, 7) containing the torsion angle values.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.new_dihedral">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">new_dihedral</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.new_dihedral" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate the dihedral angle between four points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>np.ndarray</em>) – An array of shape (4, 3) representing the coordinates of the four points.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The dihedral angle in degrees between the planes formed by the points.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.readPDB">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">readPDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.readPDB" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a PDB file and extracts residue information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pdb_path</strong> (<em>str</em>) – The file path to the PDB file to be parsed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>residues</strong> (<em>dict</em>) – A dictionary mapping residue IDs to residue names.</p></li>
+<li><p><strong>chain</strong> (<em>Chain</em>) – The chain object from the parsed structure.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.restype_refer_atoms">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">restype_refer_atoms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">restype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.restype_refer_atoms" title="Link to this definition">¶</a></dt>
+<dd><p>Get reference atom indices for a given residue type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>restype</strong> (<em>str</em>) – The residue type (e.g., ‘ALA’, ‘ARG’).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of indices representing the atoms associated with the residue type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.sidechain_sym_angle">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">sidechain_sym_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_residues</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tor_masks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">native_angles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_angles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_alter_angles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.sidechain_sym_angle" title="Link to this definition">¶</a></dt>
+<dd><p>Adjusts the target angles of sidechain torsions based on their differences with native angles and alternative angles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target_residues</strong> (<em>dict</em>) – A dictionary containing the target residues indexed by their residue numbers.</p></li>
+<li><p><strong>tor_masks</strong> (<em>np.ndarray</em>) – A boolean array indicating the availability of torsion angles for each residue.</p></li>
+<li><p><strong>native_angles</strong> (<em>np.ndarray</em>) – An array of native torsion angles.</p></li>
+<li><p><strong>target_angles</strong> (<em>np.ndarray</em>) – An array of target torsion angles to be modified.</p></li>
+<li><p><strong>target_alter_angles</strong> (<em>np.ndarray</em>) – An array of alternative target torsion angles for comparison.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The modified target angles after adjusting based on comparisons with native and alternative angles.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.TORSION2.torsion_angle_loss">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.TORSION2.</span></span><span class="sig-name descname"><span class="pre">torsion_angle_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_gt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tor_masks</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.TORSION2.torsion_angle_loss" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the loss for torsion angles based on the difference between predicted angles and ground truth angles,
+including penalties for angle normalization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>torch.Tensor</em>) – The predicted torsion angles, shape [<a href="#id1"><span class="problematic" id="id2">*</span></a>, N, 7, 2].</p></li>
+<li><p><strong>a_gt</strong> (<em>torch.Tensor</em>) – The ground truth torsion angles, shape [<a href="#id3"><span class="problematic" id="id4">*</span></a>, N, 7, 2].</p></li>
+<li><p><strong>tor_masks</strong> (<em>torch.Tensor</em>) – A boolean tensor indicating the validity of torsion angles.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary containing the total loss, backbone loss, and sidechain loss.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="bis-protein-structure-utills-module">
-<h2>bis_protein_structure.UTILLS module<a class="headerlink" href="#bis-protein-structure-utills-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.residue_constants">
+<span id="bis-protein-structure-residue-constants-module"></span><h2>bis_protein_structure.residue_constants module<a class="headerlink" href="#module-bis_protein_structure.residue_constants" title="Link to this heading">¶</a></h2>
+<p>Constants used in AlphaFold.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.Bond">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bis_protein_structure.residue_constants.</span></span><span class="sig-name descname"><span class="pre">Bond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom1_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom2_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.residue_constants.Bond" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.Bond.atom1_name">
+<span class="sig-name descname"><span class="pre">atom1_name</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.Bond.atom1_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.Bond.atom2_name">
+<span class="sig-name descname"><span class="pre">atom2_name</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.Bond.atom2_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.Bond.length">
+<span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.Bond.length" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.Bond.stddev">
+<span class="sig-name descname"><span class="pre">stddev</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.Bond.stddev" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.BondAngle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bis_protein_structure.residue_constants.</span></span><span class="sig-name descname"><span class="pre">BondAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom1_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom2_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom3name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle_rad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.residue_constants.BondAngle" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.BondAngle.angle_rad">
+<span class="sig-name descname"><span class="pre">angle_rad</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.BondAngle.angle_rad" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.BondAngle.atom1_name">
+<span class="sig-name descname"><span class="pre">atom1_name</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.BondAngle.atom1_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.BondAngle.atom2_name">
+<span class="sig-name descname"><span class="pre">atom2_name</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.BondAngle.atom2_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.BondAngle.atom3name">
+<span class="sig-name descname"><span class="pre">atom3name</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.BondAngle.atom3name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.BondAngle.stddev">
+<span class="sig-name descname"><span class="pre">stddev</span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.BondAngle.stddev" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.chi_angle_atom">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.residue_constants.</span></span><span class="sig-name descname"><span class="pre">chi_angle_atom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.chi_angle_atom" title="Link to this definition">¶</a></dt>
+<dd><p>Define chi-angle rigid groups via one-hot representations.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.load_stereo_chemical_props">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.residue_constants.</span></span><span class="sig-name descname"><span class="pre">load_stereo_chemical_props</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond" title="bis_protein_structure.residue_constants.Bond"><span class="pre">Bond</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond" title="bis_protein_structure.residue_constants.Bond"><span class="pre">Bond</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle" title="bis_protein_structure.residue_constants.BondAngle"><span class="pre">BondAngle</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.load_stereo_chemical_props" title="Link to this definition">¶</a></dt>
+<dd><p>Load stereo_chemical_props.txt into a nice structure.</p>
+<p>Load literature values for bond lengths and bond angles and translate
+bond angles into the length of the opposite edge of the triangle
+(“residue_virtual_bonds”).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict that maps resname –&gt; list of Bond tuples
+residue_virtual_bonds: dict that maps resname –&gt; list of Bond tuples
+residue_bond_angles: dict that maps resname –&gt; list of BondAngle tuples</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>residue_bonds</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.make_atom14_dists_bounds">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.residue_constants.</span></span><span class="sig-name descname"><span class="pre">make_atom14_dists_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overlap_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bond_length_tolerance_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.residue_constants.make_atom14_dists_bounds" title="Link to this definition">¶</a></dt>
+<dd><p>compute upper and lower bounds for bonds to assess violations.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.residue_constants.sequence_to_onehot">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.residue_constants.</span></span><span class="sig-name descname"><span class="pre">sequence_to_onehot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_unknown_to_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#bis_protein_structure.residue_constants.sequence_to_onehot" title="Link to this definition">¶</a></dt>
+<dd><p>Maps the given sequence into a one-hot encoded matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> – An amino acid sequence.</p></li>
+<li><p><strong>mapping</strong> – A dictionary mapping amino acids to integers.</p></li>
+<li><p><strong>map_unknown_to_x</strong> – If True, any amino acid that is not in the mapping will be
+mapped to the unknown amino acid ‘X’. If the mapping doesn’t contain
+amino acid ‘X’, an error will be thrown. If False, any amino acid not in
+the mapping will throw an error.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A numpy array of shape (seq_len, num_unique_aas) with one-hot encoding of
+the sequence.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If the mapping doesn’t contain values from 0 to
+    num_unique_aas - 1 without any gaps.</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="bis-protein-structure-residue-constants-module">
-<h2>bis_protein_structure.residue_constants module<a class="headerlink" href="#bis-protein-structure-residue-constants-module" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure.split_pdb">
+<span id="bis-protein-structure-split-pdb-module"></span><h2>bis_protein_structure.split_pdb module<a class="headerlink" href="#module-bis_protein_structure.split_pdb" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.split_pdb.extract">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.split_pdb.</span></span><span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.split_pdb.extract" title="Link to this definition">¶</a></dt>
+<dd><p>Write out selected portion of a structure to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>structure</strong> (<em>Bio.PDB.Structure</em>) – The structure object containing the protein data.</p></li>
+<li><p><strong>chain_id</strong> (<em>str</em>) – The identifier for the chain to extract.</p></li>
+<li><p><strong>start</strong> (<em>int</em>) – The starting residue index for extraction.</p></li>
+<li><p><strong>end</strong> (<em>int</em>) – The ending residue index for extraction.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – The path to the output file where the selected portion will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="bis_protein_structure.split_pdb.split_the_pdb">
+<span class="sig-prename descclassname"><span class="pre">bis_protein_structure.split_pdb.</span></span><span class="sig-name descname"><span class="pre">split_the_pdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cif_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bis_protein_structure.split_pdb.split_the_pdb" title="Link to this definition">¶</a></dt>
+<dd><p>Split a PDB file into separate CIF files for a specified chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cif_path</strong> (<em>str</em>) – The path to the input CIF file.</p></li>
+<li><p><strong>pdb</strong> (<em>str</em>) – The name of the PDB structure.</p></li>
+<li><p><strong>chain</strong> (<em>str</em>) – The chain identifier to extract from the PDB structure.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="bis-protein-structure-split-pdb-module">
-<h2>bis_protein_structure.split_pdb module<a class="headerlink" href="#bis-protein-structure-split-pdb-module" title="Link to this heading">¶</a></h2>
-</section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<section id="module-bis_protein_structure">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bis_protein_structure" title="Link to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -548,18 +1511,92 @@
             <ul>
 <li><a class="reference internal" href="#">bis_protein_structure package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-basic-info-module">bis_protein_structure.BASIC_INFO module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-crosslink-module">bis_protein_structure.CROSSLINK module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-datagen-module">bis_protein_structure.DATAGEN module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-disulfide-module">bis_protein_structure.DISULFIDE module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-mmeval-module">bis_protein_structure.MMEVAL module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-ramachandran-module">bis_protein_structure.RAMACHANDRAN module</a></li>
+<li><a class="reference internal" href="#module-bis_protein_structure.CROSSLINK">bis_protein_structure.CROSSLINK module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.calculate_calpha_distogram"><code class="docutils literal notranslate"><span class="pre">calculate_calpha_distogram()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.calculate_lys_leu_map"><code class="docutils literal notranslate"><span class="pre">calculate_lys_leu_map()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.calculate_sa_map"><code class="docutils literal notranslate"><span class="pre">calculate_sa_map()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.calculate_tryptic_map"><code class="docutils literal notranslate"><span class="pre">calculate_tryptic_map()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.load_list_from_file"><code class="docutils literal notranslate"><span class="pre">load_list_from_file()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.plot_cross_link"><code class="docutils literal notranslate"><span class="pre">plot_cross_link()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.readMMCIF"><code class="docutils literal notranslate"><span class="pre">readMMCIF()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.CROSSLINK.readPDB"><code class="docutils literal notranslate"><span class="pre">readPDB()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bis_protein_structure.DATAGEN">bis_protein_structure.DATAGEN module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.AllResiduesSelector"><code class="docutils literal notranslate"><span class="pre">AllResiduesSelector</span></code></a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.AllResiduesSelector.accept_residue"><code class="docutils literal notranslate"><span class="pre">AllResiduesSelector.accept_residue()</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">AllResiduesSelector.accept_residue()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.create_structure_from_feature"><code class="docutils literal notranslate"><span class="pre">create_structure_from_feature()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.generate_feature_dict"><code class="docutils literal notranslate"><span class="pre">generate_feature_dict()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.mmcif_to_pdbs"><code class="docutils literal notranslate"><span class="pre">mmcif_to_pdbs()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.parallel_processing"><code class="docutils literal notranslate"><span class="pre">parallel_processing()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.parse_fasta"><code class="docutils literal notranslate"><span class="pre">parse_fasta()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.parse_mmcif"><code class="docutils literal notranslate"><span class="pre">parse_mmcif()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.process_mmcif_to_pdbs"><code class="docutils literal notranslate"><span class="pre">process_mmcif_to_pdbs()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DATAGEN.read_fasta"><code class="docutils literal notranslate"><span class="pre">read_fasta()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bis_protein_structure.DISULFIDE">bis_protein_structure.DISULFIDE module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.DISULFIDE.get_SS_ver5"><code class="docutils literal notranslate"><span class="pre">get_SS_ver5()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.DISULFIDE.readMMCIF_label"><code class="docutils literal notranslate"><span class="pre">readMMCIF_label()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bis_protein_structure.MMEVAL">bis_protein_structure.MMEVAL module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.convert_string"><code class="docutils literal notranslate"><span class="pre">convert_string()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.eval_interface"><code class="docutils literal notranslate"><span class="pre">eval_interface()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.get_ICS"><code class="docutils literal notranslate"><span class="pre">get_ICS()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.get_IPS"><code class="docutils literal notranslate"><span class="pre">get_IPS()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.get_contact"><code class="docutils literal notranslate"><span class="pre">get_contact()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.readPDB"><code class="docutils literal notranslate"><span class="pre">readPDB()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.MMEVAL.restype_refer_atoms"><code class="docutils literal notranslate"><span class="pre">restype_refer_atoms()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#bis-protein-structure-solventacc-module">bis_protein_structure.SOLVENTACC module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-torsion2-module">bis_protein_structure.TORSION2 module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-utills-module">bis_protein_structure.UTILLS module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-residue-constants-module">bis_protein_structure.residue_constants module</a></li>
-<li><a class="reference internal" href="#bis-protein-structure-split-pdb-module">bis_protein_structure.split_pdb module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-bis_protein_structure.TORSION2">bis_protein_structure.TORSION2 module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.angles_to_sincos"><code class="docutils literal notranslate"><span class="pre">angles_to_sincos()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.getDistogram"><code class="docutils literal notranslate"><span class="pre">getDistogram()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.getTorsion_acc"><code class="docutils literal notranslate"><span class="pre">getTorsion_acc()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.get_bondangle"><code class="docutils literal notranslate"><span class="pre">get_bondangle()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.get_coordinates"><code class="docutils literal notranslate"><span class="pre">get_coordinates()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.get_refer_atoms"><code class="docutils literal notranslate"><span class="pre">get_refer_atoms()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.get_torsion"><code class="docutils literal notranslate"><span class="pre">get_torsion()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.new_dihedral"><code class="docutils literal notranslate"><span class="pre">new_dihedral()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.readPDB"><code class="docutils literal notranslate"><span class="pre">readPDB()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.restype_refer_atoms"><code class="docutils literal notranslate"><span class="pre">restype_refer_atoms()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.sidechain_sym_angle"><code class="docutils literal notranslate"><span class="pre">sidechain_sym_angle()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.TORSION2.torsion_angle_loss"><code class="docutils literal notranslate"><span class="pre">torsion_angle_loss()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bis_protein_structure.residue_constants">bis_protein_structure.residue_constants module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond"><code class="docutils literal notranslate"><span class="pre">Bond</span></code></a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond.atom1_name"><code class="docutils literal notranslate"><span class="pre">Bond.atom1_name</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond.atom2_name"><code class="docutils literal notranslate"><span class="pre">Bond.atom2_name</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond.length"><code class="docutils literal notranslate"><span class="pre">Bond.length</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.Bond.stddev"><code class="docutils literal notranslate"><span class="pre">Bond.stddev</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle"><code class="docutils literal notranslate"><span class="pre">BondAngle</span></code></a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle.angle_rad"><code class="docutils literal notranslate"><span class="pre">BondAngle.angle_rad</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle.atom1_name"><code class="docutils literal notranslate"><span class="pre">BondAngle.atom1_name</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle.atom2_name"><code class="docutils literal notranslate"><span class="pre">BondAngle.atom2_name</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle.atom3name"><code class="docutils literal notranslate"><span class="pre">BondAngle.atom3name</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.BondAngle.stddev"><code class="docutils literal notranslate"><span class="pre">BondAngle.stddev</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.chi_angle_atom"><code class="docutils literal notranslate"><span class="pre">chi_angle_atom()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.load_stereo_chemical_props"><code class="docutils literal notranslate"><span class="pre">load_stereo_chemical_props()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.make_atom14_dists_bounds"><code class="docutils literal notranslate"><span class="pre">make_atom14_dists_bounds()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.residue_constants.sequence_to_onehot"><code class="docutils literal notranslate"><span class="pre">sequence_to_onehot()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bis_protein_structure.split_pdb">bis_protein_structure.split_pdb module</a><ul>
+<li><a class="reference internal" href="#bis_protein_structure.split_pdb.extract"><code class="docutils literal notranslate"><span class="pre">extract()</span></code></a></li>
+<li><a class="reference internal" href="#bis_protein_structure.split_pdb.split_the_pdb"><code class="docutils literal notranslate"><span class="pre">split_the_pdb()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bis_protein_structure">Module contents</a></li>
 </ul>
 </li>
 </ul>

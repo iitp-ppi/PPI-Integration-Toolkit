@@ -4,14 +4,6 @@ bis\_protein\_structure package
 Submodules
 ----------
 
-bis\_protein\_structure.BASIC\_INFO module
-------------------------------------------
-
-.. automodule:: bis_protein_structure.BASIC_INFO
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 bis\_protein\_structure.CROSSLINK module
 ----------------------------------------
 
@@ -44,14 +36,6 @@ bis\_protein\_structure.MMEVAL module
    :undoc-members:
    :show-inheritance:
 
-bis\_protein\_structure.RAMACHANDRAN module
--------------------------------------------
-
-.. automodule:: bis_protein_structure.RAMACHANDRAN
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 bis\_protein\_structure.SOLVENTACC module
 -----------------------------------------
 
@@ -64,14 +48,6 @@ bis\_protein\_structure.TORSION2 module
 ---------------------------------------
 
 .. automodule:: bis_protein_structure.TORSION2
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-bis\_protein\_structure.UTILLS module
--------------------------------------
-
-.. automodule:: bis_protein_structure.UTILLS
    :members:
    :undoc-members:
    :show-inheritance:

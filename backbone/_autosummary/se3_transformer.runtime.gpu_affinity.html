@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="se3_transformer.runtime.metrics" href="se3_transformer.runtime.metrics.html" /><link rel="prev" title="se3_transformer.runtime.arguments" href="se3_transformer.runtime.arguments.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="se3_transformer.runtime.inference" href="se3_transformer.runtime.inference.html" /><link rel="prev" title="se3_transformer.runtime.callbacks" href="se3_transformer.runtime.callbacks.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>se3_transformer.runtime.gpu_affinity - IITP PPI 0.0.2 documentation</title>
@@ -405,7 +405,10 @@
 </li>
 <li class="toctree-l4 current has-children"><a class="reference internal" href="se3_transformer.runtime.html">se3_transformer.runtime</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of se3_transformer.runtime</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l5"><a class="reference internal" href="se3_transformer.runtime.arguments.html">se3_transformer.runtime.arguments</a></li>
+<li class="toctree-l5"><a class="reference internal" href="se3_transformer.runtime.callbacks.html">se3_transformer.runtime.callbacks</a></li>
 <li class="toctree-l5 current current-page"><a class="current reference internal" href="#">se3_transformer.runtime.gpu_affinity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="se3_transformer.runtime.inference.html">se3_transformer.runtime.inference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="se3_transformer.runtime.loggers.html">se3_transformer.runtime.loggers</a></li>
 <li class="toctree-l5"><a class="reference internal" href="se3_transformer.runtime.metrics.html">se3_transformer.runtime.metrics</a></li>
 <li class="toctree-l5"><a class="reference internal" href="se3_transformer.runtime.utils.html">se3_transformer.runtime.utils</a></li>
 </ul>
@@ -415,7 +418,17 @@
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../tool/tool_api.html">API/Tool</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.html">bis_protein_structure</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.data.html">gd_dl.data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.path_setting.html">gd_dl.path_setting</a></li>
@@ -472,40 +485,40 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.build_thread_siblings_dict" title="se3_transformer.runtime.gpu_affinity.build_thread_siblings_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_thread_siblings_dict</span></code></a>(siblings_list)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.build_thread_siblings_dict" title="se3_transformer.runtime.gpu_affinity.build_thread_siblings_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_thread_siblings_dict</span></code></a>(siblings_list)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.check_affinities" title="se3_transformer.runtime.gpu_affinity.check_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_affinities</span></code></a>(affinities)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.check_affinities" title="se3_transformer.runtime.gpu_affinity.check_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_affinities</span></code></a>(affinities)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.get_affinities" title="se3_transformer.runtime.gpu_affinity.get_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_affinities</span></code></a>(nproc_per_node, scope[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.get_affinities" title="se3_transformer.runtime.gpu_affinity.get_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_affinities</span></code></a>(nproc_per_node, scope[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.get_grouped_affinities" title="se3_transformer.runtime.gpu_affinity.get_grouped_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_grouped_affinities</span></code></a>(nproc_per_node[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.get_grouped_affinities" title="se3_transformer.runtime.gpu_affinity.get_grouped_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_grouped_affinities</span></code></a>(nproc_per_node[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.get_thread_siblings_list" title="se3_transformer.runtime.gpu_affinity.get_thread_siblings_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_thread_siblings_list</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.get_thread_siblings_list" title="se3_transformer.runtime.gpu_affinity.get_thread_siblings_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_thread_siblings_list</span></code></a>()</p></td>
 <td><p>Returns a list of 2-element integer tuples representing pairs of hyperthreading cores.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.group_list_by_key" title="se3_transformer.runtime.gpu_affinity.group_list_by_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">group_list_by_key</span></code></a>(the_list, key)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.group_list_by_key" title="se3_transformer.runtime.gpu_affinity.group_list_by_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">group_list_by_key</span></code></a>(the_list, key)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_affinity" title="se3_transformer.runtime.gpu_affinity.set_affinity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_affinity</span></code></a>(gpu_id, nproc_per_node, *[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_affinity" title="se3_transformer.runtime.gpu_affinity.set_affinity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_affinity</span></code></a>(gpu_id, nproc_per_node, *[, ...])</p></td>
 <td><p>The process is assigned with a proper CPU affinity that matches CPU-GPU hardware architecture on a given platform.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_all" title="se3_transformer.runtime.gpu_affinity.set_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_all</span></code></a>(gpu_id, nproc_per_node, scope, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_all" title="se3_transformer.runtime.gpu_affinity.set_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_all</span></code></a>(gpu_id, nproc_per_node, scope, ...)</p></td>
 <td><p>The process is assigned with all available physical CPU cores recommended by pynvml for the GPU with a given id.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_single" title="se3_transformer.runtime.gpu_affinity.set_single"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_single</span></code></a>(gpu_id, nproc_per_node, scope, cores)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_single" title="se3_transformer.runtime.gpu_affinity.set_single"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_single</span></code></a>(gpu_id, nproc_per_node, scope, cores)</p></td>
 <td><p>The process is assigned with the first available physical CPU core from the list of all physical CPU cores recommended by pynvml for the GPU with a given id.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_single_unique" title="se3_transformer.runtime.gpu_affinity.set_single_unique"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_single_unique</span></code></a>(gpu_id, nproc_per_node, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_single_unique" title="se3_transformer.runtime.gpu_affinity.set_single_unique"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_single_unique</span></code></a>(gpu_id, nproc_per_node, ...)</p></td>
 <td><p>The process is assigned with a single unique available physical CPU core from the list of all physical CPU cores recommended by pynvml for the GPU with a given id.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_unique" title="se3_transformer.runtime.gpu_affinity.set_unique"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_unique</span></code></a>(gpu_id, nproc_per_node, scope, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.set_unique" title="se3_transformer.runtime.gpu_affinity.set_unique"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_unique</span></code></a>(gpu_id, nproc_per_node, scope, ...)</p></td>
 <td><p>The process is assigned with a unique subset of available physical CPU cores from the list of all CPU cores recommended by pynvml for the GPU with a given id.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.ungroup_affinities" title="se3_transformer.runtime.gpu_affinity.ungroup_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ungroup_affinities</span></code></a>(affinities, scope, cores)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.ungroup_affinities" title="se3_transformer.runtime.gpu_affinity.ungroup_affinities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ungroup_affinities</span></code></a>(affinities, scope, cores)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -515,7 +528,7 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../RoseTTAFold2/se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.Device" title="se3_transformer.runtime.gpu_affinity.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device</span></code></a>(device_idx)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../se3_transformer/se3_transformer.runtime.html#se3_transformer.runtime.gpu_affinity.Device" title="se3_transformer.runtime.gpu_affinity.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device</span></code></a>(device_idx)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -528,23 +541,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="se3_transformer.runtime.metrics.html">
+          <a class="next-page" href="se3_transformer.runtime.inference.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">se3_transformer.runtime.metrics</div>
+                <div class="title">se3_transformer.runtime.inference</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="se3_transformer.runtime.arguments.html">
+          <a class="prev-page" href="se3_transformer.runtime.callbacks.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">se3_transformer.runtime.arguments</div>
+                <div class="title">se3_transformer.runtime.callbacks</div>
                 
               </div>
             </a>

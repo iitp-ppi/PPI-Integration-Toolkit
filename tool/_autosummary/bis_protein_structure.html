@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="bis_protein_structure.CROSSLINK" href="bis_protein_structure.CROSSLINK.html" /><link rel="prev" title="API/Tool" href="../tool_api.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>examples package - IITP PPI 0.0.2 documentation</title>
+        <title>bis_protein_structure - IITP PPI 0.0.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -198,8 +198,8 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../api.html">API</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../api.html">API</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../backbone/backbone_api.html">API/Backbone</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of API/Backbone</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../backbone/_autosummary/deepfold.html">deepfold</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of deepfold</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../../backbone/_autosummary/deepfold.common.html">deepfold.common</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of deepfold.common</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -405,7 +405,10 @@
 </li>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.html">se3_transformer.runtime</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of se3_transformer.runtime</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.arguments.html">se3_transformer.runtime.arguments</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.callbacks.html">se3_transformer.runtime.callbacks</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.gpu_affinity.html">se3_transformer.runtime.gpu_affinity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.inference.html">se3_transformer.runtime.inference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.loggers.html">se3_transformer.runtime.loggers</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.metrics.html">se3_transformer.runtime.metrics</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../backbone/_autosummary/se3_transformer.runtime.utils.html">se3_transformer.runtime.utils</a></li>
 </ul>
@@ -414,12 +417,22 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../tool_api.html">API/Tool</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.data.html">gd_dl.data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.path_setting.html">gd_dl.path_setting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.utils.html">gd_dl.utils</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../tool_api.html">API/Tool</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children current-page"><a class="current reference internal" href="#">bis_protein_structure</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.data.html">gd_dl.data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.path_setting.html">gd_dl.path_setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.utils.html">gd_dl.utils</a></li>
 </ul>
 </li>
 </ul>
@@ -446,7 +459,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/tool/BIS-ProteinStructure-libraries/examples.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/tool/_autosummary/bis_protein_structure.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -460,17 +473,42 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="examples-package">
-<h1>examples package<a class="headerlink" href="#examples-package" title="Link to this heading">¶</a></h1>
-<section id="module-examples">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-examples" title="Link to this heading">¶</a></h2>
-</section>
+          <section id="module-bis_protein_structure">
+<span id="bis-protein-structure"></span><h1>bis_protein_structure<a class="headerlink" href="#module-bis_protein_structure" title="Link to this heading">¶</a></h1>
+<p class="rubric">Modules</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="bis_protein_structure.CROSSLINK.html#module-bis_protein_structure.CROSSLINK" title="bis_protein_structure.CROSSLINK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CROSSLINK</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="bis_protein_structure.DATAGEN.html#module-bis_protein_structure.DATAGEN" title="bis_protein_structure.DATAGEN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DATAGEN</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="bis_protein_structure.DISULFIDE.html#module-bis_protein_structure.DISULFIDE" title="bis_protein_structure.DISULFIDE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DISULFIDE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="bis_protein_structure.MMEVAL.html#module-bis_protein_structure.MMEVAL" title="bis_protein_structure.MMEVAL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MMEVAL</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="bis_protein_structure.TORSION2.html#module-bis_protein_structure.TORSION2" title="bis_protein_structure.TORSION2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TORSION2</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="bis_protein_structure.residue_constants.html#module-bis_protein_structure.residue_constants" title="bis_protein_structure.residue_constants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">residue_constants</span></code></a></p></td>
+<td><p>Constants used in AlphaFold.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="bis_protein_structure.split_pdb.html#module-bis_protein_structure.split_pdb" title="bis_protein_structure.split_pdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">split_pdb</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 
         </article>
@@ -478,8 +516,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="bis_protein_structure.CROSSLINK.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">bis_protein_structure.CROSSLINK</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../tool_api.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">API/Tool</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -498,27 +554,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">examples package</a><ul>
-<li><a class="reference internal" href="#module-examples">Module contents</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
