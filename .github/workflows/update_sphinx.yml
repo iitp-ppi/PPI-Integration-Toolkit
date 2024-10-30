@@ -25,8 +25,9 @@ jobs:
           cd apex
           pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
           cd ../
-          conda install sphinx
+          conda install -y sphinx
           pip install furo
+          pip install git+https://github.com/google-deepmind/alphafold.git
           sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
           sphinx-apidoc -d 8 -F -o docs/source/backbone/se3_transformer backbone/RoseTTAFold2/SE3Transformer/se3_transformer
           sphinx-apidoc -d 8 -F -o docs/source/backbone/network backbone/RoseTTAFold2/network
