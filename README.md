@@ -6,9 +6,6 @@ git clone --recursive https://github.com/iitp-ppi/PPI-Integration-Toolkit.git
 conda env create --file environment.yml
 
 conda activate ppi-toolkit
-cd apex
-pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
-cd ../
 ```
 
 ## License
