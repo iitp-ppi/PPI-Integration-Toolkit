@@ -1,8 +1,13 @@
-deepfold.utils.feats\_utils
+﻿deepfold.utils.feats\_utils
 ===========================
 
 .. automodule:: deepfold.utils.feats_utils
 
+   
+   
+   
+
+   
    
    .. rubric:: Functions
 
@@ -11,3 +16,15 @@ deepfold.utils.feats\_utils
       crop_a3m_string
       crop_features
    
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

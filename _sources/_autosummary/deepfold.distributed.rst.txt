@@ -4,11 +4,29 @@
 .. automodule:: deepfold.distributed
 
    
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
 .. rubric:: Modules
 
 .. autosummary::
    :toctree:
    :recursive:
 
-   model_parallel
-   utils
+   deepfold.distributed.model_parallel
+   deepfold.distributed.utils
+

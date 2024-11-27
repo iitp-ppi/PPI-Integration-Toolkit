@@ -1,8 +1,13 @@
-deepfold.utils.tensor\_utils
+﻿deepfold.utils.tensor\_utils
 ============================
 
 .. automodule:: deepfold.utils.tensor_utils
 
+   
+   
+   
+
+   
    
    .. rubric:: Functions
 
@@ -20,3 +25,15 @@ deepfold.utils.tensor\_utils
       pts_to_distogram
       tree_map
    
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

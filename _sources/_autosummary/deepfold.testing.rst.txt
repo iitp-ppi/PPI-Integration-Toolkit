@@ -4,11 +4,29 @@
 .. automodule:: deepfold.testing
 
    
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
 .. rubric:: Modules
 
 .. autosummary::
    :toctree:
    :recursive:
 
-   common
-   utils
+   deepfold.testing.common
+   deepfold.testing.utils
+

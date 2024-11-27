@@ -1,8 +1,13 @@
-deepfold.modules.inductor
+﻿deepfold.modules.inductor
 =========================
 
 .. automodule:: deepfold.modules.inductor
 
+   
+   
+   
+
+   
    
    .. rubric:: Functions
 
@@ -13,3 +18,15 @@ deepfold.modules.inductor
       is_enabled
       is_enabled_and_autograd_off
    
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,6 +1,23 @@
-﻿deepfold.package\_info
+deepfold.package\_info
 ======================
 
 .. automodule:: deepfold.package_info
 
    
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

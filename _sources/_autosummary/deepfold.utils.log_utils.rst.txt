@@ -1,8 +1,13 @@
-deepfold.utils.log\_utils
+﻿deepfold.utils.log\_utils
 =========================
 
 .. automodule:: deepfold.utils.log_utils
 
+   
+   
+   
+
+   
    
    .. rubric:: Functions
 
@@ -12,9 +17,21 @@ deepfold.utils.log\_utils
       save_logs
       setup_logging
    
+   
+
+   
+   
    .. rubric:: Classes
 
    .. autosummary::
    
       TqdmHandler
    
+   
+
+   
+   
+   
+
+
+

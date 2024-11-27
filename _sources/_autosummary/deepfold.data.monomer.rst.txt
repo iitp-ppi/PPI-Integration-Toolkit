@@ -1,8 +1,13 @@
-deepfold.data.monomer
+﻿deepfold.data.monomer
 =====================
 
 .. automodule:: deepfold.data.monomer
 
+   
+   
+   
+
+   
    
    .. rubric:: Functions
 
@@ -13,6 +18,10 @@ deepfold.data.monomer
       get_ligand
       read_ligand
    
+   
+
+   
+   
    .. rubric:: Classes
 
    .. autosummary::
@@ -20,3 +29,11 @@ deepfold.data.monomer
       AtomMap
       Ligand
    
+   
+
+   
+   
+   
+
+
+

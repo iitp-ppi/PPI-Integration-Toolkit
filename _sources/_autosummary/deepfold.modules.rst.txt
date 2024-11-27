@@ -1,48 +1,66 @@
-﻿deepfold.modules
+deepfold.modules
 ================
 
 .. automodule:: deepfold.modules
 
    
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
 .. rubric:: Modules
 
 .. autosummary::
    :toctree:
    :recursive:
 
-   alphafold
-   angle_resnet
-   attention
-   auxiliary_heads
-   backbone_update
-   dropout
-   evoformer_block
-   evoformer_block_pair_core
-   evoformer_stack
-   extra_msa_block
-   extra_msa_embedder
-   extra_msa_stack
-   global_attention
-   inductor
-   input_embedder
-   invariant_point_attention
-   layer_norm
-   linear
-   msa_column_attention
-   msa_column_global_attention
-   msa_row_attention_with_pair_bias
-   msa_transition
-   outer_product_mean
-   pair_transition
-   recycling_embedder
-   single_transition
-   structure_module
-   template_angle_embedder
-   template_pair_block
-   template_pair_embedder
-   template_pair_stack
-   template_pointwise_attention
-   template_projection
-   triangular_attention
-   triangular_multiplicative_update
-   tweaks
+   deepfold.modules.alphafold
+   deepfold.modules.angle_resnet
+   deepfold.modules.attention
+   deepfold.modules.auxiliary_heads
+   deepfold.modules.backbone_update
+   deepfold.modules.dropout
+   deepfold.modules.evoformer_block
+   deepfold.modules.evoformer_block_pair_core
+   deepfold.modules.evoformer_stack
+   deepfold.modules.extra_msa_block
+   deepfold.modules.extra_msa_embedder
+   deepfold.modules.extra_msa_stack
+   deepfold.modules.global_attention
+   deepfold.modules.inductor
+   deepfold.modules.input_embedder
+   deepfold.modules.invariant_point_attention
+   deepfold.modules.layer_norm
+   deepfold.modules.linear
+   deepfold.modules.msa_column_attention
+   deepfold.modules.msa_column_global_attention
+   deepfold.modules.msa_row_attention_with_pair_bias
+   deepfold.modules.msa_transition
+   deepfold.modules.outer_product_mean
+   deepfold.modules.pair_transition
+   deepfold.modules.recycling_embedder
+   deepfold.modules.single_transition
+   deepfold.modules.structure_module
+   deepfold.modules.template_angle_embedder
+   deepfold.modules.template_pair_block
+   deepfold.modules.template_pair_embedder
+   deepfold.modules.template_pair_stack
+   deepfold.modules.template_pointwise_attention
+   deepfold.modules.template_projection
+   deepfold.modules.triangular_attention
+   deepfold.modules.triangular_multiplicative_update
+   deepfold.modules.tweaks
+
