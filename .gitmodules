@@ -11,10 +11,10 @@
 	path = tool/nurikit
 	url = https://github.com/iitp-ppi/nurikit.git
 [submodule "tool/tool/DiffAlign"]
-	path = tool/tool/DiffAlign
+	path = tool/DiffAlign
 	url = https://github.com/iitp-ppi/DiffAlign.git
 [submodule "tool/tool/PromptBind"]
-	path = tool/tool/PromptBind
+	path = tool/PromptBind
 	url = https://github.com/iitp-ppi/PromptBind.git
 [submodule "tool/BAPred"]
 	path = tool/BAPred
