@@ -7,6 +7,3 @@
 [submodule "tool/galaxydock_dl"]
 	path = tool/galaxydock_dl
 	url = https://github.com/iitp-ppi/galaxydock_dl.git
-[submodule "backbone/RoseTTAFold2"]
-	path = backbone/RoseTTAFold2
-	url = https://github.com/iitp-ppi/RoseTTAFold2.git

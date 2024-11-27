@@ -7,8 +7,9 @@ Welcome to doc-test's documentation!
 ====================================
 
 .. toctree::
-   api
+   :maxdepth: 4
 
+   api.rst
 
 
 Indices and tables

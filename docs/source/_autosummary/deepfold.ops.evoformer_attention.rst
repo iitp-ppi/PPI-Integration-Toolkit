@@ -1,4 +1,4 @@
-deepfold.ops.evoformer\_attention
+﻿deepfold.ops.evoformer\_attention
 =================================
 
 .. automodule:: deepfold.ops.evoformer_attention
@@ -13,17 +13,11 @@ deepfold.ops.evoformer\_attention
 
    .. autosummary::
    
-      evoformer_attention_core
+      deepspeed_evo_attn
    
    
 
    
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      EvoformerFusedAttention
    
    
 
