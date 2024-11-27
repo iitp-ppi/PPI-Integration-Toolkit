@@ -5,5 +5,3 @@ API/Backbone
    :recursive:
 
    deepfold
-   network
-   se3_transformer

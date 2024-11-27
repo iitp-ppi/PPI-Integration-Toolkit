@@ -1,0 +1,25 @@
+
+#!/bin/bash
+
+cd ../
+#conda env remove --yes -n ppi-toolkit
+#conda env create --yes --file environment.yml
+source ~/anaconda3/etc/profile.d/conda.sh
+
+conda activate ppi-toolkit
+conda env update --file environment.yml --prune
+
+#git clone https://github.com/NVIDIA/apex
+#cd apex
+#pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
+#cd ../
+
+conda install -y sphinx
+pip install furo
+sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
+#sphinx-apidoc -d 8 -F -o docs/source/backbone/se3_transformer backbone/RoseTTAFold2/SE3Transformer/se3_transformer
+#sphinx-apidoc -d 8 -F -o docs/source/backbone/network backbone/RoseTTAFold2/network
+sphinx-apidoc -d 8 -F -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
+sphinx-apidoc -d 8 -F -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
+cd docs
+make html

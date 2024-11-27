@@ -41,14 +41,20 @@ dependencies:
       - deepspeed
       - hydra-core
       - networkx
+      - packaging
+      - ninja
+      - termcolor
+      - DSSPparser
       - biopython==1.84
       - requests==2.32.3
       - setuptools==75.1.0
       - pybel==0.15.5
+      - dm-tree
       - mkdocs
       - easydict
       - e3nn
       - pynvml
       - wandb
-      - git+https://github.com/Dao-AILab/flash-attention.git@5b838a8
       - git+https://github.com/NVIDIA/dllogger.git
+      - git+https://github.com/google-deepmind/alphafold.git
+
