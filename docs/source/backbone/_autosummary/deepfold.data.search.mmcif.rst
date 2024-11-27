@@ -1,4 +1,4 @@
-deepfold.data.search.mmcif
+﻿deepfold.data.search.mmcif
 ==========================
 
 .. automodule:: deepfold.data.search.mmcif
@@ -14,7 +14,6 @@ deepfold.data.search.mmcif
    .. autosummary::
    
       load_mmcif_file
-      load_mmcif_gz_file
       parse_mmcif_string
       zero_center_atom_positions
    

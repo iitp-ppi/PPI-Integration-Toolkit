@@ -20,6 +20,7 @@ sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/d
 #sphinx-apidoc -d 8 -F -o docs/source/backbone/se3_transformer backbone/RoseTTAFold2/SE3Transformer/se3_transformer
 #sphinx-apidoc -d 8 -F -o docs/source/backbone/network backbone/RoseTTAFold2/network
 sphinx-apidoc -d 8 -F -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
+sphinx-apidoc -d 8 -F -o docs/source/tool/PromptBind tool/PromptBind
 sphinx-apidoc -d 8 -F -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
 cd docs
 make html
