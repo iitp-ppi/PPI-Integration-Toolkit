@@ -16,12 +16,12 @@
 [submodule "tool/tool/PromptBind"]
 	path = tool/tool/PromptBind
 	url = https://github.com/iitp-ppi/PromptBind.git
-[submodule "tool/tool/BAPred"]
-	path = tool/tool/BAPred
-	url = https://github.com/iitp-ppi/BAPred.git
 [submodule "tool/tool/BsiteP"]
 	path = tool/tool/BsiteP
 	url = https://github.com/iitp-ppi/BsiteP.git
 [submodule "tool/tool/BindingRMSD"]
 	path = tool/tool/BindingRMSD
 	url = https://github.com/iitp-ppi/BindingRMSD.git
+[submodule "tool/BAPred"]
+	path = tool/BAPred
+	url = https://github.com/iitp-ppi/BAPred.git
