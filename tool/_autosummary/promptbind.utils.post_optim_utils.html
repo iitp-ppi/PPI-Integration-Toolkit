@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 7.3.7 and Furo 2024.08.06 -->
-        <title>promptbind - IITP PPI 0.0.2 documentation</title>
+        <title>promptbind.utils.post_optim_utils - IITP PPI 0.0.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
@@ -417,7 +417,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/tool/_autosummary/promptbind.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/tool/_autosummary/promptbind.utils.post_optim_utils.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -437,22 +437,28 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="module-promptbind">
-<span id="promptbind"></span><h1>promptbind<a class="headerlink" href="#module-promptbind" title="Link to this heading">¶</a></h1>
-<p class="rubric">Modules</p>
+          <section id="module-promptbind.utils.post_optim_utils">
+<span id="promptbind-utils-post-optim-utils"></span><h1>promptbind.utils.post_optim_utils<a class="headerlink" href="#module-promptbind.utils.post_optim_utils" title="Link to this heading">¶</a></h1>
+<p class="rubric">Functions</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="promptbind.data.html#module-promptbind.data" title="promptbind.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">promptbind.data</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../PromptBind/promptbind.utils.html#promptbind.utils.post_optim_utils.compute_RMSD" title="promptbind.utils.post_optim_utils.compute_RMSD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_RMSD</span></code></a>(a, b)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="promptbind.models.html#module-promptbind.models" title="promptbind.models"><code class="xref py py-obj docutils literal notranslate"><span class="pre">promptbind.models</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../PromptBind/promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_compound_coords" title="promptbind.utils.post_optim_utils.post_optimize_compound_coords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_compound_coords</span></code></a>(...[, lr, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils" title="promptbind.utils"><code class="xref py py-obj docutils literal notranslate"><span class="pre">promptbind.utils</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../PromptBind/promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_compound_coords_lbfgs" title="promptbind.utils.post_optim_utils.post_optimize_compound_coords_lbfgs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_compound_coords_lbfgs</span></code></a>(...[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../PromptBind/promptbind.html#module-promptbind.visualize_prompt_components" title="promptbind.visualize_prompt_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">promptbind.visualize_prompt_components</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../PromptBind/promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_loss_function" title="promptbind.utils.post_optim_utils.post_optimize_loss_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_loss_function</span></code></a>(epoch, x, ...[, ...])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../PromptBind/promptbind.utils.html#promptbind.utils.post_optim_utils.read_molecule" title="promptbind.utils.post_optim_utils.read_molecule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_molecule</span></code></a>(molecule_file[, sanitize, ...])</p></td>
+<td><p>Load a molecule from a file of format <code class="docutils literal notranslate"><span class="pre">.mol2</span></code> or <code class="docutils literal notranslate"><span class="pre">.sdf</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdbqt</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdb</span></code>. :param molecule_file: Path to file for storing a molecule, which can be of format <code class="docutils literal notranslate"><span class="pre">.mol2</span></code> or <code class="docutils literal notranslate"><span class="pre">.sdf</span></code>                       or <code class="docutils literal notranslate"><span class="pre">.pdbqt</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdb</span></code>. :type molecule_file: str :param sanitize: Whether sanitization is performed in initializing RDKit molecule instances. See                  <a class="reference external" href="https://www.rdkit.org/docs/RDKit_Book.html">https://www.rdkit.org/docs/RDKit_Book.html</a> for details of the sanitization. Default to False. :type sanitize: bool :param calc_charges: Whether to add Gasteiger charges via RDKit. Setting this to be True will enforce                      <code class="docutils literal notranslate"><span class="pre">sanitize</span></code> to be True. Default to False. :type calc_charges: bool :param remove_hs: Whether to remove hydrogens via RDKit. Note that removing hydrogens can be quite                   slow for large molecules. Default to False. :type remove_hs: bool :param use_conformation: Whether we need to extract molecular conformation from proteins and ligands. Default to True. :type use_conformation: bool.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../PromptBind/promptbind.utils.html#promptbind.utils.post_optim_utils.write_mol" title="promptbind.utils.post_optim_utils.write_mol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_mol</span></code></a>(reference_file, coords, output_file)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
