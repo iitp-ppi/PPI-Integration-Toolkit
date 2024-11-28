@@ -10,10 +10,10 @@ channels:
   - pyg
 dependencies:
   - python=3.10
-  - pytorch=2.4.1
-  - pytorch-cuda=12.1
-  - torchaudio=2.4.1
-  - torchvision=0.19.1
+  - pytorch::pytorch=2.4.1
+  - pytorch::pytorch-cuda=12.1
+  - pytorch::torchaudio=2.4.1
+  - pytorch::torchvision=0.19.1
   - scipy=1.13.1
   - scikit-learn=1.5.2
   - pandas=2.2.3
