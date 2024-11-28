@@ -39,7 +39,7 @@ dependencies:
   - torchdrug
   - pymol-open-source
   - python-lmdb
-  - pyg
+  - pyg=*=*cu*
   - pip
   - pip:
       - deepspeed
