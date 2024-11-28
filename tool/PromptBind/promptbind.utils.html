@@ -393,6 +393,23 @@
 <li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.utils.html">gd_dl.utils</a></li>
 </ul>
 </li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/promptbind.html">promptbind</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of promptbind</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/promptbind.data.html">promptbind.data</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/promptbind.models.html">promptbind.models</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of promptbind.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.models.model_utils.html">promptbind.models.model_utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/promptbind.utils.html">promptbind.utils</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of promptbind.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.generation_utils.html">promptbind.utils.generation_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.logging_utils.html">promptbind.utils.logging_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.metrics.html">promptbind.utils.metrics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.metrics_to_tsb.html">promptbind.utils.metrics_to_tsb</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.post_optim_utils.html">promptbind.utils.post_optim_utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/promptbind.visualize_prompt_components.html">promptbind.visualize_prompt_components</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -496,11 +513,76 @@
 <dd></dd></dl>
 
 </section>
-<section id="promptbind-utils-inference-mol-utils-module">
-<h2>promptbind.utils.inference_mol_utils module<a class="headerlink" href="#promptbind-utils-inference-mol-utils-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.utils.inference_mol_utils">
+<span id="promptbind-utils-inference-mol-utils-module"></span><h2>promptbind.utils.inference_mol_utils module<a class="headerlink" href="#module-promptbind.utils.inference_mol_utils" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.binarize">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">binarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.binarize" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.extract_torchdrug_feature_from_mol">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">extract_torchdrug_feature_from_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.extract_torchdrug_feature_from_mol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.generate_conformation">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">generate_conformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.generate_conformation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.get_LAS_distance_constraint_mask">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">get_LAS_distance_constraint_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.get_LAS_distance_constraint_mask" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.get_compound_pair_dis_distribution">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">get_compound_pair_dis_distribution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_distance_constraint_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.get_compound_pair_dis_distribution" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.n_hops_adj">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">n_hops_adj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_hops</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.n_hops_adj" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.read_mol_and_renumber">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">read_mol_and_renumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sdf_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mol2_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.read_mol_and_renumber" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.read_smiles">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">read_smiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.read_smiles" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_mol_utils.write_mol">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_mol_utils.</span></span><span class="sig-name descname"><span class="pre">write_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_mol_utils.write_mol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
-<section id="promptbind-utils-inference-pdb-utils-module">
-<h2>promptbind.utils.inference_pdb_utils module<a class="headerlink" href="#promptbind-utils-inference-pdb-utils-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.utils.inference_pdb_utils">
+<span id="promptbind-utils-inference-pdb-utils-module"></span><h2>promptbind.utils.inference_pdb_utils module<a class="headerlink" href="#module-promptbind.utils.inference_pdb_utils" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_pdb_utils.extract_esm_feature">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_pdb_utils.</span></span><span class="sig-name descname"><span class="pre">extract_esm_feature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_pdb_utils.extract_esm_feature" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_pdb_utils.extract_protein_structure">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_pdb_utils.</span></span><span class="sig-name descname"><span class="pre">extract_protein_structure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_pdb_utils.extract_protein_structure" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_pdb_utils.get_clean_res_list">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_pdb_utils.</span></span><span class="sig-name descname"><span class="pre">get_clean_res_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ca_exist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bfactor_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_pdb_utils.get_clean_res_list" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.inference_pdb_utils.get_protein_structure">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.inference_pdb_utils.</span></span><span class="sig-name descname"><span class="pre">get_protein_structure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.inference_pdb_utils.get_protein_structure" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="module-promptbind.utils.logging_utils">
 <span id="promptbind-utils-logging-utils-module"></span><h2>promptbind.utils.logging_utils module<a class="headerlink" href="#module-promptbind.utils.logging_utils" title="Link to this heading">¶</a></h2>
@@ -690,8 +772,25 @@ we failed to get conformation information.</p></li>
 <li><a class="reference internal" href="#promptbind.utils.generation_utils.write_with_new_coords"><code class="docutils literal notranslate"><span class="pre">write_with_new_coords()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#promptbind-utils-inference-mol-utils-module">promptbind.utils.inference_mol_utils module</a></li>
-<li><a class="reference internal" href="#promptbind-utils-inference-pdb-utils-module">promptbind.utils.inference_pdb_utils module</a></li>
+<li><a class="reference internal" href="#module-promptbind.utils.inference_mol_utils">promptbind.utils.inference_mol_utils module</a><ul>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.extract_torchdrug_feature_from_mol"><code class="docutils literal notranslate"><span class="pre">extract_torchdrug_feature_from_mol()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.generate_conformation"><code class="docutils literal notranslate"><span class="pre">generate_conformation()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.get_LAS_distance_constraint_mask"><code class="docutils literal notranslate"><span class="pre">get_LAS_distance_constraint_mask()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.get_compound_pair_dis_distribution"><code class="docutils literal notranslate"><span class="pre">get_compound_pair_dis_distribution()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.n_hops_adj"><code class="docutils literal notranslate"><span class="pre">n_hops_adj()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.read_mol_and_renumber"><code class="docutils literal notranslate"><span class="pre">read_mol_and_renumber()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.read_smiles"><code class="docutils literal notranslate"><span class="pre">read_smiles()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_mol_utils.write_mol"><code class="docutils literal notranslate"><span class="pre">write_mol()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-promptbind.utils.inference_pdb_utils">promptbind.utils.inference_pdb_utils module</a><ul>
+<li><a class="reference internal" href="#promptbind.utils.inference_pdb_utils.extract_esm_feature"><code class="docutils literal notranslate"><span class="pre">extract_esm_feature()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_pdb_utils.extract_protein_structure"><code class="docutils literal notranslate"><span class="pre">extract_protein_structure()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_pdb_utils.get_clean_res_list"><code class="docutils literal notranslate"><span class="pre">get_clean_res_list()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.inference_pdb_utils.get_protein_structure"><code class="docutils literal notranslate"><span class="pre">get_protein_structure()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-promptbind.utils.logging_utils">promptbind.utils.logging_utils module</a><ul>
 <li><a class="reference internal" href="#promptbind.utils.logging_utils.Logger"><code class="docutils literal notranslate"><span class="pre">Logger</span></code></a><ul>
 <li><a class="reference internal" href="#promptbind.utils.logging_utils.Logger.log_message"><code class="docutils literal notranslate"><span class="pre">Logger.log_message()</span></code></a></li>
