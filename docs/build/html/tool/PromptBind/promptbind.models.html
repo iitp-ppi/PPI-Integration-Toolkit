@@ -459,24 +459,459 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="promptbind-models-att-model-module">
-<h2>promptbind.models.att_model module<a class="headerlink" href="#promptbind-models-att-model-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.models.att_model">
+<span id="promptbind-models-att-model-module"></span><h2>promptbind.models.att_model module<a class="headerlink" href="#module-promptbind.models.att_model" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.att_model.ComplexGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.att_model.</span></span><span class="sig-name descname"><span class="pre">ComplexGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inter_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intra_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unnormalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.ComplexGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.att_model.ComplexGraph.construct_edges">
+<span class="sig-name descname"><span class="pre">construct_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_global</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.ComplexGraph.construct_edges" title="Link to this definition">¶</a></dt>
+<dd><p>Memory efficient with complexity of O(Nn) where n is the largest number of nodes in the batch</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.att_model.ComplexGraph.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_global</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.ComplexGraph.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.att_model.EfficientMCAttModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.att_model.</span></span><span class="sig-name descname"><span class="pre">EfficientMCAttModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embed_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_edge_feats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inter_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intra_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unnormalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.EfficientMCAttModel" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.att_model.EfficientMCAttModel.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_global</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batched_complex_coord_LAS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_node</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.EfficientMCAttModel.forward" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> – [n_all_node, n_channel, 3]</p></li>
+<li><p><strong>S</strong> – [n_all_node]</p></li>
+<li><p><strong>batch</strong> – [n_all_node]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.att_model.sequential_and">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.att_model.</span></span><span class="sig-name descname"><span class="pre">sequential_and</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">tensors</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.sequential_and" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.att_model.sequential_or">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.att_model.</span></span><span class="sig-name descname"><span class="pre">sequential_or</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">tensors</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.att_model.sequential_or" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
-<section id="promptbind-models-cross-att-module">
-<h2>promptbind.models.cross_att module<a class="headerlink" href="#promptbind-models-cross-att-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.models.cross_att">
+<span id="promptbind-models-cross-att-module"></span><h2>promptbind.models.cross_att module<a class="headerlink" href="#module-promptbind.models.cross_att" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.CrossAttentionModule">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.cross_att.</span></span><span class="sig-name descname"><span class="pre">CrossAttentionModule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm_layernorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_trig_attn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.cross_att.CrossAttentionModule" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.CrossAttentionModule.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p_embed_batched</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_embed_batched</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_c_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_p_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.cross_att.CrossAttentionModule.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.RowAttentionBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.cross_att.</span></span><span class="sig-name descname"><span class="pre">RowAttentionBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention_hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_heads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm_layernorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.cross_att.RowAttentionBlock" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.RowAttentionBlock.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_embed_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_embed_j</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask_i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.cross_att.RowAttentionBlock.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.RowAttentionBlock.inf">
+<span class="sig-name descname"><span class="pre">inf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000000000.0</span></em><a class="headerlink" href="#promptbind.models.cross_att.RowAttentionBlock.inf" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.RowTriangleAttentionBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.cross_att.</span></span><span class="sig-name descname"><span class="pre">RowTriangleAttentionBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pair_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention_hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_heads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm_layernorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.cross_att.RowTriangleAttentionBlock" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.RowTriangleAttentionBlock.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pair_embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_embed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.cross_att.RowTriangleAttentionBlock.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="promptbind.models.cross_att.RowTriangleAttentionBlock.inf">
+<span class="sig-name descname"><span class="pre">inf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000000000.0</span></em><a class="headerlink" href="#promptbind.models.cross_att.RowTriangleAttentionBlock.inf" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="promptbind-models-egnn-module">
-<h2>promptbind.models.egnn module<a class="headerlink" href="#promptbind-models-egnn-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.models.egnn">
+<span id="promptbind-models-egnn-module"></span><h2>promptbind.models.egnn module<a class="headerlink" href="#module-promptbind.models.egnn" title="Link to this heading">¶</a></h2>
+<p>Most codes are copied from <a class="reference external" href="https://github.com/vgsatorras/egnn">https://github.com/vgsatorras/egnn</a>, which is the official implementation of
+the paper:</p>
+<blockquote>
+<div><p>E(n) Equivariant Graph Neural Networks
+Victor Garcia Satorras, Emiel Hogeboom, Max Welling</p>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MCAttEGNN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">MCAttEGNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_node_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_node_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_edge_nf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unnormalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">geometry_reg_step_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MCAttEGNN" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MCAttEGNN.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">att_edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_edge_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batched_complex_coord_LAS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduced_tuple</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_embed_batched</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_p_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_c_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctx_edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">att_edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_node</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MCAttEGNN.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_Att_L">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">MC_Att_L</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges_in_d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_change_maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_Att_L" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Multi-Channel Attention Layer</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_Att_L.att_model">
+<span class="sig-name descname"><span class="pre">att_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_Att_L.att_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>h</strong> – [bs * n_node, input_size]</p></li>
+<li><p><strong>edge_index</strong> – list of [n_edge], [n_edge]</p></li>
+<li><p><strong>radial</strong> – [n_edge, n_channel, n_channel]</p></li>
+<li><p><strong>edge_attr</strong> – [n_edge, edge_dim]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_Att_L.coord_model">
+<span class="sig-name descname"><span class="pre">coord_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_diff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">att_weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_Att_L.coord_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coord</strong> – [bs * n_node, n_channel, d]</p></li>
+<li><p><strong>edge_index</strong> – list of [n_edge], [n_edge]</p></li>
+<li><p><strong>coord_diff</strong> – [n_edge, n_channel, d]</p></li>
+<li><p><strong>att_weight</strong> – [n_edge, 1], unsqueezed before passed in</p></li>
+<li><p><strong>v</strong> – [n_edge, hidden_size]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_Att_L.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduced_tuple</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_embed_batched</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_p_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_c_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_Att_L.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_Att_L.node_model">
+<span class="sig-name descname"><span class="pre">node_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">att_weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_Att_L.node_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>h</strong> – [bs * n_node, input_size]</p></li>
+<li><p><strong>edge_index</strong> – list of [n_edge], [n_edge]</p></li>
+<li><p><strong>att_weight</strong> – [n_edge, 1], unsqueezed before passed in</p></li>
+<li><p><strong>v</strong> – [n_edge, hidden_size]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_Att_L.trio_encoder">
+<span class="sig-name descname"><span class="pre">trio_encoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_embed_batched</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduced_tuple</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_p_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_c_dist_embed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_Att_L.trio_encoder" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">MC_E_GCL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges_in_d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_agg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_change_maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Multi-Channel E(n) Equivariant Convolutional Layer</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL.coord_model">
+<span class="sig-name descname"><span class="pre">coord_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_diff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_feat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL.coord_model" title="Link to this definition">¶</a></dt>
+<dd><p>coord: [bs * n_node, n_channel, d]
+edge_index: list of [n_edge], [n_edge]
+coord_diff: [n_edge, n_channel, d]
+edge_feat: [n_edge, hidden_size]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL.edge_model">
+<span class="sig-name descname"><span class="pre">edge_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL.edge_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> – [n_edge, input_size]</p></li>
+<li><p><strong>target</strong> – [n_edge, input_size]</p></li>
+<li><p><strong>radial</strong> – [n_edge, n_channel, n_channel]</p></li>
+<li><p><strong>edge_attr</strong> – [n_edge, edge_dim]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL.forward" title="Link to this definition">¶</a></dt>
+<dd><p>h: [bs * n_node, hidden_size]
+edge_index: list of [n_row] and [n_col] where n_row == n_col (with no cutoff, n_row == bs * n_node * (n_node - 1))
+coord: [bs * n_node, n_channel, d]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL.node_model">
+<span class="sig-name descname"><span class="pre">node_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_attr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL.node_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – [bs * n_node, input_size]</p></li>
+<li><p><strong>edge_index</strong> – list of [n_edge], [n_edge]</p></li>
+<li><p><strong>edge_attr</strong> – [n_edge, hidden_size], refers to message from i to j</p></li>
+<li><p><strong>node_attr</strong> – [bs * n_node, node_dim]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">MC_E_GCL_Prompt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_channel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges_in_d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_agg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_change_maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Multi-Channel E(n) Equivariant Convolutional Layer</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt.coord_model">
+<span class="sig-name descname"><span class="pre">coord_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_diff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_feat_agg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt.coord_model" title="Link to this definition">¶</a></dt>
+<dd><p>coord: [bs * n_node, n_channel, d]
+edge_index: list of [n_edge], [n_edge]
+coord_diff: [n_edge, n_channel, d]
+edge_feat: [n_edge, hidden_size]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt.edge_model">
+<span class="sig-name descname"><span class="pre">edge_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt.edge_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> – [n_edge, input_size]</p></li>
+<li><p><strong>target</strong> – [n_edge, input_size]</p></li>
+<li><p><strong>radial</strong> – [n_edge, n_channel, n_channel]</p></li>
+<li><p><strong>edge_attr</strong> – [n_edge, edge_dim]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_node</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt.forward" title="Link to this definition">¶</a></dt>
+<dd><p>h: [bs * n_node, hidden_size]
+edge_index: list of [n_row] and [n_col] where n_row == n_col (with no cutoff, n_row == bs * n_node * (n_node - 1))
+coord: [bs * n_node, n_channel, d]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt.node_model">
+<span class="sig-name descname"><span class="pre">node_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr_agg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_attr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt.node_model" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – [bs * n_node, input_size]</p></li>
+<li><p><strong>edge_index</strong> – list of [n_edge], [n_edge]</p></li>
+<li><p><strong>edge_attr</strong> – [n_edge, hidden_size], refers to message from i to j</p></li>
+<li><p><strong>node_attr</strong> – [bs * n_node, node_dim]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt.prompt_generation_module">
+<span class="sig-name descname"><span class="pre">prompt_generation_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_coord</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt.prompt_generation_module" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.egnn.MC_E_GCL_Prompt.prompt_interaction_module">
+<span class="sig-name descname"><span class="pre">prompt_interaction_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_node_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_coord_feat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.MC_E_GCL_Prompt.prompt_interaction_module" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.egnn.coord2radial">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">coord2radial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm_F_norm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.coord2radial" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.egnn.get_edges">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">get_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_nodes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.get_edges" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.egnn.get_edges_batch">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">get_edges_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.get_edges_batch" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.egnn.unsorted_segment_mean">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">unsorted_segment_mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_segments</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.unsorted_segment_mean" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – [n_edge, <a href="#id1"><span class="problematic" id="id2">*</span></a>dimensions]</p></li>
+<li><p><strong>segment_ids</strong> – [n_edge]</p></li>
+<li><p><strong>num_segments</strong> – [bs * n_node]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.egnn.unsorted_segment_sum">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.egnn.</span></span><span class="sig-name descname"><span class="pre">unsorted_segment_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_segments</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.egnn.unsorted_segment_sum" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – [n_edge, <a href="#id3"><span class="problematic" id="id4">*</span></a>dimensions]</p></li>
+<li><p><strong>segment_ids</strong> – [n_edge]</p></li>
+<li><p><strong>num_segments</strong> – [bs * n_node]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="promptbind-models-model-module">
-<h2>promptbind.models.model module<a class="headerlink" href="#promptbind-models-model-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.models.model">
+<span id="promptbind-models-model-module"></span><h2>promptbind.models.model module<a class="headerlink" href="#module-promptbind.models.model" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model.</span></span><span class="sig-name descname"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_channels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_pred_embedding_channels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference">
+<span class="sig-name descname"><span class="pre">inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.models.model.Transition_diff_out_dim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model.</span></span><span class="sig-name descname"><span class="pre">Transition_diff_out_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embedding_channels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">256</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">256</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model.Transition_diff_out_dim" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.models.model.Transition_diff_out_dim.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">z</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model.Transition_diff_out_dim.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.models.model.get_model">
+<span class="sig-prename descclassname"><span class="pre">promptbind.models.model.</span></span><span class="sig-name descname"><span class="pre">get_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model.get_model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="module-promptbind.models.model_utils">
 <span id="promptbind-models-model-utils-module"></span><h2>promptbind.models.model_utils module<a class="headerlink" href="#module-promptbind.models.model_utils" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.Attention">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model_utils.</span></span><span class="sig-name descname"><span class="pre">Attention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c_q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_k</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_hidden</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_heads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gating</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.Attention" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
 <p>Standard multi-head attention using AlphaFold’s default layer
 initialization. Allows multiple bias vectors.</p>
 <dl class="py method">
@@ -485,14 +920,14 @@ initialization. Allows multiple bias vectors.</p>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>q_x</strong> – [<a href="#id1"><span class="problematic" id="id2">*</span></a>, Q, C_q] query data</p></li>
-<li><p><strong>kv_x</strong> – [<a href="#id3"><span class="problematic" id="id4">*</span></a>, K, C_k] key data</p></li>
-<li><p><strong>biases</strong> – List of biases that broadcast to [<a href="#id5"><span class="problematic" id="id6">*</span></a>, H, Q, K]</p></li>
+<li><p><strong>q_x</strong> – [<a href="#id5"><span class="problematic" id="id6">*</span></a>, Q, C_q] query data</p></li>
+<li><p><strong>kv_x</strong> – [<a href="#id7"><span class="problematic" id="id8">*</span></a>, K, C_k] key data</p></li>
+<li><p><strong>biases</strong> – List of biases that broadcast to [<a href="#id9"><span class="problematic" id="id10">*</span></a>, H, Q, K]</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="simple">
-<dt>Returns</dt><dd><p>[<a href="#id7"><span class="problematic" id="id8">*</span></a>, Q, C_q] attention update</p>
+<dt>Returns</dt><dd><p>[<a href="#id11"><span class="problematic" id="id12">*</span></a>, Q, C_q] attention update</p>
 </dd>
 </dl>
 </dd></dl>
@@ -502,7 +937,7 @@ initialization. Allows multiple bias vectors.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.GaussianSmearing">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model_utils.</span></span><span class="sig-name descname"><span class="pre">GaussianSmearing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_gaussians</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.GaussianSmearing" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.GaussianSmearing.forward">
 <span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.GaussianSmearing.forward" title="Link to this definition">¶</a></dt>
@@ -522,7 +957,7 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.InteractionModule">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model_utils.</span></span><span class="sig-name descname"><span class="pre">InteractionModule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm_layernorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.InteractionModule" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.InteractionModule.forward">
 <span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p_embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_embed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.InteractionModule.forward" title="Link to this definition">¶</a></dt>
@@ -542,7 +977,7 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.RBFDistanceModule">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model_utils.</span></span><span class="sig-name descname"><span class="pre">RBFDistanceModule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rbf_stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_gaussian</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.RBFDistanceModule" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.RBFDistanceModule.forward">
 <span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.RBFDistanceModule.forward" title="Link to this definition">¶</a></dt>
@@ -562,7 +997,7 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.Transition">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.models.model_utils.</span></span><span class="sig-name descname"><span class="pre">Transition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm_layernorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.Transition" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="promptbind.models.model_utils.Transition.forward">
 <span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.models.model_utils.Transition.forward" title="Link to this definition">¶</a></dt>
@@ -634,10 +1069,86 @@ registered hooks while the latter silently ignores them.</p>
             <ul>
 <li><a class="reference internal" href="#">promptbind.models package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#promptbind-models-att-model-module">promptbind.models.att_model module</a></li>
-<li><a class="reference internal" href="#promptbind-models-cross-att-module">promptbind.models.cross_att module</a></li>
-<li><a class="reference internal" href="#promptbind-models-egnn-module">promptbind.models.egnn module</a></li>
-<li><a class="reference internal" href="#promptbind-models-model-module">promptbind.models.model module</a></li>
+<li><a class="reference internal" href="#module-promptbind.models.att_model">promptbind.models.att_model module</a><ul>
+<li><a class="reference internal" href="#promptbind.models.att_model.ComplexGraph"><code class="docutils literal notranslate"><span class="pre">ComplexGraph</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.att_model.ComplexGraph.construct_edges"><code class="docutils literal notranslate"><span class="pre">ComplexGraph.construct_edges()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.att_model.ComplexGraph.forward"><code class="docutils literal notranslate"><span class="pre">ComplexGraph.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.att_model.EfficientMCAttModel"><code class="docutils literal notranslate"><span class="pre">EfficientMCAttModel</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.att_model.EfficientMCAttModel.forward"><code class="docutils literal notranslate"><span class="pre">EfficientMCAttModel.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.att_model.sequential_and"><code class="docutils literal notranslate"><span class="pre">sequential_and()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.att_model.sequential_or"><code class="docutils literal notranslate"><span class="pre">sequential_or()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-promptbind.models.cross_att">promptbind.models.cross_att module</a><ul>
+<li><a class="reference internal" href="#promptbind.models.cross_att.CrossAttentionModule"><code class="docutils literal notranslate"><span class="pre">CrossAttentionModule</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.cross_att.CrossAttentionModule.forward"><code class="docutils literal notranslate"><span class="pre">CrossAttentionModule.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.cross_att.RowAttentionBlock"><code class="docutils literal notranslate"><span class="pre">RowAttentionBlock</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.cross_att.RowAttentionBlock.forward"><code class="docutils literal notranslate"><span class="pre">RowAttentionBlock.forward()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.cross_att.RowAttentionBlock.inf"><code class="docutils literal notranslate"><span class="pre">RowAttentionBlock.inf</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.cross_att.RowTriangleAttentionBlock"><code class="docutils literal notranslate"><span class="pre">RowTriangleAttentionBlock</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.cross_att.RowTriangleAttentionBlock.forward"><code class="docutils literal notranslate"><span class="pre">RowTriangleAttentionBlock.forward()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.cross_att.RowTriangleAttentionBlock.inf"><code class="docutils literal notranslate"><span class="pre">RowTriangleAttentionBlock.inf</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-promptbind.models.egnn">promptbind.models.egnn module</a><ul>
+<li><a class="reference internal" href="#promptbind.models.egnn.MCAttEGNN"><code class="docutils literal notranslate"><span class="pre">MCAttEGNN</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.egnn.MCAttEGNN.forward"><code class="docutils literal notranslate"><span class="pre">MCAttEGNN.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_Att_L"><code class="docutils literal notranslate"><span class="pre">MC_Att_L</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_Att_L.att_model"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.att_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_Att_L.coord_model"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.coord_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_Att_L.forward"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.forward()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_Att_L.node_model"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.node_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_Att_L.trio_encoder"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.trio_encoder()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL.coord_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.coord_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL.edge_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.edge_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL.forward"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.forward()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL.node_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.node_model()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt.coord_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.coord_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt.edge_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.edge_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt.forward"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.forward()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt.node_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.node_model()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt.prompt_generation_module"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.prompt_generation_module()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.MC_E_GCL_Prompt.prompt_interaction_module"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.prompt_interaction_module()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.egnn.coord2radial"><code class="docutils literal notranslate"><span class="pre">coord2radial()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.get_edges"><code class="docutils literal notranslate"><span class="pre">get_edges()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.get_edges_batch"><code class="docutils literal notranslate"><span class="pre">get_edges_batch()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.unsorted_segment_mean"><code class="docutils literal notranslate"><span class="pre">unsorted_segment_mean()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.egnn.unsorted_segment_sum"><code class="docutils literal notranslate"><span class="pre">unsorted_segment_sum()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-promptbind.models.model">promptbind.models.model module</a><ul>
+<li><a class="reference internal" href="#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent"><code class="docutils literal notranslate"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.forward"><code class="docutils literal notranslate"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent.forward()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference"><code class="docutils literal notranslate"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.model.Transition_diff_out_dim"><code class="docutils literal notranslate"><span class="pre">Transition_diff_out_dim</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.models.model.Transition_diff_out_dim.forward"><code class="docutils literal notranslate"><span class="pre">Transition_diff_out_dim.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#promptbind.models.model.get_model"><code class="docutils literal notranslate"><span class="pre">get_model()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-promptbind.models.model_utils">promptbind.models.model_utils module</a><ul>
 <li><a class="reference internal" href="#promptbind.models.model_utils.Attention"><code class="docutils literal notranslate"><span class="pre">Attention</span></code></a><ul>
 <li><a class="reference internal" href="#promptbind.models.model_utils.Attention.forward"><code class="docutils literal notranslate"><span class="pre">Attention.forward()</span></code></a></li>

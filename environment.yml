@@ -61,4 +61,5 @@ dependencies:
       - wandb
       - git+https://github.com/NVIDIA/dllogger.git
       - git+https://github.com/google-deepmind/alphafold.git
+      - git+https://github.com/iitp-ppi/gvp-pytorch.git
 

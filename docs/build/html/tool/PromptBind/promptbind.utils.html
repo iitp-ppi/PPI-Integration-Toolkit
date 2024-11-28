@@ -459,11 +459,144 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="promptbind-utils-fabind-inference-dataset-module">
-<h2>promptbind.utils.fabind_inference_dataset module<a class="headerlink" href="#promptbind-utils-fabind-inference-dataset-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.utils.fabind_inference_dataset">
+<span id="promptbind-utils-fabind-inference-dataset-module"></span><h2>promptbind.utils.fabind_inference_dataset module<a class="headerlink" href="#module-promptbind.utils.fabind_inference_dataset" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="promptbind.utils.fabind_inference_dataset.InferenceDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.utils.fabind_inference_dataset.</span></span><span class="sig-name descname"><span class="pre">InferenceDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index_csv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb_file_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocess_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.fabind_inference_dataset.InferenceDataset" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.utils.fabind_inference_dataset.InferenceDataset.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.fabind_inference_dataset.InferenceDataset.get" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the data object at index <code class="xref py py-obj docutils literal notranslate"><span class="pre">idx</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="promptbind.utils.fabind_inference_dataset.InferenceDataset.len">
+<span class="sig-name descname"><span class="pre">len</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.fabind_inference_dataset.InferenceDataset.len" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the number of data objects stored in the dataset.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="promptbind-utils-feature-utils-module">
-<h2>promptbind.utils.feature_utils module<a class="headerlink" href="#promptbind-utils-feature-utils-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.utils.feature_utils">
+<span id="promptbind-utils-feature-utils-module"></span><h2>promptbind.utils.feature_utils module<a class="headerlink" href="#module-promptbind.utils.feature_utils" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.Seed_everything">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">Seed_everything</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">42</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.Seed_everything" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.binarize">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">binarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.binarize" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">extract_torchdrug_feature_from_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol_E3Bind">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">extract_torchdrug_feature_from_mol_E3Bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_LAS_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol_E3Bind" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.generate_and_write_sdf_from_smiles_using_rdkit_E3Bind">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">generate_and_write_sdf_from_smiles_using_rdkit_E3Bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdkitMolFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_dis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_generation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.generate_and_write_sdf_from_smiles_using_rdkit_E3Bind" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.generate_conformation">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">generate_conformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.generate_conformation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.generate_rdkit_conformation_v2">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">generate_rdkit_conformation_v2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_repeat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.generate_rdkit_conformation_v2" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">generate_sdf_from_smiles_using_rdkit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdkitMolFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_dis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_generation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit_E3Bind">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">generate_sdf_from_smiles_using_rdkit_E3Bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_dis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_generation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit_E3Bind" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.get_LAS_distance_constraint_mask">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">get_LAS_distance_constraint_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.get_LAS_distance_constraint_mask" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.get_canonical_smiles">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">get_canonical_smiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.get_canonical_smiles" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.get_clean_res_list">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">get_clean_res_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ca_exist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bfactor_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.get_clean_res_list" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.get_compound_pair_dis_distribution">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">get_compound_pair_dis_distribution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_distance_constraint_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.get_compound_pair_dis_distribution" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.get_protein_feature">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">get_protein_feature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.get_protein_feature" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.get_res_unique_id">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">get_res_unique_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">residue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.get_res_unique_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.n_hops_adj">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">n_hops_adj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_hops</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.n_hops_adj" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.read_mol">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">read_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sdf_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mol2_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.read_mol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.remove_hetero_and_extract_ligand">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">remove_hetero_and_extract_ligand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ca_exist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bfactor_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.remove_hetero_and_extract_ligand" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.save_cleaned_protein">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">save_cleaned_protein</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteinFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.save_cleaned_protein" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.select_chain_within_cutoff_to_ligand_v2">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">select_chain_within_cutoff_to_ligand_v2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.select_chain_within_cutoff_to_ligand_v2" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.split_protein_and_ligand">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">split_protein_and_ligand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_seq_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteinFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligandFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.split_protein_and_ligand" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.write_renumbered_sdf">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">write_renumbered_sdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">toFile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdf_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mol2_fileName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.write_renumbered_sdf" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.feature_utils.write_with_new_coords">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.feature_utils.</span></span><span class="sig-name descname"><span class="pre">write_with_new_coords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.feature_utils.write_with_new_coords" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="module-promptbind.utils.generation_utils">
 <span id="promptbind-utils-generation-utils-module"></span><h2>promptbind.utils.generation_utils module<a class="headerlink" href="#module-promptbind.utils.generation_utils" title="Link to this heading">¶</a></h2>
@@ -711,8 +844,97 @@ we failed to get conformation information.</p></li>
 <dd></dd></dl>
 
 </section>
-<section id="promptbind-utils-utils-module">
-<h2>promptbind.utils.utils module<a class="headerlink" href="#promptbind-utils-utils-module" title="Link to this heading">¶</a></h2>
+<section id="module-promptbind.utils.utils">
+<span id="promptbind-utils-utils-module"></span><h2>promptbind.utils.utils module<a class="headerlink" href="#module-promptbind.utils.utils" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.SetDihedral">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">SetDihedral</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_vale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.SetDihedral" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.compute_dis_between_two_vector">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">compute_dis_between_two_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.compute_dis_between_two_vector" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.compute_dis_between_two_vector_tensor">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">compute_dis_between_two_vector_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.compute_dis_between_two_vector_tensor" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.construct_data_from_graph_gvp_mean">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">construct_data_from_graph_gvp_mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_node_xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_node_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_atom_edge_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_atom_edge_attr_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdkit_coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_coords_init_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pocket_center_rdkit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeDisMap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">42</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contactCutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactionThresholdDistance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compoundMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_noise_to_com</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_whole_protein</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_compound_com_as_pocket</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chosen_pocket_com</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_rotation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_idx_no_noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_esm2_feat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.construct_data_from_graph_gvp_mean" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.evaluate_mean_pocket_cls_coord_multi_task">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">evaluate_mean_pocket_cls_coord_multi_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">accelerator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">com_coord_criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_cls_criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_coord_criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_dis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveFileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_y_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_y_metrics_evaluation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.evaluate_mean_pocket_cls_coord_multi_task" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.evaluate_mean_pocket_cls_coord_pocket_pred">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">evaluate_mean_pocket_cls_coord_pocket_pred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">com_coord_criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_cls_criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_coord_criterion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_dis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveFileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_y_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_y_metrics_evaluation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.evaluate_mean_pocket_cls_coord_pocket_pred" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.get_keepNode">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">get_keepNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">com</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_node_xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_whole_protein</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_compound_com_as_pocket</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_noise_to_com</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chosen_pocket_com</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.get_keepNode" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.get_keepNode_tensor">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">get_keepNode_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein_node_xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_noise_to_com</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chosen_pocket_com</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.get_keepNode_tensor" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.get_protein_edge_features_and_index">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">get_protein_edge_features_and_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein_edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_edge_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_edge_v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.get_protein_edge_features_and_index" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.get_torsions">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">get_torsions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.get_torsions" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.gumbel_softmax_no_random">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">gumbel_softmax_no_random</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hard</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#promptbind.utils.utils.gumbel_softmax_no_random" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.post_optim_mol">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">post_optim_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accelerator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">com_coord_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LAS_tmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rigid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.post_optim_mol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.read_mol">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">read_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sdf_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mol2_fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.read_mol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.read_pdbbind_data">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">read_pdbbind_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.read_pdbbind_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="promptbind.utils.utils.uniform_random_rotation">
+<span class="sig-prename descclassname"><span class="pre">promptbind.utils.utils.</span></span><span class="sig-name descname"><span class="pre">uniform_random_rotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.utils.utils.uniform_random_rotation" title="Link to this definition">¶</a></dt>
+<dd><p>Apply a random rotation in 3D, with a distribution uniform over the
+sphere.
+:param x: vector or set of vectors with dimension (n, 3), where n is the</p>
+<blockquote>
+<div><p>number of vectors</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array of shape (n, 3) containing the randomly rotated vectors of x,
+about the mean coordinate of x.</p>
+</dd>
+</dl>
+<p>Algorithm taken from “Fast Random Rotation Matrices” (James Avro, 1992):
+<a class="reference external" href="https://doi.org/10.1016/B978-0-08-050755-2.50034-8">https://doi.org/10.1016/B978-0-08-050755-2.50034-8</a></p>
+</dd></dl>
+
 </section>
 <section id="module-promptbind.utils">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-promptbind.utils" title="Link to this heading">¶</a></h2>
@@ -758,8 +980,40 @@ we failed to get conformation information.</p></li>
             <ul>
 <li><a class="reference internal" href="#">promptbind.utils package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#promptbind-utils-fabind-inference-dataset-module">promptbind.utils.fabind_inference_dataset module</a></li>
-<li><a class="reference internal" href="#promptbind-utils-feature-utils-module">promptbind.utils.feature_utils module</a></li>
+<li><a class="reference internal" href="#module-promptbind.utils.fabind_inference_dataset">promptbind.utils.fabind_inference_dataset module</a><ul>
+<li><a class="reference internal" href="#promptbind.utils.fabind_inference_dataset.InferenceDataset"><code class="docutils literal notranslate"><span class="pre">InferenceDataset</span></code></a><ul>
+<li><a class="reference internal" href="#promptbind.utils.fabind_inference_dataset.InferenceDataset.get"><code class="docutils literal notranslate"><span class="pre">InferenceDataset.get()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.fabind_inference_dataset.InferenceDataset.len"><code class="docutils literal notranslate"><span class="pre">InferenceDataset.len()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-promptbind.utils.feature_utils">promptbind.utils.feature_utils module</a><ul>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.Seed_everything"><code class="docutils literal notranslate"><span class="pre">Seed_everything()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol"><code class="docutils literal notranslate"><span class="pre">extract_torchdrug_feature_from_mol()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol_E3Bind"><code class="docutils literal notranslate"><span class="pre">extract_torchdrug_feature_from_mol_E3Bind()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.generate_and_write_sdf_from_smiles_using_rdkit_E3Bind"><code class="docutils literal notranslate"><span class="pre">generate_and_write_sdf_from_smiles_using_rdkit_E3Bind()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.generate_conformation"><code class="docutils literal notranslate"><span class="pre">generate_conformation()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.generate_rdkit_conformation_v2"><code class="docutils literal notranslate"><span class="pre">generate_rdkit_conformation_v2()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit"><code class="docutils literal notranslate"><span class="pre">generate_sdf_from_smiles_using_rdkit()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit_E3Bind"><code class="docutils literal notranslate"><span class="pre">generate_sdf_from_smiles_using_rdkit_E3Bind()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.get_LAS_distance_constraint_mask"><code class="docutils literal notranslate"><span class="pre">get_LAS_distance_constraint_mask()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.get_canonical_smiles"><code class="docutils literal notranslate"><span class="pre">get_canonical_smiles()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.get_clean_res_list"><code class="docutils literal notranslate"><span class="pre">get_clean_res_list()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.get_compound_pair_dis_distribution"><code class="docutils literal notranslate"><span class="pre">get_compound_pair_dis_distribution()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.get_protein_feature"><code class="docutils literal notranslate"><span class="pre">get_protein_feature()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.get_res_unique_id"><code class="docutils literal notranslate"><span class="pre">get_res_unique_id()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.n_hops_adj"><code class="docutils literal notranslate"><span class="pre">n_hops_adj()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.read_mol"><code class="docutils literal notranslate"><span class="pre">read_mol()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.remove_hetero_and_extract_ligand"><code class="docutils literal notranslate"><span class="pre">remove_hetero_and_extract_ligand()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.save_cleaned_protein"><code class="docutils literal notranslate"><span class="pre">save_cleaned_protein()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.select_chain_within_cutoff_to_ligand_v2"><code class="docutils literal notranslate"><span class="pre">select_chain_within_cutoff_to_ligand_v2()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.split_protein_and_ligand"><code class="docutils literal notranslate"><span class="pre">split_protein_and_ligand()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.write_renumbered_sdf"><code class="docutils literal notranslate"><span class="pre">write_renumbered_sdf()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.feature_utils.write_with_new_coords"><code class="docutils literal notranslate"><span class="pre">write_with_new_coords()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-promptbind.utils.generation_utils">promptbind.utils.generation_utils module</a><ul>
 <li><a class="reference internal" href="#promptbind.utils.generation_utils.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
 <li><a class="reference internal" href="#promptbind.utils.generation_utils.compute_RMSD"><code class="docutils literal notranslate"><span class="pre">compute_RMSD()</span></code></a></li>
@@ -822,7 +1076,24 @@ we failed to get conformation information.</p></li>
 <li><a class="reference internal" href="#promptbind.utils.post_optim_utils.write_mol"><code class="docutils literal notranslate"><span class="pre">write_mol()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#promptbind-utils-utils-module">promptbind.utils.utils module</a></li>
+<li><a class="reference internal" href="#module-promptbind.utils.utils">promptbind.utils.utils module</a><ul>
+<li><a class="reference internal" href="#promptbind.utils.utils.SetDihedral"><code class="docutils literal notranslate"><span class="pre">SetDihedral()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.compute_dis_between_two_vector"><code class="docutils literal notranslate"><span class="pre">compute_dis_between_two_vector()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.compute_dis_between_two_vector_tensor"><code class="docutils literal notranslate"><span class="pre">compute_dis_between_two_vector_tensor()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.construct_data_from_graph_gvp_mean"><code class="docutils literal notranslate"><span class="pre">construct_data_from_graph_gvp_mean()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.evaluate_mean_pocket_cls_coord_multi_task"><code class="docutils literal notranslate"><span class="pre">evaluate_mean_pocket_cls_coord_multi_task()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.evaluate_mean_pocket_cls_coord_pocket_pred"><code class="docutils literal notranslate"><span class="pre">evaluate_mean_pocket_cls_coord_pocket_pred()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.get_keepNode"><code class="docutils literal notranslate"><span class="pre">get_keepNode()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.get_keepNode_tensor"><code class="docutils literal notranslate"><span class="pre">get_keepNode_tensor()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.get_protein_edge_features_and_index"><code class="docutils literal notranslate"><span class="pre">get_protein_edge_features_and_index()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.get_torsions"><code class="docutils literal notranslate"><span class="pre">get_torsions()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.gumbel_softmax_no_random"><code class="docutils literal notranslate"><span class="pre">gumbel_softmax_no_random()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.post_optim_mol"><code class="docutils literal notranslate"><span class="pre">post_optim_mol()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.read_mol"><code class="docutils literal notranslate"><span class="pre">read_mol()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.read_pdbbind_data"><code class="docutils literal notranslate"><span class="pre">read_pdbbind_data()</span></code></a></li>
+<li><a class="reference internal" href="#promptbind.utils.utils.uniform_random_rotation"><code class="docutils literal notranslate"><span class="pre">uniform_random_rotation()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-promptbind.utils">Module contents</a></li>
 </ul>
 </li>
