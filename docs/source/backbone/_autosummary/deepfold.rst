@@ -30,6 +30,7 @@
    deepfold.common
    deepfold.config
    deepfold.data
+   deepfold.deepfold
    deepfold.distributed
    deepfold.eval
    deepfold.loss
@@ -37,9 +38,12 @@
    deepfold.modules
    deepfold.ops
    deepfold.package_info
+   deepfold.predict
    deepfold.relax
    deepfold.runner
+   deepfold.setup
    deepfold.testing
+   deepfold.tests
    deepfold.train
    deepfold.utils
 

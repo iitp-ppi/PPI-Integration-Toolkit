@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ppi-toolkit"
+version = "0.0.1"
+readme = "README.md"
+[tool.setuptools.package-dir]
+""="src/tool"
+"deepfold"="src/backbone/DeepFoldPublic"
