@@ -1,4 +1,4 @@
-﻿promptbind.utils.feature\_utils
+promptbind.utils.feature\_utils
 ===============================
 
 .. automodule:: promptbind.utils.feature_utils

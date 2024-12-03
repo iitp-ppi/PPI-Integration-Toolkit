@@ -1,4 +1,4 @@
-﻿deepfold.utils.file\_utils
+deepfold.utils.file\_utils
 ==========================
 
 .. automodule:: deepfold.utils.file_utils

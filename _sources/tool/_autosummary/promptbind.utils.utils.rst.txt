@@ -1,4 +1,4 @@
-﻿promptbind.utils.utils
+promptbind.utils.utils
 ======================
 
 .. automodule:: promptbind.utils.utils

@@ -1,4 +1,4 @@
-﻿promptbind.utils.inference\_pdb\_utils
+promptbind.utils.inference\_pdb\_utils
 ======================================
 
 .. automodule:: promptbind.utils.inference_pdb_utils

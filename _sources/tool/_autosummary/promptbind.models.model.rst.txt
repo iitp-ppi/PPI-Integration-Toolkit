@@ -1,4 +1,4 @@
-﻿promptbind.models.model
+promptbind.models.model
 =======================
 
 .. automodule:: promptbind.models.model

@@ -1,4 +1,4 @@
-﻿promptbind.utils.inference\_mol\_utils
+promptbind.utils.inference\_mol\_utils
 ======================================
 
 .. automodule:: promptbind.utils.inference_mol_utils

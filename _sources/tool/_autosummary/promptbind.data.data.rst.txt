@@ -1,4 +1,4 @@
-﻿promptbind.data.data
+promptbind.data.data
 ====================
 
 .. automodule:: promptbind.data.data

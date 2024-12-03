@@ -1,4 +1,4 @@
-﻿promptbind.models.egnn
+promptbind.models.egnn
 ======================
 
 .. automodule:: promptbind.models.egnn

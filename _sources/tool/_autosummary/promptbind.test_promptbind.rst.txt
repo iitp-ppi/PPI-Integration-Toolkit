@@ -1,4 +1,4 @@
-﻿promptbind.test\_promptbind
+promptbind.test\_promptbind
 ===========================
 
 .. automodule:: promptbind.test_promptbind
