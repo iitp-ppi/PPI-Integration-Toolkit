@@ -25,3 +25,6 @@
 [submodule "tool/BindingRMSD"]
 	path = tool/BindingRMSD
 	url = https://github.com/iitp-ppi/BindingRMSD.git
+[submodule "backbone/MiniWorld"]
+	path = backbone/MiniWorld
+	url = git@github.com:iitp-ppi/MiniWorld.git
