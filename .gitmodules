@@ -28,3 +28,6 @@
 [submodule "backbone/MiniWorld"]
 	path = backbone/MiniWorld
 	url = git@github.com:iitp-ppi/MiniWorld.git
+[submodule "tool/MSA_search_pipeline"]
+	path = tool/MSA_search_pipeline
+	url = git@github.com:iitp-ppi/MSA_search_pipeline.git
