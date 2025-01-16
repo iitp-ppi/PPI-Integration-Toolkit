@@ -1,12 +1,15 @@
 # Protein Protein Interaction Toolkit
 
-## To install:
+## To install
 ```bash
 git clone --recursive https://github.com/iitp-ppi/PPI-Integration-Toolkit.git
 conda env create --file environment.yml
 
 conda activate ppi-toolkit
 ```
+
+## Document
+[API Document](https://iitp-ppi.github.io/PPI-Integration-Toolkit/)
 
 ## License
 
