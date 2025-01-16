@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="diffalign.utils.dataloader" href="diffalign.utils.dataloader.html" /><link rel="prev" title="diffalign.utils.chem" href="diffalign.utils.chem.html" />
 
     <!-- Generated with Sphinx 7.3.7 and Furo 2024.08.06 -->
-        <title>promptbind.data package - IITP PPI 0.0.2 documentation</title>
+        <title>diffalign.utils.common - IITP PPI 0.0.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -198,8 +198,8 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../api.html">API</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../api.html">API</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../backbone/backbone_api.html">API/Backbone</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of API/Backbone</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../backbone/_autosummary/deepfold.html">deepfold</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of deepfold</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../../backbone/_autosummary/deepfold.common.html">deepfold.common</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of deepfold.common</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -374,79 +374,79 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../tool_api.html">API/Tool</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/bis_protein_structure.html">bis_protein_structure</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.SOLVENTACC.html">bis_protein_structure.SOLVENTACC</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../tool_api.html">API/Tool</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="bis_protein_structure.html">bis_protein_structure</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.SOLVENTACC.html">bis_protein_structure.SOLVENTACC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/gd_dl.data.html">gd_dl.data</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of gd_dl.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/gd_dl.data.ML_inference.html">gd_dl.data.ML_inference</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/gd_dl.data.ML_rerank.html">gd_dl.data.ML_rerank</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/gd_dl.data.all_ML_rerank.html">gd_dl.data.all_ML_rerank</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/gd_dl.data.single_ML_rerank.html">gd_dl.data.single_ML_rerank</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="gd_dl.data.html">gd_dl.data</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of gd_dl.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="gd_dl.data.ML_inference.html">gd_dl.data.ML_inference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="gd_dl.data.ML_rerank.html">gd_dl.data.ML_rerank</a></li>
+<li class="toctree-l5"><a class="reference internal" href="gd_dl.data.all_ML_rerank.html">gd_dl.data.all_ML_rerank</a></li>
+<li class="toctree-l5"><a class="reference internal" href="gd_dl.data.single_ML_rerank.html">gd_dl.data.single_ML_rerank</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.models.html">gd_dl.models</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.path_setting.html">gd_dl.path_setting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.rerank_model.html">gd_dl.rerank_model</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/gd_dl.utils.html">gd_dl.utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.models.html">gd_dl.models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.path_setting.html">gd_dl.path_setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.rerank_model.html">gd_dl.rerank_model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gd_dl.utils.html">gd_dl.utils</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/promptbind.html">promptbind</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of promptbind</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/promptbind.data.html">promptbind.data</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of promptbind.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.data.data.html">promptbind.data.data</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="promptbind.html">promptbind</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of promptbind</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="promptbind.data.html">promptbind.data</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of promptbind.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.data.data.html">promptbind.data.data</a></li>
 </ul>
 </li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/promptbind.models.html">promptbind.models</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of promptbind.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.models.att_model.html">promptbind.models.att_model</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.models.cross_att.html">promptbind.models.cross_att</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.models.egnn.html">promptbind.models.egnn</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.models.model.html">promptbind.models.model</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.models.model_utils.html">promptbind.models.model_utils</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="promptbind.models.html">promptbind.models</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of promptbind.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.models.att_model.html">promptbind.models.att_model</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.models.cross_att.html">promptbind.models.cross_att</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.models.egnn.html">promptbind.models.egnn</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.models.model.html">promptbind.models.model</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.models.model_utils.html">promptbind.models.model_utils</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/promptbind.test_promptbind.html">promptbind.test_promptbind</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/promptbind.utils.html">promptbind.utils</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of promptbind.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.fabind_inference_dataset.html">promptbind.utils.fabind_inference_dataset</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.feature_utils.html">promptbind.utils.feature_utils</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.generation_utils.html">promptbind.utils.generation_utils</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.inference_mol_utils.html">promptbind.utils.inference_mol_utils</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.inference_pdb_utils.html">promptbind.utils.inference_pdb_utils</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.logging_utils.html">promptbind.utils.logging_utils</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.metrics.html">promptbind.utils.metrics</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.metrics_to_tsb.html">promptbind.utils.metrics_to_tsb</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.post_optim_utils.html">promptbind.utils.post_optim_utils</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/promptbind.utils.utils.html">promptbind.utils.utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="promptbind.test_promptbind.html">promptbind.test_promptbind</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="promptbind.utils.html">promptbind.utils</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of promptbind.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.fabind_inference_dataset.html">promptbind.utils.fabind_inference_dataset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.feature_utils.html">promptbind.utils.feature_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.generation_utils.html">promptbind.utils.generation_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.inference_mol_utils.html">promptbind.utils.inference_mol_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.inference_pdb_utils.html">promptbind.utils.inference_pdb_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.logging_utils.html">promptbind.utils.logging_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.metrics.html">promptbind.utils.metrics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.metrics_to_tsb.html">promptbind.utils.metrics_to_tsb</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.post_optim_utils.html">promptbind.utils.post_optim_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.utils.html">promptbind.utils.utils</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../_autosummary/promptbind.visualize_prompt_components.html">promptbind.visualize_prompt_components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="promptbind.visualize_prompt_components.html">promptbind.visualize_prompt_components</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/diffalign.html">diffalign</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of diffalign</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/diffalign.models.html">diffalign.models</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle navigation of diffalign.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.models.epsnet.html">diffalign.models.epsnet</a></li>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="diffalign.html">diffalign</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of diffalign</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 has-children"><a class="reference internal" href="diffalign.models.html">diffalign.models</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle navigation of diffalign.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="diffalign.models.epsnet.html">diffalign.models.epsnet</a></li>
 </ul>
 </li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/diffalign.utils.html">diffalign.utils</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle navigation of diffalign.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.utils.chem.html">diffalign.utils.chem</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.utils.common.html">diffalign.utils.common</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.utils.dataloader.html">diffalign.utils.dataloader</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.utils.datasets.html">diffalign.utils.datasets</a></li>
-<li class="toctree-l5 has-children"><a class="reference internal" href="../_autosummary/diffalign.utils.evaluation.html">diffalign.utils.evaluation</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle navigation of diffalign.utils.evaluation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l6"><a class="reference internal" href="../_autosummary/diffalign.utils.evaluation.covmat.html">diffalign.utils.evaluation.covmat</a></li>
+<li class="toctree-l4 current has-children"><a class="reference internal" href="diffalign.utils.html">diffalign.utils</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle navigation of diffalign.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="diffalign.utils.chem.html">diffalign.utils.chem</a></li>
+<li class="toctree-l5 current current-page"><a class="current reference internal" href="#">diffalign.utils.common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diffalign.utils.dataloader.html">diffalign.utils.dataloader</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diffalign.utils.datasets.html">diffalign.utils.datasets</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="diffalign.utils.evaluation.html">diffalign.utils.evaluation</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle navigation of diffalign.utils.evaluation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="diffalign.utils.evaluation.covmat.html">diffalign.utils.evaluation.covmat</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.utils.misc.html">diffalign.utils.misc</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../_autosummary/diffalign.utils.visualize.html">diffalign.utils.visualize</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diffalign.utils.misc.html">diffalign.utils.misc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diffalign.utils.visualize.html">diffalign.utils.visualize</a></li>
 </ul>
 </li>
 </ul>
@@ -475,7 +475,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/tool/PromptBind/promptbind.data.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/tool/_autosummary/diffalign.utils.common.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -489,59 +489,43 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="promptbind-data-package">
-<h1>promptbind.data package<a class="headerlink" href="#promptbind-data-package" title="Link to this heading">¶</a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
-</section>
-<section id="module-promptbind.data.data">
-<span id="promptbind-data-data-module"></span><h2>promptbind.data.data module<a class="headerlink" href="#module-promptbind.data.data" title="Link to this heading">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="promptbind.data.data.FABindDataSet">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">promptbind.data.data.</span></span><span class="sig-name descname"><span class="pre">FABindDataSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteinMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compoundMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_noise_to_com</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contactCutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predDis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_whole_protein</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_coords_init_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">42</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_for_predicted_pocket</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_random_rotation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocket_idx_no_noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_esm2_feat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.data.data.FABindDataSet" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="promptbind.data.data.FABindDataSet.get">
-<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.data.data.FABindDataSet.get" title="Link to this definition">¶</a></dt>
-<dd><p>Gets the data object at index <code class="xref py py-obj docutils literal notranslate"><span class="pre">idx</span></code>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="promptbind.data.data.FABindDataSet.len">
-<span class="sig-name descname"><span class="pre">len</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.data.data.FABindDataSet.len" title="Link to this definition">¶</a></dt>
-<dd><p>Returns the number of data objects stored in the dataset.</p>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="promptbind.data.data.FABindDataSet.processed_file_names">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">processed_file_names</span></span><a class="headerlink" href="#promptbind.data.data.FABindDataSet.processed_file_names" title="Link to this definition">¶</a></dt>
-<dd><p>The name of the files in the <code class="xref py py-obj docutils literal notranslate"><span class="pre">self.processed_dir</span></code> folder that
-must be present in order to skip processing.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="promptbind.data.data.get_data">
-<span class="sig-prename descclassname"><span class="pre">promptbind.data.data.</span></span><span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addNoise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_whole_protein</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_coords_init_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pocket_center_rdkit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/PDBbind_data/pdbbind2020'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#promptbind.data.data.get_data" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</section>
-<section id="promptbind-data-inference-preprocess-mol-confs-module">
-<h2>promptbind.data.inference_preprocess_mol_confs module<a class="headerlink" href="#promptbind-data-inference-preprocess-mol-confs-module" title="Link to this heading">¶</a></h2>
-</section>
-<section id="promptbind-data-inference-preprocess-protein-module">
-<h2>promptbind.data.inference_preprocess_protein module<a class="headerlink" href="#promptbind-data-inference-preprocess-protein-module" title="Link to this heading">¶</a></h2>
-</section>
-<section id="module-promptbind.data">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-promptbind.data" title="Link to this heading">¶</a></h2>
-</section>
+          <section id="module-diffalign.utils.common">
+<span id="diffalign-utils-common"></span><h1>diffalign.utils.common<a class="headerlink" href="#module-diffalign.utils.common" title="Link to this heading">¶</a></h1>
+<p class="rubric">Functions</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../DiffAlign/diffalign.utils.html#diffalign.utils.common.get_optimizer" title="diffalign.utils.common.get_optimizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_optimizer</span></code></a>(cfg, model)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../DiffAlign/diffalign.utils.html#diffalign.utils.common.get_scheduler" title="diffalign.utils.common.get_scheduler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_scheduler</span></code></a>(cfg, optimizer)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../DiffAlign/diffalign.utils.html#diffalign.utils.common.repeat_batch" title="diffalign.utils.common.repeat_batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">repeat_batch</span></code></a>(batch, num_repeat)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../DiffAlign/diffalign.utils.html#diffalign.utils.common.repeat_data" title="diffalign.utils.common.repeat_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">repeat_data</span></code></a>(data, num_repeat)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Classes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../DiffAlign/diffalign.utils.html#diffalign.utils.common.ExponentialLR_with_minLr" title="diffalign.utils.common.ExponentialLR_with_minLr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExponentialLR_with_minLr</span></code></a>(optimizer, gamma[, ...])</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 
         </article>
@@ -549,8 +533,26 @@ must be present in order to skip processing.</p>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="diffalign.utils.dataloader.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">diffalign.utils.dataloader</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="diffalign.utils.chem.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">diffalign.utils.chem</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -569,40 +571,8 @@ must be present in order to skip processing.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">promptbind.data package</a><ul>
-<li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#module-promptbind.data.data">promptbind.data.data module</a><ul>
-<li><a class="reference internal" href="#promptbind.data.data.FABindDataSet"><code class="docutils literal notranslate"><span class="pre">FABindDataSet</span></code></a><ul>
-<li><a class="reference internal" href="#promptbind.data.data.FABindDataSet.get"><code class="docutils literal notranslate"><span class="pre">FABindDataSet.get()</span></code></a></li>
-<li><a class="reference internal" href="#promptbind.data.data.FABindDataSet.len"><code class="docutils literal notranslate"><span class="pre">FABindDataSet.len()</span></code></a></li>
-<li><a class="reference internal" href="#promptbind.data.data.FABindDataSet.processed_file_names"><code class="docutils literal notranslate"><span class="pre">FABindDataSet.processed_file_names</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#promptbind.data.data.get_data"><code class="docutils literal notranslate"><span class="pre">get_data()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#promptbind-data-inference-preprocess-mol-confs-module">promptbind.data.inference_preprocess_mol_confs module</a></li>
-<li><a class="reference internal" href="#promptbind-data-inference-preprocess-protein-module">promptbind.data.inference_preprocess_protein module</a></li>
-<li><a class="reference internal" href="#module-promptbind.data">Module contents</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

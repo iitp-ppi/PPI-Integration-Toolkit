@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 7.3.7 and Furo 2024.08.06 -->
-        <title>Welcome to PromptBind’s documentation! - IITP PPI 0.0.2 documentation</title>
+        <title>diffalign.models.encoder package - IITP PPI 0.0.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -475,7 +475,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/tool/PromptBind/index.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/tool/DiffAlign/diffalign.models.encoder.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -489,299 +489,212 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="welcome-to-promptbind-s-documentation">
-<h1>Welcome to PromptBind’s documentation!<a class="headerlink" href="#welcome-to-promptbind-s-documentation" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="promptbind.html">promptbind package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="promptbind.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="promptbind.data.html">promptbind.data package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.data.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.data.html#module-promptbind.data.data">promptbind.data.data module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.data.html#promptbind.data.data.FABindDataSet"><code class="docutils literal notranslate"><span class="pre">FABindDataSet</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.data.html#promptbind.data.data.FABindDataSet.get"><code class="docutils literal notranslate"><span class="pre">FABindDataSet.get()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.data.html#promptbind.data.data.FABindDataSet.len"><code class="docutils literal notranslate"><span class="pre">FABindDataSet.len()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.data.html#promptbind.data.data.FABindDataSet.processed_file_names"><code class="docutils literal notranslate"><span class="pre">FABindDataSet.processed_file_names</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.data.html#promptbind.data.data.get_data"><code class="docutils literal notranslate"><span class="pre">get_data()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.data.html#promptbind-data-inference-preprocess-mol-confs-module">promptbind.data.inference_preprocess_mol_confs module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.data.html#promptbind-data-inference-preprocess-protein-module">promptbind.data.inference_preprocess_protein module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.data.html#module-promptbind.data">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="promptbind.models.html">promptbind.models package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#module-promptbind.models.att_model">promptbind.models.att_model module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.ComplexGraph"><code class="docutils literal notranslate"><span class="pre">ComplexGraph</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.ComplexGraph.construct_edges"><code class="docutils literal notranslate"><span class="pre">ComplexGraph.construct_edges()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.ComplexGraph.forward"><code class="docutils literal notranslate"><span class="pre">ComplexGraph.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.EfficientMCAttModel"><code class="docutils literal notranslate"><span class="pre">EfficientMCAttModel</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.EfficientMCAttModel.forward"><code class="docutils literal notranslate"><span class="pre">EfficientMCAttModel.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.sequential_and"><code class="docutils literal notranslate"><span class="pre">sequential_and()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.att_model.sequential_or"><code class="docutils literal notranslate"><span class="pre">sequential_or()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#module-promptbind.models.cross_att">promptbind.models.cross_att module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.CrossAttentionModule"><code class="docutils literal notranslate"><span class="pre">CrossAttentionModule</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.CrossAttentionModule.forward"><code class="docutils literal notranslate"><span class="pre">CrossAttentionModule.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.RowAttentionBlock"><code class="docutils literal notranslate"><span class="pre">RowAttentionBlock</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.RowAttentionBlock.forward"><code class="docutils literal notranslate"><span class="pre">RowAttentionBlock.forward()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.RowAttentionBlock.inf"><code class="docutils literal notranslate"><span class="pre">RowAttentionBlock.inf</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.RowTriangleAttentionBlock"><code class="docutils literal notranslate"><span class="pre">RowTriangleAttentionBlock</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.RowTriangleAttentionBlock.forward"><code class="docutils literal notranslate"><span class="pre">RowTriangleAttentionBlock.forward()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.cross_att.RowTriangleAttentionBlock.inf"><code class="docutils literal notranslate"><span class="pre">RowTriangleAttentionBlock.inf</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#module-promptbind.models.egnn">promptbind.models.egnn module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MCAttEGNN"><code class="docutils literal notranslate"><span class="pre">MCAttEGNN</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MCAttEGNN.forward"><code class="docutils literal notranslate"><span class="pre">MCAttEGNN.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_Att_L"><code class="docutils literal notranslate"><span class="pre">MC_Att_L</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_Att_L.att_model"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.att_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_Att_L.coord_model"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.coord_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_Att_L.forward"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.forward()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_Att_L.node_model"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.node_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_Att_L.trio_encoder"><code class="docutils literal notranslate"><span class="pre">MC_Att_L.trio_encoder()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL.coord_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.coord_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL.edge_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.edge_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL.forward"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.forward()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL.node_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL.node_model()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt.coord_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.coord_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt.edge_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.edge_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt.forward"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.forward()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt.node_model"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.node_model()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt.prompt_generation_module"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.prompt_generation_module()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.MC_E_GCL_Prompt.prompt_interaction_module"><code class="docutils literal notranslate"><span class="pre">MC_E_GCL_Prompt.prompt_interaction_module()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.coord2radial"><code class="docutils literal notranslate"><span class="pre">coord2radial()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.get_edges"><code class="docutils literal notranslate"><span class="pre">get_edges()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.get_edges_batch"><code class="docutils literal notranslate"><span class="pre">get_edges_batch()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.unsorted_segment_mean"><code class="docutils literal notranslate"><span class="pre">unsorted_segment_mean()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.egnn.unsorted_segment_sum"><code class="docutils literal notranslate"><span class="pre">unsorted_segment_sum()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#module-promptbind.models.model">promptbind.models.model module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent"><code class="docutils literal notranslate"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.forward"><code class="docutils literal notranslate"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent.forward()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model.IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference"><code class="docutils literal notranslate"><span class="pre">IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model.Transition_diff_out_dim"><code class="docutils literal notranslate"><span class="pre">Transition_diff_out_dim</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model.Transition_diff_out_dim.forward"><code class="docutils literal notranslate"><span class="pre">Transition_diff_out_dim.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model.get_model"><code class="docutils literal notranslate"><span class="pre">get_model()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#module-promptbind.models.model_utils">promptbind.models.model_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.Attention"><code class="docutils literal notranslate"><span class="pre">Attention</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.Attention.forward"><code class="docutils literal notranslate"><span class="pre">Attention.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.GaussianSmearing"><code class="docutils literal notranslate"><span class="pre">GaussianSmearing</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.GaussianSmearing.forward"><code class="docutils literal notranslate"><span class="pre">GaussianSmearing.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.InteractionModule"><code class="docutils literal notranslate"><span class="pre">InteractionModule</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.InteractionModule.forward"><code class="docutils literal notranslate"><span class="pre">InteractionModule.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.RBFDistanceModule"><code class="docutils literal notranslate"><span class="pre">RBFDistanceModule</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.RBFDistanceModule.forward"><code class="docutils literal notranslate"><span class="pre">RBFDistanceModule.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.Transition"><code class="docutils literal notranslate"><span class="pre">Transition</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.Transition.forward"><code class="docutils literal notranslate"><span class="pre">Transition.forward()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.flatten_final_dims"><code class="docutils literal notranslate"><span class="pre">flatten_final_dims()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.models.html#promptbind.models.model_utils.permute_final_dims"><code class="docutils literal notranslate"><span class="pre">permute_final_dims()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.models.html#module-promptbind.models">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="promptbind.utils.html">promptbind.utils package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.fabind_inference_dataset">promptbind.utils.fabind_inference_dataset module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.fabind_inference_dataset.InferenceDataset"><code class="docutils literal notranslate"><span class="pre">InferenceDataset</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.fabind_inference_dataset.InferenceDataset.get"><code class="docutils literal notranslate"><span class="pre">InferenceDataset.get()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.fabind_inference_dataset.InferenceDataset.len"><code class="docutils literal notranslate"><span class="pre">InferenceDataset.len()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.feature_utils">promptbind.utils.feature_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.Seed_everything"><code class="docutils literal notranslate"><span class="pre">Seed_everything()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol"><code class="docutils literal notranslate"><span class="pre">extract_torchdrug_feature_from_mol()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.extract_torchdrug_feature_from_mol_E3Bind"><code class="docutils literal notranslate"><span class="pre">extract_torchdrug_feature_from_mol_E3Bind()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.generate_and_write_sdf_from_smiles_using_rdkit_E3Bind"><code class="docutils literal notranslate"><span class="pre">generate_and_write_sdf_from_smiles_using_rdkit_E3Bind()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.generate_conformation"><code class="docutils literal notranslate"><span class="pre">generate_conformation()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.generate_rdkit_conformation_v2"><code class="docutils literal notranslate"><span class="pre">generate_rdkit_conformation_v2()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit"><code class="docutils literal notranslate"><span class="pre">generate_sdf_from_smiles_using_rdkit()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.generate_sdf_from_smiles_using_rdkit_E3Bind"><code class="docutils literal notranslate"><span class="pre">generate_sdf_from_smiles_using_rdkit_E3Bind()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.get_LAS_distance_constraint_mask"><code class="docutils literal notranslate"><span class="pre">get_LAS_distance_constraint_mask()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.get_canonical_smiles"><code class="docutils literal notranslate"><span class="pre">get_canonical_smiles()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.get_clean_res_list"><code class="docutils literal notranslate"><span class="pre">get_clean_res_list()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.get_compound_pair_dis_distribution"><code class="docutils literal notranslate"><span class="pre">get_compound_pair_dis_distribution()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.get_protein_feature"><code class="docutils literal notranslate"><span class="pre">get_protein_feature()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.get_res_unique_id"><code class="docutils literal notranslate"><span class="pre">get_res_unique_id()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.n_hops_adj"><code class="docutils literal notranslate"><span class="pre">n_hops_adj()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.read_mol"><code class="docutils literal notranslate"><span class="pre">read_mol()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.remove_hetero_and_extract_ligand"><code class="docutils literal notranslate"><span class="pre">remove_hetero_and_extract_ligand()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.save_cleaned_protein"><code class="docutils literal notranslate"><span class="pre">save_cleaned_protein()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.select_chain_within_cutoff_to_ligand_v2"><code class="docutils literal notranslate"><span class="pre">select_chain_within_cutoff_to_ligand_v2()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.split_protein_and_ligand"><code class="docutils literal notranslate"><span class="pre">split_protein_and_ligand()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.write_renumbered_sdf"><code class="docutils literal notranslate"><span class="pre">write_renumbered_sdf()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.feature_utils.write_with_new_coords"><code class="docutils literal notranslate"><span class="pre">write_with_new_coords()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.generation_utils">promptbind.utils.generation_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.compute_RMSD"><code class="docutils literal notranslate"><span class="pre">compute_RMSD()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.distance_loss_function"><code class="docutils literal notranslate"><span class="pre">distance_loss_function()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.distance_optimize_compound_coords"><code class="docutils literal notranslate"><span class="pre">distance_optimize_compound_coords()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.get_LAS_distance_constraint_mask"><code class="docutils literal notranslate"><span class="pre">get_LAS_distance_constraint_mask()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.get_info_pred_distance"><code class="docutils literal notranslate"><span class="pre">get_info_pred_distance()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.n_hops_adj"><code class="docutils literal notranslate"><span class="pre">n_hops_adj()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.read_mol"><code class="docutils literal notranslate"><span class="pre">read_mol()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.generation_utils.write_with_new_coords"><code class="docutils literal notranslate"><span class="pre">write_with_new_coords()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.inference_mol_utils">promptbind.utils.inference_mol_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.extract_torchdrug_feature_from_mol"><code class="docutils literal notranslate"><span class="pre">extract_torchdrug_feature_from_mol()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.generate_conformation"><code class="docutils literal notranslate"><span class="pre">generate_conformation()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.get_LAS_distance_constraint_mask"><code class="docutils literal notranslate"><span class="pre">get_LAS_distance_constraint_mask()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.get_compound_pair_dis_distribution"><code class="docutils literal notranslate"><span class="pre">get_compound_pair_dis_distribution()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.n_hops_adj"><code class="docutils literal notranslate"><span class="pre">n_hops_adj()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.read_mol_and_renumber"><code class="docutils literal notranslate"><span class="pre">read_mol_and_renumber()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.read_smiles"><code class="docutils literal notranslate"><span class="pre">read_smiles()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_mol_utils.write_mol"><code class="docutils literal notranslate"><span class="pre">write_mol()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.inference_pdb_utils">promptbind.utils.inference_pdb_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_pdb_utils.extract_esm_feature"><code class="docutils literal notranslate"><span class="pre">extract_esm_feature()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_pdb_utils.extract_protein_structure"><code class="docutils literal notranslate"><span class="pre">extract_protein_structure()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_pdb_utils.get_clean_res_list"><code class="docutils literal notranslate"><span class="pre">get_clean_res_list()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.inference_pdb_utils.get_protein_structure"><code class="docutils literal notranslate"><span class="pre">get_protein_structure()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.logging_utils">promptbind.utils.logging_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.logging_utils.Logger"><code class="docutils literal notranslate"><span class="pre">Logger</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.logging_utils.Logger.log_message"><code class="docutils literal notranslate"><span class="pre">Logger.log_message()</span></code></a></li>
-<li class="toctree-l6"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.logging_utils.Logger.log_stats"><code class="docutils literal notranslate"><span class="pre">Logger.log_stats()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.metrics">promptbind.utils.metrics module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.affinity_metrics"><code class="docutils literal notranslate"><span class="pre">affinity_metrics()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.cls_metric"><code class="docutils literal notranslate"><span class="pre">cls_metric()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.compute_individual_metrics"><code class="docutils literal notranslate"><span class="pre">compute_individual_metrics()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.myMetric"><code class="docutils literal notranslate"><span class="pre">myMetric()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.pocket_direct_metrics"><code class="docutils literal notranslate"><span class="pre">pocket_direct_metrics()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.pocket_metrics"><code class="docutils literal notranslate"><span class="pre">pocket_metrics()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics.print_metrics"><code class="docutils literal notranslate"><span class="pre">print_metrics()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.metrics_to_tsb">promptbind.utils.metrics_to_tsb module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.metrics_to_tsb.metrics_runtime_no_prefix"><code class="docutils literal notranslate"><span class="pre">metrics_runtime_no_prefix()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.post_optim_utils">promptbind.utils.post_optim_utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.post_optim_utils.compute_RMSD"><code class="docutils literal notranslate"><span class="pre">compute_RMSD()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_compound_coords"><code class="docutils literal notranslate"><span class="pre">post_optimize_compound_coords()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_compound_coords_lbfgs"><code class="docutils literal notranslate"><span class="pre">post_optimize_compound_coords_lbfgs()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_loss_function"><code class="docutils literal notranslate"><span class="pre">post_optimize_loss_function()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.post_optim_utils.read_molecule"><code class="docutils literal notranslate"><span class="pre">read_molecule()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.post_optim_utils.write_mol"><code class="docutils literal notranslate"><span class="pre">write_mol()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils.utils">promptbind.utils.utils module</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.SetDihedral"><code class="docutils literal notranslate"><span class="pre">SetDihedral()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.compute_dis_between_two_vector"><code class="docutils literal notranslate"><span class="pre">compute_dis_between_two_vector()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.compute_dis_between_two_vector_tensor"><code class="docutils literal notranslate"><span class="pre">compute_dis_between_two_vector_tensor()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.construct_data_from_graph_gvp_mean"><code class="docutils literal notranslate"><span class="pre">construct_data_from_graph_gvp_mean()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.evaluate_mean_pocket_cls_coord_multi_task"><code class="docutils literal notranslate"><span class="pre">evaluate_mean_pocket_cls_coord_multi_task()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.evaluate_mean_pocket_cls_coord_pocket_pred"><code class="docutils literal notranslate"><span class="pre">evaluate_mean_pocket_cls_coord_pocket_pred()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.get_keepNode"><code class="docutils literal notranslate"><span class="pre">get_keepNode()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.get_keepNode_tensor"><code class="docutils literal notranslate"><span class="pre">get_keepNode_tensor()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.get_protein_edge_features_and_index"><code class="docutils literal notranslate"><span class="pre">get_protein_edge_features_and_index()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.get_torsions"><code class="docutils literal notranslate"><span class="pre">get_torsions()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.gumbel_softmax_no_random"><code class="docutils literal notranslate"><span class="pre">gumbel_softmax_no_random()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.post_optim_mol"><code class="docutils literal notranslate"><span class="pre">post_optim_mol()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.read_mol"><code class="docutils literal notranslate"><span class="pre">read_mol()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.read_pdbbind_data"><code class="docutils literal notranslate"><span class="pre">read_pdbbind_data()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="promptbind.utils.html#promptbind.utils.utils.uniform_random_rotation"><code class="docutils literal notranslate"><span class="pre">uniform_random_rotation()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.utils.html#module-promptbind.utils">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="promptbind.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="promptbind.html#module-promptbind.test_promptbind">promptbind.test_promptbind module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference"><code class="docutils literal notranslate"><span class="pre">PromptBindInference</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.load_args"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.load_args()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.load_model"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.load_model()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.run_inference"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.run_inference()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.setup_accelerator"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.setup_accelerator()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.setup_criterions"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.setup_criterions()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.setup_data_loaders"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.setup_data_loaders()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="promptbind.html#promptbind.test_promptbind.PromptBindInference.setup_logger"><code class="docutils literal notranslate"><span class="pre">PromptBindInference.setup_logger()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="promptbind.html#promptbind-train-promptbind-module">promptbind.train_promptbind module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="promptbind.html#module-promptbind.visualize_prompt_components">promptbind.visualize_prompt_components module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="promptbind.html#promptbind.visualize_prompt_components.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="promptbind.html#module-promptbind">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</div>
+          <section id="diffalign-models-encoder-package">
+<h1>diffalign.models.encoder package<a class="headerlink" href="#diffalign-models-encoder-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="../../py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="../../search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
+<section id="module-diffalign.models.encoder.edge">
+<span id="diffalign-models-encoder-edge-module"></span><h2>diffalign.models.encoder.edge module<a class="headerlink" href="#module-diffalign.models.encoder.edge" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.edge.MLPEdgeEncoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.edge.</span></span><span class="sig-name descname"><span class="pre">MLPEdgeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.edge.MLPEdgeEncoder" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.edge.MLPEdgeEncoder.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.edge.MLPEdgeEncoder.forward" title="Link to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Input:</dt><dd><p>edge_length: The length of edges, shape=(E, 1).
+edge_type: The type pf edges, shape=(E,)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The representation of edges. (E, self.hidden_dim)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>edge_attr</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="diffalign.models.encoder.edge.MLPEdgeEncoder.out_channels">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">out_channels</span></span><a class="headerlink" href="#diffalign.models.encoder.edge.MLPEdgeEncoder.out_channels" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-diffalign.models.encoder.egnn">
+<span id="diffalign-models-encoder-egnn-module"></span><h2>diffalign.models.encoder.egnn module<a class="headerlink" href="#module-diffalign.models.encoder.egnn" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.EGNN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">EGNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_node_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_edge_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurrent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_diff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_node_nf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sum'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inv_sublayers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_embedding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.EGNN" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.EGNN.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.EGNN.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.EGNN_old">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">EGNN_old</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_node_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_edge_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurrent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_diff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_node_nf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sum'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.EGNN_old" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.EGNN_old.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.EGNN_old.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.E_GCL">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">E_GCL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges_in_d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes_att_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_diff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.E_GCL" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<p>Graph Neural Net with global state and fixed number of nodes per graph.
+:param hidden_dim: Number of hidden units.
+:param num_nodes: Maximum number of nodes (for self-attentive pooling).
+:param global_agg: Global aggregation function (‘attn’ or ‘sum’).
+:param temp: Softmax temperature.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.E_GCL.coord2radial">
+<span class="sig-name descname"><span class="pre">coord2radial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.E_GCL.coord2radial" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.E_GCL.coord_model">
+<span class="sig-name descname"><span class="pre">coord_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_diff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_mask</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.E_GCL.coord_model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.E_GCL.edge_model">
+<span class="sig-name descname"><span class="pre">edge_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.E_GCL.edge_model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.E_GCL.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coord_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.E_GCL.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.E_GCL.node_model">
+<span class="sig-name descname"><span class="pre">node_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_attr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.E_GCL.node_model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.GNN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">GNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_node_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_edge_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_node_nf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.GNN" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.GNN.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.GNN.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.MLP">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">MLP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nb_layers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.MLP" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.MLP.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.MLP.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.TransformerNN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">TransformerNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_node_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_edge_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_nf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_fn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SiLU()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurrent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_diff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_node_nf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sum'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.TransformerNN" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.TransformerNN.SetDecoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SetDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.TransformerNN.SetDecoder" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.TransformerNN.SetDecoder.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.TransformerNN.SetDecoder.forward" title="Link to this definition">¶</a></dt>
+<dd><p>x: batch_size, n, channels
+latent: batch_size, channels2.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.TransformerNN.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_attr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.TransformerNN.forward" title="Link to this definition">¶</a></dt>
+<dd><p>x: batch_size, n, channels
+latent: batch_size, channels2.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="diffalign.models.encoder.egnn.unsorted_segment_sum">
+<span class="sig-prename descclassname"><span class="pre">diffalign.models.encoder.egnn.</span></span><span class="sig-name descname"><span class="pre">unsorted_segment_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_segments</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#diffalign.models.encoder.egnn.unsorted_segment_sum" title="Link to this definition">¶</a></dt>
+<dd><p>Custom PyTorch op to replicate TensorFlow’s <cite>unsorted_segment_sum</cite>.</p>
+</dd></dl>
+
+</section>
+<section id="module-diffalign.models.encoder">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-diffalign.models.encoder" title="Link to this heading">¶</a></h2>
+</section>
 </section>
 
         </article>
@@ -809,8 +722,72 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">diffalign.models.encoder package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-diffalign.models.encoder.edge">diffalign.models.encoder.edge module</a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.edge.MLPEdgeEncoder"><code class="docutils literal notranslate"><span class="pre">MLPEdgeEncoder</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.edge.MLPEdgeEncoder.forward"><code class="docutils literal notranslate"><span class="pre">MLPEdgeEncoder.forward()</span></code></a></li>
+<li><a class="reference internal" href="#diffalign.models.encoder.edge.MLPEdgeEncoder.out_channels"><code class="docutils literal notranslate"><span class="pre">MLPEdgeEncoder.out_channels</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-diffalign.models.encoder.egnn">diffalign.models.encoder.egnn module</a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.EGNN"><code class="docutils literal notranslate"><span class="pre">EGNN</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.EGNN.forward"><code class="docutils literal notranslate"><span class="pre">EGNN.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.EGNN_old"><code class="docutils literal notranslate"><span class="pre">EGNN_old</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.EGNN_old.forward"><code class="docutils literal notranslate"><span class="pre">EGNN_old.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.E_GCL"><code class="docutils literal notranslate"><span class="pre">E_GCL</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.E_GCL.coord2radial"><code class="docutils literal notranslate"><span class="pre">E_GCL.coord2radial()</span></code></a></li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.E_GCL.coord_model"><code class="docutils literal notranslate"><span class="pre">E_GCL.coord_model()</span></code></a></li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.E_GCL.edge_model"><code class="docutils literal notranslate"><span class="pre">E_GCL.edge_model()</span></code></a></li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.E_GCL.forward"><code class="docutils literal notranslate"><span class="pre">E_GCL.forward()</span></code></a></li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.E_GCL.node_model"><code class="docutils literal notranslate"><span class="pre">E_GCL.node_model()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.GNN"><code class="docutils literal notranslate"><span class="pre">GNN</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.GNN.forward"><code class="docutils literal notranslate"><span class="pre">GNN.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.MLP"><code class="docutils literal notranslate"><span class="pre">MLP</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.MLP.forward"><code class="docutils literal notranslate"><span class="pre">MLP.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.TransformerNN"><code class="docutils literal notranslate"><span class="pre">TransformerNN</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.TransformerNN.SetDecoder"><code class="docutils literal notranslate"><span class="pre">TransformerNN.SetDecoder</span></code></a><ul>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.TransformerNN.SetDecoder.forward"><code class="docutils literal notranslate"><span class="pre">TransformerNN.SetDecoder.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.TransformerNN.forward"><code class="docutils literal notranslate"><span class="pre">TransformerNN.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#diffalign.models.encoder.egnn.unsorted_segment_sum"><code class="docutils literal notranslate"><span class="pre">unsorted_segment_sum()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-diffalign.models.encoder">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
