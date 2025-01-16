@@ -4,11 +4,6 @@ promptbind.utils.inference\_mol\_utils
 .. automodule:: promptbind.utils.inference_mol_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -23,15 +18,3 @@ promptbind.utils.inference\_mol\_utils
       read_smiles
       write_mol
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

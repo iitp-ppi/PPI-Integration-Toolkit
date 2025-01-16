@@ -4,11 +4,6 @@ deepfold.eval.plot
 .. automodule:: deepfold.eval.plot
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -19,15 +14,3 @@ deepfold.eval.plot
       plot_plddt
       plot_predicted_alignment_error
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

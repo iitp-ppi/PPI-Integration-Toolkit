@@ -4,11 +4,6 @@ deepfold.relax.cleanup
 .. automodule:: deepfold.relax.cleanup
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -16,15 +11,3 @@ deepfold.relax.cleanup
       clean_structure
       fix_pdb
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

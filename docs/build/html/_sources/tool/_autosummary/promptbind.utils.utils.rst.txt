@@ -4,11 +4,6 @@ promptbind.utils.utils
 .. automodule:: promptbind.utils.utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -29,15 +24,3 @@ promptbind.utils.utils
       read_pdbbind_data
       uniform_random_rotation
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

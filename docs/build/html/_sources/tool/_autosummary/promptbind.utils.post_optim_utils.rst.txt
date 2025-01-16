@@ -4,11 +4,6 @@ promptbind.utils.post\_optim\_utils
 .. automodule:: promptbind.utils.post_optim_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -20,15 +15,3 @@ promptbind.utils.post\_optim\_utils
       read_molecule
       write_mol
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

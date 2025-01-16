@@ -4,11 +4,6 @@ gd\_dl.data.ML\_inference
 .. automodule:: gd_dl.data.ML_inference
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -19,15 +14,3 @@ gd\_dl.data.ML\_inference
       load_files
       main
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

@@ -1,17 +1,8 @@
-﻿diffalign.utils.transforms
+diffalign.utils.transforms
 ==========================
 
 .. automodule:: diffalign.utils.transforms
 
-   
-   
-   
-
-   
-   
-   
-
-   
    
    .. rubric:: Classes
 
@@ -24,11 +15,3 @@
       AddPlaceHolder
       CountNodesPerGraph
    
-   
-
-   
-   
-   
-
-
-

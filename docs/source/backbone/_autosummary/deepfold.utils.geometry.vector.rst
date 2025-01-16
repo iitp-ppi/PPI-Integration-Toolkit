@@ -4,11 +4,6 @@ deepfold.utils.geometry.vector
 .. automodule:: deepfold.utils.geometry.vector
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -21,21 +16,9 @@ deepfold.utils.geometry.vector
       normalized
       square_euclidean_distance
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       Vec3Array
    
-   
-
-   
-   
-   
-
-
-

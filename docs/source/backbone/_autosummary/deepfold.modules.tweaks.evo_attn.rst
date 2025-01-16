@@ -4,11 +4,6 @@ deepfold.modules.tweaks.evo\_attn
 .. automodule:: deepfold.modules.tweaks.evo_attn
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -17,15 +12,3 @@ deepfold.modules.tweaks.evo\_attn
       enable
       is_enabled
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

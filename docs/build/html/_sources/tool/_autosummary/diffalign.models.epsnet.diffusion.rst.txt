@@ -1,13 +1,8 @@
-﻿diffalign.models.epsnet.diffusion
+diffalign.models.epsnet.diffusion
 =================================
 
 .. automodule:: diffalign.models.epsnet.diffusion
 
-   
-   
-   
-
-   
    
    .. rubric:: Functions
 
@@ -16,10 +11,6 @@
       get_distance
       merge_graphs_in_batch
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -27,11 +18,3 @@
       DiffAlign
       SinusoidalTimeEmbeddings
    
-   
-
-   
-   
-   
-
-
-

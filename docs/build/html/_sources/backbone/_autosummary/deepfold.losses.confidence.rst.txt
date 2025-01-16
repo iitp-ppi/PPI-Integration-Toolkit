@@ -4,11 +4,6 @@ deepfold.losses.confidence
 .. automodule:: deepfold.losses.confidence
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -21,15 +16,3 @@ deepfold.losses.confidence
       plddt_loss
       tm_loss
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

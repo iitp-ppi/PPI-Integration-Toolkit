@@ -4,11 +4,6 @@ bis\_protein\_structure.MMEVAL
 .. automodule:: bis_protein_structure.MMEVAL
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -21,15 +16,3 @@ bis\_protein\_structure.MMEVAL
       readPDB
       restype_refer_atoms
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

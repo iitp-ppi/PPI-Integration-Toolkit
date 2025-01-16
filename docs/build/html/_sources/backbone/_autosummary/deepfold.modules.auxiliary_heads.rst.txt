@@ -4,15 +4,6 @@ deepfold.modules.auxiliary\_heads
 .. automodule:: deepfold.modules.auxiliary_heads
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -24,11 +15,3 @@ deepfold.modules.auxiliary\_heads
       PerResidueLDDTCaPredictor
       TMScoreHead
    
-   
-
-   
-   
-   
-
-
-

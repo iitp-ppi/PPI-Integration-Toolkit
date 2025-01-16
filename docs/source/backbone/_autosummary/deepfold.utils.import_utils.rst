@@ -4,11 +4,6 @@ deepfold.utils.import\_utils
 .. automodule:: deepfold.utils.import_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -18,10 +13,6 @@ deepfold.utils.import\_utils
       reshape_weight
       stacked
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -29,11 +20,3 @@ deepfold.utils.import\_utils
       Param
       ParamType
    
-   
-
-   
-   
-   
-
-
-

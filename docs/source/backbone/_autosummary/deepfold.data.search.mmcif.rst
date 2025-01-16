@@ -4,11 +4,6 @@ deepfold.data.search.mmcif
 .. automodule:: deepfold.data.search.mmcif
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -17,15 +12,3 @@ deepfold.data.search.mmcif
       parse_mmcif_string
       zero_center_atom_positions
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

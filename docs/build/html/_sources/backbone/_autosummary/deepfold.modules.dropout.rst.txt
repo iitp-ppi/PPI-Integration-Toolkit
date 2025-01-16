@@ -4,15 +4,6 @@ deepfold.modules.dropout
 .. automodule:: deepfold.modules.dropout
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -21,11 +12,3 @@ deepfold.modules.dropout
       DropoutColumnwise
       DropoutRowwise
    
-   
-
-   
-   
-   
-
-
-

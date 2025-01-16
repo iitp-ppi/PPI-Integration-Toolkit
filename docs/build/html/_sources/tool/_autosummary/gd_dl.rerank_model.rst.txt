@@ -4,15 +4,6 @@ gd\_dl.rerank\_model
 .. automodule:: gd_dl.rerank_model
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -21,11 +12,3 @@ gd\_dl.rerank\_model
       Rerank_model
       Weight_CGConv
    
-   
-
-   
-   
-   
-
-
-

@@ -4,11 +4,6 @@ deepfold.losses.utils
 .. automodule:: deepfold.losses.utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -17,15 +12,3 @@ deepfold.losses.utils
       sigmoid_cross_entropy
       softmax_cross_entropy
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

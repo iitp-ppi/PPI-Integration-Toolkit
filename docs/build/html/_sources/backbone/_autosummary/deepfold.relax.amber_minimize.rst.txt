@@ -4,11 +4,6 @@ deepfold.relax.amber\_minimize
 .. automodule:: deepfold.relax.amber_minimize
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -20,15 +15,3 @@ deepfold.relax.amber\_minimize
       run_pipeline
       will_restrain
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

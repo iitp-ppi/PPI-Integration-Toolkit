@@ -4,11 +4,6 @@ deepfold.data.search.crfalign
 .. automodule:: deepfold.data.search.crfalign
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -16,15 +11,3 @@ deepfold.data.search.crfalign
       parse_crf
       parse_pir
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

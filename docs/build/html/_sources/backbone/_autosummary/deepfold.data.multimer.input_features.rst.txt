@@ -4,11 +4,6 @@ deepfold.data.multimer.input\_features
 .. automodule:: deepfold.data.multimer.input_features
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -27,21 +22,9 @@ deepfold.data.multimer.input\_features
       process_single_chain
       process_unmerged_features
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       ComplexInfo
    
-   
-
-   
-   
-   
-
-
-

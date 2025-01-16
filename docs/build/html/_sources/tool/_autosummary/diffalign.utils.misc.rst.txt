@@ -4,11 +4,6 @@ diffalign.utils.misc
 .. automodule:: diffalign.utils.misc
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -24,21 +19,9 @@ diffalign.utils.misc
       seed_all
       str_tuple
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       BlackHole
    
-   
-
-   
-   
-   
-
-
-

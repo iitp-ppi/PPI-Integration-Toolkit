@@ -4,11 +4,6 @@ deepfold.relax.utils
 .. automodule:: deepfold.relax.utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -17,15 +12,3 @@ deepfold.relax.utils
       overwrite_b_factors
       overwrite_pdb_coordinates
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

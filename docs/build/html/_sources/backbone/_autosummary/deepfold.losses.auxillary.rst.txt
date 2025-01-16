@@ -4,11 +4,6 @@ deepfold.losses.auxillary
 .. automodule:: deepfold.losses.auxillary
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -18,15 +13,3 @@ deepfold.losses.auxillary
       get_asym_mask
       repr_norm_loss
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

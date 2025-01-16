@@ -4,15 +4,6 @@ deepfold.modules.triangular\_attention
 .. automodule:: deepfold.modules.triangular_attention
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -21,11 +12,3 @@ deepfold.modules.triangular\_attention
       TriangleAttentionEndingNode
       TriangleAttentionStartingNode
    
-   
-
-   
-   
-   
-
-
-

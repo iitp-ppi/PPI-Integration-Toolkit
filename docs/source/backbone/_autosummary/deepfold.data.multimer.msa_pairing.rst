@@ -4,11 +4,6 @@ deepfold.data.multimer.msa\_pairing
 .. automodule:: deepfold.data.multimer.msa_pairing
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -21,15 +16,3 @@ deepfold.data.multimer.msa\_pairing
       pair_sequences
       reorder_paired_rows
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

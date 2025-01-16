@@ -4,11 +4,6 @@ bis\_protein\_structure.residue\_constants
 .. automodule:: bis_protein_structure.residue_constants
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -18,10 +13,6 @@ bis\_protein\_structure.residue\_constants
       make_atom14_dists_bounds
       sequence_to_onehot
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -29,11 +20,3 @@ bis\_protein\_structure.residue\_constants
       Bond
       BondAngle
    
-   
-
-   
-   
-   
-
-
-

@@ -4,42 +4,24 @@
 .. automodule:: deepfold
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-
 .. rubric:: Modules
 
 .. autosummary::
    :toctree:
    :recursive:
 
-   deepfold.common
-   deepfold.config
-   deepfold.data
-   deepfold.distributed
-   deepfold.eval
-   deepfold.loss
-   deepfold.losses
-   deepfold.modules
-   deepfold.ops
-   deepfold.package_info
-   deepfold.relax
-   deepfold.runner
-   deepfold.testing
-   deepfold.train
-   deepfold.utils
-
+   common
+   config
+   data
+   distributed
+   eval
+   loss
+   losses
+   modules
+   ops
+   package_info
+   relax
+   runner
+   testing
+   train
+   utils

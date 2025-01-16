@@ -4,11 +4,6 @@ deepfold.data.pdbx\_parsing
 .. automodule:: deepfold.data.pdbx_parsing
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -22,10 +17,6 @@ deepfold.data.pdbx\_parsing
       print_amap
       print_chain_features
       read_mmcif
-   
-   
-
-   
    
    .. rubric:: Classes
 
@@ -43,17 +34,9 @@ deepfold.data.pdbx\_parsing
       ResidueAtPosition
       ResiduePosition
    
-   
-
-   
-   
    .. rubric:: Exceptions
 
    .. autosummary::
    
       CategoryNotFoundError
    
-   
-
-
-

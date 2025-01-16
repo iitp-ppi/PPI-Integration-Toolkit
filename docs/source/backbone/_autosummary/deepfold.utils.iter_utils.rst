@@ -4,11 +4,6 @@ deepfold.utils.iter\_utils
 .. automodule:: deepfold.utils.iter_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -19,15 +14,3 @@ deepfold.utils.iter\_utils
       map_dict_values
       slice_generator
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

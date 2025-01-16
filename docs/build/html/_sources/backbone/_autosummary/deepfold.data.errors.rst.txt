@@ -4,19 +4,6 @@ deepfold.data.errors
 .. automodule:: deepfold.data.errors
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Exceptions
 
    .. autosummary::
@@ -27,7 +14,3 @@ deepfold.data.errors
       PDBxError
       PDBxWarning
    
-   
-
-
-

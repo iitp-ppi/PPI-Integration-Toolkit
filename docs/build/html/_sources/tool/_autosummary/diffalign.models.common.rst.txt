@@ -1,13 +1,8 @@
-﻿diffalign.models.common
+diffalign.models.common
 =======================
 
 .. automodule:: diffalign.models.common
 
-   
-   
-   
-
-   
    
    .. rubric:: Functions
 
@@ -16,21 +11,9 @@
       extend_graph_order_radius
       extend_to_cross_attention
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       MultiLayerPerceptron
    
-   
-
-   
-   
-   
-
-
-
