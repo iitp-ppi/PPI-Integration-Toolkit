@@ -18,6 +18,7 @@ conda activate ppi-toolkit
 sphinx-apidoc -d 8 -F -o docs/source/backbone/deepfold backbone/DeepFoldPublic/deepfold
 sphinx-apidoc -d 8 -F -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
 sphinx-apidoc -d 8 -F -o docs/source/tool/PromptBind tool/PromptBind
+sphinx-apidoc -d 8 -F -o docs/source/tool/DiffAlign tool/DiffAlign
 sphinx-apidoc -d 8 -F -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
 cd docs
 make html
