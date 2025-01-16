@@ -4,11 +4,6 @@ gd\_dl.utils
 .. automodule:: gd_dl.utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -16,15 +11,3 @@ gd\_dl.utils
       set_prep
       str2bool
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

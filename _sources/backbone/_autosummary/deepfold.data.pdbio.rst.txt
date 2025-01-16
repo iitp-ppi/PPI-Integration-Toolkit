@@ -4,15 +4,6 @@ deepfold.data.pdbio
 .. automodule:: deepfold.data.pdbio
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -20,11 +11,3 @@ deepfold.data.pdbio
       IO
       PDBIO
    
-   
-
-   
-   
-   
-
-
-

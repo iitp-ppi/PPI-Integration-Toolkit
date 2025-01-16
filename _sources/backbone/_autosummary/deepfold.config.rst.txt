@@ -4,15 +4,6 @@ deepfold.config
 .. automodule:: deepfold.config
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -48,11 +39,3 @@ deepfold.config
       TrainingConfig
       ViolationLossConfig
    
-   
-
-   
-   
-   
-
-
-

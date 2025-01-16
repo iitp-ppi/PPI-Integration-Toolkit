@@ -4,11 +4,6 @@ deepfold.utils.script\_utils
 .. automodule:: deepfold.utils.script_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -17,15 +12,3 @@ deepfold.utils.script\_utils
       make_output_directory
       parse_fasta
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

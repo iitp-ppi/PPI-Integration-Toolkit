@@ -4,11 +4,6 @@ deepfold.modules.linear
 .. automodule:: deepfold.modules.linear
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -21,21 +16,9 @@ deepfold.modules.linear
       normal_init_
       trunc_normal_init_
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       Linear
    
-   
-
-   
-   
-   
-
-
-

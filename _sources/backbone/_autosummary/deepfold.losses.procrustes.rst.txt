@@ -4,11 +4,6 @@ deepfold.losses.procrustes
 .. automodule:: deepfold.losses.procrustes
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -22,21 +17,9 @@ deepfold.losses.procrustes
       svd
       unflatten_batch_dims
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       Procrustes
    
-   
-
-   
-   
-   
-
-
-

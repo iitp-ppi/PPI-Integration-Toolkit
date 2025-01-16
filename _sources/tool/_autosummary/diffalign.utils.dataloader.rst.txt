@@ -4,15 +4,6 @@ diffalign.utils.dataloader
 .. automodule:: diffalign.utils.dataloader
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -20,11 +11,3 @@ diffalign.utils.dataloader
       Collater
       DataLoader
    
-   
-
-   
-   
-   
-
-
-

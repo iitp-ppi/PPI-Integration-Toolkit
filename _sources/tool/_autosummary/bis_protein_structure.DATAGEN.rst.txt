@@ -4,11 +4,6 @@ bis\_protein\_structure.DATAGEN
 .. automodule:: bis_protein_structure.DATAGEN
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -22,21 +17,9 @@ bis\_protein\_structure.DATAGEN
       process_mmcif_to_pdbs
       read_fasta
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       AllResiduesSelector
    
-   
-
-   
-   
-   
-
-
-

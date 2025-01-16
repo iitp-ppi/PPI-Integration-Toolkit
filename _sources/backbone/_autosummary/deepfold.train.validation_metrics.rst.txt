@@ -4,11 +4,6 @@ deepfold.train.validation\_metrics
 .. automodule:: deepfold.train.validation_metrics
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -19,15 +14,3 @@ deepfold.train.validation\_metrics
       gdt_ha
       gdt_ts
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

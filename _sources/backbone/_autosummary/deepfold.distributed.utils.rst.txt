@@ -4,11 +4,6 @@ deepfold.distributed.utils
 .. automodule:: deepfold.distributed.utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -18,21 +13,9 @@ deepfold.distributed.utils
       ensure_divisibility
       safely_set_viewless_tensor_data
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       GlobalMemoryBuffer
    
-   
-
-   
-   
-   
-
-
-

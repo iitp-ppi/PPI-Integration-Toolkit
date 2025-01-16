@@ -4,11 +4,6 @@ deepfold.losses.geometry
 .. automodule:: deepfold.losses.geometry
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -25,15 +20,3 @@ deepfold.losses.geometry
       superimpose
       supervised_chi_loss
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

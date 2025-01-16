@@ -4,11 +4,6 @@ bis\_protein\_structure.SOLVENTACC
 .. automodule:: bis_protein_structure.SOLVENTACC
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -22,15 +17,3 @@ bis\_protein\_structure.SOLVENTACC
       getTMscore
       load_pickle_file
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

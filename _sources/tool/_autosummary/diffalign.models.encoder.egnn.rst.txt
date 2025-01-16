@@ -4,20 +4,11 @@ diffalign.models.encoder.egnn
 .. automodule:: diffalign.models.encoder.egnn
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
    
       unsorted_segment_sum
-   
-   
-
-   
    
    .. rubric:: Classes
 
@@ -30,11 +21,3 @@ diffalign.models.encoder.egnn
       MLP
       TransformerNN
    
-   
-
-   
-   
-   
-
-
-

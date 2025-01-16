@@ -4,11 +4,6 @@ promptbind.utils.metrics
 .. automodule:: promptbind.utils.metrics
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -21,15 +16,3 @@ promptbind.utils.metrics
       pocket_metrics
       print_metrics
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

@@ -4,11 +4,6 @@ diffalign.utils.datasets
 .. automodule:: diffalign.utils.datasets
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -25,10 +20,6 @@ diffalign.utils.datasets
       rdmol_cluster_to_data
       rdmol_to_data
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -38,11 +29,3 @@ diffalign.utils.datasets
       PackedConformationDataset
       SidechainConformationDataset
    
-   
-
-   
-   
-   
-
-
-

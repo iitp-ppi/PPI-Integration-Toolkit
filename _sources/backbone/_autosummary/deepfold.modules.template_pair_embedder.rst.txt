@@ -4,15 +4,6 @@ deepfold.modules.template\_pair\_embedder
 .. automodule:: deepfold.modules.template_pair_embedder
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -20,11 +11,3 @@ deepfold.modules.template\_pair\_embedder
       TemplatePairEmbedder
       TemplatePairEmbedderMultimer
    
-   
-
-   
-   
-   
-
-
-

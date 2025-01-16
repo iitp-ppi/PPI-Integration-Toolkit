@@ -4,15 +4,6 @@ gd\_dl.lib\_pdb\_mol2
 .. automodule:: gd_dl.lib_pdb_mol2
 
    
-   
-   
-
-   
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -25,11 +16,3 @@ gd\_dl.lib\_pdb\_mol2
       PDBline
       Residue
    
-   
-
-   
-   
-   
-
-
-

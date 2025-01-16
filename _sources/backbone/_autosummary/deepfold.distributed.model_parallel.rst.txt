@@ -4,11 +4,6 @@ deepfold.distributed.model\_parallel
 .. automodule:: deepfold.distributed.model_parallel
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -36,10 +31,6 @@ deepfold.distributed.model\_parallel
       size
       transpose_on_model_parallel_region
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -47,11 +38,3 @@ deepfold.distributed.model\_parallel
       Disable
       Enable
    
-   
-
-   
-   
-   
-
-
-

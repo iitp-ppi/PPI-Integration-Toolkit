@@ -4,11 +4,6 @@ deepfold.common.protein
 .. automodule:: deepfold.common.protein
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -22,21 +17,9 @@ deepfold.common.protein
       to_modelcif
       to_pdb
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       Protein
    
-   
-
-   
-   
-   
-
-
-

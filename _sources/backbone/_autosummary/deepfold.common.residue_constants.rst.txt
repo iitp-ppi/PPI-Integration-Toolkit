@@ -4,11 +4,6 @@ deepfold.common.residue\_constants
 .. automodule:: deepfold.common.residue_constants
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -20,10 +15,6 @@ deepfold.common.residue\_constants
       map_structure_with_atom_order
       sequence_to_onehot
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -31,11 +22,3 @@ deepfold.common.residue\_constants
       Bond
       BondAngle
    
-   
-
-   
-   
-   
-
-
-

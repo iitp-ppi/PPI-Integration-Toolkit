@@ -4,11 +4,6 @@ deepfold.data.search.templates
 .. automodule:: deepfold.data.search.templates
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -20,20 +15,12 @@ deepfold.data.search.templates
       load_mmcif_dict
       load_pdb_obsolete_mapping
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       TemplateFeaturesResult
       TemplateHitFeaturizer
-   
-   
-
-   
    
    .. rubric:: Exceptions
 
@@ -51,7 +38,3 @@ deepfold.data.search.templates
       SequenceNotInTemplateError
       TemplateAtomMaskAllZerosError
    
-   
-
-
-

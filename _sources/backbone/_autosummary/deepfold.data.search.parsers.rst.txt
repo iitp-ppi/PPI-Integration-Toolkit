@@ -4,11 +4,6 @@ deepfold.data.search.parsers
 .. automodule:: deepfold.data.search.parsers
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -25,10 +20,6 @@ deepfold.data.search.parsers
       remove_empty_columns_from_stockholm_msa
       truncate_stockholm_msa
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -36,11 +27,3 @@ deepfold.data.search.parsers
       HitMetadata
       TemplateHit
    
-   
-
-   
-   
-   
-
-
-

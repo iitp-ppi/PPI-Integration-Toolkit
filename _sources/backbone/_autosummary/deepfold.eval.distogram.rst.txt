@@ -4,11 +4,6 @@ deepfold.eval.distogram
 .. automodule:: deepfold.eval.distogram
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -19,15 +14,3 @@ deepfold.eval.distogram
       compute_predicted_distogram
       undigitize
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

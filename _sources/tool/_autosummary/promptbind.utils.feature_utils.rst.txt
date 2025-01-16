@@ -4,11 +4,6 @@ promptbind.utils.feature\_utils
 .. automodule:: promptbind.utils.feature_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -37,15 +32,3 @@ promptbind.utils.feature\_utils
       write_renumbered_sdf
       write_with_new_coords
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

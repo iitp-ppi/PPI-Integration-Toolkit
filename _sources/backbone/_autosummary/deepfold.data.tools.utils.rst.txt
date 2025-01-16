@@ -4,11 +4,6 @@ deepfold.data.tools.utils
 .. automodule:: deepfold.data.tools.utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -17,15 +12,3 @@ deepfold.data.tools.utils
       tmpdir_manager
       to_date
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

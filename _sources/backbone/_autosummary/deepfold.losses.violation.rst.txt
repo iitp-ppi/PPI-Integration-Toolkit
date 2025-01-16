@@ -4,11 +4,6 @@ deepfold.losses.violation
 .. automodule:: deepfold.losses.violation
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -23,15 +18,3 @@ deepfold.losses.violation
       violation_loss
       within_residue_violations
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

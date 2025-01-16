@@ -4,11 +4,6 @@ deepfold.utils.rigid\_utils
 .. automodule:: deepfold.utils.rigid_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -25,10 +20,6 @@ deepfold.utils.rigid\_utils
       rot_to_quat
       rot_vec_mul
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -36,11 +27,3 @@ deepfold.utils.rigid\_utils
       Rigid
       Rotation
    
-   
-
-   
-   
-   
-
-
-

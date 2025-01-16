@@ -4,11 +4,6 @@ diffalign.utils.chem
 .. automodule:: diffalign.utils.chem
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -29,15 +24,3 @@ diffalign.utils.chem
       update_data_pos_from_rdmol
       update_data_rdmol_positions
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

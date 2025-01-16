@@ -4,11 +4,6 @@ diffalign.utils.common
 .. automodule:: diffalign.utils.common
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -18,21 +13,9 @@ diffalign.utils.common
       repeat_batch
       repeat_data
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
    
       ExponentialLR_with_minLr
    
-   
-
-   
-   
-   
-
-
-

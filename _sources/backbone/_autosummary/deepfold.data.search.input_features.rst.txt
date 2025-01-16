@@ -4,11 +4,6 @@ deepfold.data.search.input\_features
 .. automodule:: deepfold.data.search.input_features
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -22,15 +17,3 @@ deepfold.data.search.input\_features
       create_template_features_from_hhr_string
       create_template_features_from_hmmsearch_sto_string
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

@@ -4,11 +4,6 @@ deepfold.utils.checkpoint\_utils
 .. automodule:: deepfold.utils.checkpoint_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -20,15 +15,3 @@ deepfold.utils.checkpoint\_utils
       save_last_checkpoint
       save_val_checkpoint
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

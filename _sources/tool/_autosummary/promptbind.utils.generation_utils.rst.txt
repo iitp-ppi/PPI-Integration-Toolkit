@@ -4,11 +4,6 @@ promptbind.utils.generation\_utils
 .. automodule:: promptbind.utils.generation_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -23,15 +18,3 @@ promptbind.utils.generation\_utils
       read_mol
       write_with_new_coords
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

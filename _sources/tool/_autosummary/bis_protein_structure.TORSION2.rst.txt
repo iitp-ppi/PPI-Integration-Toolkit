@@ -4,11 +4,6 @@ bis\_protein\_structure.TORSION2
 .. automodule:: bis_protein_structure.TORSION2
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -26,15 +21,3 @@ bis\_protein\_structure.TORSION2
       sidechain_sym_angle
       torsion_angle_loss
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-

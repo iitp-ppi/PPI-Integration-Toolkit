@@ -4,11 +4,6 @@ promptbind.models.egnn
 .. automodule:: promptbind.models.egnn
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -19,10 +14,6 @@ promptbind.models.egnn
       unsorted_segment_mean
       unsorted_segment_sum
    
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
@@ -32,11 +23,3 @@ promptbind.models.egnn
       MC_E_GCL
       MC_E_GCL_Prompt
    
-   
-
-   
-   
-   
-
-
-

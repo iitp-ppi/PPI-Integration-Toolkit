@@ -4,11 +4,6 @@ deepfold.utils.file\_utils
 .. automodule:: deepfold.utils.file_utils
 
    
-   
-   
-
-   
-   
    .. rubric:: Functions
 
    .. autosummary::
@@ -20,15 +15,3 @@ deepfold.utils.file\_utils
       read_text
       restore_wrapper
    
-   
-
-   
-   
-   
-
-   
-   
-   
-
-
-
