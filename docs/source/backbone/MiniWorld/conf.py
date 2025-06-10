@@ -6,8 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'deepfold'
-copyright = '2024, Author'
+project = 'MiniWorld'
+copyright = '2025, Author'
 author = 'Author'
 
 # -- General configuration ---------------------------------------------------

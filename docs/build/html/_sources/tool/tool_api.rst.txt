@@ -8,3 +8,7 @@ API/Tool
    gd_dl 
    promptbind
    diffalign
+   bapred
+   bindingrmsd
+   bsitep
+   msa_search_pipeline
