@@ -1,6 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.abspath('../../backbone/DeepFoldPublic'))
+sys.path.append(os.path.abspath('../../backbone'))
 sys.path.append(os.path.abspath('../../tool/BAPred'))
 sys.path.append(os.path.abspath('../../tool/BIS-ProteinStructure-libraries'))
 sys.path.append(os.path.abspath('../../tool/BindingRMSD'))
@@ -8,7 +9,7 @@ sys.path.append(os.path.abspath('../../tool/BsiteP/src'))
 sys.path.append(os.path.abspath('../../tool/DiffAlign'))
 sys.path.append(os.path.abspath('../../tool/PromptBind'))
 sys.path.append(os.path.abspath('../../tool/galaxydock_dl/src'))
-#sys.path.append(os.path.abspath('../../tool/nurikit'))
+sys.path.append(os.path.abspath('../../tool'))
 
 # Configuration file for the Sphinx documentation builder.
 #
