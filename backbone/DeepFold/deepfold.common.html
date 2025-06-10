@@ -1,0 +1,753 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>deepfold.common package - IITP PPI 0.0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">IITP PPI 0.0.2 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">IITP PPI 0.0.2 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../api.html">API</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../backbone_api.html">API/Backbone</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tool/tool_api.html">API/Tool</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of API/Tool</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.html">bis_protein_structure</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.SOLVENTACC.html">bis_protein_structure.SOLVENTACC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../tool/_autosummary/gd_dl.data.html">gd_dl.data</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of gd_dl.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/gd_dl.data.ML_inference.html">gd_dl.data.ML_inference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/gd_dl.data.ML_rerank.html">gd_dl.data.ML_rerank</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/gd_dl.data.all_ML_rerank.html">gd_dl.data.all_ML_rerank</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/gd_dl.data.single_ML_rerank.html">gd_dl.data.single_ML_rerank</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.models.html">gd_dl.models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.path_setting.html">gd_dl.path_setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.rerank_model.html">gd_dl.rerank_model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/gd_dl.utils.html">gd_dl.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/promptbind.html">promptbind</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of promptbind</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../tool/_autosummary/promptbind.data.html">promptbind.data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of promptbind.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.data.data.html">promptbind.data.data</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../tool/_autosummary/promptbind.models.html">promptbind.models</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of promptbind.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.models.att_model.html">promptbind.models.att_model</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.models.cross_att.html">promptbind.models.cross_att</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.models.egnn.html">promptbind.models.egnn</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.models.model.html">promptbind.models.model</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.models.model_utils.html">promptbind.models.model_utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/promptbind.test_promptbind.html">promptbind.test_promptbind</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.html">promptbind.utils</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of promptbind.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.fabind_inference_dataset.html">promptbind.utils.fabind_inference_dataset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.feature_utils.html">promptbind.utils.feature_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.generation_utils.html">promptbind.utils.generation_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.inference_mol_utils.html">promptbind.utils.inference_mol_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.inference_pdb_utils.html">promptbind.utils.inference_pdb_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.logging_utils.html">promptbind.utils.logging_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.metrics.html">promptbind.utils.metrics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.metrics_to_tsb.html">promptbind.utils.metrics_to_tsb</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.post_optim_utils.html">promptbind.utils.post_optim_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/promptbind.utils.utils.html">promptbind.utils.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../tool/_autosummary/promptbind.visualize_prompt_components.html">promptbind.visualize_prompt_components</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../tool/_autosummary/diffalign.html">diffalign</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of diffalign</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.html">diffalign.models</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of diffalign.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.common.html">diffalign.models.common</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.encoder.html">diffalign.models.encoder</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of diffalign.models.encoder</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.encoder.edge.html">diffalign.models.encoder.edge</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.encoder.egnn.html">diffalign.models.encoder.egnn</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.epsnet.html">diffalign.models.epsnet</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of diffalign.models.epsnet</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../tool/_autosummary/diffalign.models.epsnet.diffusion.html">diffalign.models.epsnet.diffusion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.html">diffalign.utils</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of diffalign.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.chem.html">diffalign.utils.chem</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.common.html">diffalign.utils.common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.dataloader.html">diffalign.utils.dataloader</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.datasets.html">diffalign.utils.datasets</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.evaluation.html">diffalign.utils.evaluation</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of diffalign.utils.evaluation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.evaluation.covmat.html">diffalign.utils.evaluation.covmat</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.misc.html">diffalign.utils.misc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.transforms.html">diffalign.utils.transforms</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../tool/_autosummary/diffalign.utils.visualize.html">diffalign.utils.visualize</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/backbone/DeepFold/deepfold.common.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="deepfold-common-package">
+<h1>deepfold.common package<a class="headerlink" href="#deepfold-common-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-deepfold.common.protein">
+<span id="deepfold-common-protein-module"></span><h2>deepfold.common.protein module<a class="headerlink" href="#module-deepfold.common.protein" title="Link to this heading">¶</a></h2>
+<p>Protein data type.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">Protein</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom_positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aatype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_mask</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_factors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remark</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parents_chain_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deepfold.common.protein.Protein" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Protein structure representation.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.aatype">
+<span class="sig-name descname"><span class="pre">aatype</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.aatype" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.atom_mask">
+<span class="sig-name descname"><span class="pre">atom_mask</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.atom_mask" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.atom_positions">
+<span class="sig-name descname"><span class="pre">atom_positions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.atom_positions" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.b_factors">
+<span class="sig-name descname"><span class="pre">b_factors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.b_factors" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.chain_index">
+<span class="sig-name descname"><span class="pre">chain_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.chain_index" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.parents">
+<span class="sig-name descname"><span class="pre">parents</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.parents" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.parents_chain_index">
+<span class="sig-name descname"><span class="pre">parents_chain_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.parents_chain_index" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.remark">
+<span class="sig-name descname"><span class="pre">remark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.remark" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.protein.Protein.residue_index">
+<span class="sig-name descname"><span class="pre">residue_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#deepfold.common.protein.Protein.residue_index" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.add_pdb_headers">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">add_pdb_headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#deepfold.common.protein.add_pdb_headers" title="Link to this definition">¶</a></dt>
+<dd><p>Add pdb headers to an existing PDB string. Useful during multi-chain
+recycling</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.from_pdb_string">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">from_pdb_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdb_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a></span></span><a class="headerlink" href="#deepfold.common.protein.from_pdb_string" title="Link to this definition">¶</a></dt>
+<dd><p>Takes a PDB string and constructs a Protein object.</p>
+<dl class="simple">
+<dt>WARNING: All non-standard residue types will be converted into UNK. All</dt><dd><p>non-standard atoms will be ignored.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pdb_str</strong> – The contents of the pdb file</p></li>
+<li><p><strong>chain_id</strong> – If None, then the whole pdb file is parsed. If chain_id is specified (e.g. A), then only that chain
+is parsed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new <cite>Protein</cite> parsed from the pdb contents.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.from_prediction">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">from_prediction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">processed_features</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_factors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_leading_feature_dimension</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_trajectory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remark</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parents_chain_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#deepfold.common.protein.from_prediction" title="Link to this definition">¶</a></dt>
+<dd><p>Assembles a protein from a prediction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>processed_features</strong> – Dictionary holding model inputs.</p></li>
+<li><p><strong>result</strong> – Dictionary holding model outputs.</p></li>
+<li><p><strong>b_factors</strong> – (Optional) B-factors to use for the protein.</p></li>
+<li><p><strong>remove_leading_feature_dimension</strong> – Whether to remove the leading dimension of the feature values.</p></li>
+<li><p><strong>remark</strong> – (Optional) Remark about the prediction</p></li>
+<li><p><strong>parents</strong> – (Optional) List of template names</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A protein instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.from_relaxation">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">from_relaxation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">relaxed_pdb_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residue_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_factors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a></span></span><a class="headerlink" href="#deepfold.common.protein.from_relaxation" title="Link to this definition">¶</a></dt>
+<dd><p>Amber relaxation procedure renames residue index starting from 1.
+Since we may ahve cropped domains, we must fix residue indices with correct ones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>relaxed_pdb_str</strong> – a protein indices/</p></li>
+<li><p><strong>residue_index</strong> – residue indcies.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>PDB strings.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.get_pdb_headers">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">get_pdb_headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#deepfold.common.protein.get_pdb_headers" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.ideal_atom_mask">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">ideal_atom_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#deepfold.common.protein.ideal_atom_mask" title="Link to this definition">¶</a></dt>
+<dd><p>Computes an ideal atom mask.</p>
+<p><cite>Protein.atom_mask</cite> typically is defined according to the atoms that are
+reported in the PDB. This function computes a mask according to heavy atoms
+that should be present in the given sequence of amino acids.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prot</strong> – <cite>Protein</cite> whose fields are <cite>numpy.ndarray</cite> objects.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An ideal atom mask.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.to_modelcif">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">to_modelcif</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#deepfold.common.protein.to_modelcif" title="Link to this definition">¶</a></dt>
+<dd><p>Converts a <cite>Protein</cite> instance to a ModelCIF string. Chains with identical modelled coordinates
+will be treated as the same polymer entity. But note that if chains differ in modelled regions,
+no attempt is made at identifying them as a single polymer entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prot</strong> – The protein to convert to PDB.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ModelCIF string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.protein.to_pdb">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.protein.</span></span><span class="sig-name descname"><span class="pre">to_pdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prots</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deepfold.common.protein.Protein" title="deepfold.common.protein.Protein"><span class="pre">Protein</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#deepfold.common.protein.to_pdb" title="Link to this definition">¶</a></dt>
+<dd><p>Convert <cite>Protein</cite> instances to a PDB string.</p>
+</dd></dl>
+
+</section>
+<section id="module-deepfold.common.residue_constants">
+<span id="deepfold-common-residue-constants-module"></span><h2>deepfold.common.residue_constants module<a class="headerlink" href="#module-deepfold.common.residue_constants" title="Link to this heading">¶</a></h2>
+<p>Constants used in AlphaFold.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.Bond">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">Bond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom1_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom2_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deepfold.common.residue_constants.Bond" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.Bond.atom1_name">
+<span class="sig-name descname"><span class="pre">atom1_name</span></span><a class="headerlink" href="#deepfold.common.residue_constants.Bond.atom1_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.Bond.atom2_name">
+<span class="sig-name descname"><span class="pre">atom2_name</span></span><a class="headerlink" href="#deepfold.common.residue_constants.Bond.atom2_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.Bond.length">
+<span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#deepfold.common.residue_constants.Bond.length" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.Bond.stddev">
+<span class="sig-name descname"><span class="pre">stddev</span></span><a class="headerlink" href="#deepfold.common.residue_constants.Bond.stddev" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.BondAngle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">BondAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom1_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom2_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom3name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle_rad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deepfold.common.residue_constants.BondAngle" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.BondAngle.angle_rad">
+<span class="sig-name descname"><span class="pre">angle_rad</span></span><a class="headerlink" href="#deepfold.common.residue_constants.BondAngle.angle_rad" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.BondAngle.atom1_name">
+<span class="sig-name descname"><span class="pre">atom1_name</span></span><a class="headerlink" href="#deepfold.common.residue_constants.BondAngle.atom1_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.BondAngle.atom2_name">
+<span class="sig-name descname"><span class="pre">atom2_name</span></span><a class="headerlink" href="#deepfold.common.residue_constants.BondAngle.atom2_name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.BondAngle.atom3name">
+<span class="sig-name descname"><span class="pre">atom3name</span></span><a class="headerlink" href="#deepfold.common.residue_constants.BondAngle.atom3name" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.BondAngle.stddev">
+<span class="sig-name descname"><span class="pre">stddev</span></span><a class="headerlink" href="#deepfold.common.residue_constants.BondAngle.stddev" title="Link to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.aatype_to_str_sequence">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">aatype_to_str_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aatype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deepfold.common.residue_constants.aatype_to_str_sequence" title="Link to this definition">¶</a></dt>
+<dd><p>Return all residue types with X.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.chi_angle_atom">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">chi_angle_atom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#deepfold.common.residue_constants.chi_angle_atom" title="Link to this definition">¶</a></dt>
+<dd><p>Define chi-angle rigid groups via one-hot representations.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.load_stereo_chemical_props">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">load_stereo_chemical_props</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deepfold.common.residue_constants.Bond" title="deepfold.common.residue_constants.Bond"><span class="pre">Bond</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deepfold.common.residue_constants.Bond" title="deepfold.common.residue_constants.Bond"><span class="pre">Bond</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle" title="deepfold.common.residue_constants.BondAngle"><span class="pre">BondAngle</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#deepfold.common.residue_constants.load_stereo_chemical_props" title="Link to this definition">¶</a></dt>
+<dd><p>Load stereo_chemical_props.txt into a nice structure.</p>
+<p>Load literature values for bond lengths and bond angles and translate
+bond angles into the length of the opposite edge of the triangle
+(“residue_virtual_bonds”).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict that maps resname -&gt; list of Bond tuples
+residue_virtual_bonds: Dict that maps resname -&gt; list of Bond tuples
+residue_bond_angles: Dict that maps resname -&gt; list of BondAngle tuples</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>residue_bonds</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.make_atom14_dists_bounds">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">make_atom14_dists_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overlap_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bond_length_tolerance_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deepfold.common.residue_constants.make_atom14_dists_bounds" title="Link to this definition">¶</a></dt>
+<dd><p>compute upper and lower bounds for bonds to assess violations.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.map_structure_with_atom_order">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">map_structure_with_atom_order</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_call</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#deepfold.common.residue_constants.map_structure_with_atom_order" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deepfold.common.residue_constants.sequence_to_onehot">
+<span class="sig-prename descclassname"><span class="pre">deepfold.common.residue_constants.</span></span><span class="sig-name descname"><span class="pre">sequence_to_onehot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">map_unknown_to_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#deepfold.common.residue_constants.sequence_to_onehot" title="Link to this definition">¶</a></dt>
+<dd><p>Maps the given sequence into a one-hot encoded matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> – An amino acid sequence.</p></li>
+<li><p><strong>mapping</strong> – A dictionary mapping amino acids to integers.</p></li>
+<li><p><strong>map_unknown_to_x</strong> – If True, any amino acid that is not in the mapping will be
+mapped to the unknown amino acid ‘X’. If the mapping doesn’t contain
+amino acid ‘X’, an error will be thrown. If False, any amino acid not in
+the mapping will throw an error.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A numpy array of shape (seq_len, num_unique_aas) with one-hot encoding of
+the sequence.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If the mapping doesn’t contain values from <cite>0</cite> to <cite>num_unique_aas - 1</cite> without any gaps.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-deepfold.common">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-deepfold.common" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, Paek et al.
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">deepfold.common package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-deepfold.common.protein">deepfold.common.protein module</a><ul>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein"><code class="docutils literal notranslate"><span class="pre">Protein</span></code></a><ul>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.aatype"><code class="docutils literal notranslate"><span class="pre">Protein.aatype</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.atom_mask"><code class="docutils literal notranslate"><span class="pre">Protein.atom_mask</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.atom_positions"><code class="docutils literal notranslate"><span class="pre">Protein.atom_positions</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.b_factors"><code class="docutils literal notranslate"><span class="pre">Protein.b_factors</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.chain_index"><code class="docutils literal notranslate"><span class="pre">Protein.chain_index</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.parents"><code class="docutils literal notranslate"><span class="pre">Protein.parents</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.parents_chain_index"><code class="docutils literal notranslate"><span class="pre">Protein.parents_chain_index</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.remark"><code class="docutils literal notranslate"><span class="pre">Protein.remark</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.Protein.residue_index"><code class="docutils literal notranslate"><span class="pre">Protein.residue_index</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deepfold.common.protein.add_pdb_headers"><code class="docutils literal notranslate"><span class="pre">add_pdb_headers()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.from_pdb_string"><code class="docutils literal notranslate"><span class="pre">from_pdb_string()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.from_prediction"><code class="docutils literal notranslate"><span class="pre">from_prediction()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.from_relaxation"><code class="docutils literal notranslate"><span class="pre">from_relaxation()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.get_pdb_headers"><code class="docutils literal notranslate"><span class="pre">get_pdb_headers()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.ideal_atom_mask"><code class="docutils literal notranslate"><span class="pre">ideal_atom_mask()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.to_modelcif"><code class="docutils literal notranslate"><span class="pre">to_modelcif()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.protein.to_pdb"><code class="docutils literal notranslate"><span class="pre">to_pdb()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-deepfold.common.residue_constants">deepfold.common.residue_constants module</a><ul>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.Bond"><code class="docutils literal notranslate"><span class="pre">Bond</span></code></a><ul>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.Bond.atom1_name"><code class="docutils literal notranslate"><span class="pre">Bond.atom1_name</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.Bond.atom2_name"><code class="docutils literal notranslate"><span class="pre">Bond.atom2_name</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.Bond.length"><code class="docutils literal notranslate"><span class="pre">Bond.length</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.Bond.stddev"><code class="docutils literal notranslate"><span class="pre">Bond.stddev</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle"><code class="docutils literal notranslate"><span class="pre">BondAngle</span></code></a><ul>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle.angle_rad"><code class="docutils literal notranslate"><span class="pre">BondAngle.angle_rad</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle.atom1_name"><code class="docutils literal notranslate"><span class="pre">BondAngle.atom1_name</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle.atom2_name"><code class="docutils literal notranslate"><span class="pre">BondAngle.atom2_name</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle.atom3name"><code class="docutils literal notranslate"><span class="pre">BondAngle.atom3name</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.BondAngle.stddev"><code class="docutils literal notranslate"><span class="pre">BondAngle.stddev</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.aatype_to_str_sequence"><code class="docutils literal notranslate"><span class="pre">aatype_to_str_sequence()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.chi_angle_atom"><code class="docutils literal notranslate"><span class="pre">chi_angle_atom()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.load_stereo_chemical_props"><code class="docutils literal notranslate"><span class="pre">load_stereo_chemical_props()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.make_atom14_dists_bounds"><code class="docutils literal notranslate"><span class="pre">make_atom14_dists_bounds()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.map_structure_with_atom_order"><code class="docutils literal notranslate"><span class="pre">map_structure_with_atom_order()</span></code></a></li>
+<li><a class="reference internal" href="#deepfold.common.residue_constants.sequence_to_onehot"><code class="docutils literal notranslate"><span class="pre">sequence_to_onehot()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-deepfold.common">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e3a6060d"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    </body>
+</html>

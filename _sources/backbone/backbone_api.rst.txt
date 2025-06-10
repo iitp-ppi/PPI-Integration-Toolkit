@@ -4,4 +4,5 @@ API/Backbone
    :toctree: _autosummary
    :recursive:
 
-   deepfold
+   DeepFold
+   MiniWorld
