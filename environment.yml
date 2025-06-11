@@ -16,6 +16,7 @@ dependencies:
   - pytorch::torchvision=0.19.1
   - scipy=1.13.1
   - scikit-learn=1.5.2
+  - scikit-image
   - pandas=2.2.3
   - dgl
   - hmmer=3.4
@@ -35,6 +36,7 @@ dependencies:
   - lightning
   - torchmetrics
   - meeko
+  - openbabel
   - dacite
   - ply
   - torchdrug
