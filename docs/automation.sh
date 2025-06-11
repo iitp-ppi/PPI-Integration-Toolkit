@@ -20,6 +20,5 @@ sphinx-apidoc -d 8 -F -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
 sphinx-apidoc -d 8 -F -o docs/source/tool/BAPred tool/BAPred/bapred
 sphinx-apidoc -d 8 -F -o docs/source/tool/BindingRMSD tool/BindingRMSD/bindingrmsd
 sphinx-apidoc -d 8 -F -o docs/source/tool/BsiteP tool/BsiteP/bsitep
-sphinx-apidoc -d 8 -F -o docs/source/tool/MSA-search-pipeline tool/MSA-search-pipeline
 cd docs
 make html
