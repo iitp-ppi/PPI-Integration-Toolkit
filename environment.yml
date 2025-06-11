@@ -34,6 +34,7 @@ dependencies:
   - safetensors
   - lightning
   - torchmetrics
+  - meeko
   - dacite
   - ply
   - torchdrug
