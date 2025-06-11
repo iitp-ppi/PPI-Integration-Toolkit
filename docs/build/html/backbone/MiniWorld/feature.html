@@ -555,11 +555,170 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="feature-miniworld-featuring-species-module">
-<h2>feature.MiniWorld_featuring_species module<a class="headerlink" href="#feature-miniworld-featuring-species-module" title="Link to this heading">¶</a></h2>
+<section id="module-feature.MiniWorld_featuring_species">
+<span id="feature-miniworld-featuring-species-module"></span><h2>feature.MiniWorld_featuring_species module<a class="headerlink" href="#module-feature.MiniWorld_featuring_species" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.MSA_block_deletion">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">MSA_block_deletion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insertion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.MSA_block_deletion" title="Link to this definition">¶</a></dt>
+<dd><p>Down-sample given MSA by randomly delete blocks of sequences
+Input: MSA/Insertion having shape (N, L)
+output: new MSA/Insertion with block deletion (N’, L)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.MSA_featurize_wo_statistics">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">MSA_featurize_wo_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insertion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_to_idx_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.MSA_featurize_wo_statistics" title="Link to this definition">¶</a></dt>
+<dd><p>I modified RF2 version. (just changed name of variables)
+Input: full MSA information (after Block deletion if necessary) &amp; full insertion information
+Output: seed MSA features &amp; extra sequences</p>
+<p>params : list of parameters
+p_mask : probability of masking
+eps : small number to avoid zero division
+chain_break : dictionary of chain idx {chain_id: (start, end)}</p>
+<dl class="simple">
+<dt>Seed MSA features:</dt><dd><ul class="simple">
+<li><p>aatype of seed sequence (20 regular aa + 1 gap + 1 unknwon + 1 mask)</p></li>
+<li><p>profile of clustered sequences (23) =&gt; removed</p></li>
+<li><p>insertion statistics (2) =&gt; removed statistics, only use insertion_clust</p></li>
+<li><p>N-term or C-term? (2)</p></li>
+</ul>
+</dd>
+<dt>extra sequence features:</dt><dd><ul class="simple">
+<li><p>aatype of extra sequence (23)</p></li>
+<li><p>insertion info (1)</p></li>
+<li><p>N-term or C-term? (2)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.MSA_featurize_wo_statistics_by_chain">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">MSA_featurize_wo_statistics_by_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">insertion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N_clust</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.MSA_featurize_wo_statistics_by_chain" title="Link to this definition">¶</a></dt>
+<dd><p>I modified RF2 version. (just changed name of variables)
+Input: full MSA information (after Block deletion if necessary) &amp; full insertion information
+Output: seed MSA features &amp; extra sequences</p>
+<p>params : list of parameters
+p_mask : probability of masking
+eps : small number to avoid zero division
+chain_break : dictionary of chain idx {chain_id: (start, end)}</p>
+<dl class="simple">
+<dt>Seed MSA features:</dt><dd><ul class="simple">
+<li><p>aatype of seed sequence (20 regular aa + 1 gap + 1 unknwon + 1 mask)</p></li>
+<li><p>profile of clustered sequences (23) =&gt; removed</p></li>
+<li><p>insertion statistics (2) =&gt; removed statistics, only use insertion_clust</p></li>
+<li><p>N-term or C-term? (2)</p></li>
+</ul>
+</dd>
+<dt>extra sequence features:</dt><dd><ul class="simple">
+<li><p>aatype of extra sequence (23)</p></li>
+<li><p>insertion info (1)</p></li>
+<li><p>N-term or C-term? (2)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.center_and_realign_missing">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">center_and_realign_missing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_t</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.center_and_realign_missing" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.chain_break_cropping">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">chain_break_cropping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_break</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crop_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.chain_break_cropping" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.cluster_sum">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">cluster_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assignment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N_seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N_res</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.cluster_sum" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.cutoff_chain_num">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">cutoff_chain_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_break</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_chain_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.cutoff_chain_num" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.display_top">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">display_top</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapshot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lineno'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.display_top" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.find_chain_combinations">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">find_chain_combinations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pairs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.find_chain_combinations" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.generate_combinations">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">generate_combinations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pairs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.generate_combinations" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.get_STRING_crop">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">get_STRING_crop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">len_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.get_STRING_crop" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.get_complex_crop">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">get_complex_crop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">len_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.get_complex_crop" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.get_crop">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">get_crop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unclamp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ID</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.get_crop" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.get_same_crop_idx">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">get_same_crop_idx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz_full</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crop_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_break</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">same_chain_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.get_same_crop_idx" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.get_spatial_crop">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">get_spatial_crop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pivot_chain_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_break</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">len_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protein_ID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-06</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.get_spatial_crop" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.getsize">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">getsize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj_0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.getsize" title="Link to this definition">¶</a></dt>
+<dd><p>Recursively iterate to sum size of object &amp; members.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.permute_label">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">permute_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crop_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_of_sequence_idxs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_break</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">same_chain_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.permute_label" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.random_split">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">random_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_split</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.random_split" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="feature.MiniWorld_featuring_species.template_featurize">
+<span class="sig-prename descclassname"><span class="pre">feature.MiniWorld_featuring_species.</span></span><span class="sig-name descname"><span class="pre">template_featurize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_template_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature.MiniWorld_featuring_species.template_featurize" title="Link to this definition">¶</a></dt>
+<dd><p>I modified RF2 version.
+In MSA_featurize, I changed the name of variables and small part of code because the shape of inputs (msa, insertion) are almost same as RF2.
+On the other hand, I totally reconstructed template structure, so I changed a lot in this function.</p>
+<p>Input : template information (after Block deletion if necessary) not all chain. (only one chain)
+template :</p>
+<blockquote>
+<div><p>‘xyz’ : (N_template, L_chain, 27, 3)
+‘mask’ : (N_template, L_chain, 27)
+‘sequence’ : (N_template, L_chain, NUM_CLASSES)
+‘f0d’ : (N_template)
+‘f1d’ : (N_template, L_chain)</p>
+</div></blockquote>
+<p>output :
+xyz : (npick_global, L_query, 27, 3)
+template_1D : (npick_global, L_query, 23 + 1) # NUM_CLASSES = 23
+template_atom_mask : (npick_global, L_query, 27)</p>
+</dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<section id="module-feature">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-feature" title="Link to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -602,8 +761,29 @@
             <ul>
 <li><a class="reference internal" href="#">feature package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#feature-miniworld-featuring-species-module">feature.MiniWorld_featuring_species module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-feature.MiniWorld_featuring_species">feature.MiniWorld_featuring_species module</a><ul>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.MSA_block_deletion"><code class="docutils literal notranslate"><span class="pre">MSA_block_deletion()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.MSA_featurize_wo_statistics"><code class="docutils literal notranslate"><span class="pre">MSA_featurize_wo_statistics()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.MSA_featurize_wo_statistics_by_chain"><code class="docutils literal notranslate"><span class="pre">MSA_featurize_wo_statistics_by_chain()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.center_and_realign_missing"><code class="docutils literal notranslate"><span class="pre">center_and_realign_missing()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.chain_break_cropping"><code class="docutils literal notranslate"><span class="pre">chain_break_cropping()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.cluster_sum"><code class="docutils literal notranslate"><span class="pre">cluster_sum()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.cutoff_chain_num"><code class="docutils literal notranslate"><span class="pre">cutoff_chain_num()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.display_top"><code class="docutils literal notranslate"><span class="pre">display_top()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.find_chain_combinations"><code class="docutils literal notranslate"><span class="pre">find_chain_combinations()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.generate_combinations"><code class="docutils literal notranslate"><span class="pre">generate_combinations()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.get_STRING_crop"><code class="docutils literal notranslate"><span class="pre">get_STRING_crop()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.get_complex_crop"><code class="docutils literal notranslate"><span class="pre">get_complex_crop()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.get_crop"><code class="docutils literal notranslate"><span class="pre">get_crop()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.get_same_crop_idx"><code class="docutils literal notranslate"><span class="pre">get_same_crop_idx()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.get_spatial_crop"><code class="docutils literal notranslate"><span class="pre">get_spatial_crop()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.getsize"><code class="docutils literal notranslate"><span class="pre">getsize()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.permute_label"><code class="docutils literal notranslate"><span class="pre">permute_label()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.random_split"><code class="docutils literal notranslate"><span class="pre">random_split()</span></code></a></li>
+<li><a class="reference internal" href="#feature.MiniWorld_featuring_species.template_featurize"><code class="docutils literal notranslate"><span class="pre">template_featurize()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-feature">Module contents</a></li>
 </ul>
 </li>
 </ul>

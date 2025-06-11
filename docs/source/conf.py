@@ -1,7 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.abspath('../../backbone/DeepFoldPublic'))
-sys.path.append(os.path.abspath('../../backbone'))
+sys.path.append(os.path.abspath('../../backbone/MiniWorld'))
 sys.path.append(os.path.abspath('../../tool/BAPred'))
 sys.path.append(os.path.abspath('../../tool/BIS-ProteinStructure-libraries'))
 sys.path.append(os.path.abspath('../../tool/BindingRMSD'))
