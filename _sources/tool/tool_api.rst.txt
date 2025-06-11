@@ -11,4 +11,3 @@ API/Tool
    diffalign
    bapred
    bsitep
-   msa_search_pipeline
