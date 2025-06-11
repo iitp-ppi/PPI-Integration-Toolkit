@@ -10,6 +10,6 @@
    :toctree:
    :recursive:
 
-   SEResnet
    proteindata
+   seresnet
    utils

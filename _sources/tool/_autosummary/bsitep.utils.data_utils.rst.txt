@@ -1,4 +1,4 @@
-﻿bsitep.utils.data\_utils
+bsitep.utils.data\_utils
 ========================
 
 .. automodule:: bsitep.utils.data_utils

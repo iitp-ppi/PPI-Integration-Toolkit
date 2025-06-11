@@ -1,4 +1,4 @@
-﻿bapred.inference
+bapred.inference
 ================
 
 .. automodule:: bapred.inference
