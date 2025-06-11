@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>inference module - AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</title>
+        <title>bindingrmsd package - AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -500,7 +500,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/tool/BindingRMSD/inference.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/tool/BindingRMSD/bindingrmsd.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -514,14 +514,114 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="inference-module">
-<h1>inference module<a class="headerlink" href="#inference-module" title="Link to this heading">¶</a></h1>
+          <section id="bindingrmsd-package">
+<h1>bindingrmsd package<a class="headerlink" href="#bindingrmsd-package" title="Link to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="bindingrmsd.data.html">bindingrmsd.data package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#module-bindingrmsd.data.data">bindingrmsd.data.data module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data.PoseSelectionDataset"><code class="docutils literal notranslate"><span class="pre">PoseSelectionDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data.PoseSelectionDataset.lig_dummy_graph"><code class="docutils literal notranslate"><span class="pre">PoseSelectionDataset.lig_dummy_graph()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data.load_ligands"><code class="docutils literal notranslate"><span class="pre">load_ligands()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data.process_ligand_file"><code class="docutils literal notranslate"><span class="pre">process_ligand_file()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#module-bindingrmsd.data.data_bck">bindingrmsd.data.data_bck module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data_bck.PoseSelectionDataset"><code class="docutils literal notranslate"><span class="pre">PoseSelectionDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data_bck.PoseSelectionDataset.lig_dummy_graph"><code class="docutils literal notranslate"><span class="pre">PoseSelectionDataset.lig_dummy_graph()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data_bck.load_ligands"><code class="docutils literal notranslate"><span class="pre">load_ligands()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data_bck.process_dlg"><code class="docutils literal notranslate"><span class="pre">process_dlg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.data_bck.process_ligand_file"><code class="docutils literal notranslate"><span class="pre">process_ligand_file()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#module-bindingrmsd.data.ligand_atom_feature">bindingrmsd.data.ligand_atom_feature module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.atom_feature"><code class="docutils literal notranslate"><span class="pre">atom_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.bond_feature"><code class="docutils literal notranslate"><span class="pre">bond_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.calculate_pair_distance"><code class="docutils literal notranslate"><span class="pre">calculate_pair_distance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_atom_feature"><code class="docutils literal notranslate"><span class="pre">get_atom_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_bond_feature"><code class="docutils literal notranslate"><span class="pre">get_bond_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_distance_feature"><code class="docutils literal notranslate"><span class="pre">get_distance_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_indices"><code class="docutils literal notranslate"><span class="pre">get_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_indices_sparse"><code class="docutils literal notranslate"><span class="pre">get_indices_sparse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_interact_feature"><code class="docutils literal notranslate"><span class="pre">get_interact_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_mol_coordinate"><code class="docutils literal notranslate"><span class="pre">get_mol_coordinate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.get_smarts_feature"><code class="docutils literal notranslate"><span class="pre">get_smarts_feature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.is_one"><code class="docutils literal notranslate"><span class="pre">is_one()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.load_obj"><code class="docutils literal notranslate"><span class="pre">load_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.mol_to_graph"><code class="docutils literal notranslate"><span class="pre">mol_to_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.one_hot"><code class="docutils literal notranslate"><span class="pre">one_hot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.ligand_atom_feature.save_obj"><code class="docutils literal notranslate"><span class="pre">save_obj()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#module-bindingrmsd.data.protein_atom_feature">bindingrmsd.data.protein_atom_feature module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.protein_atom_feature.get_all_graph"><code class="docutils literal notranslate"><span class="pre">get_all_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.protein_atom_feature.pl_to_c_graph"><code class="docutils literal notranslate"><span class="pre">pl_to_c_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.protein_atom_feature.prot_to_graph"><code class="docutils literal notranslate"><span class="pre">prot_to_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.protein_atom_feature.scaler"><code class="docutils literal notranslate"><span class="pre">scaler()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#module-bindingrmsd.data.utils">bindingrmsd.data.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.utils.is_one"><code class="docutils literal notranslate"><span class="pre">is_one()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.utils.load_obj"><code class="docutils literal notranslate"><span class="pre">load_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.utils.one_hot"><code class="docutils literal notranslate"><span class="pre">one_hot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.data.html#bindingrmsd.data.utils.save_obj"><code class="docutils literal notranslate"><span class="pre">save_obj()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.data.html#module-bindingrmsd.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bindingrmsd.model.html">bindingrmsd.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.model.html#module-bindingrmsd.model.GatedGCNLSPE">bindingrmsd.model.GatedGCNLSPE module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer"><code class="docutils literal notranslate"><span class="pre">GatedGCNLSPELayer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer.compute_normalized_eta"><code class="docutils literal notranslate"><span class="pre">GatedGCNLSPELayer.compute_normalized_eta()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer.forward"><code class="docutils literal notranslate"><span class="pre">GatedGCNLSPELayer.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer.message_func_for_pj"><code class="docutils literal notranslate"><span class="pre">GatedGCNLSPELayer.message_func_for_pj()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer.message_func_for_vij"><code class="docutils literal notranslate"><span class="pre">GatedGCNLSPELayer.message_func_for_vij()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.model.html#module-bindingrmsd.model.model">bindingrmsd.model.model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.model.PredictionRMSD"><code class="docutils literal notranslate"><span class="pre">PredictionRMSD</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bindingrmsd.model.html#bindingrmsd.model.model.PredictionRMSD.forward"><code class="docutils literal notranslate"><span class="pre">PredictionRMSD.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bindingrmsd.model.html#module-bindingrmsd.model">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-bindingrmsd.inference">
+<span id="bindingrmsd-inference-module"></span><h2>bindingrmsd.inference module<a class="headerlink" href="#module-bindingrmsd.inference" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="bindingrmsd.inference.inference">
+<span class="sig-prename descclassname"><span class="pre">bindingrmsd.inference.</span></span><span class="sig-name descname"><span class="pre">inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein_pdb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bindingrmsd.inference.inference" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-bindingrmsd">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bindingrmsd" title="Link to this heading">¶</a></h2>
+</section>
 </section>
 
         </article>
@@ -549,8 +649,33 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">bindingrmsd package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-bindingrmsd.inference">bindingrmsd.inference module</a><ul>
+<li><a class="reference internal" href="#bindingrmsd.inference.inference"><code class="docutils literal notranslate"><span class="pre">inference()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bindingrmsd">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
