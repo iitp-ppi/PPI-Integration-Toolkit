@@ -545,12 +545,20 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bsitep.utils.html">bsitep.utils package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#bsitep-utils-data-utils-module">bsitep.utils.data_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#module-bsitep.utils.data_utils">bsitep.utils.data_utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bsitep.utils.html#bsitep.utils.data_utils.prepare_data"><code class="docutils literal notranslate"><span class="pre">prepare_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bsitep.utils.html#bsitep.utils.data_utils.process_protein_data"><code class="docutils literal notranslate"><span class="pre">process_protein_data()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#module-bsitep.utils.model_utils">bsitep.utils.model_utils module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="bsitep.utils.html#bsitep.utils.model_utils.load_model"><code class="docutils literal notranslate"><span class="pre">load_model()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#bsitep-utils-pocket-utils-module">bsitep.utils.pocket_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#module-bsitep.utils.pocket_utils">bsitep.utils.pocket_utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bsitep.utils.html#bsitep.utils.pocket_utils.get_pockets_segmentation"><code class="docutils literal notranslate"><span class="pre">get_pockets_segmentation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bsitep.utils.html#bsitep.utils.pocket_utils.save_pocket_mol"><code class="docutils literal notranslate"><span class="pre">save_pocket_mol()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bsitep.utils.html#module-bsitep.utils">Module contents</a></li>
 </ul>
 </li>
@@ -560,8 +568,96 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
 </section>
-<section id="bsitep-proteindata-module">
-<h2>bsitep.proteindata module<a class="headerlink" href="#bsitep-proteindata-module" title="Link to this heading">¶</a></h2>
+<section id="module-bsitep.proteindata">
+<span id="bsitep-proteindata-module"></span><h2>bsitep.proteindata module<a class="headerlink" href="#module-bsitep.proteindata" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.proteindata.</span></span><span class="sig-name descname"><span class="pre">Featurizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom_codes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">named_properties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_molecule_codes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_properties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smarts_properties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smarts_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.compile_smarts">
+<span class="sig-name descname"><span class="pre">compile_smarts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.compile_smarts" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.encode_num">
+<span class="sig-name descname"><span class="pre">encode_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.encode_num" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.find_smarts">
+<span class="sig-name descname"><span class="pre">find_smarts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecule</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.find_smarts" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.from_pickle">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.from_pickle" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.get_binary_features">
+<span class="sig-name descname"><span class="pre">get_binary_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.get_binary_features" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.get_features">
+<span class="sig-name descname"><span class="pre">get_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">molcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.get_features" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.get_features_gt">
+<span class="sig-name descname"><span class="pre">get_features_gt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">molcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.get_features_gt" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.Featurizer.to_pickle">
+<span class="sig-name descname"><span class="pre">to_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'featurizer.pkl'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.Featurizer.to_pickle" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.proteindata.</span></span><span class="sig-name descname"><span class="pre">proteinDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featurizer=&lt;bsitep.proteindata.Featurizer</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist=35</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale=0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_translation=5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kfold_ind=0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset.feed_data">
+<span class="sig-name descname"><span class="pre">feed_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mol2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset.feed_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset.make_grid">
+<span class="sig-name descname"><span class="pre">make_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset.make_grid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset.rotate">
+<span class="sig-name descname"><span class="pre">rotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotation</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset.rotate" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset.rotation_matrix">
+<span class="sig-name descname"><span class="pre">rotation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset.rotation_matrix" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset_predict">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.proteindata.</span></span><span class="sig-name descname"><span class="pre">proteinDataset_predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featurizer=&lt;bsitep.proteindata.Featurizer</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist=35</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale=0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_translation=5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_format='mol2'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset_predict" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset_predict.feed_data">
+<span class="sig-name descname"><span class="pre">feed_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset_predict.feed_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.proteindata.proteinDataset_predict.make_grid">
+<span class="sig-name descname"><span class="pre">make_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.proteindata.proteinDataset_predict.make_grid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-bsitep">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bsitep" title="Link to this heading">¶</a></h2>
@@ -608,7 +704,32 @@
 <li><a class="reference internal" href="#">bsitep package</a><ul>
 <li><a class="reference internal" href="#subpackages">Subpackages</a></li>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#bsitep-proteindata-module">bsitep.proteindata module</a></li>
+<li><a class="reference internal" href="#module-bsitep.proteindata">bsitep.proteindata module</a><ul>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer"><code class="docutils literal notranslate"><span class="pre">Featurizer</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.compile_smarts"><code class="docutils literal notranslate"><span class="pre">Featurizer.compile_smarts()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.encode_num"><code class="docutils literal notranslate"><span class="pre">Featurizer.encode_num()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.find_smarts"><code class="docutils literal notranslate"><span class="pre">Featurizer.find_smarts()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.from_pickle"><code class="docutils literal notranslate"><span class="pre">Featurizer.from_pickle()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.get_binary_features"><code class="docutils literal notranslate"><span class="pre">Featurizer.get_binary_features()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.get_features"><code class="docutils literal notranslate"><span class="pre">Featurizer.get_features()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.get_features_gt"><code class="docutils literal notranslate"><span class="pre">Featurizer.get_features_gt()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.Featurizer.to_pickle"><code class="docutils literal notranslate"><span class="pre">Featurizer.to_pickle()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset"><code class="docutils literal notranslate"><span class="pre">proteinDataset</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset.feed_data"><code class="docutils literal notranslate"><span class="pre">proteinDataset.feed_data()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset.make_grid"><code class="docutils literal notranslate"><span class="pre">proteinDataset.make_grid()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset.rotate"><code class="docutils literal notranslate"><span class="pre">proteinDataset.rotate()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset.rotation_matrix"><code class="docutils literal notranslate"><span class="pre">proteinDataset.rotation_matrix()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset_predict"><code class="docutils literal notranslate"><span class="pre">proteinDataset_predict</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset_predict.feed_data"><code class="docutils literal notranslate"><span class="pre">proteinDataset_predict.feed_data()</span></code></a></li>
+<li><a class="reference internal" href="#bsitep.proteindata.proteinDataset_predict.make_grid"><code class="docutils literal notranslate"><span class="pre">proteinDataset_predict.make_grid()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-bsitep">Module contents</a></li>
 </ul>
 </li>
