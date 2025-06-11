@@ -1,4 +1,4 @@
-﻿bsitep.utils.pocket\_utils
+bsitep.utils.pocket\_utils
 ==========================
 
 .. automodule:: bsitep.utils.pocket_utils

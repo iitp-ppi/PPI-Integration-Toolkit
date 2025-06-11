@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'gd_dl'
-copyright = '2024, Author'
+copyright = '2025, Author'
 author = 'Author'
 
 # -- General configuration ---------------------------------------------------

@@ -1,21 +1,18 @@
 .. BIS-ProteinStructure-libraries documentation master file, created by
-   sphinx-quickstart on Tue Dec  3 04:34:15 2024.
+   sphinx-quickstart on Wed Jun 11 06:13:54 2025.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to BIS-ProteinStructure-libraries's documentation!
-==========================================================
+BIS-ProteinStructure-libraries documentation
+============================================
+
+Add your content using ``reStructuredText`` syntax. See the
+`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
+documentation for details.
+
 
 .. toctree::
    :maxdepth: 8
    :caption: Contents:
 
    bis_protein_structure
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

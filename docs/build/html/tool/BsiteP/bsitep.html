@@ -481,14 +481,27 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/bapred.html">bapred</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" role="switch" type="checkbox"/><label for="toctree-checkbox-39"><div class="visually-hidden">Toggle navigation of bapred</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/bapred.data.html">bapred.data</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" role="switch" type="checkbox"/><label for="toctree-checkbox-40"><div class="visually-hidden">Toggle navigation of bapred.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.data.atom_feature.html">bapred.data.atom_feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.data.data.html">bapred.data.data</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.data.utils.html">bapred.data.utils</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bapred.inference.html">bapred.inference</a></li>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/bapred.model.html">bapred.model</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" role="switch" type="checkbox"/><label for="toctree-checkbox-41"><div class="visually-hidden">Toggle navigation of bapred.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.model.GatedGCNLSPE.html">bapred.model.GatedGCNLSPE</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.model.GraphGPS.html">bapred.model.GraphGPS</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.model.MHA.html">bapred.model.MHA</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../_autosummary/bapred.model.model.html">bapred.model.model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_autosummary/bsitep.html">bsitep</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" role="switch" type="checkbox"/><label for="toctree-checkbox-42"><div class="visually-hidden">Toggle navigation of bsitep</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bsitep.proteindata.html">bsitep.proteindata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../_autosummary/bsitep.seresnet.html">bsitep.seresnet</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../_autosummary/bsitep.utils.html">bsitep.utils</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" role="switch" type="checkbox"/><label for="toctree-checkbox-43"><div class="visually-hidden">Toggle navigation of bsitep.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/bsitep.utils.data_utils.html">bsitep.utils.data_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/bsitep.utils.model_utils.html">bsitep.utils.model_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../_autosummary/bsitep.utils.pocket_utils.html">bsitep.utils.pocket_utils</a></li>
 </ul>
 </li>
 </ul>
@@ -659,6 +672,167 @@
 </dd></dl>
 
 </section>
+<section id="module-bsitep.seresnet">
+<span id="bsitep-seresnet-module"></span><h2>bsitep.seresnet module<a class="headerlink" href="#module-bsitep.seresnet" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.ChannelSELayer3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">ChannelSELayer3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.ChannelSELayer3D" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="simple">
+<dt>3D extension of Squeeze-and-Excitation (SE) block described in:</dt><dd><p><em>Hu et al., Squeeze-and-Excitation Networks, arXiv:1709.01507</em>
+<em>Zhu et al., AnatomyNet, arXiv:arXiv:1808.05238</em></p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.ChannelSELayer3D.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.ChannelSELayer3D.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.ChannelSpatialSELayer3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">ChannelSpatialSELayer3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.ChannelSpatialSELayer3D" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="simple">
+<dt>3D extension of concurrent spatial and channel squeeze &amp; excitation:</dt><dd><p><em>Roy et al., Concurrent Spatial and Channel Squeeze &amp; Excitation in Fully Convolutional Networks, arXiv:1803.02579</em></p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.ChannelSpatialSELayer3D.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.ChannelSpatialSELayer3D.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.ConvolutionBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">ConvolutionBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strides</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.ConvolutionBlock" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.ConvolutionBlock.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.ConvolutionBlock.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.IdentityBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">IdentityBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.IdentityBlock" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.IdentityBlock.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.IdentityBlock.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.SEResNet">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">SEResNet</span></span><a class="headerlink" href="#bsitep.seresnet.SEResNet" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.SEResNet.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.SEResNet.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.SpatialSELayer3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">SpatialSELayer3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_channels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.SpatialSELayer3D" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="simple">
+<dt>3D extension of SE block – squeezing spatially and exciting channel-wise described in:</dt><dd><p><em>Roy et al., Concurrent Spatial and Channel Squeeze &amp; Excitation in Fully Convolutional Networks, MICCAI 2018</em></p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.SpatialSELayer3D.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.SpatialSELayer3D.forward" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>weights</strong> (<em>torch.Tensor</em>) – weights for few shot learning</p></li>
+<li><p><strong>x</strong> – X, shape = (batch_size, num_channels, D, H, W)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>output_tensor</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(torch.Tensor)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="bsitep.seresnet.UpSamplingBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bsitep.seresnet.</span></span><span class="sig-name descname"><span class="pre">UpSamplingBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.UpSamplingBlock" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bsitep.seresnet.UpSamplingBlock.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bsitep.seresnet.UpSamplingBlock.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 <section id="module-bsitep">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bsitep" title="Link to this heading">¶</a></h2>
 </section>
@@ -726,6 +900,37 @@
 <li><a class="reference internal" href="#bsitep.proteindata.proteinDataset_predict"><code class="docutils literal notranslate"><span class="pre">proteinDataset_predict</span></code></a><ul>
 <li><a class="reference internal" href="#bsitep.proteindata.proteinDataset_predict.feed_data"><code class="docutils literal notranslate"><span class="pre">proteinDataset_predict.feed_data()</span></code></a></li>
 <li><a class="reference internal" href="#bsitep.proteindata.proteinDataset_predict.make_grid"><code class="docutils literal notranslate"><span class="pre">proteinDataset_predict.make_grid()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-bsitep.seresnet">bsitep.seresnet module</a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.ChannelSELayer3D"><code class="docutils literal notranslate"><span class="pre">ChannelSELayer3D</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.ChannelSELayer3D.forward"><code class="docutils literal notranslate"><span class="pre">ChannelSELayer3D.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.seresnet.ChannelSpatialSELayer3D"><code class="docutils literal notranslate"><span class="pre">ChannelSpatialSELayer3D</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.ChannelSpatialSELayer3D.forward"><code class="docutils literal notranslate"><span class="pre">ChannelSpatialSELayer3D.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.seresnet.ConvolutionBlock"><code class="docutils literal notranslate"><span class="pre">ConvolutionBlock</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.ConvolutionBlock.forward"><code class="docutils literal notranslate"><span class="pre">ConvolutionBlock.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.seresnet.IdentityBlock"><code class="docutils literal notranslate"><span class="pre">IdentityBlock</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.IdentityBlock.forward"><code class="docutils literal notranslate"><span class="pre">IdentityBlock.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.seresnet.SEResNet"><code class="docutils literal notranslate"><span class="pre">SEResNet</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.SEResNet.forward"><code class="docutils literal notranslate"><span class="pre">SEResNet.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.seresnet.SpatialSELayer3D"><code class="docutils literal notranslate"><span class="pre">SpatialSELayer3D</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.SpatialSELayer3D.forward"><code class="docutils literal notranslate"><span class="pre">SpatialSELayer3D.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bsitep.seresnet.UpSamplingBlock"><code class="docutils literal notranslate"><span class="pre">UpSamplingBlock</span></code></a><ul>
+<li><a class="reference internal" href="#bsitep.seresnet.UpSamplingBlock.forward"><code class="docutils literal notranslate"><span class="pre">UpSamplingBlock.forward()</span></code></a></li>
 </ul>
 </li>
 </ul>

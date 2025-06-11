@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'BsiteP'
+project = 'bsitep'
 copyright = '2025, Author'
 author = 'Author'
 

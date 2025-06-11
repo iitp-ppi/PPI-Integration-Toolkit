@@ -1,4 +1,4 @@
-﻿bsitep.proteindata
+bsitep.proteindata
 ==================
 
 .. automodule:: bsitep.proteindata

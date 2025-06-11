@@ -20,6 +20,14 @@ bsitep.proteindata module
    :undoc-members:
    :show-inheritance:
 
+bsitep.seresnet module
+----------------------
+
+.. automodule:: bsitep.seresnet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 
