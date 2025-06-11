@@ -19,10 +19,10 @@ sys.path.append(os.path.abspath('../../tool'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'IITP PPI'
-copyright = '2024, Paek et al.'
+project = 'AI toolkits for prediction of structure-based protein interaction'
+copyright = '2025, PPI.'
 author = 'Paek et al.'
-release = '0.0.2'
+release = '0.0.3'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

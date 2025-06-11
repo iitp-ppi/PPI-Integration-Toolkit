@@ -8,11 +8,6 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate ppi-toolkit
 #conda env update --file environment.yml --prune
 
-#git clone https://github.com/NVIDIA/apex
-#cd apex
-#pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
-#cd ../
-
 #conda install -y sphinx
 #pip install furo
 sphinx-apidoc -d 8 -F -o docs/source/backbone/DeepFold backbone/DeepFoldPublic/deepfold
