@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>MiniWorld_train_multi_deep_v1_5_use_interaction module - AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</title>
+        <title>miniworld.models_MiniWorld_v1_5_use_interaction package - AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -530,7 +530,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/backbone/MiniWorld/MiniWorld_train_multi_deep_v1_5_use_interaction.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/backbone/MiniWorld/miniworld.models_MiniWorld_v1_5_use_interaction.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -544,14 +544,188 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="miniworld-train-multi-deep-v1-5-use-interaction-module">
-<h1>MiniWorld_train_multi_deep_v1_5_use_interaction module<a class="headerlink" href="#miniworld-train-multi-deep-v1-5-use-interaction-module" title="Link to this heading">¶</a></h1>
+          <section id="miniworld-models-miniworld-v1-5-use-interaction-package">
+<h1>miniworld.models_MiniWorld_v1_5_use_interaction package<a class="headerlink" href="#miniworld-models-miniworld-v1-5-use-interaction-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="miniworld-models-miniworld-v1-5-use-interaction-attention-module-module">
+<h2>miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module module<a class="headerlink" href="#miniworld-models-miniworld-v1-5-use-interaction-attention-module-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor">
+<span id="miniworld-models-miniworld-v1-5-use-interaction-auxiliarypredictor-module"></span><h2>miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor module<a class="headerlink" href="#module-miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.</span></span><span class="sig-name descname"><span class="pre">BinderNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bin_pae</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pae</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">same_chain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork.reset_parameter">
+<span class="sig-name descname"><span class="pre">reset_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork.reset_parameter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.</span></span><span class="sig-name descname"><span class="pre">DistanceNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_drop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork.reset_parameter">
+<span class="sig-name descname"><span class="pre">reset_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork.reset_parameter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.</span></span><span class="sig-name descname"><span class="pre">ExpResolvedNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d_msa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_drop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork.reset_parameter">
+<span class="sig-name descname"><span class="pre">reset_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork.reset_parameter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.</span></span><span class="sig-name descname"><span class="pre">LDDTNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d_hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bin_lddt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork.reset_parameter">
+<span class="sig-name descname"><span class="pre">reset_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork.reset_parameter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.</span></span><span class="sig-name descname"><span class="pre">MaskedTokenNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_drop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork.reset_parameter">
+<span class="sig-name descname"><span class="pre">reset_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork.reset_parameter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.</span></span><span class="sig-name descname"><span class="pre">PAENetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_feat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bin_pae</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork.reset_parameter">
+<span class="sig-name descname"><span class="pre">reset_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork.reset_parameter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="miniworld-models-miniworld-v1-5-use-interaction-embeddings-module">
+<h2>miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings module<a class="headerlink" href="#miniworld-models-miniworld-v1-5-use-interaction-embeddings-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="miniworld-models-miniworld-v1-5-use-interaction-miniworld-module">
+<h2>miniworld.models_MiniWorld_v1_5_use_interaction.MiniWorld module<a class="headerlink" href="#miniworld-models-miniworld-v1-5-use-interaction-miniworld-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="miniworld-models-miniworld-v1-5-use-interaction-track-module-module">
+<h2>miniworld.models_MiniWorld_v1_5_use_interaction.Track_module module<a class="headerlink" href="#miniworld-models-miniworld-v1-5-use-interaction-track-module-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="miniworld-models-miniworld-v1-5-use-interaction-value-network-module">
+<h2>miniworld.models_MiniWorld_v1_5_use_interaction.value_network module<a class="headerlink" href="#miniworld-models-miniworld-v1-5-use-interaction-value-network-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-miniworld.models_MiniWorld_v1_5_use_interaction">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-miniworld.models_MiniWorld_v1_5_use_interaction" title="Link to this heading">¶</a></h2>
+</section>
 </section>
 
         </article>
@@ -579,8 +753,66 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">miniworld.models_MiniWorld_v1_5_use_interaction package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#miniworld-models-miniworld-v1-5-use-interaction-attention-module-module">miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module module</a></li>
+<li><a class="reference internal" href="#module-miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor module</a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork"><code class="docutils literal notranslate"><span class="pre">BinderNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork.forward"><code class="docutils literal notranslate"><span class="pre">BinderNetwork.forward()</span></code></a></li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.BinderNetwork.reset_parameter"><code class="docutils literal notranslate"><span class="pre">BinderNetwork.reset_parameter()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork"><code class="docutils literal notranslate"><span class="pre">DistanceNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork.forward"><code class="docutils literal notranslate"><span class="pre">DistanceNetwork.forward()</span></code></a></li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.DistanceNetwork.reset_parameter"><code class="docutils literal notranslate"><span class="pre">DistanceNetwork.reset_parameter()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork"><code class="docutils literal notranslate"><span class="pre">ExpResolvedNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork.forward"><code class="docutils literal notranslate"><span class="pre">ExpResolvedNetwork.forward()</span></code></a></li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.ExpResolvedNetwork.reset_parameter"><code class="docutils literal notranslate"><span class="pre">ExpResolvedNetwork.reset_parameter()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork"><code class="docutils literal notranslate"><span class="pre">LDDTNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork.forward"><code class="docutils literal notranslate"><span class="pre">LDDTNetwork.forward()</span></code></a></li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.LDDTNetwork.reset_parameter"><code class="docutils literal notranslate"><span class="pre">LDDTNetwork.reset_parameter()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork"><code class="docutils literal notranslate"><span class="pre">MaskedTokenNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork.forward"><code class="docutils literal notranslate"><span class="pre">MaskedTokenNetwork.forward()</span></code></a></li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.MaskedTokenNetwork.reset_parameter"><code class="docutils literal notranslate"><span class="pre">MaskedTokenNetwork.reset_parameter()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork"><code class="docutils literal notranslate"><span class="pre">PAENetwork</span></code></a><ul>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork.forward"><code class="docutils literal notranslate"><span class="pre">PAENetwork.forward()</span></code></a></li>
+<li><a class="reference internal" href="#miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.PAENetwork.reset_parameter"><code class="docutils literal notranslate"><span class="pre">PAENetwork.reset_parameter()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miniworld-models-miniworld-v1-5-use-interaction-embeddings-module">miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings module</a></li>
+<li><a class="reference internal" href="#miniworld-models-miniworld-v1-5-use-interaction-miniworld-module">miniworld.models_MiniWorld_v1_5_use_interaction.MiniWorld module</a></li>
+<li><a class="reference internal" href="#miniworld-models-miniworld-v1-5-use-interaction-track-module-module">miniworld.models_MiniWorld_v1_5_use_interaction.Track_module module</a></li>
+<li><a class="reference internal" href="#miniworld-models-miniworld-v1-5-use-interaction-value-network-module">miniworld.models_MiniWorld_v1_5_use_interaction.value_network module</a></li>
+<li><a class="reference internal" href="#module-miniworld.models_MiniWorld_v1_5_use_interaction">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
