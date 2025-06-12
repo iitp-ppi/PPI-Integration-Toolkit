@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -544,132 +544,14 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="module-MiniWorld_train_multi_deep_v1_5_use_interaction">
-<span id="miniworld-train-multi-deep-v1-5-use-interaction-module"></span><h1>MiniWorld_train_multi_deep_v1_5_use_interaction module<a class="headerlink" href="#module-MiniWorld_train_multi_deep_v1_5_use_interaction" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.EMA">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MiniWorld_train_multi_deep_v1_5_use_interaction.</span></span><span class="sig-name descname"><span class="pre">EMA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decay</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.EMA" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PatchedModule</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.EMA.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.EMA.forward" title="Link to this definition">¶</a></dt>
-<dd><p>Define the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.EMA.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.EMA.update" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MiniWorld_train_multi_deep_v1_5_use_interaction.</span></span><span class="sig-name descname"><span class="pre">ModelVisulizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">saved_model_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxcycle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.ATOM_REPR">
-<span class="sig-name descname"><span class="pre">ATOM_REPR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.ATOM_REPR" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.draw_distogram">
-<span class="sig-name descname"><span class="pre">draw_distogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logit_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.draw_distogram" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.get_fasta">
-<span class="sig-name descname"><span class="pre">get_fasta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fasta_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.get_fasta" title="Link to this definition">¶</a></dt>
-<dd><p>Input : a3m_file_path (.a3m or .a3m.gz)</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.get_msa">
-<span class="sig-name descname"><span class="pre">get_msa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a3m_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.get_msa" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.inference_from_raw_data">
-<span class="sig-name descname"><span class="pre">inference_from_raw_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_file_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'use_hhr'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a3m_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'use_raw_a3m'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_intermediate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_structure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msa_save_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.inference_from_raw_data" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.load_initial_xyz">
-<span class="sig-name descname"><span class="pre">load_initial_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_xyz_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_protein</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.load_initial_xyz" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.load_model">
-<span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saved_model_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.load_model" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.model_inference">
-<span class="sig-name descname"><span class="pre">model_inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_intermediate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_structure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.model_inference" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.save_clean_msa">
-<span class="sig-name descname"><span class="pre">save_clean_msa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.save_clean_msa" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.symmetric_a3m_to_diagonal_a3m">
-<span class="sig-name descname"><span class="pre">symmetric_a3m_to_diagonal_a3m</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a3m_file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasta_file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.symmetric_a3m_to_diagonal_a3m" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.symmetric_a3m_to_full_a3m">
-<span class="sig-name descname"><span class="pre">symmetric_a3m_to_full_a3m</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a3m_file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasta_file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.symmetric_a3m_to_full_a3m" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.write_pae_plddt">
-<span class="sig-name descname"><span class="pre">write_pae_plddt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">save_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pae</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plddt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.write_pae_plddt" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.write_pdb">
-<span class="sig-name descname"><span class="pre">write_pdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred_crds_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ID_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lddt_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx_to_chain_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crop_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">File_suffix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saving_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.write_pdb" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.a3m_parse">
-<span class="sig-prename descclassname"><span class="pre">MiniWorld_train_multi_deep_v1_5_use_interaction.</span></span><span class="sig-name descname"><span class="pre">a3m_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a3m_file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.a3m_parse" title="Link to this definition">¶</a></dt>
-<dd><p>Input : a3m_file_path (.a3m or .a3m.gz)</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.add_weight_decay">
-<span class="sig-prename descclassname"><span class="pre">MiniWorld_train_multi_deep_v1_5_use_interaction.</span></span><span class="sig-name descname"><span class="pre">add_weight_decay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2_coeff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.add_weight_decay" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.count_parameters">
-<span class="sig-prename descclassname"><span class="pre">MiniWorld_train_multi_deep_v1_5_use_interaction.</span></span><span class="sig-name descname"><span class="pre">count_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.count_parameters" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="MiniWorld_train_multi_deep_v1_5_use_interaction.visualize_2D_tensor">
-<span class="sig-prename descclassname"><span class="pre">MiniWorld_train_multi_deep_v1_5_use_interaction.</span></span><span class="sig-name descname"><span class="pre">visualize_2D_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sav_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'permutation_test/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'test'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.visualize_2D_tensor" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
+          <section id="miniworld-train-multi-deep-v1-5-use-interaction-module">
+<h1>MiniWorld_train_multi_deep_v1_5_use_interaction module<a class="headerlink" href="#miniworld-train-multi-deep-v1-5-use-interaction-module" title="Link to this heading">¶</a></h1>
 </section>
 
         </article>
@@ -697,51 +579,8 @@ registered hooks while the latter silently ignores them.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">MiniWorld_train_multi_deep_v1_5_use_interaction module</a><ul>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.EMA"><code class="docutils literal notranslate"><span class="pre">EMA</span></code></a><ul>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.EMA.forward"><code class="docutils literal notranslate"><span class="pre">EMA.forward()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.EMA.update"><code class="docutils literal notranslate"><span class="pre">EMA.update()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer</span></code></a><ul>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.ATOM_REPR"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.ATOM_REPR()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.draw_distogram"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.draw_distogram()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.get_fasta"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.get_fasta()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.get_msa"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.get_msa()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.inference_from_raw_data"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.inference_from_raw_data()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.load_initial_xyz"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.load_initial_xyz()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.load_model"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.load_model()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.model_inference"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.model_inference()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.save_clean_msa"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.save_clean_msa()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.symmetric_a3m_to_diagonal_a3m"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.symmetric_a3m_to_diagonal_a3m()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.symmetric_a3m_to_full_a3m"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.symmetric_a3m_to_full_a3m()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.write_pae_plddt"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.write_pae_plddt()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.ModelVisulizer.write_pdb"><code class="docutils literal notranslate"><span class="pre">ModelVisulizer.write_pdb()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.a3m_parse"><code class="docutils literal notranslate"><span class="pre">a3m_parse()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.add_weight_decay"><code class="docutils literal notranslate"><span class="pre">add_weight_decay()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.count_parameters"><code class="docutils literal notranslate"><span class="pre">count_parameters()</span></code></a></li>
-<li><a class="reference internal" href="#MiniWorld_train_multi_deep_v1_5_use_interaction.visualize_2D_tensor"><code class="docutils literal notranslate"><span class="pre">visualize_2D_tensor()</span></code></a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
