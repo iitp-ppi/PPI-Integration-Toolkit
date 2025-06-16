@@ -3,6 +3,6 @@ Examples
 .. toctree::
    :maxdepth: 4
    
-   "Predicting protein-ligand interactions/index"  
-   "Predicting protein-protein interactions/index"  
-   "Predicting the effect of protein mutations/index"
+   Predicting_protein-ligand_interactions/index  
+   Predicting_protein-protein_interactions/index
+   Predicting_the_effect_of_protein_mutations/index
