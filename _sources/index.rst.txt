@@ -8,9 +8,12 @@ Welcome to PPI Integration Toolkit's documentation!
 
 .. toctree::
    :maxdepth: 8
+   :caption: Table of Contents
 
-   api.rst
-
+   api
+   backbone/index
+   tool/index
+   examples/index
 
 Indices and tables
 ==================
