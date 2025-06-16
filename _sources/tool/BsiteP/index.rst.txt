@@ -7,3 +7,8 @@ bsitep documentation
    :caption: API Reference
 
    bsitep
+.. toctree::
+   :maxdepth: 2
+   :caption: API Docs
+
+   modules

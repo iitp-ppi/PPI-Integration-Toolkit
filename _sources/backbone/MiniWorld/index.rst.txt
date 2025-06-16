@@ -16,3 +16,8 @@ documentation for details.
    :caption: API Reference
 
    miniworld
+.. toctree::
+   :maxdepth: 2
+   :caption: API Docs
+
+   modules
