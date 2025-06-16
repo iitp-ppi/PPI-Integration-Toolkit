@@ -16,3 +16,9 @@ documentation for details.
    :caption: API Reference
 
    deepfold
+
+.. toctree::
+   :maxdepth: 2
+   :caption: API Docs
+
+   modules

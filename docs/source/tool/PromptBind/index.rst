@@ -7,3 +7,8 @@ promptbind documentation
    :caption: API Reference
 
    promptbind
+.. toctree::
+   :maxdepth: 2
+   :caption: API Docs
+
+   modules

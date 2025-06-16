@@ -14,3 +14,8 @@ bapred documentation
    :caption: API Reference
 
    bapred
+.. toctree::
+   :maxdepth: 2
+   :caption: API Docs
+
+   modules

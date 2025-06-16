@@ -7,3 +7,8 @@ gd_dl documentation
    :caption: API Reference
 
    gd_dl
+.. toctree::
+   :maxdepth: 2
+   :caption: API Docs
+
+   modules
