@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -630,43 +623,43 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_assembly_features</span></code>(all_chain_features)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.add_assembly_features" title="deepfold.data.multimer.input_features.add_assembly_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_assembly_features</span></code></a>(all_chain_features)</p></td>
 <td><p>Add features to distinguish between chains.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_monomer_features</span></code>(monomer_features)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.convert_monomer_features" title="deepfold.data.multimer.input_features.convert_monomer_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_monomer_features</span></code></a>(monomer_features)</p></td>
 <td><p>Reshapes and modifies monomer features for multimer models.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_all_seq_msa_features</span></code>(all_seq_features)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.create_all_seq_msa_features" title="deepfold.data.multimer.input_features.create_all_seq_msa_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_all_seq_msa_features</span></code></a>(all_seq_features)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_all_seq_msa_features_from_a3m</span></code>(a3m_strings)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.create_all_seq_msa_features_from_a3m" title="deepfold.data.multimer.input_features.create_all_seq_msa_features_from_a3m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_all_seq_msa_features_from_a3m</span></code></a>(a3m_strings)</p></td>
 <td><p>Get MSA features for paring.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_multimer_features</span></code>(paired_a3m_strings)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.create_multimer_features" title="deepfold.data.multimer.input_features.create_multimer_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_multimer_features</span></code></a>(paired_a3m_strings)</p></td>
 <td><p>Create multimer features from paired MSA strings.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">crop_chains</span></code>(chains_list, msa_crop_size, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.crop_chains" title="deepfold.data.multimer.input_features.crop_chains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crop_chains</span></code></a>(chains_list, msa_crop_size, ...)</p></td>
 <td><p>Crops the MSAs for a set of chains.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">int_id_to_str_id</span></code>(num)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.int_id_to_str_id" title="deepfold.data.multimer.input_features.int_id_to_str_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int_id_to_str_id</span></code></a>(num)</p></td>
 <td><p>Encodes a number as a string, using reverse spreadsheet style naming.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pad_msa</span></code>(example, min_num_cluster)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.pad_msa" title="deepfold.data.multimer.input_features.pad_msa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pad_msa</span></code></a>(example, min_num_cluster)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pair_and_merge</span></code>(all_chain_features)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.pair_and_merge" title="deepfold.data.multimer.input_features.pair_and_merge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pair_and_merge</span></code></a>(all_chain_features)</p></td>
 <td><p>Runs processing on features to augment, pair and merge.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_final</span></code>(np_example)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.process_final" title="deepfold.data.multimer.input_features.process_final"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_final</span></code></a>(np_example)</p></td>
 <td><p>Final processing steps in data pipeline, after merging and pairing.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_multimer_features</span></code>(complex, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.process_multimer_features" title="deepfold.data.multimer.input_features.process_multimer_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_multimer_features</span></code></a>(complex, ...[, ...])</p></td>
 <td><p>Create a multimer input features.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_single_chain</span></code>(chain_features, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.process_single_chain" title="deepfold.data.multimer.input_features.process_single_chain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_single_chain</span></code></a>(chain_features, ...[, ...])</p></td>
 <td><p>Process a single chain features.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_unmerged_features</span></code>(all_chain_features)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.process_unmerged_features" title="deepfold.data.multimer.input_features.process_unmerged_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_unmerged_features</span></code></a>(all_chain_features)</p></td>
 <td><p>Postprocessing stage for per-chain features before merging.</p></td>
 </tr>
 </tbody>
@@ -676,7 +669,7 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComplexInfo</span></code>(descriptions, num_units)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.multimer.html#deepfold.data.multimer.input_features.ComplexInfo" title="deepfold.data.multimer.input_features.ComplexInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComplexInfo</span></code></a>(descriptions, num_units)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>

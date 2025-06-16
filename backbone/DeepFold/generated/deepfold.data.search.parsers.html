@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -631,37 +624,37 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_stockholm_to_a3m</span></code>(stockholm_format[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.convert_stockholm_to_a3m" title="deepfold.data.search.parsers.convert_stockholm_to_a3m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_stockholm_to_a3m</span></code></a>(stockholm_format[, ...])</p></td>
 <td><p>Converts MSA in Stockholm format to the A3M format.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deduplicate_stockholm_msa</span></code>(stockholm_msa)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.deduplicate_stockholm_msa" title="deepfold.data.search.parsers.deduplicate_stockholm_msa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deduplicate_stockholm_msa</span></code></a>(stockholm_msa)</p></td>
 <td><p>Remove duplicate sequences (ignoring insertions wrt query).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_a3m</span></code>(a3m_string)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_a3m" title="deepfold.data.search.parsers.parse_a3m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_a3m</span></code></a>(a3m_string)</p></td>
 <td><p>Parses sequences and deletion matrix from a3m format alignment.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_e_values_from_tblout</span></code>(tblout)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_e_values_from_tblout" title="deepfold.data.search.parsers.parse_e_values_from_tblout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_e_values_from_tblout</span></code></a>(tblout)</p></td>
 <td><p>Parse target to e-value mapping parsed from Jackhmmer tblout string.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_fasta</span></code>(fasta_string)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_fasta" title="deepfold.data.search.parsers.parse_fasta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_fasta</span></code></a>(fasta_string)</p></td>
 <td><p>Parses FASTA string and returns list of strings with amino-acid sequences.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_hhr</span></code>(hhr_string)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_hhr" title="deepfold.data.search.parsers.parse_hhr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_hhr</span></code></a>(hhr_string)</p></td>
 <td><p>Parses the content of an entire HHR file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_hmmsearch_a3m</span></code>(query_sequence, a3m_string)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_hmmsearch_a3m" title="deepfold.data.search.parsers.parse_hmmsearch_a3m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_hmmsearch_a3m</span></code></a>(query_sequence, a3m_string)</p></td>
 <td><p>Parses an a3m string produced by hmmsearch.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_hmmsearch_sto</span></code>(query_sequence, sto_string)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_hmmsearch_sto" title="deepfold.data.search.parsers.parse_hmmsearch_sto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_hmmsearch_sto</span></code></a>(query_sequence, sto_string)</p></td>
 <td><p>Gets parsed template hits from the raw string output by the tool.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_stockholm</span></code>(stockholm_string)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.parse_stockholm" title="deepfold.data.search.parsers.parse_stockholm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_stockholm</span></code></a>(stockholm_string)</p></td>
 <td><p>Parses sequences and deletion matrix from stockholm format alignment.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_empty_columns_from_stockholm_msa</span></code>(...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.remove_empty_columns_from_stockholm_msa" title="deepfold.data.search.parsers.remove_empty_columns_from_stockholm_msa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_empty_columns_from_stockholm_msa</span></code></a>(...)</p></td>
 <td><p>Removes empty columns (dashes-only) from a Stockholm MSA.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">truncate_stockholm_msa</span></code>(stockholm_msa_path, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.truncate_stockholm_msa" title="deepfold.data.search.parsers.truncate_stockholm_msa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">truncate_stockholm_msa</span></code></a>(stockholm_msa_path, ...)</p></td>
 <td><p>Reads + truncates a Stockholm file while preventing excessive RAM usage.</p></td>
 </tr>
 </tbody>
@@ -671,10 +664,10 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HitMetadata</span></code>(pdb_id, chain, start, end, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.HitMetadata" title="deepfold.data.search.parsers.HitMetadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HitMetadata</span></code></a>(pdb_id, chain, start, end, ...)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TemplateHit</span></code>(index, name, aligned_cols, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../deepfold.data.search.html#deepfold.data.search.parsers.TemplateHit" title="deepfold.data.search.parsers.TemplateHit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TemplateHit</span></code></a>(index, name, aligned_cols, ...)</p></td>
 <td><p>Class representing a template hit.</p></td>
 </tr>
 </tbody>

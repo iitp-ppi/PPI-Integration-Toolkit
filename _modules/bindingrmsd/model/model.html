@@ -1,0 +1,787 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../../../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" />
+
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>bindingrmsd.model.model - AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=302659d7" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  
+  <span class="sidebar-brand-text">AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../api.html">API</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../backbone/index.html">Backbone Models</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Backbone Models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../backbone/DeepFold/index.html">deepfold documentation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of deepfold documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.html">deepfold</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of deepfold</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.common.html">deepfold.common</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of deepfold.common</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.common.protein.html">deepfold.common.protein</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.common.residue_constants.html">deepfold.common.residue_constants</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.config.html">deepfold.config</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.html">deepfold.data</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of deepfold.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.errors.html">deepfold.data.errors</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.modules.html">deepfold.data.modules</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of deepfold.data.modules</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.modules.dataloaders.html">deepfold.data.modules.dataloaders</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.modules.mmcif_dataset.html">deepfold.data.modules.mmcif_dataset</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.modules.samplers.html">deepfold.data.modules.samplers</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.modules.single_dataset.html">deepfold.data.modules.single_dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.monomer.html">deepfold.data.monomer</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.multimer.html">deepfold.data.multimer</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of deepfold.data.multimer</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.multimer.input_features.html">deepfold.data.multimer.input_features</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.multimer.msa_pairing.html">deepfold.data.multimer.msa_pairing</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.pdbio.html">deepfold.data.pdbio</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.pdbx_parsing.html">deepfold.data.pdbx_parsing</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.html">deepfold.data.search</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of deepfold.data.search</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.crfalign.html">deepfold.data.search.crfalign</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.input_features.html">deepfold.data.search.input_features</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.mmcif.html">deepfold.data.search.mmcif</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.msa_identifiers.html">deepfold.data.search.msa_identifiers</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.parsers.html">deepfold.data.search.parsers</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.search.templates.html">deepfold.data.search.templates</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.html">deepfold.data.tools</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of deepfold.data.tools</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.hhblits.html">deepfold.data.tools.hhblits</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.hhsearch.html">deepfold.data.tools.hhsearch</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.hmmbuild.html">deepfold.data.tools.hmmbuild</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.hmmsearch.html">deepfold.data.tools.hmmsearch</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.jackhmmer.html">deepfold.data.tools.jackhmmer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.kalign.html">deepfold.data.tools.kalign</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.data.tools.utils.html">deepfold.data.tools.utils</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.distributed.html">deepfold.distributed</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of deepfold.distributed</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.distributed.model_parallel.html">deepfold.distributed.model_parallel</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.distributed.utils.html">deepfold.distributed.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.html">deepfold.eval</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of deepfold.eval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.cell_lists.html">deepfold.eval.cell_lists</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.contact.html">deepfold.eval.contact</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.distogram.html">deepfold.eval.distogram</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.msa.html">deepfold.eval.msa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.plot.html">deepfold.eval.plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.eval.pseudo_3d.html">deepfold.eval.pseudo_3d</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.loss.html">deepfold.loss</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.html">deepfold.losses</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of deepfold.losses</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.auxillary.html">deepfold.losses.auxillary</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.confidence.html">deepfold.losses.confidence</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.geometry.html">deepfold.losses.geometry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.masked_msa.html">deepfold.losses.masked_msa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.procrustes.html">deepfold.losses.procrustes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.utils.html">deepfold.losses.utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.losses.violation.html">deepfold.losses.violation</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.html">deepfold.modules</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of deepfold.modules</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.alphafold.html">deepfold.modules.alphafold</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.angle_resnet.html">deepfold.modules.angle_resnet</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.attention.html">deepfold.modules.attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.auxiliary_heads.html">deepfold.modules.auxiliary_heads</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.backbone_update.html">deepfold.modules.backbone_update</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.dropout.html">deepfold.modules.dropout</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.evoformer_block.html">deepfold.modules.evoformer_block</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.evoformer_block_pair_core.html">deepfold.modules.evoformer_block_pair_core</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.evoformer_stack.html">deepfold.modules.evoformer_stack</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.extra_msa_block.html">deepfold.modules.extra_msa_block</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.extra_msa_embedder.html">deepfold.modules.extra_msa_embedder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.extra_msa_stack.html">deepfold.modules.extra_msa_stack</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.global_attention.html">deepfold.modules.global_attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.inductor.html">deepfold.modules.inductor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.input_embedder.html">deepfold.modules.input_embedder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.invariant_point_attention.html">deepfold.modules.invariant_point_attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.layer_norm.html">deepfold.modules.layer_norm</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.linear.html">deepfold.modules.linear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.msa_column_attention.html">deepfold.modules.msa_column_attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.msa_column_global_attention.html">deepfold.modules.msa_column_global_attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.msa_row_attention_with_pair_bias.html">deepfold.modules.msa_row_attention_with_pair_bias</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.msa_transition.html">deepfold.modules.msa_transition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.outer_product_mean.html">deepfold.modules.outer_product_mean</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.pair_transition.html">deepfold.modules.pair_transition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.recycling_embedder.html">deepfold.modules.recycling_embedder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.single_transition.html">deepfold.modules.single_transition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.structure_module.html">deepfold.modules.structure_module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.template_angle_embedder.html">deepfold.modules.template_angle_embedder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.template_pair_block.html">deepfold.modules.template_pair_block</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.template_pair_embedder.html">deepfold.modules.template_pair_embedder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.template_pair_stack.html">deepfold.modules.template_pair_stack</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.template_pointwise_attention.html">deepfold.modules.template_pointwise_attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.template_projection.html">deepfold.modules.template_projection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.triangular_attention.html">deepfold.modules.triangular_attention</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.triangular_multiplicative_update.html">deepfold.modules.triangular_multiplicative_update</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.tweaks.html">deepfold.modules.tweaks</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of deepfold.modules.tweaks</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.modules.tweaks.evo_attn.html">deepfold.modules.tweaks.evo_attn</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.ops.html">deepfold.ops</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of deepfold.ops</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.ops.evoformer_attention.html">deepfold.ops.evoformer_attention</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.package_info.html">deepfold.package_info</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.relax.html">deepfold.relax</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of deepfold.relax</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.relax.amber_minimize.html">deepfold.relax.amber_minimize</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.relax.cleanup.html">deepfold.relax.cleanup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.relax.relax.html">deepfold.relax.relax</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.relax.utils.html">deepfold.relax.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.runner.html">deepfold.runner</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of deepfold.runner</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.runner.config_utils.html">deepfold.runner.config_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.runner.parser.html">deepfold.runner.parser</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.runner.utils.html">deepfold.runner.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.testing.html">deepfold.testing</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of deepfold.testing</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.testing.common.html">deepfold.testing.common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.testing.utils.html">deepfold.testing.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.train.html">deepfold.train</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of deepfold.train</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.train.gradient_clipping.html">deepfold.train.gradient_clipping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.train.lr_scheduler.html">deepfold.train.lr_scheduler</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.train.validation_metrics.html">deepfold.train.validation_metrics</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.html">deepfold.utils</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of deepfold.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.checkpoint_utils.html">deepfold.utils.checkpoint_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.chunk_utils.html">deepfold.utils.chunk_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.crop_utils.html">deepfold.utils.crop_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.datetime_utils.html">deepfold.utils.datetime_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.dist_utils.html">deepfold.utils.dist_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.feats_utils.html">deepfold.utils.feats_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.file_utils.html">deepfold.utils.file_utils</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.geometry.html">deepfold.utils.geometry</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of deepfold.utils.geometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.geometry.quat_rigid.html">deepfold.utils.geometry.quat_rigid</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.geometry.rigid_matrix_vector.html">deepfold.utils.geometry.rigid_matrix_vector</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.geometry.rotation_matrix.html">deepfold.utils.geometry.rotation_matrix</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.geometry.utils.html">deepfold.utils.geometry.utils</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.geometry.vector.html">deepfold.utils.geometry.vector</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.hash_utils.html">deepfold.utils.hash_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.import_utils.html">deepfold.utils.import_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.iter_utils.html">deepfold.utils.iter_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.log_utils.html">deepfold.utils.log_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.precision.html">deepfold.utils.precision</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.random.html">deepfold.utils.random</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.rigid_utils.html">deepfold.utils.rigid_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.script_utils.html">deepfold.utils.script_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.swa_utils.html">deepfold.utils.swa_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/DeepFold/generated/deepfold.utils.tensor_utils.html">deepfold.utils.tensor_utils</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../backbone/MiniWorld/index.html">MiniWorld documentation</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of MiniWorld documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.html">miniworld</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of miniworld</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.MiniWorld_train_multi_deep_v1_5_use_interaction.html">miniworld.MiniWorld_train_multi_deep_v1_5_use_interaction</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.feature.html">miniworld.feature</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of miniworld.feature</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.feature.MiniWorld_featuring_species.html">miniworld.feature.MiniWorld_featuring_species</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.html">miniworld.models_MiniWorld_v1_5_use_interaction</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of miniworld.models_MiniWorld_v1_5_use_interaction</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module.html">miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor.html">miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings.html">miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.MiniWorld.html">miniworld.models_MiniWorld_v1_5_use_interaction.MiniWorld</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.Track_module.html">miniworld.models_MiniWorld_v1_5_use_interaction.Track_module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.models_MiniWorld_v1_5_use_interaction.value_network.html">miniworld.models_MiniWorld_v1_5_use_interaction.value_network</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.html">miniworld.utils</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of miniworld.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.DataClass.html">miniworld.utils.DataClass</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.My_mistake.html">miniworld.utils.My_mistake</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.ProteinClass.html">miniworld.utils.ProteinClass</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.arguments_MiniWorld.html">miniworld.utils.arguments_MiniWorld</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.chemical.html">miniworld.utils.chemical</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.data_refactoring.html">miniworld.utils.data_refactoring</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.ffindex.html">miniworld.utils.ffindex</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.hhpred_parser.html">miniworld.utils.hhpred_parser</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.kalign_mapping.html">miniworld.utils.kalign_mapping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.kinematics.html">miniworld.utils.kinematics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.output_visualize.html">miniworld.utils.output_visualize</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.parser_util.html">miniworld.utils.parser_util</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.template_parser.html">miniworld.utils.template_parser</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.util.html">miniworld.utils.util</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../backbone/MiniWorld/generated/miniworld.utils.util_module.html">miniworld.utils.util_module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../tool/index.html">Tools</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of Tools</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.html">bapred</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of bapred</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.data.html">bapred.data</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of bapred.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.data.atom_feature.html">bapred.data.atom_feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.data.data.html">bapred.data.data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.data.utils.html">bapred.data.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.inference.html">bapred.inference</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.model.html">bapred.model</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle navigation of bapred.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.model.GatedGCNLSPE.html">bapred.model.GatedGCNLSPE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.model.GraphGPS.html">bapred.model.GraphGPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.model.MHA.html">bapred.model.MHA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BAPred/generated/bapred.model.model.html">bapred.model.model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/BindingRMSD/index.html">bindingrmsd documentation</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle navigation of bindingrmsd documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.html">bindingrmsd</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle navigation of bindingrmsd</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.data.html">bindingrmsd.data</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" role="switch" type="checkbox"/><label for="toctree-checkbox-34"><div class="visually-hidden">Toggle navigation of bindingrmsd.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.data.data.html">bindingrmsd.data.data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.data.data_bck.html">bindingrmsd.data.data_bck</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.data.ligand_atom_feature.html">bindingrmsd.data.ligand_atom_feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.data.protein_atom_feature.html">bindingrmsd.data.protein_atom_feature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.data.utils.html">bindingrmsd.data.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.inference.html">bindingrmsd.inference</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.model.html">bindingrmsd.model</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" role="switch" type="checkbox"/><label for="toctree-checkbox-35"><div class="visually-hidden">Toggle navigation of bindingrmsd.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.model.GatedGCNLSPE.html">bindingrmsd.model.GatedGCNLSPE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BindingRMSD/generated/bindingrmsd.model.model.html">bindingrmsd.model.model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/index.html">bis_protein_structure documentation</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" role="switch" type="checkbox"/><label for="toctree-checkbox-36"><div class="visually-hidden">Toggle navigation of bis_protein_structure documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.html">bis_protein_structure</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle navigation of bis_protein_structure</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.CROSSLINK.html">bis_protein_structure.CROSSLINK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.DATAGEN.html">bis_protein_structure.DATAGEN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.DISULFIDE.html">bis_protein_structure.DISULFIDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.MMEVAL.html">bis_protein_structure.MMEVAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.SOLVENTACC.html">bis_protein_structure.SOLVENTACC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.TORSION2.html">bis_protein_structure.TORSION2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.residue_constants.html">bis_protein_structure.residue_constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BIS-ProteinStructure-libraries/generated/bis_protein_structure.split_pdb.html">bis_protein_structure.split_pdb</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/BsiteP/index.html">bsitep documentation</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle navigation of bsitep documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.html">bsitep</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" role="switch" type="checkbox"/><label for="toctree-checkbox-39"><div class="visually-hidden">Toggle navigation of bsitep</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.proteindata.html">bsitep.proteindata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.seresnet.html">bsitep.seresnet</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.utils.html">bsitep.utils</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" role="switch" type="checkbox"/><label for="toctree-checkbox-40"><div class="visually-hidden">Toggle navigation of bsitep.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.utils.data_utils.html">bsitep.utils.data_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.utils.model_utils.html">bsitep.utils.model_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/BsiteP/generated/bsitep.utils.pocket_utils.html">bsitep.utils.pocket_utils</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/DiffAlign/index.html">DiffAlign documentation</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" role="switch" type="checkbox"/><label for="toctree-checkbox-41"><div class="visually-hidden">Toggle navigation of DiffAlign documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.html">diffalign</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" role="switch" type="checkbox"/><label for="toctree-checkbox-42"><div class="visually-hidden">Toggle navigation of diffalign</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.html">diffalign.models</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" role="switch" type="checkbox"/><label for="toctree-checkbox-43"><div class="visually-hidden">Toggle navigation of diffalign.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.common.html">diffalign.models.common</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.encoder.html">diffalign.models.encoder</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" role="switch" type="checkbox"/><label for="toctree-checkbox-44"><div class="visually-hidden">Toggle navigation of diffalign.models.encoder</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.encoder.edge.html">diffalign.models.encoder.edge</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.encoder.egnn.html">diffalign.models.encoder.egnn</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.epsnet.html">diffalign.models.epsnet</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" role="switch" type="checkbox"/><label for="toctree-checkbox-45"><div class="visually-hidden">Toggle navigation of diffalign.models.epsnet</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.models.epsnet.diffusion.html">diffalign.models.epsnet.diffusion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.train.html">diffalign.train</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.html">diffalign.utils</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" role="switch" type="checkbox"/><label for="toctree-checkbox-46"><div class="visually-hidden">Toggle navigation of diffalign.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.chem.html">diffalign.utils.chem</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.common.html">diffalign.utils.common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.dataloader.html">diffalign.utils.dataloader</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.datasets.html">diffalign.utils.datasets</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.evaluation.html">diffalign.utils.evaluation</a><input class="toctree-checkbox" id="toctree-checkbox-47" name="toctree-checkbox-47" role="switch" type="checkbox"/><label for="toctree-checkbox-47"><div class="visually-hidden">Toggle navigation of diffalign.utils.evaluation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.evaluation.covmat.html">diffalign.utils.evaluation.covmat</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.misc.html">diffalign.utils.misc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.transforms.html">diffalign.utils.transforms</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/DiffAlign/generated/diffalign.utils.visualize.html">diffalign.utils.visualize</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/gd_dl/index.html">gd_dl documentation</a><input class="toctree-checkbox" id="toctree-checkbox-48" name="toctree-checkbox-48" role="switch" type="checkbox"/><label for="toctree-checkbox-48"><div class="visually-hidden">Toggle navigation of gd_dl documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.html">gd_dl</a><input class="toctree-checkbox" id="toctree-checkbox-49" name="toctree-checkbox-49" role="switch" type="checkbox"/><label for="toctree-checkbox-49"><div class="visually-hidden">Toggle navigation of gd_dl</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.data.html">gd_dl.data</a><input class="toctree-checkbox" id="toctree-checkbox-50" name="toctree-checkbox-50" role="switch" type="checkbox"/><label for="toctree-checkbox-50"><div class="visually-hidden">Toggle navigation of gd_dl.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.data.ML_inference.html">gd_dl.data.ML_inference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.data.ML_rerank.html">gd_dl.data.ML_rerank</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.data.all_ML_rerank.html">gd_dl.data.all_ML_rerank</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.data.single_ML_rerank.html">gd_dl.data.single_ML_rerank</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.lib_pdb_mol2.html">gd_dl.lib_pdb_mol2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.models.html">gd_dl.models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.path_setting.html">gd_dl.path_setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.rerank_model.html">gd_dl.rerank_model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/gd_dl/generated/gd_dl.utils.html">gd_dl.utils</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tool/PromptBind/index.html">promptbind documentation</a><input class="toctree-checkbox" id="toctree-checkbox-51" name="toctree-checkbox-51" role="switch" type="checkbox"/><label for="toctree-checkbox-51"><div class="visually-hidden">Toggle navigation of promptbind documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.html">promptbind</a><input class="toctree-checkbox" id="toctree-checkbox-52" name="toctree-checkbox-52" role="switch" type="checkbox"/><label for="toctree-checkbox-52"><div class="visually-hidden">Toggle navigation of promptbind</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.data.html">promptbind.data</a><input class="toctree-checkbox" id="toctree-checkbox-53" name="toctree-checkbox-53" role="switch" type="checkbox"/><label for="toctree-checkbox-53"><div class="visually-hidden">Toggle navigation of promptbind.data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.data.data.html">promptbind.data.data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.data.inference_preprocess_mol_confs.html">promptbind.data.inference_preprocess_mol_confs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.data.inference_preprocess_protein.html">promptbind.data.inference_preprocess_protein</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.models.html">promptbind.models</a><input class="toctree-checkbox" id="toctree-checkbox-54" name="toctree-checkbox-54" role="switch" type="checkbox"/><label for="toctree-checkbox-54"><div class="visually-hidden">Toggle navigation of promptbind.models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.models.att_model.html">promptbind.models.att_model</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.models.cross_att.html">promptbind.models.cross_att</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.models.egnn.html">promptbind.models.egnn</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.models.model.html">promptbind.models.model</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.models.model_utils.html">promptbind.models.model_utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.test_promptbind.html">promptbind.test_promptbind</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.train_promptbind.html">promptbind.train_promptbind</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.html">promptbind.utils</a><input class="toctree-checkbox" id="toctree-checkbox-55" name="toctree-checkbox-55" role="switch" type="checkbox"/><label for="toctree-checkbox-55"><div class="visually-hidden">Toggle navigation of promptbind.utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.fabind_inference_dataset.html">promptbind.utils.fabind_inference_dataset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.feature_utils.html">promptbind.utils.feature_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.generation_utils.html">promptbind.utils.generation_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.inference_mol_utils.html">promptbind.utils.inference_mol_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.inference_pdb_utils.html">promptbind.utils.inference_pdb_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.logging_utils.html">promptbind.utils.logging_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.metrics.html">promptbind.utils.metrics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.metrics_to_tsb.html">promptbind.utils.metrics_to_tsb</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.post_optim_utils.html">promptbind.utils.post_optim_utils</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.utils.utils.html">promptbind.utils.utils</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../tool/PromptBind/generated/promptbind.visualize_prompt_components.html">promptbind.visualize_prompt_components</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <h1>Source code for bindingrmsd.model.model</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span><span class="o">,</span><span class="w"> </span><span class="nn">dgl</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch.nn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nn</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dgl.nn.pytorch.glob</span><span class="w"> </span><span class="kn">import</span> <span class="n">SumPooling</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">.GatedGCNLSPE</span><span class="w"> </span><span class="kn">import</span> <span class="n">GatedGCNLSPELayer</span>
+
+<div class="viewcode-block" id="PredictionRMSD">
+<a class="viewcode-back" href="../../../tool/BindingRMSD/bindingrmsd.model.html#bindingrmsd.model.model.PredictionRMSD">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">PredictionRMSD</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">in_size</span><span class="p">,</span> <span class="n">emb_size</span><span class="p">,</span> <span class="n">intra_edge_size</span><span class="p">,</span> <span class="n">inter_edge_size</span><span class="p">,</span> <span class="n">pose_size</span><span class="p">,</span> <span class="n">num_layers</span><span class="p">,</span> <span class="n">dropout_ratio</span><span class="o">=</span><span class="mf">0.15</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">PredictionRMSD</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">res_token_encoder</span>  <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Embedding</span><span class="p">(</span> <span class="mi">22</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">emb_size</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atom_token_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Embedding</span><span class="p">(</span> <span class="mi">175</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">emb_size</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">protein_edge_encoder</span>  <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span> <span class="mi">15</span><span class="p">,</span> <span class="n">emb_size</span> <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ligand_node_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span> <span class="n">in_size</span><span class="p">,</span> <span class="n">emb_size</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ligand_edge_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span> <span class="n">intra_edge_size</span><span class="p">,</span>  <span class="n">emb_size</span> <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">protein_pose_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span> <span class="n">pose_size</span><span class="p">,</span> <span class="n">emb_size</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ligand_pose_encoder</span>  <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span> <span class="n">pose_size</span><span class="p">,</span> <span class="n">emb_size</span> <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">complex_edge_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span> <span class="mi">15</span><span class="p">,</span> <span class="n">emb_size</span> <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">protein_norm</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span> <span class="n">emb_size</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ligand_norm</span>  <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span> <span class="n">emb_size</span> <span class="p">)</span>
+
+        <span class="n">blocks</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">(</span>
+                <span class="p">[</span>
+                    <span class="n">GatedGCNLSPELayer</span><span class="p">(</span>
+                        <span class="n">input_dim</span><span class="o">=</span><span class="n">emb_size</span><span class="p">,</span>
+                        <span class="n">output_dim</span><span class="o">=</span><span class="n">emb_size</span><span class="p">,</span>
+                        <span class="n">dropout</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+                        <span class="n">batch_norm</span><span class="o">=</span><span class="kc">True</span>
+                    <span class="p">)</span>
+                    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">protein_block</span> <span class="o">=</span> <span class="n">blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ligand_block</span>  <span class="o">=</span> <span class="n">blocks</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">complex_block</span> <span class="o">=</span> <span class="n">blocks</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">mlp_rmsd</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">emb_size</span><span class="p">,</span> <span class="n">emb_size</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="n">emb_size</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ELU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="n">dropout_ratio</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">emb_size</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sum_pooling</span> <span class="o">=</span> <span class="n">SumPooling</span><span class="p">()</span>
+        
+<div class="viewcode-block" id="PredictionRMSD.forward">
+<a class="viewcode-back" href="../../../tool/BindingRMSD/bindingrmsd.model.html#bindingrmsd.model.model.PredictionRMSD.forward">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gp</span><span class="p">,</span> <span class="n">gl</span><span class="p">,</span> <span class="n">gc</span><span class="p">):</span>
+        <span class="n">hpr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">res_token_encoder</span><span class="p">(</span> <span class="n">gp</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;token_res&#39;</span><span class="p">]</span> <span class="p">)</span>
+        <span class="n">hpa</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">atom_token_encoder</span><span class="p">(</span> <span class="n">gp</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;token_atom&#39;</span><span class="p">])</span>
+
+        <span class="n">hp</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="p">[</span><span class="n">hpr</span><span class="p">,</span> <span class="n">hpa</span><span class="p">],</span> <span class="mi">1</span> <span class="p">)</span>
+
+        <span class="n">ep</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">protein_edge_encoder</span><span class="p">(</span> <span class="n">gp</span><span class="o">.</span><span class="n">edata</span><span class="p">[</span><span class="s1">&#39;dist&#39;</span><span class="p">]</span> <span class="p">)</span>
+        <span class="n">pp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">protein_pose_encoder</span><span class="p">(</span> <span class="n">gp</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;pos_enc&#39;</span><span class="p">]</span> <span class="p">)</span>
+
+        <span class="n">hl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ligand_node_encoder</span><span class="p">(</span> <span class="n">gl</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]</span> <span class="p">)</span>
+        <span class="n">el</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ligand_edge_encoder</span><span class="p">(</span> <span class="n">gl</span><span class="o">.</span><span class="n">edata</span><span class="p">[</span><span class="s1">&#39;feat&#39;</span><span class="p">]</span> <span class="p">)</span>
+        <span class="n">pl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ligand_pose_encoder</span><span class="p">(</span> <span class="n">gl</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;pos_enc&#39;</span><span class="p">])</span>
+
+        <span class="n">ec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">complex_edge_encoder</span><span class="p">(</span> <span class="n">gc</span><span class="o">.</span><span class="n">edata</span><span class="p">[</span><span class="s1">&#39;dist&#39;</span><span class="p">]</span> <span class="p">)</span>
+
+        <span class="n">hp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">protein_norm</span><span class="p">(</span> <span class="n">hp</span> <span class="p">)</span>
+        <span class="n">hl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ligand_norm</span><span class="p">(</span> <span class="n">hl</span> <span class="p">)</span>
+
+        <span class="n">xp</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span>
+        <span class="n">xl</span> <span class="o">=</span> <span class="n">gl</span><span class="o">.</span><span class="n">ndata</span><span class="p">[</span><span class="s1">&#39;coord&#39;</span><span class="p">]</span>
+
+        <span class="n">hp_raw</span> <span class="o">=</span> <span class="n">hp</span>
+        <span class="n">hl_raw</span> <span class="o">=</span> <span class="n">hl</span>
+
+        <span class="n">gp_batch_sizes</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">batch_num_nodes</span><span class="p">()</span>
+        <span class="n">gl_batch_sizes</span> <span class="o">=</span> <span class="n">gl</span><span class="o">.</span><span class="n">batch_num_nodes</span><span class="p">()</span>
+
+        <span class="n">gp_start_indices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">gp_batch_sizes</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+        <span class="n">gl_start_indices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">gl_batch_sizes</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="n">protein_layer</span><span class="p">,</span> <span class="n">ligand_layer</span><span class="p">,</span> <span class="n">complex_layer</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">protein_block</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ligand_block</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">complex_block</span><span class="p">):</span>
+            <span class="n">hp</span><span class="p">,</span> <span class="n">pp</span><span class="p">,</span> <span class="n">ep</span> <span class="o">=</span> <span class="n">protein_layer</span><span class="p">(</span> <span class="n">gp</span><span class="p">,</span> <span class="n">hp</span><span class="p">,</span> <span class="n">pp</span><span class="p">,</span> <span class="n">ep</span> <span class="p">)</span> 
+            <span class="n">hl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">el</span> <span class="o">=</span> <span class="n">ligand_layer</span><span class="p">(</span> <span class="n">gl</span><span class="p">,</span> <span class="n">hl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">el</span> <span class="p">)</span>
+
+            <span class="n">hc</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">pc</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">xc</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">gp_start</span><span class="p">,</span> <span class="n">gp_size</span><span class="p">,</span> <span class="n">gl_start</span><span class="p">,</span> <span class="n">gl_size</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">gp_start_indices</span><span class="p">,</span> <span class="n">gp_batch_sizes</span><span class="p">,</span> <span class="n">gl_start_indices</span><span class="p">,</span> <span class="n">gl_batch_sizes</span><span class="p">):</span>
+                <span class="n">hp_slice</span> <span class="o">=</span> <span class="n">hp</span><span class="p">[</span><span class="n">gp_start</span><span class="p">:</span><span class="n">gp_start</span> <span class="o">+</span> <span class="n">gp_size</span><span class="p">]</span>
+                <span class="n">hl_slice</span> <span class="o">=</span> <span class="n">hl</span><span class="p">[</span><span class="n">gl_start</span><span class="p">:</span><span class="n">gl_start</span> <span class="o">+</span> <span class="n">gl_size</span><span class="p">]</span>
+                <span class="n">pp_slice</span> <span class="o">=</span> <span class="n">pp</span><span class="p">[</span><span class="n">gp_start</span><span class="p">:</span><span class="n">gp_start</span> <span class="o">+</span> <span class="n">gp_size</span><span class="p">]</span>
+                <span class="n">pl_slice</span> <span class="o">=</span> <span class="n">pl</span><span class="p">[</span><span class="n">gl_start</span><span class="p">:</span><span class="n">gl_start</span> <span class="o">+</span> <span class="n">gl_size</span><span class="p">]</span>
+                <span class="n">xp_slice</span> <span class="o">=</span> <span class="n">xp</span><span class="p">[</span><span class="n">gp_start</span><span class="p">:</span><span class="n">gp_start</span> <span class="o">+</span> <span class="n">gp_size</span><span class="p">]</span>
+                <span class="n">xl_slice</span> <span class="o">=</span> <span class="n">xl</span><span class="p">[</span><span class="n">gp_start</span><span class="p">:</span><span class="n">gp_start</span> <span class="o">+</span> <span class="n">gp_size</span><span class="p">]</span>
+
+                <span class="n">hc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="p">[</span><span class="n">hp_slice</span><span class="p">,</span> <span class="n">hl_slice</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">pc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="p">[</span><span class="n">pp_slice</span><span class="p">,</span> <span class="n">pl_slice</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">xc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="p">[</span><span class="n">xp_slice</span><span class="p">,</span> <span class="n">xl_slice</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+
+            <span class="n">hc</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="n">hc</span> <span class="p">)</span>
+            <span class="n">pc</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="n">pc</span> <span class="p">)</span>
+            <span class="n">xc</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span> <span class="n">xc</span> <span class="p">)</span>
+
+            <span class="n">hc</span><span class="p">,</span> <span class="n">pc</span><span class="p">,</span> <span class="n">ec</span> <span class="o">=</span> <span class="n">complex_layer</span><span class="p">(</span> <span class="n">gc</span><span class="p">,</span> <span class="n">hc</span><span class="p">,</span> <span class="n">pc</span><span class="p">,</span> <span class="n">ec</span> <span class="p">)</span>
+
+            <span class="n">hp_separated</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">hl_separated</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">gp_size</span><span class="p">,</span> <span class="n">gl_size</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">gp_batch_sizes</span><span class="p">,</span> <span class="n">gl_batch_sizes</span><span class="p">):</span>
+                <span class="n">hp_separated</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hc</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">start</span> <span class="o">+</span> <span class="n">gp_size</span><span class="p">])</span>
+                <span class="n">start</span> <span class="o">+=</span> <span class="n">gp_size</span>
+                <span class="n">hl_separated</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hc</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">start</span> <span class="o">+</span> <span class="n">gl_size</span><span class="p">])</span>
+                <span class="n">start</span> <span class="o">+=</span> <span class="n">gl_size</span>
+
+            <span class="n">hp</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">hp_separated</span><span class="p">)</span>
+            <span class="n">hl</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">hl_separated</span><span class="p">)</span>
+            
+            <span class="n">hp</span> <span class="o">+=</span> <span class="n">hp_raw</span>
+            <span class="n">hl</span> <span class="o">+=</span> <span class="n">hl_raw</span>
+
+        <span class="n">h</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_pooling</span><span class="p">(</span><span class="n">gc</span><span class="p">,</span> <span class="n">hc</span><span class="p">)</span>
+
+        <span class="n">rmsd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mlp_rmsd</span><span class="p">(</span> <span class="n">h</span> <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">rmsd</span></div>
+</div>
+
+</pre></div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, PPI.
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="../../../_static/documentation_options.js?v=47de8214"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    </body>
+</html>

@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -630,37 +623,37 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">accumulate_grad_from_subgraph</span></code>(model, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.accumulate_grad_from_subgraph" title="diffalign.utils.datasets.accumulate_grad_from_subgraph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">accumulate_grad_from_subgraph</span></code></a>(model, ...[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_test_set_with_large_num_conf</span></code>(base_path, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.get_test_set_with_large_num_conf" title="diffalign.utils.datasets.get_test_set_with_large_num_conf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_test_set_with_large_num_conf</span></code></a>(base_path, ...)</p></td>
 <td><p>base_path: directory that contains GEOM dataset dataset_name: dataset name, should be in [qm9, drugs] conf_per_mol: keep mol that has at least conf_per_mol confs, and sampling the most probable conf_per_mol confs train_size ratio, val = test = (1-train_size) / 2 tot_mol_size: max num of mols.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pdb_to_data</span></code>(pdb_path, name)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.pdb_to_data" title="diffalign.utils.datasets.pdb_to_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pdb_to_data</span></code></a>(pdb_path, name)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_pdb2</span></code>(scn_dir, data_path)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.prepare_pdb2" title="diffalign.utils.datasets.prepare_pdb2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_pdb2</span></code></a>(scn_dir, data_path)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_pdb_valtest</span></code>(scn_dir, data_path)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.prepare_pdb_valtest" title="diffalign.utils.datasets.prepare_pdb_valtest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_pdb_valtest</span></code></a>(scn_dir, data_path)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_pdblarge</span></code>(scn_dir, data_path)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.prepare_pdblarge" title="diffalign.utils.datasets.prepare_pdblarge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_pdblarge</span></code></a>(scn_dir, data_path)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">preprocess_GEOM_dataset</span></code>(base_path, dataset_name)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.preprocess_GEOM_dataset" title="diffalign.utils.datasets.preprocess_GEOM_dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">preprocess_GEOM_dataset</span></code></a>(base_path, dataset_name)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">preprocess_GEOM_dataset_with_fixed_num_conf</span></code>(...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.preprocess_GEOM_dataset_with_fixed_num_conf" title="diffalign.utils.datasets.preprocess_GEOM_dataset_with_fixed_num_conf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">preprocess_GEOM_dataset_with_fixed_num_conf</span></code></a>(...)</p></td>
 <td><p>base_path: directory that contains GEOM dataset dataset_name: dataset name, should be in [qm9, drugs] conf_per_mol: keep mol that has at least conf_per_mol confs, and sampling the most probable conf_per_mol confs train_size ratio, val = test = (1-train_size) / 2 tot_mol_size: max num of mols.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">preprocess_iso17_dataset</span></code>(base_path)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.preprocess_iso17_dataset" title="diffalign.utils.datasets.preprocess_iso17_dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">preprocess_iso17_dataset</span></code></a>(base_path)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rdmol_cluster_to_data</span></code>(mol[, smiles])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.rdmol_cluster_to_data" title="diffalign.utils.datasets.rdmol_cluster_to_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rdmol_cluster_to_data</span></code></a>(mol[, smiles])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rdmol_to_data</span></code>(mol[, smiles, data_cls])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.rdmol_to_data" title="diffalign.utils.datasets.rdmol_to_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rdmol_to_data</span></code></a>(mol[, smiles, data_cls])</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -670,16 +663,16 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConformationDataset</span></code>(path[, transform])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.ConformationDataset" title="diffalign.utils.datasets.ConformationDataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConformationDataset</span></code></a>(path[, transform])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MolClusterData</span></code>([x, edge_index, edge_attr, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.MolClusterData" title="diffalign.utils.datasets.MolClusterData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MolClusterData</span></code></a>([x, edge_index, edge_attr, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PackedConformationDataset</span></code>(path[, transform])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.PackedConformationDataset" title="diffalign.utils.datasets.PackedConformationDataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PackedConformationDataset</span></code></a>(path[, transform])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SidechainConformationDataset</span></code>(path[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../diffalign.utils.html#diffalign.utils.datasets.SidechainConformationDataset" title="diffalign.utils.datasets.SidechainConformationDataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SidechainConformationDataset</span></code></a>(path[, ...])</p></td>
 <td><p></p></td>
 </tr>
 </tbody>

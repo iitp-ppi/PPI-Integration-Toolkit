@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -630,22 +623,22 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_RMSD</span></code>(a, b)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../promptbind.utils.html#promptbind.utils.post_optim_utils.compute_RMSD" title="promptbind.utils.post_optim_utils.compute_RMSD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_RMSD</span></code></a>(a, b)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_compound_coords</span></code>(...[, lr, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_compound_coords" title="promptbind.utils.post_optim_utils.post_optimize_compound_coords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_compound_coords</span></code></a>(...[, lr, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_compound_coords_lbfgs</span></code>(...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_compound_coords_lbfgs" title="promptbind.utils.post_optim_utils.post_optimize_compound_coords_lbfgs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_compound_coords_lbfgs</span></code></a>(...[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_loss_function</span></code>(epoch, x, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../promptbind.utils.html#promptbind.utils.post_optim_utils.post_optimize_loss_function" title="promptbind.utils.post_optim_utils.post_optimize_loss_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post_optimize_loss_function</span></code></a>(epoch, x, ...[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_molecule</span></code>(molecule_file[, sanitize, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../promptbind.utils.html#promptbind.utils.post_optim_utils.read_molecule" title="promptbind.utils.post_optim_utils.read_molecule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_molecule</span></code></a>(molecule_file[, sanitize, ...])</p></td>
 <td><p>Load a molecule from a file of format <code class="docutils literal notranslate"><span class="pre">.mol2</span></code> or <code class="docutils literal notranslate"><span class="pre">.sdf</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdbqt</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdb</span></code>. :param molecule_file: Path to file for storing a molecule, which can be of format <code class="docutils literal notranslate"><span class="pre">.mol2</span></code> or <code class="docutils literal notranslate"><span class="pre">.sdf</span></code>                       or <code class="docutils literal notranslate"><span class="pre">.pdbqt</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdb</span></code>. :type molecule_file: str :param sanitize: Whether sanitization is performed in initializing RDKit molecule instances. See                  <a class="reference external" href="https://www.rdkit.org/docs/RDKit_Book.html">https://www.rdkit.org/docs/RDKit_Book.html</a> for details of the sanitization. Default to False. :type sanitize: bool :param calc_charges: Whether to add Gasteiger charges via RDKit. Setting this to be True will enforce                      <code class="docutils literal notranslate"><span class="pre">sanitize</span></code> to be True. Default to False. :type calc_charges: bool :param remove_hs: Whether to remove hydrogens via RDKit. Note that removing hydrogens can be quite                   slow for large molecules. Default to False. :type remove_hs: bool :param use_conformation: Whether we need to extract molecular conformation from proteins and ligands. Default to True. :type use_conformation: bool.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_mol</span></code>(reference_file, coords, output_file)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../promptbind.utils.html#promptbind.utils.post_optim_utils.write_mol" title="promptbind.utils.post_optim_utils.write_mol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_mol</span></code></a>(reference_file, coords, output_file)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>

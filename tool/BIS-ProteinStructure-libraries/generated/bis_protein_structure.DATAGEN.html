@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -630,28 +623,28 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_structure_from_feature</span></code>(sequence, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.create_structure_from_feature" title="bis_protein_structure.DATAGEN.create_structure_from_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_structure_from_feature</span></code></a>(sequence, ...)</p></td>
 <td><p>Creates a structure from sequence and atomic position information.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_feature_dict</span></code>(tag, seq, fasta_path, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.generate_feature_dict" title="bis_protein_structure.DATAGEN.generate_feature_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_feature_dict</span></code></a>(tag, seq, fasta_path, ...)</p></td>
 <td><p>Generates a feature dictionary from the given sequence and alignment.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_to_pdbs</span></code>(input_mmcif_file, output_pdb_root)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.mmcif_to_pdbs" title="bis_protein_structure.DATAGEN.mmcif_to_pdbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_to_pdbs</span></code></a>(input_mmcif_file, output_pdb_root)</p></td>
 <td><p>Converts an MMCIF file to separate PDB files for each chain.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallel_processing</span></code>(mmcifs, mmcif_root, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.parallel_processing" title="bis_protein_structure.DATAGEN.parallel_processing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parallel_processing</span></code></a>(mmcifs, mmcif_root, ...)</p></td>
 <td><p>Processes multiple MMCIF files in parallel and converts them to PDB files.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_fasta</span></code>(data)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.parse_fasta" title="bis_protein_structure.DATAGEN.parse_fasta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_fasta</span></code></a>(data)</p></td>
 <td><p>Parses the contents of a FASTA file and extracts sequence tags and sequences.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_mmcif</span></code>(path, file_id, chain_id, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.parse_mmcif" title="bis_protein_structure.DATAGEN.parse_mmcif"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_mmcif</span></code></a>(path, file_id, chain_id, ...)</p></td>
 <td><p>Parses an MMCIF file and processes it into structured data.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_mmcif_to_pdbs</span></code>(mmcif, mmcif_root, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.process_mmcif_to_pdbs" title="bis_protein_structure.DATAGEN.process_mmcif_to_pdbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_mmcif_to_pdbs</span></code></a>(mmcif, mmcif_root, ...)</p></td>
 <td><p>Processes an MMCIF file and converts it to PDB format.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_fasta</span></code>(file_path)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.read_fasta" title="bis_protein_structure.DATAGEN.read_fasta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_fasta</span></code></a>(file_path)</p></td>
 <td><p>Reads a FASTA file and prints out each sequence ID and sequence.</p></td>
 </tr>
 </tbody>
@@ -661,7 +654,7 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AllResiduesSelector</span></code>(target_chain_id)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bis_protein_structure.html#bis_protein_structure.DATAGEN.AllResiduesSelector" title="bis_protein_structure.DATAGEN.AllResiduesSelector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AllResiduesSelector</span></code></a>(target_chain_id)</p></td>
 <td><p>Selector class for PDBIO to select all residues in a specific chain.</p></td>
 </tr>
 </tbody>

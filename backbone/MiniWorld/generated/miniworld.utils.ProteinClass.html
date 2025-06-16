@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -630,7 +623,7 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PDB_parsing</span></code>(PDB_file[, IS_LABEL, return_lddt])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.PDB_parsing" title="miniworld.utils.ProteinClass.PDB_parsing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PDB_parsing</span></code></a>(PDB_file[, IS_LABEL, return_lddt])</p></td>
 <td><p>Input : PDB file path, IS_LABEL (bool) Output : Protein object</p></td>
 </tr>
 </tbody>
@@ -640,22 +633,22 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Protein</span></code>(sequence, structure[, occupancy, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.Protein" title="miniworld.utils.ProteinClass.Protein"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Protein</span></code></a>(sequence, structure[, occupancy, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinMSA</span></code>([msa_ID, query_sequence, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.ProteinMSA" title="miniworld.utils.ProteinClass.ProteinMSA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinMSA</span></code></a>([msa_ID, query_sequence, ...])</p></td>
 <td><p>Represents the Multiple Sequence Alignment (MSA) of a Protein.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinSequence</span></code>(sequence[, masked_sequence, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.ProteinSequence" title="miniworld.utils.ProteinClass.ProteinSequence"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinSequence</span></code></a>(sequence[, masked_sequence, ...])</p></td>
 <td><p>This class is used to store the protein sequence information.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinStructure</span></code>(xyz, chain_break, atom_mask)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.ProteinStructure" title="miniworld.utils.ProteinClass.ProteinStructure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinStructure</span></code></a>(xyz, chain_break, atom_mask)</p></td>
 <td><p>This class is used to store the protein structure information.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinTemplate</span></code>(sequence, structure[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.ProteinTemplate" title="miniworld.utils.ProteinClass.ProteinTemplate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinTemplate</span></code></a>(sequence, structure[, ...])</p></td>
 <td><p>position : (M, L_template) np.array or list or tensor.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinTemplates</span></code>([templates, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.ProteinClass.ProteinTemplates" title="miniworld.utils.ProteinClass.ProteinTemplates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProteinTemplates</span></code></a>([templates, ...])</p></td>
 <td><p>ProteinTemplates : list of ProteinTemplate</p></td>
 </tr>
 </tbody>
