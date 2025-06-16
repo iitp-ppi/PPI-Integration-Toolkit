@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="prev" title="Tips and Instructions" href="../examples_ipynb/Protein_Protein_Complex_Structure_Prediction.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html" /><link rel="prev" title="Tips and Instructions" href="../examples_ipynb/Protein_Protein_Complex_Structure_Prediction.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>EGFR-ligand interaction analysis - AI toolkits for prediction of structure-based protein interaction 0.0.3 documentation</title>
@@ -1148,7 +1148,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../examples_ipynb/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">EGFR-ligand interaction analysis</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-157" name="toctree-checkbox-157" role="switch" type="checkbox"/><label for="toctree-checkbox-157"><div class="visually-hidden">Toggle navigation of EGFR-ligand interaction analysis</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">EGFR-ligand interaction analysis</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-157" name="toctree-checkbox-157" role="switch" type="checkbox"/><label for="toctree-checkbox-157"><div class="visually-hidden">Toggle navigation of EGFR-ligand interaction analysis</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
 </ul>
 </li>
 </ul>
@@ -1196,6 +1201,17 @@
           <section id="egfr-ligand-interaction-analysis">
 <h1>EGFR-ligand interaction analysis<a class="headerlink" href="#egfr-ligand-interaction-analysis" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html###-Benchmarking-results-of-binding-site-prediction-method">## Benchmarking results of binding site prediction method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html##Section-3:-Conducting-Protein-ligand-Docking-Using-GDDL">#Section 3: Conducting Protein-ligand Docking Using GDDL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+</ul>
 </div>
 </section>
 
@@ -1204,7 +1220,15 @@
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="../examples_ipynb/Predicting_the_effect_of_protein_mutations.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="../examples_ipynb/Protein_Protein_Complex_Structure_Prediction.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -1245,5 +1269,7 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>

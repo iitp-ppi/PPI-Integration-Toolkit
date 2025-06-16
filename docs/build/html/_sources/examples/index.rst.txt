@@ -1,7 +1,7 @@
 Examples
 =====================================
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 6
    
    Predicting_protein-ligand_interactions/index  
    Predicting_protein-protein_interactions/index
