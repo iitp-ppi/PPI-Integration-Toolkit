@@ -2,7 +2,7 @@ Examples
 =====================================
 .. toctree::
    :maxdepth: 4
-
-   ../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits
-   ../../../examples/Protein_Protein_Complex_Structure_Prediction
-   ../../../examples/Predicting_the_effect_of_protein_mutations
+   
+   Predicting_protein-protein_interactions
+   Predicting_protein-ligand_interactions
+   Predicting_the_effect_of_protein_mutations

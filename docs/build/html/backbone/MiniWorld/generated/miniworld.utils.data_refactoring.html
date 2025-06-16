@@ -574,14 +574,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Case_Study_of_EGFR_Mutant_Ligand_Interactions_Using_Protein_Ligand_Interaction_Prediction_Toolkits.html">Section 2: Finding binding pockets for EGFR KD using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Protein_Protein_Complex_Structure_Prediction.html"><strong>Tips and Instructions</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html">Section 2: Finding binding pockets for a given protein (EGFR) using “BsiteP”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#Section-4:-Re-scoring-GDDL-docking-results-using-BindingRMSD.">Section 4: Re-scoring GDDL docking results using BindingRMSD.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-1.-Re-scoring-for-Docked-Protein-Ligand-Complex">4-1. Re-scoring for Docked Protein-Ligand Complex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-2.-3D-Visualization:-Crystal-Structure-vs-Docked-Poses">4-2. 3D Visualization: Crystal Structure vs Docked Poses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../examples/Predicting_the_effect_of_protein_mutations.html#4-3.-Crystal-Ligand-Pose-vs-Docked-Ligand-Pose:-RMSD-and-Prediction-Comparison">4-3. Crystal Ligand Pose vs Docked Ligand Pose: RMSD and Prediction Comparison</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -631,88 +624,88 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AF_Results_filtering</span></code>([file_path, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.AF_Results_filtering" title="miniworld.utils.data_refactoring.AF_Results_filtering"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AF_Results_filtering</span></code></a>([file_path, ...])</p></td>
 <td><p>Input : AF results folder path Output : None</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AF_Results_json_filtering</span></code>(json_file_path[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.AF_Results_json_filtering" title="miniworld.utils.data_refactoring.AF_Results_json_filtering"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AF_Results_json_filtering</span></code></a>(json_file_path[, ...])</p></td>
 <td><p>Input : AF results json path, plddt_filtering (float) Output : plddt_filtered (np.array) [It is index of filtered seq]</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AF_Results_json_viewer</span></code>(file_path)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.AF_Results_json_viewer" title="miniworld.utils.data_refactoring.AF_Results_json_viewer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AF_Results_json_viewer</span></code></a>(file_path)</p></td>
 <td><p>Input : AF results json path Output : None</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PDB_parsing_from_pt</span></code>(PDB_file[, IS_LABEL, source])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.PDB_parsing_from_pt" title="miniworld.utils.data_refactoring.PDB_parsing_from_pt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PDB_parsing_from_pt</span></code></a>(PDB_file[, IS_LABEL, source])</p></td>
 <td><p>Input : PDB file path, IS_LABEL (bool) Output : Protein object</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">STRING_refactoring</span></code>([rank_num])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.STRING_refactoring" title="miniworld.utils.data_refactoring.STRING_refactoring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">STRING_refactoring</span></code></a>([rank_num])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">a3m_pickling</span></code>(a3m_folder[, saving_directory])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.a3m_pickling" title="miniworld.utils.data_refactoring.a3m_pickling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">a3m_pickling</span></code></a>(a3m_folder[, saving_directory])</p></td>
 <td><p>Input : a3m folder path Output : None</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_hhr_loaded</span></code>(hhr_folder, saved_dir)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.check_hhr_loaded" title="miniworld.utils.data_refactoring.check_hhr_loaded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_hhr_loaded</span></code></a>(hhr_folder, saved_dir)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ID_to_source_dict</span></code>(sources_path_list[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.get_ID_to_source_dict" title="miniworld.utils.data_refactoring.get_ID_to_source_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ID_to_source_dict</span></code></a>(sources_path_list[, ...])</p></td>
 <td><p>Input : sources directory path, saving directory path(.txt) Output : ID_to_source_dict (dictionary)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_csv</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.get_csv" title="miniworld.utils.data_refactoring.get_csv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_csv</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_hash_dict</span></code>(msa_folder_path[, saving_path])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.get_hash_dict" title="miniworld.utils.data_refactoring.get_hash_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_hash_dict</span></code></a>(msa_folder_path[, saving_path])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_query_from_a3m</span></code>(a3m_file_path)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.get_query_from_a3m" title="miniworld.utils.data_refactoring.get_query_from_a3m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_query_from_a3m</span></code></a>(a3m_file_path)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">gzip_files</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.gzip_files" title="miniworld.utils.data_refactoring.gzip_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gzip_files</span></code></a>()</p></td>
 <td><p>It's just for convenience.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hhr_dir_rerefactoring</span></code>([hhr_dir, saving_dir])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.hhr_dir_rerefactoring" title="miniworld.utils.data_refactoring.hhr_dir_rerefactoring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hhr_dir_rerefactoring</span></code></a>([hhr_dir, saving_dir])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hhr_file_rerefactoring</span></code>(hhr_file_path, saving_dir)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.hhr_file_rerefactoring" title="miniworld.utils.data_refactoring.hhr_file_rerefactoring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hhr_file_rerefactoring</span></code></a>(hhr_file_path, saving_dir)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hhr_refactoring</span></code>(hhr_folder[, saving_directory])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.hhr_refactoring" title="miniworld.utils.data_refactoring.hhr_refactoring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hhr_refactoring</span></code></a>(hhr_folder[, saving_directory])</p></td>
 <td><p>Input : hhr folder path Output : None</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_Full_sequence_parsing</span></code>(mmcif_file[, output])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.mmcif_Full_sequence_parsing" title="miniworld.utils.data_refactoring.mmcif_Full_sequence_parsing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_Full_sequence_parsing</span></code></a>(mmcif_file[, output])</p></td>
 <td><p>Input : mmcif file path Output : Full Sequence</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_full_sequence</span></code>(mmcif_folder[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.mmcif_full_sequence" title="miniworld.utils.data_refactoring.mmcif_full_sequence"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_full_sequence</span></code></a>(mmcif_folder[, ...])</p></td>
 <td><p>Input : mmcif folder path Output : None</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_line_parser</span></code>(line[, loop_])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.mmcif_line_parser" title="miniworld.utils.data_refactoring.mmcif_line_parser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_line_parser</span></code></a>(line[, loop_])</p></td>
 <td><p>Parses a single line from an mmCIF file..</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_loop_parser</span></code>(lines_split_by_sharp, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.mmcif_loop_parser" title="miniworld.utils.data_refactoring.mmcif_loop_parser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_loop_parser</span></code></a>(lines_split_by_sharp, ...)</p></td>
 <td><p>CAUTION !!! mmcif is not well-sturctured file.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_parsing</span></code>(mmcif_file[, IS_LABEL])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.mmcif_parsing" title="miniworld.utils.data_refactoring.mmcif_parsing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_parsing</span></code></a>(mmcif_file[, IS_LABEL])</p></td>
 <td><p>Input : mmcif file path (~.cif or ~.cif.gz) Output : Protein object</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_pickling</span></code>(mmcif_folder[, saving_directory])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.mmcif_pickling" title="miniworld.utils.data_refactoring.mmcif_pickling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mmcif_pickling</span></code></a>(mmcif_folder[, saving_directory])</p></td>
 <td><p>Input : mmcif folder path Output : None</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pdb_Sampling</span></code>([output_path])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.pdb_Sampling" title="miniworld.utils.data_refactoring.pdb_Sampling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pdb_Sampling</span></code></a>([output_path])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pdb_pickling</span></code>(pdb_folder[, saving_directory])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.pdb_pickling" title="miniworld.utils.data_refactoring.pdb_pickling"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pdb_pickling</span></code></a>(pdb_folder[, saving_directory])</p></td>
 <td><p>Input : pdb folder path Output : None</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">print_hhr_pt</span></code>([file_path])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.print_hhr_pt" title="miniworld.utils.data_refactoring.print_hhr_pt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">print_hhr_pt</span></code></a>([file_path])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">protein_to_template</span></code>(protein[, position, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.protein_to_template" title="miniworld.utils.data_refactoring.protein_to_template"><code class="xref py py-obj docutils literal notranslate"><span class="pre">protein_to_template</span></code></a>(protein[, position, ...])</p></td>
 <td><p>Input : Protein object, position (torch.Tensor) Output : ProteinTemplate object This function is used when Alphafold output is used as template.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">refactoring_hhr_file</span></code>(original_hhr_file[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.refactoring_hhr_file" title="miniworld.utils.data_refactoring.refactoring_hhr_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">refactoring_hhr_file</span></code></a>(original_hhr_file[, ...])</p></td>
 <td><p>Input : original hhr file path Do : Refactoring hhr file and save it Output : None</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_a3m</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.test_a3m" title="miniworld.utils.data_refactoring.test_a3m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_a3m</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_a3m_file</span></code>(file_path)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../miniworld.utils.html#miniworld.utils.data_refactoring.test_a3m_file" title="miniworld.utils.data_refactoring.test_a3m_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_a3m_file</span></code></a>(file_path)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
