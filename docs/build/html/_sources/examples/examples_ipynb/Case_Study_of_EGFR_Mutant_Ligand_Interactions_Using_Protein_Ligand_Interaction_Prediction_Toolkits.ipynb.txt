@@ -3,7 +3,8 @@
     {
       "cell_type": "markdown",
       "metadata": {
-        "id": "Pxb4BzAUotZs"
+        "id": "Pxb4BzAUotZs",
+        "nbsphinx-toctree": {}
       },
       "source": [
         "#PART II: Case Study of EGFR Mutant-Ligand Interactions Using Protein-Ligand Interaction Prediction Toolkits"

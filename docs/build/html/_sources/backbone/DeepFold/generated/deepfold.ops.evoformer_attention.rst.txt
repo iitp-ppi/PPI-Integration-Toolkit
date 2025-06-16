@@ -1,4 +1,4 @@
-deepfold.ops.evoformer\_attention
+﻿deepfold.ops.evoformer\_attention
 =================================
 
 .. automodule:: deepfold.ops.evoformer_attention
