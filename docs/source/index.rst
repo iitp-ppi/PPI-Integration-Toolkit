@@ -10,7 +10,6 @@ Welcome to PPI Integration Toolkit's documentation!
    :maxdepth: 8
    :caption: Table of Contents
 
-   api
    backbone/index
    tool/index
    examples/index
