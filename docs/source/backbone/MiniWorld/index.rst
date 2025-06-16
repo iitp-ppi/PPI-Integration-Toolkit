@@ -10,11 +10,9 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
+.. autosummary::
+   :toctree: generated
+   :recursive:
+   :caption: API Reference
 
-.. toctree::
-   :maxdepth: 8
-   :caption: Contents:
-
-   MiniWorld_train_multi_deep_v1_5_use_interaction
-   feature
-   utils
+   miniworld

@@ -1,15 +1,16 @@
 import os
 import sys
-sys.path.append(os.path.abspath('../../backbone/DeepFoldPublic'))
-sys.path.append(os.path.abspath('../../backbone/MiniWorld'))
-sys.path.append(os.path.abspath('../../tool/BAPred'))
-sys.path.append(os.path.abspath('../../tool/BIS-ProteinStructure-libraries'))
-sys.path.append(os.path.abspath('../../tool/BindingRMSD'))
-sys.path.append(os.path.abspath('../../tool/BsiteP'))
-sys.path.append(os.path.abspath('../../tool/DiffAlign'))
-sys.path.append(os.path.abspath('../../tool/PromptBind'))
-sys.path.append(os.path.abspath('../../tool/galaxydock_dl/src'))
-sys.path.append(os.path.abspath('../../tool'))
+
+sys.path.insert(0, os.path.abspath('../../backbone')) 
+sys.path.insert(0, os.path.abspath('../../backbone/DeepFoldPublic'))
+sys.path.insert(0, os.path.abspath('../../backbone/MiniWorld'))
+sys.path.insert(0, os.path.abspath('../../tool/BAPred'))
+sys.path.insert(0, os.path.abspath('../../tool/BIS-ProteinStructure-libraries'))
+sys.path.insert(0, os.path.abspath('../../tool/BindingRMSD'))
+sys.path.insert(0, os.path.abspath('../../tool/BsiteP'))
+sys.path.insert(0, os.path.abspath('../../tool/DiffAlign'))
+sys.path.insert(0, os.path.abspath('../../tool/PromptBind'))
+sys.path.insert(0, os.path.abspath('../../tool/galaxydock_dl/src'))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -31,8 +32,11 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'nbsphinx'
 ]
 autosummary_generate = True
+nbsphinx_codecell_lexer = 'none'
+suppress_warnings = ['misc.highlighting_failure']
 
 templates_path = ['_templates']
 exclude_patterns = []
