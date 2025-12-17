@@ -6,3 +6,4 @@ Backbone Models
 
    DeepFold/index
    MiniWorld/index
+   RoseTTAFold2/index

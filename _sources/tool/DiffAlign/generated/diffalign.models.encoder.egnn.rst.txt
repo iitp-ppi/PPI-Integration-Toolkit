@@ -1,4 +1,4 @@
-﻿diffalign.models.encoder.egnn
+diffalign.models.encoder.egnn
 =============================
 
 .. automodule:: diffalign.models.encoder.egnn
@@ -15,9 +15,5 @@
    .. autosummary::
    
       EGNN
-      EGNN_old
       E_GCL
-      GNN
-      MLP
-      TransformerNN
    

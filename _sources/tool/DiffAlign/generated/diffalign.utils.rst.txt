@@ -11,10 +11,3 @@ diffalign.utils
    :recursive:
 
    chem
-   common
-   dataloader
-   datasets
-   evaluation
-   misc
-   transforms
-   visualize

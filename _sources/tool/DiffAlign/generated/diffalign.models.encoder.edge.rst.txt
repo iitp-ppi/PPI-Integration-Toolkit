@@ -1,4 +1,4 @@
-﻿diffalign.models.encoder.edge
+diffalign.models.encoder.edge
 =============================
 
 .. automodule:: diffalign.models.encoder.edge
