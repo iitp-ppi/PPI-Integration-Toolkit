@@ -31,3 +31,6 @@
 [submodule "backbone/RoseTTAFold2"]
 	path = backbone/RoseTTAFold2
 	url = git@github.com:iitp-ppi/iitp-RF2.git
+[submodule "tool/AlphaSS"]
+	path = tool/AlphaSS
+	url = git@github.com:iitp-ppi/AlphaSS.git
