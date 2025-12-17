@@ -1,4 +1,4 @@
-bindingrmsd.inference
+﻿bindingrmsd.inference
 =====================
 
 .. automodule:: bindingrmsd.inference
@@ -9,4 +9,5 @@ bindingrmsd.inference
    .. autosummary::
    
       inference
+      main
    

@@ -65,4 +65,5 @@ dependencies:
       - git+https://github.com/NVIDIA/dllogger.git
       - git+https://github.com/google-deepmind/alphafold.git
       - git+https://github.com/iitp-ppi/gvp-pytorch.git
+      - git+https://github.com/kim-iljung/UFF_PyTorch.git
 

@@ -11,5 +11,4 @@
    :recursive:
 
    models
-   train
    utils

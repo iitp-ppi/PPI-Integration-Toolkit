@@ -1,4 +1,4 @@
-diffalign.models.encoder
+﻿diffalign.models.encoder
 ========================
 
 .. automodule:: diffalign.models.encoder
@@ -10,5 +10,6 @@ diffalign.models.encoder
    :toctree:
    :recursive:
 
+   cross_attention
    edge
    egnn

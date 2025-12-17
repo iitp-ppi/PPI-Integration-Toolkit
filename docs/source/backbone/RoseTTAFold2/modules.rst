@@ -1,7 +1,6 @@
-bsitep
-======
+RoseTTAFold2
+============
 
 .. toctree::
    :maxdepth: 8
 
-   bsitep

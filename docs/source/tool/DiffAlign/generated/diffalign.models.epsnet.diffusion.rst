@@ -8,13 +8,16 @@
 
    .. autosummary::
    
+      cosine_beta_schedule
       get_distance
+      linear_beta_schedule
       merge_graphs_in_batch
    
    .. rubric:: Classes
 
    .. autosummary::
    
+      DDPMTimeEncoder
       DiffAlign
-      SinusoidalTimeEmbeddings
+      SinusoidalPosEmb
    

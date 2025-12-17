@@ -8,7 +8,7 @@ Tools
    BAPred/index
    BindingRMSD/index
    BIS-ProteinStructure-libraries/index
-   BsiteP/index
+   SwinSite/index
    DiffAlign/index
    gd_dl/index
    PromptBind/index

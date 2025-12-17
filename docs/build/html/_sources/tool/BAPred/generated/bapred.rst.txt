@@ -10,6 +10,8 @@
    :toctree:
    :recursive:
 
+   cli
    data
    inference
+   logger
    model
