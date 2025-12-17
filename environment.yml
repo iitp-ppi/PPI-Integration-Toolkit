@@ -19,6 +19,7 @@ dependencies:
   - scikit-image
   - pandas=2.2.3
   - dgl
+  - einops
   - hmmer=3.4
   - hhsuite=3.3.0
   - kalign2
