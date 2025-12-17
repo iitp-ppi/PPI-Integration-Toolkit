@@ -19,12 +19,15 @@
 [submodule "tool/BAPred"]
 	path = tool/BAPred
 	url = https://github.com/iitp-ppi/BAPred.git
-[submodule "tool/BsiteP"]
-	path = tool/BsiteP
-	url = https://github.com/iitp-ppi/BsiteP.git
 [submodule "tool/BindingRMSD"]
 	path = tool/BindingRMSD
 	url = https://github.com/iitp-ppi/BindingRMSD.git
 [submodule "backbone/MiniWorld"]
 	path = backbone/MiniWorld
 	url = git@github.com:iitp-ppi/MiniWorld.git
+[submodule "tool/SwinSite"]
+	path = tool/SwinSite
+	url = git@github.com:ding-oh/SwinSite.git
+[submodule "backbone/RoseTTAFold2"]
+	path = backbone/RoseTTAFold2
+	url = git@github.com:iitp-ppi/iitp-RF2.git
