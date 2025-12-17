@@ -34,3 +34,6 @@
 [submodule "tool/AlphaSS"]
 	path = tool/AlphaSS
 	url = git@github.com:iitp-ppi/AlphaSS.git
+[submodule "tool/MSA_search_pipeline"]
+	path = tool/MSA_search_pipeline
+	url = git@github.com:iitp-ppi/MSA_search_pipeline.git
