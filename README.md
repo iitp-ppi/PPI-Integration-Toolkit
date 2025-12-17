@@ -1,4 +1,4 @@
-# Protein Protein Interaction Toolkit
+# PPI-Integration-Toolkit
 
 ## To install
 ```bash
