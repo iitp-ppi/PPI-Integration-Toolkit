@@ -4,9 +4,13 @@ bis\_protein\_structure.CROSSLINK
 .. automodule:: bis_protein_structure.CROSSLINK
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       calculate_calpha_distogram
       calculate_lys_leu_map
@@ -16,4 +20,6 @@ bis\_protein\_structure.CROSSLINK
       plot_cross_link
       readMMCIF
       readPDB
-   
+
+
+

@@ -4,9 +4,13 @@ deepfold.relax.amber\_minimize
 .. automodule:: deepfold.relax.amber_minimize
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       clean_protein
       find_violations
@@ -14,4 +18,6 @@ deepfold.relax.amber\_minimize
       make_atom14_positions
       run_pipeline
       will_restrain
-   
+
+
+

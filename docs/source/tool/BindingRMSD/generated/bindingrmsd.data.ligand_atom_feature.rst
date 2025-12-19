@@ -4,9 +4,13 @@ bindingrmsd.data.ligand\_atom\_feature
 .. automodule:: bindingrmsd.data.ligand_atom_feature
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       atom_feature
       bond_feature
@@ -24,4 +28,6 @@ bindingrmsd.data.ligand\_atom\_feature
       mol_to_graph
       one_hot
       save_obj
-   
+
+
+

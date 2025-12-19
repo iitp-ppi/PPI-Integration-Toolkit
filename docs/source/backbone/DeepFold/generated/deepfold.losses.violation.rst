@@ -4,9 +4,13 @@ deepfold.losses.violation
 .. automodule:: deepfold.losses.violation
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       between_residue_bond_loss
       between_residue_clash_loss
@@ -17,4 +21,6 @@ deepfold.losses.violation
       find_structural_violations_np
       violation_loss
       within_residue_violations
-   
+
+
+

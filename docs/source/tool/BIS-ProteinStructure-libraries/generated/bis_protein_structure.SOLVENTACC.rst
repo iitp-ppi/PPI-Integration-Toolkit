@@ -4,9 +4,13 @@ bis\_protein\_structure.SOLVENTACC
 .. automodule:: bis_protein_structure.SOLVENTACC
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       contains_non_numeric
       convert_mmcif_to_dssp
@@ -16,4 +20,6 @@ bis\_protein\_structure.SOLVENTACC
       extract_coords_from_pdb
       getTMscore
       load_pickle_file
-   
+
+
+

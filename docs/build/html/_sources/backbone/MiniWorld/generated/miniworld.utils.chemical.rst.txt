@@ -1,6 +1,11 @@
-﻿miniworld.utils.chemical
+miniworld.utils.chemical
 ========================
 
 .. automodule:: miniworld.utils.chemical
 
    
+
+
+
+
+

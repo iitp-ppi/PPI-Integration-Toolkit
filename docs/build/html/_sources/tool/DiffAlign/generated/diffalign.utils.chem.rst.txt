@@ -4,9 +4,13 @@ diffalign.utils.chem
 .. automodule:: diffalign.utils.chem
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       bond_type_to_int
       draw_mol_svg
@@ -23,4 +27,6 @@ diffalign.utils.chem
       set_rdmol_positions_
       update_data_pos_from_rdmol
       update_data_rdmol_positions
-   
+
+
+

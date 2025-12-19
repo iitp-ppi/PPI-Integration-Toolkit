@@ -1,9 +1,15 @@
-﻿diffalign.models.encoder
+diffalign.models.encoder
 ========================
 
 .. automodule:: diffalign.models.encoder
 
    
+
+
+
+
+
+
 .. rubric:: Modules
 
 .. autosummary::

@@ -4,9 +4,13 @@ deepfold.common.residue\_constants
 .. automodule:: deepfold.common.residue_constants
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       aatype_to_str_sequence
       chi_angle_atom
@@ -14,11 +18,14 @@ deepfold.common.residue\_constants
       make_atom14_dists_bounds
       map_structure_with_atom_order
       sequence_to_onehot
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Bond
       BondAngle
-   
+

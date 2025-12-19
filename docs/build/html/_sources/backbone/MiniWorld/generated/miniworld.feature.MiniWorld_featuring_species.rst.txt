@@ -1,12 +1,16 @@
-﻿miniworld.feature.MiniWorld\_featuring\_species
+miniworld.feature.MiniWorld\_featuring\_species
 ===============================================
 
 .. automodule:: miniworld.feature.MiniWorld_featuring_species
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       MSA_block_deletion
       MSA_featurize_wo_statistics
@@ -27,4 +31,6 @@
       permute_label
       random_split
       template_featurize
-   
+
+
+

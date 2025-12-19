@@ -4,9 +4,13 @@ deepfold.data.search.templates
 .. automodule:: deepfold.data.search.templates
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       build_query_to_hit_index_mapping
       create_empty_template_feats
@@ -14,14 +18,18 @@ deepfold.data.search.templates
       get_atom_positions
       load_mmcif_dict
       load_pdb_obsolete_mapping
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       TemplateFeaturesResult
       TemplateHitFeaturizer
-   
+
+
    .. rubric:: Exceptions
 
    .. autosummary::

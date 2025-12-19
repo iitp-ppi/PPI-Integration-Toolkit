@@ -1,12 +1,16 @@
-﻿promptbind.utils.utils
+promptbind.utils.utils
 ======================
 
 .. automodule:: promptbind.utils.utils
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       SetDihedral
       compute_dis_between_two_vector
@@ -23,4 +27,6 @@
       read_mol
       read_pdbbind_data
       uniform_random_rotation
-   
+
+
+

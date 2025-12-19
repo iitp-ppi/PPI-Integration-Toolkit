@@ -4,9 +4,13 @@ deepfold.losses.procrustes
 .. automodule:: deepfold.losses.procrustes
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       flatten_batch_dims
       kabsch
@@ -16,10 +20,13 @@ deepfold.losses.procrustes
       speical_procrustes
       svd
       unflatten_batch_dims
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Procrustes
-   
+

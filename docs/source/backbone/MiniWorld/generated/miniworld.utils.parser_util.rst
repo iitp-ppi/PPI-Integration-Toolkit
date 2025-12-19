@@ -1,12 +1,16 @@
-﻿miniworld.utils.parser\_util
+miniworld.utils.parser\_util
 ============================
 
 .. automodule:: miniworld.utils.parser_util
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       center_and_realign_missing
       cross_product_matrix
@@ -19,4 +23,6 @@
       th_dih
       th_dih_v
       writepdb
-   
+
+
+

@@ -4,9 +4,13 @@ deepfold.common.protein
 .. automodule:: deepfold.common.protein
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       add_pdb_headers
       from_pdb_string
@@ -16,10 +20,13 @@ deepfold.common.protein
       ideal_atom_mask
       to_modelcif
       to_pdb
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Protein
-   
+

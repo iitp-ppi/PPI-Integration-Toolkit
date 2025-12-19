@@ -1,12 +1,16 @@
-﻿miniworld.utils.ffindex
+miniworld.utils.ffindex
 =======================
 
 .. automodule:: miniworld.utils.ffindex
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       finish_db
       get_entry_by_name
@@ -17,10 +21,13 @@
       write_entries_to_db
       write_entry
       write_entry_with_file
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       FFindexEntry
-   
+

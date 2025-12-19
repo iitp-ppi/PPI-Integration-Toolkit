@@ -4,9 +4,13 @@ deepfold.data.pdbx\_parsing
 .. automodule:: deepfold.data.pdbx_parsing
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       fetch_mmcif
       get_assemblies
@@ -17,10 +21,13 @@ deepfold.data.pdbx\_parsing
       print_amap
       print_chain_features
       read_mmcif
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       AssemblyGenerator
       AtomSite
@@ -33,7 +40,8 @@ deepfold.data.pdbx\_parsing
       ParsingResult
       ResidueAtPosition
       ResiduePosition
-   
+
+
    .. rubric:: Exceptions
 
    .. autosummary::

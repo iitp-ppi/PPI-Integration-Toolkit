@@ -1,12 +1,16 @@
-﻿promptbind.utils.generation\_utils
+promptbind.utils.generation\_utils
 ==================================
 
 .. automodule:: promptbind.utils.generation_utils
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       binarize
       compute_RMSD
@@ -17,4 +21,6 @@
       n_hops_adj
       read_mol
       write_with_new_coords
-   
+
+
+

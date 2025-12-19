@@ -1,12 +1,18 @@
-﻿promptbind.utils.logging\_utils
+promptbind.utils.logging\_utils
 ===============================
 
 .. automodule:: promptbind.utils.logging_utils
 
    
+
+
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Logger
-   
+

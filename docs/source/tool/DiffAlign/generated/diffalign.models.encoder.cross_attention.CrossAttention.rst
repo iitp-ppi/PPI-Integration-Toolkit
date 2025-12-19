@@ -1,0 +1,82 @@
+diffalign.models.encoder.cross\_attention.CrossAttention
+========================================================
+
+.. currentmodule:: diffalign.models.encoder.cross_attention
+
+.. autoclass:: CrossAttention
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CrossAttention.__init__
+      ~CrossAttention.add_module
+      ~CrossAttention.apply
+      ~CrossAttention.bfloat16
+      ~CrossAttention.buffers
+      ~CrossAttention.children
+      ~CrossAttention.compile
+      ~CrossAttention.cpu
+      ~CrossAttention.cuda
+      ~CrossAttention.double
+      ~CrossAttention.eval
+      ~CrossAttention.extra_repr
+      ~CrossAttention.float
+      ~CrossAttention.forward
+      ~CrossAttention.forward_dense
+      ~CrossAttention.get_buffer
+      ~CrossAttention.get_extra_state
+      ~CrossAttention.get_parameter
+      ~CrossAttention.get_submodule
+      ~CrossAttention.graph_state_dict
+      ~CrossAttention.half
+      ~CrossAttention.ipu
+      ~CrossAttention.load_graph_state_dict
+      ~CrossAttention.load_state_dict
+      ~CrossAttention.modules
+      ~CrossAttention.named_buffers
+      ~CrossAttention.named_children
+      ~CrossAttention.named_modules
+      ~CrossAttention.named_parameters
+      ~CrossAttention.parameters
+      ~CrossAttention.preproject_R
+      ~CrossAttention.register_backward_hook
+      ~CrossAttention.register_buffer
+      ~CrossAttention.register_forward_hook
+      ~CrossAttention.register_forward_pre_hook
+      ~CrossAttention.register_full_backward_hook
+      ~CrossAttention.register_full_backward_pre_hook
+      ~CrossAttention.register_load_state_dict_post_hook
+      ~CrossAttention.register_module
+      ~CrossAttention.register_parameter
+      ~CrossAttention.register_state_dict_pre_hook
+      ~CrossAttention.requires_grad_
+      ~CrossAttention.set_extra_state
+      ~CrossAttention.share_memory
+      ~CrossAttention.state_dict
+      ~CrossAttention.to
+      ~CrossAttention.to_empty
+      ~CrossAttention.train
+      ~CrossAttention.type
+      ~CrossAttention.xpu
+      ~CrossAttention.zero_grad
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CrossAttention.T_destination
+      ~CrossAttention.call_super_init
+      ~CrossAttention.device
+      ~CrossAttention.dump_patches
+      ~CrossAttention.training
+   
+   

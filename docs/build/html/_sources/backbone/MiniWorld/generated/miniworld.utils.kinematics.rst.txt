@@ -1,12 +1,16 @@
-﻿miniworld.utils.kinematics
+miniworld.utils.kinematics
 ==========================
 
 .. automodule:: miniworld.utils.kinematics
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       Qs2Rs
       Rs2Qs
@@ -23,4 +27,6 @@
       xyz_to_c6d
       xyz_to_chi1
       xyz_to_t2d
-   
+
+
+

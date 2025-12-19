@@ -1,12 +1,16 @@
-﻿miniworld.utils.output\_visualize
+miniworld.utils.output\_visualize
 =================================
 
 .. automodule:: miniworld.utils.output_visualize
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       TMalign
       align_two_protein
@@ -18,4 +22,6 @@
       visualize_2D_heatmaps
       visualize_2D_tensor
       visualize_t_map
-   
+
+
+

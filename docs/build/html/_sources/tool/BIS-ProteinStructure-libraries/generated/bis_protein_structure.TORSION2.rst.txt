@@ -4,9 +4,13 @@ bis\_protein\_structure.TORSION2
 .. automodule:: bis_protein_structure.TORSION2
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       angles_to_sincos
       getDistogram
@@ -20,4 +24,6 @@ bis\_protein\_structure.TORSION2
       restype_refer_atoms
       sidechain_sym_angle
       torsion_angle_loss
-   
+
+
+

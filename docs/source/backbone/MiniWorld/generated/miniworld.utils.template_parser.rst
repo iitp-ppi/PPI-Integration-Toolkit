@@ -1,12 +1,16 @@
-﻿miniworld.utils.template\_parser
+miniworld.utils.template\_parser
 ================================
 
 .. automodule:: miniworld.utils.template_parser
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       get_args
       parse_a3m
@@ -17,4 +21,6 @@
       parse_templates_raw
       read_template_pdb
       read_templates
-   
+
+
+

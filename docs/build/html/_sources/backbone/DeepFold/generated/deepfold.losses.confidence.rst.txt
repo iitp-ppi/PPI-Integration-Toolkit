@@ -4,9 +4,13 @@ deepfold.losses.confidence
 .. automodule:: deepfold.losses.confidence
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       compute_plddt
       compute_predicted_aligned_error
@@ -15,4 +19,6 @@ deepfold.losses.confidence
       lddt_ca
       plddt_loss
       tm_loss
-   
+
+
+

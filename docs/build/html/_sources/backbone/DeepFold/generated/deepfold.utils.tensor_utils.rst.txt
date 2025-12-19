@@ -4,9 +4,13 @@ deepfold.utils.tensor\_utils
 .. automodule:: deepfold.utils.tensor_utils
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       add
       batched_gather
@@ -19,4 +23,6 @@ deepfold.utils.tensor\_utils
       permute_final_dims
       pts_to_distogram
       tree_map
-   
+
+
+

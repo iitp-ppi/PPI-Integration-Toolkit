@@ -4,9 +4,13 @@ bis\_protein\_structure.DATAGEN
 .. automodule:: bis_protein_structure.DATAGEN
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       create_structure_from_feature
       generate_feature_dict
@@ -16,10 +20,13 @@ bis\_protein\_structure.DATAGEN
       parse_mmcif
       process_mmcif_to_pdbs
       read_fasta
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       AllResiduesSelector
-   
+

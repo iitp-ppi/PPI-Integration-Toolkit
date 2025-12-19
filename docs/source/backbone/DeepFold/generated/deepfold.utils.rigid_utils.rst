@@ -4,9 +4,13 @@ deepfold.utils.rigid\_utils
 .. automodule:: deepfold.utils.rigid_utils
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       identity_quats
       identity_rot_mats
@@ -19,11 +23,14 @@ deepfold.utils.rigid\_utils
       rot_matmul
       rot_to_quat
       rot_vec_mul
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Rigid
       Rotation
-   
+

@@ -4,9 +4,15 @@ gd\_dl.lib\_pdb\_mol2
 .. automodule:: gd_dl.lib_pdb_mol2
 
    
+
+
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Atom
       MOL2
@@ -15,4 +21,4 @@ gd\_dl.lib\_pdb\_mol2
       PDB
       PDBline
       Residue
-   
+

@@ -4,9 +4,13 @@ deepfold.data.multimer.input\_features
 .. automodule:: deepfold.data.multimer.input_features
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       add_assembly_features
       convert_monomer_features
@@ -21,10 +25,13 @@ deepfold.data.multimer.input\_features
       process_multimer_features
       process_single_chain
       process_unmerged_features
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       ComplexInfo
-   
+

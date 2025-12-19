@@ -1,12 +1,16 @@
-﻿miniworld.utils.util\_module
+miniworld.utils.util\_module
 ============================
 
 .. automodule:: miniworld.utils.util_module
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       create_custom_forward
       get_clones
@@ -18,12 +22,15 @@
       make_rotZ
       make_rot_axis
       rbf
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       ComputeAllAtomCoords
       Dropout
       XYZConverter
-   
+
