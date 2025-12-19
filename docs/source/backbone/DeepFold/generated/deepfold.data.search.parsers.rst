@@ -1,4 +1,4 @@
-﻿deepfold.data.search.parsers
+deepfold.data.search.parsers
 ============================
 
 .. automodule:: deepfold.data.search.parsers

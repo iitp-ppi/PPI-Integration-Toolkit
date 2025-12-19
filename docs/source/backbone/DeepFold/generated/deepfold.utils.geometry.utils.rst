@@ -1,4 +1,4 @@
-﻿deepfold.utils.geometry.utils
+deepfold.utils.geometry.utils
 =============================
 
 .. automodule:: deepfold.utils.geometry.utils

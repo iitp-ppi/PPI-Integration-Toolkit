@@ -1,4 +1,4 @@
-﻿deepfold.modules.tweaks.evo\_attn
+deepfold.modules.tweaks.evo\_attn
 =================================
 
 .. automodule:: deepfold.modules.tweaks.evo_attn

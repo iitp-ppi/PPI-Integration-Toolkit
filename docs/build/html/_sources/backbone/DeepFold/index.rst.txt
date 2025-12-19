@@ -1,3 +1,6 @@
+DeepFold
+========
+
 .. autosummary::
    :toctree: generated
    :recursive:

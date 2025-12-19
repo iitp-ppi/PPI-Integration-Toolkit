@@ -1,4 +1,4 @@
-﻿deepfold.data.modules.single\_dataset
+deepfold.data.modules.single\_dataset
 =====================================
 
 .. automodule:: deepfold.data.modules.single_dataset

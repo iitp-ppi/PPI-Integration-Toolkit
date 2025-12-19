@@ -1,4 +1,4 @@
-﻿deepfold.data.tools.hmmbuild
+deepfold.data.tools.hmmbuild
 ============================
 
 .. automodule:: deepfold.data.tools.hmmbuild

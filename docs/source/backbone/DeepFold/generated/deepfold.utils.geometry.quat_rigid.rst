@@ -1,4 +1,4 @@
-﻿deepfold.utils.geometry.quat\_rigid
+deepfold.utils.geometry.quat\_rigid
 ===================================
 
 .. automodule:: deepfold.utils.geometry.quat_rigid

@@ -1,4 +1,4 @@
-﻿deepfold.data.tools.hhblits
+deepfold.data.tools.hhblits
 ===========================
 
 .. automodule:: deepfold.data.tools.hhblits

@@ -1,4 +1,4 @@
-﻿deepfold.data.tools.hhsearch
+deepfold.data.tools.hhsearch
 ============================
 
 .. automodule:: deepfold.data.tools.hhsearch

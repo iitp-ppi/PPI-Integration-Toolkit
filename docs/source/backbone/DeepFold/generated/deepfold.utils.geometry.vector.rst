@@ -1,4 +1,4 @@
-﻿deepfold.utils.geometry.vector
+deepfold.utils.geometry.vector
 ==============================
 
 .. automodule:: deepfold.utils.geometry.vector

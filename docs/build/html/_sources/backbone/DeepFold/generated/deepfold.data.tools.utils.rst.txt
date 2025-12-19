@@ -1,4 +1,4 @@
-﻿deepfold.data.tools.utils
+deepfold.data.tools.utils
 =========================
 
 .. automodule:: deepfold.data.tools.utils

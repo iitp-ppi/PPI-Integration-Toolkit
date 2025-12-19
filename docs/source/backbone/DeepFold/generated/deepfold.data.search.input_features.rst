@@ -1,4 +1,4 @@
-﻿deepfold.data.search.input\_features
+deepfold.data.search.input\_features
 ====================================
 
 .. automodule:: deepfold.data.search.input_features
