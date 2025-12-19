@@ -1,5 +1,8 @@
 # PPI-Integration-Toolkit
 
+## Acknowledgments
+This work was supported by the Institute for Information & Communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT).
+
 ## To install
 ```bash
 git clone --recursive https://github.com/iitp-ppi/PPI-Integration-Toolkit.git
