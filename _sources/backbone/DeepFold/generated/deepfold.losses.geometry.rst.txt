@@ -4,9 +4,13 @@ deepfold.losses.geometry
 .. automodule:: deepfold.losses.geometry
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       backbone_loss
       compute_distogram
@@ -19,4 +23,6 @@ deepfold.losses.geometry
       sidechain_loss
       superimpose
       supervised_chi_loss
-   
+
+
+

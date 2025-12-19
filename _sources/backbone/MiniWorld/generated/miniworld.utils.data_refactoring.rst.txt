@@ -1,12 +1,16 @@
-﻿miniworld.utils.data\_refactoring
+miniworld.utils.data\_refactoring
 =================================
 
 .. automodule:: miniworld.utils.data_refactoring
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       AF_Results_filtering
       AF_Results_json_filtering
@@ -36,4 +40,6 @@
       refactoring_hhr_file
       test_a3m
       test_a3m_file
-   
+
+
+

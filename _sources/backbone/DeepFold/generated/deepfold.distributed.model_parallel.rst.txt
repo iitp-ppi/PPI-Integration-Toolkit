@@ -4,9 +4,13 @@ deepfold.distributed.model\_parallel
 .. automodule:: deepfold.distributed.model_parallel
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       all_to_all
       broadcast
@@ -30,11 +34,14 @@ deepfold.distributed.model\_parallel
       scatter_to_model_parallel_region
       size
       transpose_on_model_parallel_region
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Disable
       Enable
-   
+

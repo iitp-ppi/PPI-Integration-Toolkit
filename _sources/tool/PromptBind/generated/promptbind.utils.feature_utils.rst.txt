@@ -1,12 +1,16 @@
-﻿promptbind.utils.feature\_utils
+promptbind.utils.feature\_utils
 ===============================
 
 .. automodule:: promptbind.utils.feature_utils
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       Seed_everything
       binarize
@@ -31,4 +35,6 @@
       split_protein_and_ligand
       write_renumbered_sdf
       write_with_new_coords
-   
+
+
+

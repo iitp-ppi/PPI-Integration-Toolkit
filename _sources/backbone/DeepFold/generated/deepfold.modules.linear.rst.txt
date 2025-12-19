@@ -4,9 +4,13 @@ deepfold.modules.linear
 .. automodule:: deepfold.modules.linear
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       final_init_
       gating_init_
@@ -15,10 +19,13 @@ deepfold.modules.linear
       lecun_normal_init_
       normal_init_
       trunc_normal_init_
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Linear
-   
+

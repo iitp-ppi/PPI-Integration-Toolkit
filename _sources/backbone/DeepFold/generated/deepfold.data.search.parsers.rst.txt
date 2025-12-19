@@ -4,9 +4,13 @@ deepfold.data.search.parsers
 .. automodule:: deepfold.data.search.parsers
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       convert_stockholm_to_a3m
       deduplicate_stockholm_msa
@@ -19,11 +23,14 @@ deepfold.data.search.parsers
       parse_stockholm
       remove_empty_columns_from_stockholm_msa
       truncate_stockholm_msa
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       HitMetadata
       TemplateHit
-   
+

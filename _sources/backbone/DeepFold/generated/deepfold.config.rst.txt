@@ -4,9 +4,15 @@ deepfold.config
 .. automodule:: deepfold.config
 
    
+
+
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       AlphaFoldConfig
       AuxiliaryHeadsConfig
@@ -38,4 +44,4 @@ deepfold.config
       TemplateProjectionConfig
       TrainingConfig
       ViolationLossConfig
-   
+

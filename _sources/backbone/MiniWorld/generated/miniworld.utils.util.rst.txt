@@ -1,12 +1,16 @@
-﻿miniworld.utils.util
+miniworld.utils.util
 ====================
 
 .. automodule:: miniworld.utils.util
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       cal_integrated_frame
       center_and_realign_missing
@@ -31,4 +35,6 @@
       th_dih
       th_dih_v
       writepdb
-   
+
+
+

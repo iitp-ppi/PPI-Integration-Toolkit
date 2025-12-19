@@ -4,9 +4,13 @@ deepfold.utils.geometry.vector
 .. automodule:: deepfold.utils.geometry.vector
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       cross
       dihedral_angle
@@ -15,10 +19,13 @@ deepfold.utils.geometry.vector
       norm
       normalized
       square_euclidean_distance
-   
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
    
       Vec3Array
-   
+

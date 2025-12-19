@@ -4,9 +4,13 @@ deepfold.data.multimer.msa\_pairing
 .. automodule:: deepfold.data.multimer.msa_pairing
 
    
+
+
+
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
    
       block_diag
       create_paired_features
@@ -15,4 +19,6 @@ deepfold.data.multimer.msa\_pairing
       pad_features
       pair_sequences
       reorder_paired_rows
-   
+
+
+
