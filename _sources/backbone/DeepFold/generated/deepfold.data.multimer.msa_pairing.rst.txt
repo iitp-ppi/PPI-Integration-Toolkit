@@ -1,4 +1,4 @@
-﻿deepfold.data.multimer.msa\_pairing
+deepfold.data.multimer.msa\_pairing
 ===================================
 
 .. automodule:: deepfold.data.multimer.msa_pairing

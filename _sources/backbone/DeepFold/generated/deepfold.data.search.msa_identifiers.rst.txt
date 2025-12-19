@@ -1,4 +1,4 @@
-﻿deepfold.data.search.msa\_identifiers
+deepfold.data.search.msa\_identifiers
 =====================================
 
 .. automodule:: deepfold.data.search.msa_identifiers

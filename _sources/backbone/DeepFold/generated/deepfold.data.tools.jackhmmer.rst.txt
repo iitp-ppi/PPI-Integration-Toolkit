@@ -1,4 +1,4 @@
-﻿deepfold.data.tools.jackhmmer
+deepfold.data.tools.jackhmmer
 =============================
 
 .. automodule:: deepfold.data.tools.jackhmmer

@@ -1,4 +1,4 @@
-﻿deepfold.data.search.templates
+deepfold.data.search.templates
 ==============================
 
 .. automodule:: deepfold.data.search.templates

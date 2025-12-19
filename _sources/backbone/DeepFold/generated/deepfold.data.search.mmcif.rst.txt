@@ -1,4 +1,4 @@
-﻿deepfold.data.search.mmcif
+deepfold.data.search.mmcif
 ==========================
 
 .. automodule:: deepfold.data.search.mmcif

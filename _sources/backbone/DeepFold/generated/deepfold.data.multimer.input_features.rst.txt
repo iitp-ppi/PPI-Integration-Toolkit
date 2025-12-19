@@ -1,4 +1,4 @@
-﻿deepfold.data.multimer.input\_features
+deepfold.data.multimer.input\_features
 ======================================
 
 .. automodule:: deepfold.data.multimer.input_features

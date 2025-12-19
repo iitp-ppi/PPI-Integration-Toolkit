@@ -1,4 +1,4 @@
-﻿deepfold.data.search.crfalign
+deepfold.data.search.crfalign
 =============================
 
 .. automodule:: deepfold.data.search.crfalign
