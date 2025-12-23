@@ -31,11 +31,9 @@ promptbind.models.model.IaBNet\_mean\_and\_pocket\_prediction\_cls\_coords\_depe
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.get_extra_state
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.get_parameter
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.get_submodule
-      ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.graph_state_dict
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.half
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.inference
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.ipu
-      ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.load_graph_state_dict
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.load_state_dict
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.modules
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.named_buffers
@@ -74,7 +72,6 @@ promptbind.models.model.IaBNet\_mean\_and\_pocket\_prediction\_cls\_coords\_depe
    
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.T_destination
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.call_super_init
-      ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.device
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.dump_patches
       ~IaBNet_mean_and_pocket_prediction_cls_coords_dependent.training
    

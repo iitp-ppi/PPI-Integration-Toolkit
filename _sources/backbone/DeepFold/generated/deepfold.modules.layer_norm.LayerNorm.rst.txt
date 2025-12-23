@@ -1,4 +1,4 @@
-deepfold.modules.layer\_norm.LayerNorm
+﻿deepfold.modules.layer\_norm.LayerNorm
 ======================================
 
 .. currentmodule:: deepfold.modules.layer_norm
@@ -31,10 +31,8 @@ deepfold.modules.layer\_norm.LayerNorm
       ~LayerNorm.get_extra_state
       ~LayerNorm.get_parameter
       ~LayerNorm.get_submodule
-      ~LayerNorm.graph_state_dict
       ~LayerNorm.half
       ~LayerNorm.ipu
-      ~LayerNorm.load_graph_state_dict
       ~LayerNorm.load_state_dict
       ~LayerNorm.modules
       ~LayerNorm.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.layer\_norm.LayerNorm
    
       ~LayerNorm.T_destination
       ~LayerNorm.call_super_init
-      ~LayerNorm.device
       ~LayerNorm.dump_patches
       ~LayerNorm.training
    

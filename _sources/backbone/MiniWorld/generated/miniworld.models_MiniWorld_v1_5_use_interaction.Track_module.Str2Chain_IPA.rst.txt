@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Chain\_IPA
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Chain\_IPA
 =================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Chain\_IP
       ~Str2Chain_IPA.get_extra_state
       ~Str2Chain_IPA.get_parameter
       ~Str2Chain_IPA.get_submodule
-      ~Str2Chain_IPA.graph_state_dict
       ~Str2Chain_IPA.half
       ~Str2Chain_IPA.ipu
-      ~Str2Chain_IPA.load_graph_state_dict
       ~Str2Chain_IPA.load_state_dict
       ~Str2Chain_IPA.modules
       ~Str2Chain_IPA.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Chain\_IP
    
       ~Str2Chain_IPA.T_destination
       ~Str2Chain_IPA.call_super_init
-      ~Str2Chain_IPA.device
       ~Str2Chain_IPA.dump_patches
       ~Str2Chain_IPA.training
    

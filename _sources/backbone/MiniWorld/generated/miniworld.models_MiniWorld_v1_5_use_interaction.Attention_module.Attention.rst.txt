@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.Attention
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.Attention
 ================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.Attention
       ~Attention.get_extra_state
       ~Attention.get_parameter
       ~Attention.get_submodule
-      ~Attention.graph_state_dict
       ~Attention.half
       ~Attention.ipu
-      ~Attention.load_graph_state_dict
       ~Attention.load_state_dict
       ~Attention.modules
       ~Attention.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.Attention
    
       ~Attention.T_destination
       ~Attention.call_super_init
-      ~Attention.device
       ~Attention.dump_patches
       ~Attention.training
    

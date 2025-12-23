@@ -1,4 +1,4 @@
-deepfold.modules.template\_projection.TemplateProjection
+﻿deepfold.modules.template\_projection.TemplateProjection
 ========================================================
 
 .. currentmodule:: deepfold.modules.template_projection
@@ -31,10 +31,8 @@ deepfold.modules.template\_projection.TemplateProjection
       ~TemplateProjection.get_extra_state
       ~TemplateProjection.get_parameter
       ~TemplateProjection.get_submodule
-      ~TemplateProjection.graph_state_dict
       ~TemplateProjection.half
       ~TemplateProjection.ipu
-      ~TemplateProjection.load_graph_state_dict
       ~TemplateProjection.load_state_dict
       ~TemplateProjection.modules
       ~TemplateProjection.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.template\_projection.TemplateProjection
    
       ~TemplateProjection.T_destination
       ~TemplateProjection.call_super_init
-      ~TemplateProjection.device
       ~TemplateProjection.dump_patches
       ~TemplateProjection.training
    

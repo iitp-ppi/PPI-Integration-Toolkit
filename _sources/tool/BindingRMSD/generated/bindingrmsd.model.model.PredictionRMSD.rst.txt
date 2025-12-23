@@ -31,10 +31,8 @@ bindingrmsd.model.model.PredictionRMSD
       ~PredictionRMSD.get_extra_state
       ~PredictionRMSD.get_parameter
       ~PredictionRMSD.get_submodule
-      ~PredictionRMSD.graph_state_dict
       ~PredictionRMSD.half
       ~PredictionRMSD.ipu
-      ~PredictionRMSD.load_graph_state_dict
       ~PredictionRMSD.load_state_dict
       ~PredictionRMSD.modules
       ~PredictionRMSD.named_buffers
@@ -73,7 +71,6 @@ bindingrmsd.model.model.PredictionRMSD
    
       ~PredictionRMSD.T_destination
       ~PredictionRMSD.call_super_init
-      ~PredictionRMSD.device
       ~PredictionRMSD.dump_patches
       ~PredictionRMSD.training
    

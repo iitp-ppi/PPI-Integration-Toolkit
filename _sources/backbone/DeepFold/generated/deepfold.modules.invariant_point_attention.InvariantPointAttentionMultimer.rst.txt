@@ -1,4 +1,4 @@
-deepfold.modules.invariant\_point\_attention.InvariantPointAttentionMultimer
+﻿deepfold.modules.invariant\_point\_attention.InvariantPointAttentionMultimer
 ============================================================================
 
 .. currentmodule:: deepfold.modules.invariant_point_attention
@@ -31,10 +31,8 @@ deepfold.modules.invariant\_point\_attention.InvariantPointAttentionMultimer
       ~InvariantPointAttentionMultimer.get_extra_state
       ~InvariantPointAttentionMultimer.get_parameter
       ~InvariantPointAttentionMultimer.get_submodule
-      ~InvariantPointAttentionMultimer.graph_state_dict
       ~InvariantPointAttentionMultimer.half
       ~InvariantPointAttentionMultimer.ipu
-      ~InvariantPointAttentionMultimer.load_graph_state_dict
       ~InvariantPointAttentionMultimer.load_state_dict
       ~InvariantPointAttentionMultimer.modules
       ~InvariantPointAttentionMultimer.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.invariant\_point\_attention.InvariantPointAttentionMultimer
    
       ~InvariantPointAttentionMultimer.T_destination
       ~InvariantPointAttentionMultimer.call_super_init
-      ~InvariantPointAttentionMultimer.device
       ~InvariantPointAttentionMultimer.dump_patches
       ~InvariantPointAttentionMultimer.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.triangular\_attention.TriangleAttentionEndingNode
+﻿deepfold.modules.triangular\_attention.TriangleAttentionEndingNode
 ==================================================================
 
 .. currentmodule:: deepfold.modules.triangular_attention
@@ -31,10 +31,8 @@ deepfold.modules.triangular\_attention.TriangleAttentionEndingNode
       ~TriangleAttentionEndingNode.get_extra_state
       ~TriangleAttentionEndingNode.get_parameter
       ~TriangleAttentionEndingNode.get_submodule
-      ~TriangleAttentionEndingNode.graph_state_dict
       ~TriangleAttentionEndingNode.half
       ~TriangleAttentionEndingNode.ipu
-      ~TriangleAttentionEndingNode.load_graph_state_dict
       ~TriangleAttentionEndingNode.load_state_dict
       ~TriangleAttentionEndingNode.modules
       ~TriangleAttentionEndingNode.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.triangular\_attention.TriangleAttentionEndingNode
    
       ~TriangleAttentionEndingNode.T_destination
       ~TriangleAttentionEndingNode.call_super_init
-      ~TriangleAttentionEndingNode.device
       ~TriangleAttentionEndingNode.dump_patches
       ~TriangleAttentionEndingNode.training
    

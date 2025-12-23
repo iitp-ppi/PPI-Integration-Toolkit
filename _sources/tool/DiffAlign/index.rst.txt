@@ -1,3 +1,5 @@
+DiffAlign
+=========
 .. autosummary::
    :toctree: generated
    :recursive:

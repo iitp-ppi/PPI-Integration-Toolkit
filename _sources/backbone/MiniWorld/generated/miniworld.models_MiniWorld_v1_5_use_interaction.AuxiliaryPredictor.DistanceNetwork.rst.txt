@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.DistanceNetwork
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.DistanceNetwork
 =======================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.Distance
       ~DistanceNetwork.get_extra_state
       ~DistanceNetwork.get_parameter
       ~DistanceNetwork.get_submodule
-      ~DistanceNetwork.graph_state_dict
       ~DistanceNetwork.half
       ~DistanceNetwork.ipu
-      ~DistanceNetwork.load_graph_state_dict
       ~DistanceNetwork.load_state_dict
       ~DistanceNetwork.modules
       ~DistanceNetwork.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.Distance
    
       ~DistanceNetwork.T_destination
       ~DistanceNetwork.call_super_init
-      ~DistanceNetwork.device
       ~DistanceNetwork.dump_patches
       ~DistanceNetwork.training
    

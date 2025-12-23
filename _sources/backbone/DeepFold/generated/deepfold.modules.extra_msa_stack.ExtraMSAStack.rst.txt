@@ -1,4 +1,4 @@
-deepfold.modules.extra\_msa\_stack.ExtraMSAStack
+﻿deepfold.modules.extra\_msa\_stack.ExtraMSAStack
 ================================================
 
 .. currentmodule:: deepfold.modules.extra_msa_stack
@@ -31,10 +31,8 @@ deepfold.modules.extra\_msa\_stack.ExtraMSAStack
       ~ExtraMSAStack.get_extra_state
       ~ExtraMSAStack.get_parameter
       ~ExtraMSAStack.get_submodule
-      ~ExtraMSAStack.graph_state_dict
       ~ExtraMSAStack.half
       ~ExtraMSAStack.ipu
-      ~ExtraMSAStack.load_graph_state_dict
       ~ExtraMSAStack.load_state_dict
       ~ExtraMSAStack.modules
       ~ExtraMSAStack.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.extra\_msa\_stack.ExtraMSAStack
    
       ~ExtraMSAStack.T_destination
       ~ExtraMSAStack.call_super_init
-      ~ExtraMSAStack.device
       ~ExtraMSAStack.dump_patches
       ~ExtraMSAStack.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.msa\_transition.MSATransition
+﻿deepfold.modules.msa\_transition.MSATransition
 ==============================================
 
 .. currentmodule:: deepfold.modules.msa_transition
@@ -31,10 +31,8 @@ deepfold.modules.msa\_transition.MSATransition
       ~MSATransition.get_extra_state
       ~MSATransition.get_parameter
       ~MSATransition.get_submodule
-      ~MSATransition.graph_state_dict
       ~MSATransition.half
       ~MSATransition.ipu
-      ~MSATransition.load_graph_state_dict
       ~MSATransition.load_state_dict
       ~MSATransition.modules
       ~MSATransition.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.msa\_transition.MSATransition
    
       ~MSATransition.T_destination
       ~MSATransition.call_super_init
-      ~MSATransition.device
       ~MSATransition.dump_patches
       ~MSATransition.training
    

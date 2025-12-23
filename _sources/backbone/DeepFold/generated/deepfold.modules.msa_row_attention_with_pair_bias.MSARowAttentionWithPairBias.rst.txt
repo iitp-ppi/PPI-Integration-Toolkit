@@ -1,4 +1,4 @@
-deepfold.modules.msa\_row\_attention\_with\_pair\_bias.MSARowAttentionWithPairBias
+﻿deepfold.modules.msa\_row\_attention\_with\_pair\_bias.MSARowAttentionWithPairBias
 ==================================================================================
 
 .. currentmodule:: deepfold.modules.msa_row_attention_with_pair_bias
@@ -31,10 +31,8 @@ deepfold.modules.msa\_row\_attention\_with\_pair\_bias.MSARowAttentionWithPairBi
       ~MSARowAttentionWithPairBias.get_extra_state
       ~MSARowAttentionWithPairBias.get_parameter
       ~MSARowAttentionWithPairBias.get_submodule
-      ~MSARowAttentionWithPairBias.graph_state_dict
       ~MSARowAttentionWithPairBias.half
       ~MSARowAttentionWithPairBias.ipu
-      ~MSARowAttentionWithPairBias.load_graph_state_dict
       ~MSARowAttentionWithPairBias.load_state_dict
       ~MSARowAttentionWithPairBias.modules
       ~MSARowAttentionWithPairBias.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.msa\_row\_attention\_with\_pair\_bias.MSARowAttentionWithPairBi
    
       ~MSARowAttentionWithPairBias.T_destination
       ~MSARowAttentionWithPairBias.call_super_init
-      ~MSARowAttentionWithPairBias.device
       ~MSARowAttentionWithPairBias.dump_patches
       ~MSARowAttentionWithPairBias.training
    

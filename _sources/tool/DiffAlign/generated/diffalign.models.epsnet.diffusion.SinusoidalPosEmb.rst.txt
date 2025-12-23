@@ -1,4 +1,4 @@
-﻿diffalign.models.epsnet.diffusion.SinusoidalPosEmb
+diffalign.models.epsnet.diffusion.SinusoidalPosEmb
 ==================================================
 
 .. currentmodule:: diffalign.models.epsnet.diffusion

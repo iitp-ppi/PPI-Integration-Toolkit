@@ -1,4 +1,4 @@
-deepfold.modules.template\_angle\_embedder.TemplateAngleEmbedder
+﻿deepfold.modules.template\_angle\_embedder.TemplateAngleEmbedder
 ================================================================
 
 .. currentmodule:: deepfold.modules.template_angle_embedder
@@ -31,10 +31,8 @@ deepfold.modules.template\_angle\_embedder.TemplateAngleEmbedder
       ~TemplateAngleEmbedder.get_extra_state
       ~TemplateAngleEmbedder.get_parameter
       ~TemplateAngleEmbedder.get_submodule
-      ~TemplateAngleEmbedder.graph_state_dict
       ~TemplateAngleEmbedder.half
       ~TemplateAngleEmbedder.ipu
-      ~TemplateAngleEmbedder.load_graph_state_dict
       ~TemplateAngleEmbedder.load_state_dict
       ~TemplateAngleEmbedder.modules
       ~TemplateAngleEmbedder.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.template\_angle\_embedder.TemplateAngleEmbedder
    
       ~TemplateAngleEmbedder.T_destination
       ~TemplateAngleEmbedder.call_super_init
-      ~TemplateAngleEmbedder.device
       ~TemplateAngleEmbedder.dump_patches
       ~TemplateAngleEmbedder.training
    

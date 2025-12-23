@@ -1,4 +1,4 @@
-deepfold.modules.template\_pair\_embedder.TemplatePairEmbedder
+﻿deepfold.modules.template\_pair\_embedder.TemplatePairEmbedder
 ==============================================================
 
 .. currentmodule:: deepfold.modules.template_pair_embedder
@@ -32,10 +32,8 @@ deepfold.modules.template\_pair\_embedder.TemplatePairEmbedder
       ~TemplatePairEmbedder.get_extra_state
       ~TemplatePairEmbedder.get_parameter
       ~TemplatePairEmbedder.get_submodule
-      ~TemplatePairEmbedder.graph_state_dict
       ~TemplatePairEmbedder.half
       ~TemplatePairEmbedder.ipu
-      ~TemplatePairEmbedder.load_graph_state_dict
       ~TemplatePairEmbedder.load_state_dict
       ~TemplatePairEmbedder.modules
       ~TemplatePairEmbedder.named_buffers
@@ -74,7 +72,6 @@ deepfold.modules.template\_pair\_embedder.TemplatePairEmbedder
    
       ~TemplatePairEmbedder.T_destination
       ~TemplatePairEmbedder.call_super_init
-      ~TemplatePairEmbedder.device
       ~TemplatePairEmbedder.dump_patches
       ~TemplatePairEmbedder.training
    

@@ -33,10 +33,8 @@ promptbind.models.egnn.MC\_Att\_L
       ~MC_Att_L.get_extra_state
       ~MC_Att_L.get_parameter
       ~MC_Att_L.get_submodule
-      ~MC_Att_L.graph_state_dict
       ~MC_Att_L.half
       ~MC_Att_L.ipu
-      ~MC_Att_L.load_graph_state_dict
       ~MC_Att_L.load_state_dict
       ~MC_Att_L.modules
       ~MC_Att_L.named_buffers
@@ -77,7 +75,6 @@ promptbind.models.egnn.MC\_Att\_L
    
       ~MC_Att_L.T_destination
       ~MC_Att_L.call_super_init
-      ~MC_Att_L.device
       ~MC_Att_L.dump_patches
       ~MC_Att_L.training
    

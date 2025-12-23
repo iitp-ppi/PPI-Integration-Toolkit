@@ -1,4 +1,4 @@
-deepfold.modules.attention.CrossAttentionNoGate
+﻿deepfold.modules.attention.CrossAttentionNoGate
 ===============================================
 
 .. currentmodule:: deepfold.modules.attention
@@ -31,10 +31,8 @@ deepfold.modules.attention.CrossAttentionNoGate
       ~CrossAttentionNoGate.get_extra_state
       ~CrossAttentionNoGate.get_parameter
       ~CrossAttentionNoGate.get_submodule
-      ~CrossAttentionNoGate.graph_state_dict
       ~CrossAttentionNoGate.half
       ~CrossAttentionNoGate.ipu
-      ~CrossAttentionNoGate.load_graph_state_dict
       ~CrossAttentionNoGate.load_state_dict
       ~CrossAttentionNoGate.modules
       ~CrossAttentionNoGate.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.attention.CrossAttentionNoGate
    
       ~CrossAttentionNoGate.T_destination
       ~CrossAttentionNoGate.call_super_init
-      ~CrossAttentionNoGate.device
       ~CrossAttentionNoGate.dump_patches
       ~CrossAttentionNoGate.training
    

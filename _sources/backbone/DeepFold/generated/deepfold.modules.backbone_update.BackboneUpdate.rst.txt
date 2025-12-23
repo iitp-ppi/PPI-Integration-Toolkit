@@ -1,4 +1,4 @@
-deepfold.modules.backbone\_update.BackboneUpdate
+﻿deepfold.modules.backbone\_update.BackboneUpdate
 ================================================
 
 .. currentmodule:: deepfold.modules.backbone_update
@@ -31,10 +31,8 @@ deepfold.modules.backbone\_update.BackboneUpdate
       ~BackboneUpdate.get_extra_state
       ~BackboneUpdate.get_parameter
       ~BackboneUpdate.get_submodule
-      ~BackboneUpdate.graph_state_dict
       ~BackboneUpdate.half
       ~BackboneUpdate.ipu
-      ~BackboneUpdate.load_graph_state_dict
       ~BackboneUpdate.load_state_dict
       ~BackboneUpdate.modules
       ~BackboneUpdate.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.backbone\_update.BackboneUpdate
    
       ~BackboneUpdate.T_destination
       ~BackboneUpdate.call_super_init
-      ~BackboneUpdate.device
       ~BackboneUpdate.dump_patches
       ~BackboneUpdate.training
    

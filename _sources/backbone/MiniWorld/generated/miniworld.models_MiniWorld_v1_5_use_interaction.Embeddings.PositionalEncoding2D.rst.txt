@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.PositionalEncoding2D
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.PositionalEncoding2D
 ====================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings
@@ -33,10 +33,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.PositionalEncodi
       ~PositionalEncoding2D.get_extra_state
       ~PositionalEncoding2D.get_parameter
       ~PositionalEncoding2D.get_submodule
-      ~PositionalEncoding2D.graph_state_dict
       ~PositionalEncoding2D.half
       ~PositionalEncoding2D.ipu
-      ~PositionalEncoding2D.load_graph_state_dict
       ~PositionalEncoding2D.load_state_dict
       ~PositionalEncoding2D.modules
       ~PositionalEncoding2D.named_buffers
@@ -75,7 +73,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.PositionalEncodi
    
       ~PositionalEncoding2D.T_destination
       ~PositionalEncoding2D.call_super_init
-      ~PositionalEncoding2D.device
       ~PositionalEncoding2D.dump_patches
       ~PositionalEncoding2D.training
    

@@ -1,4 +1,4 @@
-deepfold.utils.geometry.quat\_rigid.QuatRigid
+﻿deepfold.utils.geometry.quat\_rigid.QuatRigid
 =============================================
 
 .. currentmodule:: deepfold.utils.geometry.quat_rigid
@@ -31,10 +31,8 @@ deepfold.utils.geometry.quat\_rigid.QuatRigid
       ~QuatRigid.get_extra_state
       ~QuatRigid.get_parameter
       ~QuatRigid.get_submodule
-      ~QuatRigid.graph_state_dict
       ~QuatRigid.half
       ~QuatRigid.ipu
-      ~QuatRigid.load_graph_state_dict
       ~QuatRigid.load_state_dict
       ~QuatRigid.modules
       ~QuatRigid.named_buffers
@@ -73,7 +71,6 @@ deepfold.utils.geometry.quat\_rigid.QuatRigid
    
       ~QuatRigid.T_destination
       ~QuatRigid.call_super_init
-      ~QuatRigid.device
       ~QuatRigid.dump_patches
       ~QuatRigid.training
    

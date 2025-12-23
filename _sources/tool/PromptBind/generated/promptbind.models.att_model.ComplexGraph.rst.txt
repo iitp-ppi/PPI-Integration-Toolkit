@@ -32,10 +32,8 @@ promptbind.models.att\_model.ComplexGraph
       ~ComplexGraph.get_extra_state
       ~ComplexGraph.get_parameter
       ~ComplexGraph.get_submodule
-      ~ComplexGraph.graph_state_dict
       ~ComplexGraph.half
       ~ComplexGraph.ipu
-      ~ComplexGraph.load_graph_state_dict
       ~ComplexGraph.load_state_dict
       ~ComplexGraph.modules
       ~ComplexGraph.named_buffers
@@ -74,7 +72,6 @@ promptbind.models.att\_model.ComplexGraph
    
       ~ComplexGraph.T_destination
       ~ComplexGraph.call_super_init
-      ~ComplexGraph.device
       ~ComplexGraph.dump_patches
       ~ComplexGraph.training
    

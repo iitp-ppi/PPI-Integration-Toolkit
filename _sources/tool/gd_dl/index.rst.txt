@@ -1,3 +1,5 @@
+GalaxyDock DL
+=============
 .. autosummary::
    :toctree: generated
    :recursive:

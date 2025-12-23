@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.StrSeqValueNet
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.StrSeqValueNet
 ==================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.value_network
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.StrSeqValueN
       ~StrSeqValueNet.get_extra_state
       ~StrSeqValueNet.get_parameter
       ~StrSeqValueNet.get_submodule
-      ~StrSeqValueNet.graph_state_dict
       ~StrSeqValueNet.half
       ~StrSeqValueNet.ipu
-      ~StrSeqValueNet.load_graph_state_dict
       ~StrSeqValueNet.load_state_dict
       ~StrSeqValueNet.modules
       ~StrSeqValueNet.named_buffers
@@ -76,7 +74,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.StrSeqValueN
    
       ~StrSeqValueNet.T_destination
       ~StrSeqValueNet.call_super_init
-      ~StrSeqValueNet.device
       ~StrSeqValueNet.dump_patches
       ~StrSeqValueNet.training
    

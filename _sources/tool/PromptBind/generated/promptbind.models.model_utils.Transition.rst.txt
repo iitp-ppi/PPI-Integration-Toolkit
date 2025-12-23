@@ -31,10 +31,8 @@ promptbind.models.model\_utils.Transition
       ~Transition.get_extra_state
       ~Transition.get_parameter
       ~Transition.get_submodule
-      ~Transition.graph_state_dict
       ~Transition.half
       ~Transition.ipu
-      ~Transition.load_graph_state_dict
       ~Transition.load_state_dict
       ~Transition.modules
       ~Transition.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.model\_utils.Transition
    
       ~Transition.T_destination
       ~Transition.call_super_init
-      ~Transition.device
       ~Transition.dump_patches
       ~Transition.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.single\_transition.SingleTransition
+﻿deepfold.modules.single\_transition.SingleTransition
 ====================================================
 
 .. currentmodule:: deepfold.modules.single_transition
@@ -31,10 +31,8 @@ deepfold.modules.single\_transition.SingleTransition
       ~SingleTransition.get_extra_state
       ~SingleTransition.get_parameter
       ~SingleTransition.get_submodule
-      ~SingleTransition.graph_state_dict
       ~SingleTransition.half
       ~SingleTransition.ipu
-      ~SingleTransition.load_graph_state_dict
       ~SingleTransition.load_state_dict
       ~SingleTransition.modules
       ~SingleTransition.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.single\_transition.SingleTransition
    
       ~SingleTransition.T_destination
       ~SingleTransition.call_super_init
-      ~SingleTransition.device
       ~SingleTransition.dump_patches
       ~SingleTransition.training
    

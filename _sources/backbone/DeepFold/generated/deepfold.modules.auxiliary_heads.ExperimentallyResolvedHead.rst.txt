@@ -1,4 +1,4 @@
-deepfold.modules.auxiliary\_heads.ExperimentallyResolvedHead
+﻿deepfold.modules.auxiliary\_heads.ExperimentallyResolvedHead
 ============================================================
 
 .. currentmodule:: deepfold.modules.auxiliary_heads
@@ -31,10 +31,8 @@ deepfold.modules.auxiliary\_heads.ExperimentallyResolvedHead
       ~ExperimentallyResolvedHead.get_extra_state
       ~ExperimentallyResolvedHead.get_parameter
       ~ExperimentallyResolvedHead.get_submodule
-      ~ExperimentallyResolvedHead.graph_state_dict
       ~ExperimentallyResolvedHead.half
       ~ExperimentallyResolvedHead.ipu
-      ~ExperimentallyResolvedHead.load_graph_state_dict
       ~ExperimentallyResolvedHead.load_state_dict
       ~ExperimentallyResolvedHead.modules
       ~ExperimentallyResolvedHead.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.auxiliary\_heads.ExperimentallyResolvedHead
    
       ~ExperimentallyResolvedHead.T_destination
       ~ExperimentallyResolvedHead.call_super_init
-      ~ExperimentallyResolvedHead.device
       ~ExperimentallyResolvedHead.dump_patches
       ~ExperimentallyResolvedHead.training
    

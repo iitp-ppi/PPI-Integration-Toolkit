@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.TemplatePairStack
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.TemplatePairStack
 =================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.TemplatePairStac
       ~TemplatePairStack.get_extra_state
       ~TemplatePairStack.get_parameter
       ~TemplatePairStack.get_submodule
-      ~TemplatePairStack.graph_state_dict
       ~TemplatePairStack.half
       ~TemplatePairStack.ipu
-      ~TemplatePairStack.load_graph_state_dict
       ~TemplatePairStack.load_state_dict
       ~TemplatePairStack.modules
       ~TemplatePairStack.named_buffers
@@ -73,7 +71,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.TemplatePairStac
    
       ~TemplatePairStack.T_destination
       ~TemplatePairStack.call_super_init
-      ~TemplatePairStack.device
       ~TemplatePairStack.dump_patches
       ~TemplatePairStack.training
    

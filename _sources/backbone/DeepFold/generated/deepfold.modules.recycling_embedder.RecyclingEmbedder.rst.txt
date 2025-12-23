@@ -1,4 +1,4 @@
-deepfold.modules.recycling\_embedder.RecyclingEmbedder
+﻿deepfold.modules.recycling\_embedder.RecyclingEmbedder
 ======================================================
 
 .. currentmodule:: deepfold.modules.recycling_embedder
@@ -31,10 +31,8 @@ deepfold.modules.recycling\_embedder.RecyclingEmbedder
       ~RecyclingEmbedder.get_extra_state
       ~RecyclingEmbedder.get_parameter
       ~RecyclingEmbedder.get_submodule
-      ~RecyclingEmbedder.graph_state_dict
       ~RecyclingEmbedder.half
       ~RecyclingEmbedder.ipu
-      ~RecyclingEmbedder.load_graph_state_dict
       ~RecyclingEmbedder.load_state_dict
       ~RecyclingEmbedder.modules
       ~RecyclingEmbedder.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.recycling\_embedder.RecyclingEmbedder
    
       ~RecyclingEmbedder.T_destination
       ~RecyclingEmbedder.call_super_init
-      ~RecyclingEmbedder.device
       ~RecyclingEmbedder.dump_patches
       ~RecyclingEmbedder.training
    

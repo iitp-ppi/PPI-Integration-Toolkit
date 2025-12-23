@@ -1,4 +1,4 @@
-deepfold.modules.msa\_column\_global\_attention.MSAColumnGlobalAttention
+﻿deepfold.modules.msa\_column\_global\_attention.MSAColumnGlobalAttention
 ========================================================================
 
 .. currentmodule:: deepfold.modules.msa_column_global_attention
@@ -31,10 +31,8 @@ deepfold.modules.msa\_column\_global\_attention.MSAColumnGlobalAttention
       ~MSAColumnGlobalAttention.get_extra_state
       ~MSAColumnGlobalAttention.get_parameter
       ~MSAColumnGlobalAttention.get_submodule
-      ~MSAColumnGlobalAttention.graph_state_dict
       ~MSAColumnGlobalAttention.half
       ~MSAColumnGlobalAttention.ipu
-      ~MSAColumnGlobalAttention.load_graph_state_dict
       ~MSAColumnGlobalAttention.load_state_dict
       ~MSAColumnGlobalAttention.modules
       ~MSAColumnGlobalAttention.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.msa\_column\_global\_attention.MSAColumnGlobalAttention
    
       ~MSAColumnGlobalAttention.T_destination
       ~MSAColumnGlobalAttention.call_super_init
-      ~MSAColumnGlobalAttention.device
       ~MSAColumnGlobalAttention.dump_patches
       ~MSAColumnGlobalAttention.training
    

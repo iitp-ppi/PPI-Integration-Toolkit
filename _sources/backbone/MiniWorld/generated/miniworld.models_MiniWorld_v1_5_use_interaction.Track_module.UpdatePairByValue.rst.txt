@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.UpdatePairByValue
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.UpdatePairByValue
 ====================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.UpdatePairByV
       ~UpdatePairByValue.get_extra_state
       ~UpdatePairByValue.get_parameter
       ~UpdatePairByValue.get_submodule
-      ~UpdatePairByValue.graph_state_dict
       ~UpdatePairByValue.half
       ~UpdatePairByValue.ipu
-      ~UpdatePairByValue.load_graph_state_dict
       ~UpdatePairByValue.load_state_dict
       ~UpdatePairByValue.modules
       ~UpdatePairByValue.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.UpdatePairByV
    
       ~UpdatePairByValue.T_destination
       ~UpdatePairByValue.call_super_init
-      ~UpdatePairByValue.device
       ~UpdatePairByValue.dump_patches
       ~UpdatePairByValue.training
    

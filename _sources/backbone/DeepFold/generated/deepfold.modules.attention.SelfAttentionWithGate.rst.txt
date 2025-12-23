@@ -1,4 +1,4 @@
-deepfold.modules.attention.SelfAttentionWithGate
+﻿deepfold.modules.attention.SelfAttentionWithGate
 ================================================
 
 .. currentmodule:: deepfold.modules.attention
@@ -31,10 +31,8 @@ deepfold.modules.attention.SelfAttentionWithGate
       ~SelfAttentionWithGate.get_extra_state
       ~SelfAttentionWithGate.get_parameter
       ~SelfAttentionWithGate.get_submodule
-      ~SelfAttentionWithGate.graph_state_dict
       ~SelfAttentionWithGate.half
       ~SelfAttentionWithGate.ipu
-      ~SelfAttentionWithGate.load_graph_state_dict
       ~SelfAttentionWithGate.load_state_dict
       ~SelfAttentionWithGate.modules
       ~SelfAttentionWithGate.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.attention.SelfAttentionWithGate
    
       ~SelfAttentionWithGate.T_destination
       ~SelfAttentionWithGate.call_super_init
-      ~SelfAttentionWithGate.device
       ~SelfAttentionWithGate.dump_patches
       ~SelfAttentionWithGate.training
    

@@ -1,4 +1,4 @@
-miniworld.utils.util\_module.ComputeAllAtomCoords
+﻿miniworld.utils.util\_module.ComputeAllAtomCoords
 =================================================
 
 .. currentmodule:: miniworld.utils.util_module
@@ -31,10 +31,8 @@ miniworld.utils.util\_module.ComputeAllAtomCoords
       ~ComputeAllAtomCoords.get_extra_state
       ~ComputeAllAtomCoords.get_parameter
       ~ComputeAllAtomCoords.get_submodule
-      ~ComputeAllAtomCoords.graph_state_dict
       ~ComputeAllAtomCoords.half
       ~ComputeAllAtomCoords.ipu
-      ~ComputeAllAtomCoords.load_graph_state_dict
       ~ComputeAllAtomCoords.load_state_dict
       ~ComputeAllAtomCoords.modules
       ~ComputeAllAtomCoords.named_buffers
@@ -73,7 +71,6 @@ miniworld.utils.util\_module.ComputeAllAtomCoords
    
       ~ComputeAllAtomCoords.T_destination
       ~ComputeAllAtomCoords.call_super_init
-      ~ComputeAllAtomCoords.device
       ~ComputeAllAtomCoords.dump_patches
       ~ComputeAllAtomCoords.training
    

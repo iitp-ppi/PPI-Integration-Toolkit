@@ -1,4 +1,4 @@
-deepfold.modules.auxiliary\_heads.DistogramHead
+﻿deepfold.modules.auxiliary\_heads.DistogramHead
 ===============================================
 
 .. currentmodule:: deepfold.modules.auxiliary_heads
@@ -31,10 +31,8 @@ deepfold.modules.auxiliary\_heads.DistogramHead
       ~DistogramHead.get_extra_state
       ~DistogramHead.get_parameter
       ~DistogramHead.get_submodule
-      ~DistogramHead.graph_state_dict
       ~DistogramHead.half
       ~DistogramHead.ipu
-      ~DistogramHead.load_graph_state_dict
       ~DistogramHead.load_state_dict
       ~DistogramHead.modules
       ~DistogramHead.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.auxiliary\_heads.DistogramHead
    
       ~DistogramHead.T_destination
       ~DistogramHead.call_super_init
-      ~DistogramHead.device
       ~DistogramHead.dump_patches
       ~DistogramHead.training
    

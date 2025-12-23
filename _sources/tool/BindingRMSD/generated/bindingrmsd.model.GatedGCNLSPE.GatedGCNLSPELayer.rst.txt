@@ -32,10 +32,8 @@ bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer
       ~GatedGCNLSPELayer.get_extra_state
       ~GatedGCNLSPELayer.get_parameter
       ~GatedGCNLSPELayer.get_submodule
-      ~GatedGCNLSPELayer.graph_state_dict
       ~GatedGCNLSPELayer.half
       ~GatedGCNLSPELayer.ipu
-      ~GatedGCNLSPELayer.load_graph_state_dict
       ~GatedGCNLSPELayer.load_state_dict
       ~GatedGCNLSPELayer.message_func_for_pj
       ~GatedGCNLSPELayer.message_func_for_vij
@@ -76,7 +74,6 @@ bindingrmsd.model.GatedGCNLSPE.GatedGCNLSPELayer
    
       ~GatedGCNLSPELayer.T_destination
       ~GatedGCNLSPELayer.call_super_init
-      ~GatedGCNLSPELayer.device
       ~GatedGCNLSPELayer.dump_patches
       ~GatedGCNLSPELayer.training
    

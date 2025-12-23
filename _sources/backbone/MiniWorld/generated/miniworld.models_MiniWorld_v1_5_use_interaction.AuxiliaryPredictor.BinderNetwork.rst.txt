@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.BinderNetwork
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.BinderNetwork
 =====================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.BinderNe
       ~BinderNetwork.get_extra_state
       ~BinderNetwork.get_parameter
       ~BinderNetwork.get_submodule
-      ~BinderNetwork.graph_state_dict
       ~BinderNetwork.half
       ~BinderNetwork.ipu
-      ~BinderNetwork.load_graph_state_dict
       ~BinderNetwork.load_state_dict
       ~BinderNetwork.modules
       ~BinderNetwork.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.BinderNe
    
       ~BinderNetwork.T_destination
       ~BinderNetwork.call_super_init
-      ~BinderNetwork.device
       ~BinderNetwork.dump_patches
       ~BinderNetwork.training
    

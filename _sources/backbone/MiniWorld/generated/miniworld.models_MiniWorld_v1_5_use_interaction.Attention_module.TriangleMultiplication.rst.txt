@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.TriangleMultiplication
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.TriangleMultiplication
 =============================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.TriangleM
       ~TriangleMultiplication.get_extra_state
       ~TriangleMultiplication.get_parameter
       ~TriangleMultiplication.get_submodule
-      ~TriangleMultiplication.graph_state_dict
       ~TriangleMultiplication.half
       ~TriangleMultiplication.ipu
-      ~TriangleMultiplication.load_graph_state_dict
       ~TriangleMultiplication.load_state_dict
       ~TriangleMultiplication.modules
       ~TriangleMultiplication.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.TriangleM
    
       ~TriangleMultiplication.T_destination
       ~TriangleMultiplication.call_super_init
-      ~TriangleMultiplication.device
       ~TriangleMultiplication.dump_patches
       ~TriangleMultiplication.training
    
