@@ -1,4 +1,4 @@
-deepfold.modules.evoformer\_block\_pair\_core.EvoformerBlockPairCore
+﻿deepfold.modules.evoformer\_block\_pair\_core.EvoformerBlockPairCore
 ====================================================================
 
 .. currentmodule:: deepfold.modules.evoformer_block_pair_core
@@ -31,10 +31,8 @@ deepfold.modules.evoformer\_block\_pair\_core.EvoformerBlockPairCore
       ~EvoformerBlockPairCore.get_extra_state
       ~EvoformerBlockPairCore.get_parameter
       ~EvoformerBlockPairCore.get_submodule
-      ~EvoformerBlockPairCore.graph_state_dict
       ~EvoformerBlockPairCore.half
       ~EvoformerBlockPairCore.ipu
-      ~EvoformerBlockPairCore.load_graph_state_dict
       ~EvoformerBlockPairCore.load_state_dict
       ~EvoformerBlockPairCore.modules
       ~EvoformerBlockPairCore.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.evoformer\_block\_pair\_core.EvoformerBlockPairCore
    
       ~EvoformerBlockPairCore.T_destination
       ~EvoformerBlockPairCore.call_super_init
-      ~EvoformerBlockPairCore.device
       ~EvoformerBlockPairCore.dump_patches
       ~EvoformerBlockPairCore.training
    

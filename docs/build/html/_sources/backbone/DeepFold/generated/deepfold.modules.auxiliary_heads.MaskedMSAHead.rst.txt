@@ -1,4 +1,4 @@
-deepfold.modules.auxiliary\_heads.MaskedMSAHead
+﻿deepfold.modules.auxiliary\_heads.MaskedMSAHead
 ===============================================
 
 .. currentmodule:: deepfold.modules.auxiliary_heads
@@ -31,10 +31,8 @@ deepfold.modules.auxiliary\_heads.MaskedMSAHead
       ~MaskedMSAHead.get_extra_state
       ~MaskedMSAHead.get_parameter
       ~MaskedMSAHead.get_submodule
-      ~MaskedMSAHead.graph_state_dict
       ~MaskedMSAHead.half
       ~MaskedMSAHead.ipu
-      ~MaskedMSAHead.load_graph_state_dict
       ~MaskedMSAHead.load_state_dict
       ~MaskedMSAHead.modules
       ~MaskedMSAHead.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.auxiliary\_heads.MaskedMSAHead
    
       ~MaskedMSAHead.T_destination
       ~MaskedMSAHead.call_super_init
-      ~MaskedMSAHead.device
       ~MaskedMSAHead.dump_patches
       ~MaskedMSAHead.training
    

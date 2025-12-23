@@ -33,10 +33,8 @@ promptbind.models.egnn.MC\_E\_GCL
       ~MC_E_GCL.get_extra_state
       ~MC_E_GCL.get_parameter
       ~MC_E_GCL.get_submodule
-      ~MC_E_GCL.graph_state_dict
       ~MC_E_GCL.half
       ~MC_E_GCL.ipu
-      ~MC_E_GCL.load_graph_state_dict
       ~MC_E_GCL.load_state_dict
       ~MC_E_GCL.modules
       ~MC_E_GCL.named_buffers
@@ -76,7 +74,6 @@ promptbind.models.egnn.MC\_E\_GCL
    
       ~MC_E_GCL.T_destination
       ~MC_E_GCL.call_super_init
-      ~MC_E_GCL.device
       ~MC_E_GCL.dump_patches
       ~MC_E_GCL.training
    

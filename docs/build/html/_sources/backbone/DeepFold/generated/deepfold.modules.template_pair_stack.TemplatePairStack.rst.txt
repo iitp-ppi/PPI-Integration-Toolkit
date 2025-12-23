@@ -1,4 +1,4 @@
-deepfold.modules.template\_pair\_stack.TemplatePairStack
+﻿deepfold.modules.template\_pair\_stack.TemplatePairStack
 ========================================================
 
 .. currentmodule:: deepfold.modules.template_pair_stack
@@ -31,10 +31,8 @@ deepfold.modules.template\_pair\_stack.TemplatePairStack
       ~TemplatePairStack.get_extra_state
       ~TemplatePairStack.get_parameter
       ~TemplatePairStack.get_submodule
-      ~TemplatePairStack.graph_state_dict
       ~TemplatePairStack.half
       ~TemplatePairStack.ipu
-      ~TemplatePairStack.load_graph_state_dict
       ~TemplatePairStack.load_state_dict
       ~TemplatePairStack.modules
       ~TemplatePairStack.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.template\_pair\_stack.TemplatePairStack
    
       ~TemplatePairStack.T_destination
       ~TemplatePairStack.call_super_init
-      ~TemplatePairStack.device
       ~TemplatePairStack.dump_patches
       ~TemplatePairStack.training
    

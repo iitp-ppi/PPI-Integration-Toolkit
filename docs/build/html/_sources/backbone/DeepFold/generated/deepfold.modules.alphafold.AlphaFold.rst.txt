@@ -1,4 +1,4 @@
-deepfold.modules.alphafold.AlphaFold
+﻿deepfold.modules.alphafold.AlphaFold
 ====================================
 
 .. currentmodule:: deepfold.modules.alphafold
@@ -31,10 +31,8 @@ deepfold.modules.alphafold.AlphaFold
       ~AlphaFold.get_extra_state
       ~AlphaFold.get_parameter
       ~AlphaFold.get_submodule
-      ~AlphaFold.graph_state_dict
       ~AlphaFold.half
       ~AlphaFold.ipu
-      ~AlphaFold.load_graph_state_dict
       ~AlphaFold.load_state_dict
       ~AlphaFold.modules
       ~AlphaFold.named_buffers
@@ -74,7 +72,6 @@ deepfold.modules.alphafold.AlphaFold
    
       ~AlphaFold.T_destination
       ~AlphaFold.call_super_init
-      ~AlphaFold.device
       ~AlphaFold.dump_patches
       ~AlphaFold.training
    

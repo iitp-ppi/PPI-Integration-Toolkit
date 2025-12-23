@@ -1,4 +1,4 @@
-deepfold.loss.AlphaFoldLoss
+﻿deepfold.loss.AlphaFoldLoss
 ===========================
 
 .. currentmodule:: deepfold.loss
@@ -31,10 +31,8 @@ deepfold.loss.AlphaFoldLoss
       ~AlphaFoldLoss.get_extra_state
       ~AlphaFoldLoss.get_parameter
       ~AlphaFoldLoss.get_submodule
-      ~AlphaFoldLoss.graph_state_dict
       ~AlphaFoldLoss.half
       ~AlphaFoldLoss.ipu
-      ~AlphaFoldLoss.load_graph_state_dict
       ~AlphaFoldLoss.load_state_dict
       ~AlphaFoldLoss.modules
       ~AlphaFoldLoss.named_buffers
@@ -73,7 +71,6 @@ deepfold.loss.AlphaFoldLoss
    
       ~AlphaFoldLoss.T_destination
       ~AlphaFoldLoss.call_super_init
-      ~AlphaFoldLoss.device
       ~AlphaFoldLoss.dump_patches
       ~AlphaFoldLoss.training
    

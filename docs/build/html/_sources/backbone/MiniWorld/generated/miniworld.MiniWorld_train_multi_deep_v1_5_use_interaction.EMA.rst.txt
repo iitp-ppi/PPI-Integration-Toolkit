@@ -1,4 +1,4 @@
-miniworld.MiniWorld\_train\_multi\_deep\_v1\_5\_use\_interaction.EMA
+﻿miniworld.MiniWorld\_train\_multi\_deep\_v1\_5\_use\_interaction.EMA
 ====================================================================
 
 .. currentmodule:: miniworld.MiniWorld_train_multi_deep_v1_5_use_interaction
@@ -31,10 +31,8 @@ miniworld.MiniWorld\_train\_multi\_deep\_v1\_5\_use\_interaction.EMA
       ~EMA.get_extra_state
       ~EMA.get_parameter
       ~EMA.get_submodule
-      ~EMA.graph_state_dict
       ~EMA.half
       ~EMA.ipu
-      ~EMA.load_graph_state_dict
       ~EMA.load_state_dict
       ~EMA.modules
       ~EMA.named_buffers
@@ -74,7 +72,6 @@ miniworld.MiniWorld\_train\_multi\_deep\_v1\_5\_use\_interaction.EMA
    
       ~EMA.T_destination
       ~EMA.call_super_init
-      ~EMA.device
       ~EMA.dump_patches
       ~EMA.training
    

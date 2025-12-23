@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.PAENetwork
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.PAENetwork
 ==================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.PAENetwo
       ~PAENetwork.get_extra_state
       ~PAENetwork.get_parameter
       ~PAENetwork.get_submodule
-      ~PAENetwork.graph_state_dict
       ~PAENetwork.half
       ~PAENetwork.ipu
-      ~PAENetwork.load_graph_state_dict
       ~PAENetwork.load_state_dict
       ~PAENetwork.modules
       ~PAENetwork.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.PAENetwo
    
       ~PAENetwork.T_destination
       ~PAENetwork.call_super_init
-      ~PAENetwork.device
       ~PAENetwork.dump_patches
       ~PAENetwork.training
    

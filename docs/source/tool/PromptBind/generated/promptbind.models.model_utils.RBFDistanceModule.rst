@@ -31,10 +31,8 @@ promptbind.models.model\_utils.RBFDistanceModule
       ~RBFDistanceModule.get_extra_state
       ~RBFDistanceModule.get_parameter
       ~RBFDistanceModule.get_submodule
-      ~RBFDistanceModule.graph_state_dict
       ~RBFDistanceModule.half
       ~RBFDistanceModule.ipu
-      ~RBFDistanceModule.load_graph_state_dict
       ~RBFDistanceModule.load_state_dict
       ~RBFDistanceModule.modules
       ~RBFDistanceModule.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.model\_utils.RBFDistanceModule
    
       ~RBFDistanceModule.T_destination
       ~RBFDistanceModule.call_super_init
-      ~RBFDistanceModule.device
       ~RBFDistanceModule.dump_patches
       ~RBFDistanceModule.training
    

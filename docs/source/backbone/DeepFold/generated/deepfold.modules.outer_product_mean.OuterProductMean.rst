@@ -1,4 +1,4 @@
-deepfold.modules.outer\_product\_mean.OuterProductMean
+﻿deepfold.modules.outer\_product\_mean.OuterProductMean
 ======================================================
 
 .. currentmodule:: deepfold.modules.outer_product_mean
@@ -31,10 +31,8 @@ deepfold.modules.outer\_product\_mean.OuterProductMean
       ~OuterProductMean.get_extra_state
       ~OuterProductMean.get_parameter
       ~OuterProductMean.get_submodule
-      ~OuterProductMean.graph_state_dict
       ~OuterProductMean.half
       ~OuterProductMean.ipu
-      ~OuterProductMean.load_graph_state_dict
       ~OuterProductMean.load_state_dict
       ~OuterProductMean.modules
       ~OuterProductMean.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.outer\_product\_mean.OuterProductMean
    
       ~OuterProductMean.T_destination
       ~OuterProductMean.call_super_init
-      ~OuterProductMean.device
       ~OuterProductMean.dump_patches
       ~OuterProductMean.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.invariant\_point\_attention.PointProjection
+﻿deepfold.modules.invariant\_point\_attention.PointProjection
 ============================================================
 
 .. currentmodule:: deepfold.modules.invariant_point_attention
@@ -31,10 +31,8 @@ deepfold.modules.invariant\_point\_attention.PointProjection
       ~PointProjection.get_extra_state
       ~PointProjection.get_parameter
       ~PointProjection.get_submodule
-      ~PointProjection.graph_state_dict
       ~PointProjection.half
       ~PointProjection.ipu
-      ~PointProjection.load_graph_state_dict
       ~PointProjection.load_state_dict
       ~PointProjection.modules
       ~PointProjection.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.invariant\_point\_attention.PointProjection
    
       ~PointProjection.T_destination
       ~PointProjection.call_super_init
-      ~PointProjection.device
       ~PointProjection.dump_patches
       ~PointProjection.training
    

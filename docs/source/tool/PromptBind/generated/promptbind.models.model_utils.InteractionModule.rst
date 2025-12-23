@@ -31,10 +31,8 @@ promptbind.models.model\_utils.InteractionModule
       ~InteractionModule.get_extra_state
       ~InteractionModule.get_parameter
       ~InteractionModule.get_submodule
-      ~InteractionModule.graph_state_dict
       ~InteractionModule.half
       ~InteractionModule.ipu
-      ~InteractionModule.load_graph_state_dict
       ~InteractionModule.load_state_dict
       ~InteractionModule.modules
       ~InteractionModule.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.model\_utils.InteractionModule
    
       ~InteractionModule.T_destination
       ~InteractionModule.call_super_init
-      ~InteractionModule.device
       ~InteractionModule.dump_patches
       ~InteractionModule.training
    

@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.SeqSep
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.SeqSep
 =========================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.SeqSep
       ~SeqSep.get_extra_state
       ~SeqSep.get_parameter
       ~SeqSep.get_submodule
-      ~SeqSep.graph_state_dict
       ~SeqSep.half
       ~SeqSep.ipu
-      ~SeqSep.load_graph_state_dict
       ~SeqSep.load_state_dict
       ~SeqSep.modules
       ~SeqSep.named_buffers
@@ -73,7 +71,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.SeqSep
    
       ~SeqSep.T_destination
       ~SeqSep.call_super_init
-      ~SeqSep.device
       ~SeqSep.dump_patches
       ~SeqSep.training
    

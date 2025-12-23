@@ -1,4 +1,4 @@
-deepfold.modules.triangular\_multiplicative\_update.TriangleMultiplicationOutgoing
+﻿deepfold.modules.triangular\_multiplicative\_update.TriangleMultiplicationOutgoing
 ==================================================================================
 
 .. currentmodule:: deepfold.modules.triangular_multiplicative_update
@@ -31,10 +31,8 @@ deepfold.modules.triangular\_multiplicative\_update.TriangleMultiplicationOutgoi
       ~TriangleMultiplicationOutgoing.get_extra_state
       ~TriangleMultiplicationOutgoing.get_parameter
       ~TriangleMultiplicationOutgoing.get_submodule
-      ~TriangleMultiplicationOutgoing.graph_state_dict
       ~TriangleMultiplicationOutgoing.half
       ~TriangleMultiplicationOutgoing.ipu
-      ~TriangleMultiplicationOutgoing.load_graph_state_dict
       ~TriangleMultiplicationOutgoing.load_state_dict
       ~TriangleMultiplicationOutgoing.modules
       ~TriangleMultiplicationOutgoing.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.triangular\_multiplicative\_update.TriangleMultiplicationOutgoi
    
       ~TriangleMultiplicationOutgoing.T_destination
       ~TriangleMultiplicationOutgoing.call_super_init
-      ~TriangleMultiplicationOutgoing.device
       ~TriangleMultiplicationOutgoing.dump_patches
       ~TriangleMultiplicationOutgoing.training
    

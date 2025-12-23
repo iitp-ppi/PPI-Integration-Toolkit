@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterBlock
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterBlock
 ============================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterBlock
       ~IterBlock.get_extra_state
       ~IterBlock.get_parameter
       ~IterBlock.get_submodule
-      ~IterBlock.graph_state_dict
       ~IterBlock.half
       ~IterBlock.ipu
-      ~IterBlock.load_graph_state_dict
       ~IterBlock.load_state_dict
       ~IterBlock.modules
       ~IterBlock.named_buffers
@@ -73,7 +71,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterBlock
    
       ~IterBlock.T_destination
       ~IterBlock.call_super_init
-      ~IterBlock.device
       ~IterBlock.dump_patches
       ~IterBlock.training
    

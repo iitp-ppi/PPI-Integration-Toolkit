@@ -31,10 +31,8 @@ promptbind.models.att\_model.EfficientMCAttModel
       ~EfficientMCAttModel.get_extra_state
       ~EfficientMCAttModel.get_parameter
       ~EfficientMCAttModel.get_submodule
-      ~EfficientMCAttModel.graph_state_dict
       ~EfficientMCAttModel.half
       ~EfficientMCAttModel.ipu
-      ~EfficientMCAttModel.load_graph_state_dict
       ~EfficientMCAttModel.load_state_dict
       ~EfficientMCAttModel.modules
       ~EfficientMCAttModel.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.att\_model.EfficientMCAttModel
    
       ~EfficientMCAttModel.T_destination
       ~EfficientMCAttModel.call_super_init
-      ~EfficientMCAttModel.device
       ~EfficientMCAttModel.dump_patches
       ~EfficientMCAttModel.training
    

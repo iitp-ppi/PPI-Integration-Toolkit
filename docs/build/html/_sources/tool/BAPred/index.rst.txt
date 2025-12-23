@@ -1,3 +1,5 @@
+BAPred
+======
 .. autosummary::
    :toctree: generated
    :recursive:

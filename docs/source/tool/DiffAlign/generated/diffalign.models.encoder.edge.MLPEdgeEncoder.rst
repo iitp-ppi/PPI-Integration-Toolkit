@@ -1,4 +1,4 @@
-﻿diffalign.models.encoder.edge.MLPEdgeEncoder
+diffalign.models.encoder.edge.MLPEdgeEncoder
 ============================================
 
 .. currentmodule:: diffalign.models.encoder.edge

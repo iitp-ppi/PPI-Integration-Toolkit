@@ -1,4 +1,4 @@
-deepfold.utils.swa\_utils.AlphaFoldSWA
+﻿deepfold.utils.swa\_utils.AlphaFoldSWA
 ======================================
 
 .. currentmodule:: deepfold.utils.swa_utils
@@ -31,10 +31,8 @@ deepfold.utils.swa\_utils.AlphaFoldSWA
       ~AlphaFoldSWA.get_extra_state
       ~AlphaFoldSWA.get_parameter
       ~AlphaFoldSWA.get_submodule
-      ~AlphaFoldSWA.graph_state_dict
       ~AlphaFoldSWA.half
       ~AlphaFoldSWA.ipu
-      ~AlphaFoldSWA.load_graph_state_dict
       ~AlphaFoldSWA.load_state_dict
       ~AlphaFoldSWA.modules
       ~AlphaFoldSWA.named_buffers
@@ -74,7 +72,6 @@ deepfold.utils.swa\_utils.AlphaFoldSWA
    
       ~AlphaFoldSWA.T_destination
       ~AlphaFoldSWA.call_super_init
-      ~AlphaFoldSWA.device
       ~AlphaFoldSWA.dump_patches
       ~AlphaFoldSWA.training
    

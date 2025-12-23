@@ -1,4 +1,4 @@
-﻿diffalign.models.epsnet.diffusion.DiffAlign
+diffalign.models.epsnet.diffusion.DiffAlign
 ===========================================
 
 .. currentmodule:: diffalign.models.epsnet.diffusion

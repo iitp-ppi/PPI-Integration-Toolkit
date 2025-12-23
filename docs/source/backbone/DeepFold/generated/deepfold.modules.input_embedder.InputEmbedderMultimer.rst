@@ -1,4 +1,4 @@
-deepfold.modules.input\_embedder.InputEmbedderMultimer
+﻿deepfold.modules.input\_embedder.InputEmbedderMultimer
 ======================================================
 
 .. currentmodule:: deepfold.modules.input_embedder
@@ -31,10 +31,8 @@ deepfold.modules.input\_embedder.InputEmbedderMultimer
       ~InputEmbedderMultimer.get_extra_state
       ~InputEmbedderMultimer.get_parameter
       ~InputEmbedderMultimer.get_submodule
-      ~InputEmbedderMultimer.graph_state_dict
       ~InputEmbedderMultimer.half
       ~InputEmbedderMultimer.ipu
-      ~InputEmbedderMultimer.load_graph_state_dict
       ~InputEmbedderMultimer.load_state_dict
       ~InputEmbedderMultimer.modules
       ~InputEmbedderMultimer.named_buffers
@@ -74,7 +72,6 @@ deepfold.modules.input\_embedder.InputEmbedderMultimer
    
       ~InputEmbedderMultimer.T_destination
       ~InputEmbedderMultimer.call_super_init
-      ~InputEmbedderMultimer.device
       ~InputEmbedderMultimer.dump_patches
       ~InputEmbedderMultimer.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.template\_pair\_embedder.TemplatePairEmbedderMultimer
+﻿deepfold.modules.template\_pair\_embedder.TemplatePairEmbedderMultimer
 ======================================================================
 
 .. currentmodule:: deepfold.modules.template_pair_embedder
@@ -32,10 +32,8 @@ deepfold.modules.template\_pair\_embedder.TemplatePairEmbedderMultimer
       ~TemplatePairEmbedderMultimer.get_extra_state
       ~TemplatePairEmbedderMultimer.get_parameter
       ~TemplatePairEmbedderMultimer.get_submodule
-      ~TemplatePairEmbedderMultimer.graph_state_dict
       ~TemplatePairEmbedderMultimer.half
       ~TemplatePairEmbedderMultimer.ipu
-      ~TemplatePairEmbedderMultimer.load_graph_state_dict
       ~TemplatePairEmbedderMultimer.load_state_dict
       ~TemplatePairEmbedderMultimer.modules
       ~TemplatePairEmbedderMultimer.named_buffers
@@ -74,7 +72,6 @@ deepfold.modules.template\_pair\_embedder.TemplatePairEmbedderMultimer
    
       ~TemplatePairEmbedderMultimer.T_destination
       ~TemplatePairEmbedderMultimer.call_super_init
-      ~TemplatePairEmbedderMultimer.device
       ~TemplatePairEmbedderMultimer.dump_patches
       ~TemplatePairEmbedderMultimer.training
    

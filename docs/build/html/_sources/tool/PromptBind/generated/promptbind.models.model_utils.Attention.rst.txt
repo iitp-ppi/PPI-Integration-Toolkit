@@ -31,10 +31,8 @@ promptbind.models.model\_utils.Attention
       ~Attention.get_extra_state
       ~Attention.get_parameter
       ~Attention.get_submodule
-      ~Attention.graph_state_dict
       ~Attention.half
       ~Attention.ipu
-      ~Attention.load_graph_state_dict
       ~Attention.load_state_dict
       ~Attention.modules
       ~Attention.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.model\_utils.Attention
    
       ~Attention.T_destination
       ~Attention.call_super_init
-      ~Attention.device
       ~Attention.dump_patches
       ~Attention.training
    

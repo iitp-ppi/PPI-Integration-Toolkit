@@ -1,4 +1,4 @@
-deepfold.modules.evoformer\_block.EvoformerBlock
+﻿deepfold.modules.evoformer\_block.EvoformerBlock
 ================================================
 
 .. currentmodule:: deepfold.modules.evoformer_block
@@ -31,10 +31,8 @@ deepfold.modules.evoformer\_block.EvoformerBlock
       ~EvoformerBlock.get_extra_state
       ~EvoformerBlock.get_parameter
       ~EvoformerBlock.get_submodule
-      ~EvoformerBlock.graph_state_dict
       ~EvoformerBlock.half
       ~EvoformerBlock.ipu
-      ~EvoformerBlock.load_graph_state_dict
       ~EvoformerBlock.load_state_dict
       ~EvoformerBlock.modules
       ~EvoformerBlock.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.evoformer\_block.EvoformerBlock
    
       ~EvoformerBlock.T_destination
       ~EvoformerBlock.call_super_init
-      ~EvoformerBlock.device
       ~EvoformerBlock.dump_patches
       ~EvoformerBlock.training
    

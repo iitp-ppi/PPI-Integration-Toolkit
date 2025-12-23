@@ -1,4 +1,4 @@
-deepfold.modules.template\_pointwise\_attention.TemplatePointwiseAttention
+﻿deepfold.modules.template\_pointwise\_attention.TemplatePointwiseAttention
 ==========================================================================
 
 .. currentmodule:: deepfold.modules.template_pointwise_attention
@@ -31,10 +31,8 @@ deepfold.modules.template\_pointwise\_attention.TemplatePointwiseAttention
       ~TemplatePointwiseAttention.get_extra_state
       ~TemplatePointwiseAttention.get_parameter
       ~TemplatePointwiseAttention.get_submodule
-      ~TemplatePointwiseAttention.graph_state_dict
       ~TemplatePointwiseAttention.half
       ~TemplatePointwiseAttention.ipu
-      ~TemplatePointwiseAttention.load_graph_state_dict
       ~TemplatePointwiseAttention.load_state_dict
       ~TemplatePointwiseAttention.modules
       ~TemplatePointwiseAttention.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.template\_pointwise\_attention.TemplatePointwiseAttention
    
       ~TemplatePointwiseAttention.T_destination
       ~TemplatePointwiseAttention.call_super_init
-      ~TemplatePointwiseAttention.device
       ~TemplatePointwiseAttention.dump_patches
       ~TemplatePointwiseAttention.training
    

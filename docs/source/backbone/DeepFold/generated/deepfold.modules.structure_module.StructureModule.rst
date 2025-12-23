@@ -1,4 +1,4 @@
-deepfold.modules.structure\_module.StructureModule
+﻿deepfold.modules.structure\_module.StructureModule
 ==================================================
 
 .. currentmodule:: deepfold.modules.structure_module
@@ -31,10 +31,8 @@ deepfold.modules.structure\_module.StructureModule
       ~StructureModule.get_extra_state
       ~StructureModule.get_parameter
       ~StructureModule.get_submodule
-      ~StructureModule.graph_state_dict
       ~StructureModule.half
       ~StructureModule.ipu
-      ~StructureModule.load_graph_state_dict
       ~StructureModule.load_state_dict
       ~StructureModule.modules
       ~StructureModule.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.structure\_module.StructureModule
    
       ~StructureModule.T_destination
       ~StructureModule.call_super_init
-      ~StructureModule.device
       ~StructureModule.dump_patches
       ~StructureModule.training
    

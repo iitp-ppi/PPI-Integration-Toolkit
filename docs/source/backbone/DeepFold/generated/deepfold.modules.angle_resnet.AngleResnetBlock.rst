@@ -1,4 +1,4 @@
-deepfold.modules.angle\_resnet.AngleResnetBlock
+﻿deepfold.modules.angle\_resnet.AngleResnetBlock
 ===============================================
 
 .. currentmodule:: deepfold.modules.angle_resnet
@@ -31,10 +31,8 @@ deepfold.modules.angle\_resnet.AngleResnetBlock
       ~AngleResnetBlock.get_extra_state
       ~AngleResnetBlock.get_parameter
       ~AngleResnetBlock.get_submodule
-      ~AngleResnetBlock.graph_state_dict
       ~AngleResnetBlock.half
       ~AngleResnetBlock.ipu
-      ~AngleResnetBlock.load_graph_state_dict
       ~AngleResnetBlock.load_state_dict
       ~AngleResnetBlock.modules
       ~AngleResnetBlock.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.angle\_resnet.AngleResnetBlock
    
       ~AngleResnetBlock.T_destination
       ~AngleResnetBlock.call_super_init
-      ~AngleResnetBlock.device
       ~AngleResnetBlock.dump_patches
       ~AngleResnetBlock.training
    

@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.AttentionWithBias
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.AttentionWithBias
 ========================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.Attention
       ~AttentionWithBias.get_extra_state
       ~AttentionWithBias.get_parameter
       ~AttentionWithBias.get_submodule
-      ~AttentionWithBias.graph_state_dict
       ~AttentionWithBias.half
       ~AttentionWithBias.ipu
-      ~AttentionWithBias.load_graph_state_dict
       ~AttentionWithBias.load_state_dict
       ~AttentionWithBias.modules
       ~AttentionWithBias.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.Attention
    
       ~AttentionWithBias.T_destination
       ~AttentionWithBias.call_super_init
-      ~AttentionWithBias.device
       ~AttentionWithBias.dump_patches
       ~AttentionWithBias.training
    

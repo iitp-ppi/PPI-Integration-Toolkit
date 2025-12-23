@@ -31,10 +31,8 @@ bapred.model.GraphGPS.GraphGPS
       ~GraphGPS.get_extra_state
       ~GraphGPS.get_parameter
       ~GraphGPS.get_submodule
-      ~GraphGPS.graph_state_dict
       ~GraphGPS.half
       ~GraphGPS.ipu
-      ~GraphGPS.load_graph_state_dict
       ~GraphGPS.load_state_dict
       ~GraphGPS.modules
       ~GraphGPS.named_buffers
@@ -73,7 +71,6 @@ bapred.model.GraphGPS.GraphGPS
    
       ~GraphGPS.T_destination
       ~GraphGPS.call_super_init
-      ~GraphGPS.device
       ~GraphGPS.dump_patches
       ~GraphGPS.training
    

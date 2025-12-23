@@ -31,10 +31,8 @@ promptbind.models.model\_utils.GaussianSmearing
       ~GaussianSmearing.get_extra_state
       ~GaussianSmearing.get_parameter
       ~GaussianSmearing.get_submodule
-      ~GaussianSmearing.graph_state_dict
       ~GaussianSmearing.half
       ~GaussianSmearing.ipu
-      ~GaussianSmearing.load_graph_state_dict
       ~GaussianSmearing.load_state_dict
       ~GaussianSmearing.modules
       ~GaussianSmearing.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.model\_utils.GaussianSmearing
    
       ~GaussianSmearing.T_destination
       ~GaussianSmearing.call_super_init
-      ~GaussianSmearing.device
       ~GaussianSmearing.dump_patches
       ~GaussianSmearing.training
    

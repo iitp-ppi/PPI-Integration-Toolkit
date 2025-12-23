@@ -1,4 +1,4 @@
-﻿diffalign.models.encoder.cross\_attention.CrossGraphAligner
+diffalign.models.encoder.cross\_attention.CrossGraphAligner
 ===========================================================
 
 .. currentmodule:: diffalign.models.encoder.cross_attention

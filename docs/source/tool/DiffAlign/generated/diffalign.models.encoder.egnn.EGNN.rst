@@ -1,4 +1,4 @@
-﻿diffalign.models.encoder.egnn.EGNN
+diffalign.models.encoder.egnn.EGNN
 ==================================
 
 .. currentmodule:: diffalign.models.encoder.egnn

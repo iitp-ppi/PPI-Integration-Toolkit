@@ -1,4 +1,4 @@
-deepfold.modules.evoformer\_stack.EvoformerStack
+﻿deepfold.modules.evoformer\_stack.EvoformerStack
 ================================================
 
 .. currentmodule:: deepfold.modules.evoformer_stack
@@ -31,10 +31,8 @@ deepfold.modules.evoformer\_stack.EvoformerStack
       ~EvoformerStack.get_extra_state
       ~EvoformerStack.get_parameter
       ~EvoformerStack.get_submodule
-      ~EvoformerStack.graph_state_dict
       ~EvoformerStack.half
       ~EvoformerStack.ipu
-      ~EvoformerStack.load_graph_state_dict
       ~EvoformerStack.load_state_dict
       ~EvoformerStack.modules
       ~EvoformerStack.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.evoformer\_stack.EvoformerStack
    
       ~EvoformerStack.T_destination
       ~EvoformerStack.call_super_init
-      ~EvoformerStack.device
       ~EvoformerStack.dump_patches
       ~EvoformerStack.training
    

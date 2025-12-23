@@ -1,3 +1,5 @@
+BIS Protein Structure
+=====================
 .. autosummary::
    :toctree: generated
    :recursive:

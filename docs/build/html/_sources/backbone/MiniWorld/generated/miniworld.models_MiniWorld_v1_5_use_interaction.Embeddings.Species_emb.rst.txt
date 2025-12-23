@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Species\_emb
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Species\_emb
 ============================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Species\_emb
       ~Species_emb.get_extra_state
       ~Species_emb.get_parameter
       ~Species_emb.get_submodule
-      ~Species_emb.graph_state_dict
       ~Species_emb.half
       ~Species_emb.ipu
-      ~Species_emb.load_graph_state_dict
       ~Species_emb.load_state_dict
       ~Species_emb.modules
       ~Species_emb.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Species\_emb
    
       ~Species_emb.T_destination
       ~Species_emb.call_super_init
-      ~Species_emb.device
       ~Species_emb.dump_patches
       ~Species_emb.training
    

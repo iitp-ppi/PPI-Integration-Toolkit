@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Residue\_IPA
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Residue\_IPA
 ===================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Residue\_
       ~Str2Residue_IPA.get_extra_state
       ~Str2Residue_IPA.get_parameter
       ~Str2Residue_IPA.get_submodule
-      ~Str2Residue_IPA.graph_state_dict
       ~Str2Residue_IPA.half
       ~Str2Residue_IPA.ipu
-      ~Str2Residue_IPA.load_graph_state_dict
       ~Str2Residue_IPA.load_state_dict
       ~Str2Residue_IPA.modules
       ~Str2Residue_IPA.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.Str2Residue\_
    
       ~Str2Residue_IPA.T_destination
       ~Str2Residue_IPA.call_super_init
-      ~Str2Residue_IPA.device
       ~Str2Residue_IPA.dump_patches
       ~Str2Residue_IPA.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.auxiliary\_heads.PerResidueLDDTCaPredictor
+﻿deepfold.modules.auxiliary\_heads.PerResidueLDDTCaPredictor
 ===========================================================
 
 .. currentmodule:: deepfold.modules.auxiliary_heads
@@ -31,10 +31,8 @@ deepfold.modules.auxiliary\_heads.PerResidueLDDTCaPredictor
       ~PerResidueLDDTCaPredictor.get_extra_state
       ~PerResidueLDDTCaPredictor.get_parameter
       ~PerResidueLDDTCaPredictor.get_submodule
-      ~PerResidueLDDTCaPredictor.graph_state_dict
       ~PerResidueLDDTCaPredictor.half
       ~PerResidueLDDTCaPredictor.ipu
-      ~PerResidueLDDTCaPredictor.load_graph_state_dict
       ~PerResidueLDDTCaPredictor.load_state_dict
       ~PerResidueLDDTCaPredictor.modules
       ~PerResidueLDDTCaPredictor.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.auxiliary\_heads.PerResidueLDDTCaPredictor
    
       ~PerResidueLDDTCaPredictor.T_destination
       ~PerResidueLDDTCaPredictor.call_super_init
-      ~PerResidueLDDTCaPredictor.device
       ~PerResidueLDDTCaPredictor.dump_patches
       ~PerResidueLDDTCaPredictor.training
    

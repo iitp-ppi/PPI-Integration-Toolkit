@@ -1,4 +1,4 @@
-﻿gd\_dl.rerank\_model.Cgc\_block
+gd\_dl.rerank\_model.Cgc\_block
 ===============================
 
 .. currentmodule:: gd_dl.rerank_model

@@ -1,4 +1,4 @@
-deepfold.modules.dropout.DropoutColumnwise
+﻿deepfold.modules.dropout.DropoutColumnwise
 ==========================================
 
 .. currentmodule:: deepfold.modules.dropout
@@ -31,10 +31,8 @@ deepfold.modules.dropout.DropoutColumnwise
       ~DropoutColumnwise.get_extra_state
       ~DropoutColumnwise.get_parameter
       ~DropoutColumnwise.get_submodule
-      ~DropoutColumnwise.graph_state_dict
       ~DropoutColumnwise.half
       ~DropoutColumnwise.ipu
-      ~DropoutColumnwise.load_graph_state_dict
       ~DropoutColumnwise.load_state_dict
       ~DropoutColumnwise.modules
       ~DropoutColumnwise.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.dropout.DropoutColumnwise
    
       ~DropoutColumnwise.T_destination
       ~DropoutColumnwise.call_super_init
-      ~DropoutColumnwise.device
       ~DropoutColumnwise.dump_patches
       ~DropoutColumnwise.training
    

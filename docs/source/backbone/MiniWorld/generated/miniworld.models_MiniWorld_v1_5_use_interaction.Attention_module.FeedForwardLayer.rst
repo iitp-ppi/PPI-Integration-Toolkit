@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.FeedForwardLayer
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.FeedForwardLayer
 =======================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.FeedForwa
       ~FeedForwardLayer.get_extra_state
       ~FeedForwardLayer.get_parameter
       ~FeedForwardLayer.get_submodule
-      ~FeedForwardLayer.graph_state_dict
       ~FeedForwardLayer.half
       ~FeedForwardLayer.ipu
-      ~FeedForwardLayer.load_graph_state_dict
       ~FeedForwardLayer.load_state_dict
       ~FeedForwardLayer.modules
       ~FeedForwardLayer.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.FeedForwa
    
       ~FeedForwardLayer.T_destination
       ~FeedForwardLayer.call_super_init
-      ~FeedForwardLayer.device
       ~FeedForwardLayer.dump_patches
       ~FeedForwardLayer.training
    

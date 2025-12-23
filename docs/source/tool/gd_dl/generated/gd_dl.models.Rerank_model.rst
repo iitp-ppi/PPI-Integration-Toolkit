@@ -31,10 +31,8 @@ gd\_dl.models.Rerank\_model
       ~Rerank_model.get_extra_state
       ~Rerank_model.get_parameter
       ~Rerank_model.get_submodule
-      ~Rerank_model.graph_state_dict
       ~Rerank_model.half
       ~Rerank_model.ipu
-      ~Rerank_model.load_graph_state_dict
       ~Rerank_model.load_state_dict
       ~Rerank_model.modules
       ~Rerank_model.named_buffers
@@ -73,7 +71,6 @@ gd\_dl.models.Rerank\_model
    
       ~Rerank_model.T_destination
       ~Rerank_model.call_super_init
-      ~Rerank_model.device
       ~Rerank_model.dump_patches
       ~Rerank_model.training
    

@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSAColGlobalAttention
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSAColGlobalAttention
 ============================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSAColGlo
       ~MSAColGlobalAttention.get_extra_state
       ~MSAColGlobalAttention.get_parameter
       ~MSAColGlobalAttention.get_submodule
-      ~MSAColGlobalAttention.graph_state_dict
       ~MSAColGlobalAttention.half
       ~MSAColGlobalAttention.ipu
-      ~MSAColGlobalAttention.load_graph_state_dict
       ~MSAColGlobalAttention.load_state_dict
       ~MSAColGlobalAttention.modules
       ~MSAColGlobalAttention.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSAColGlo
    
       ~MSAColGlobalAttention.T_destination
       ~MSAColGlobalAttention.call_super_init
-      ~MSAColGlobalAttention.device
       ~MSAColGlobalAttention.dump_patches
       ~MSAColGlobalAttention.training
    

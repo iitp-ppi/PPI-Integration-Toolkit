@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSARowAttentionWithBias
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSARowAttentionWithBias
 ==============================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSARowAtt
       ~MSARowAttentionWithBias.get_extra_state
       ~MSARowAttentionWithBias.get_parameter
       ~MSARowAttentionWithBias.get_submodule
-      ~MSARowAttentionWithBias.graph_state_dict
       ~MSARowAttentionWithBias.half
       ~MSARowAttentionWithBias.ipu
-      ~MSARowAttentionWithBias.load_graph_state_dict
       ~MSARowAttentionWithBias.load_state_dict
       ~MSARowAttentionWithBias.modules
       ~MSARowAttentionWithBias.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.MSARowAtt
    
       ~MSARowAttentionWithBias.T_destination
       ~MSARowAttentionWithBias.call_super_init
-      ~MSARowAttentionWithBias.device
       ~MSARowAttentionWithBias.dump_patches
       ~MSARowAttentionWithBias.training
    

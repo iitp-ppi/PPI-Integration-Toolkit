@@ -1,4 +1,4 @@
-﻿diffalign.models.epsnet.diffusion.DDPMTimeEncoder
+diffalign.models.epsnet.diffusion.DDPMTimeEncoder
 =================================================
 
 .. currentmodule:: diffalign.models.epsnet.diffusion

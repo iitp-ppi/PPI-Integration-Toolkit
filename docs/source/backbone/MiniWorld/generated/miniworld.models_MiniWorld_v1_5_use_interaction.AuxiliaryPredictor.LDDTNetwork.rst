@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.LDDTNetwork
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.LDDTNetwork
 ===================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.LDDTNetw
       ~LDDTNetwork.get_extra_state
       ~LDDTNetwork.get_parameter
       ~LDDTNetwork.get_submodule
-      ~LDDTNetwork.graph_state_dict
       ~LDDTNetwork.half
       ~LDDTNetwork.ipu
-      ~LDDTNetwork.load_graph_state_dict
       ~LDDTNetwork.load_state_dict
       ~LDDTNetwork.modules
       ~LDDTNetwork.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.LDDTNetw
    
       ~LDDTNetwork.T_destination
       ~LDDTNetwork.call_super_init
-      ~LDDTNetwork.device
       ~LDDTNetwork.dump_patches
       ~LDDTNetwork.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.auxiliary\_heads.TMScoreHead
+﻿deepfold.modules.auxiliary\_heads.TMScoreHead
 =============================================
 
 .. currentmodule:: deepfold.modules.auxiliary_heads
@@ -31,10 +31,8 @@ deepfold.modules.auxiliary\_heads.TMScoreHead
       ~TMScoreHead.get_extra_state
       ~TMScoreHead.get_parameter
       ~TMScoreHead.get_submodule
-      ~TMScoreHead.graph_state_dict
       ~TMScoreHead.half
       ~TMScoreHead.ipu
-      ~TMScoreHead.load_graph_state_dict
       ~TMScoreHead.load_state_dict
       ~TMScoreHead.modules
       ~TMScoreHead.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.auxiliary\_heads.TMScoreHead
    
       ~TMScoreHead.T_destination
       ~TMScoreHead.call_super_init
-      ~TMScoreHead.device
       ~TMScoreHead.dump_patches
       ~TMScoreHead.training
    

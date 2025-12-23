@@ -1,4 +1,4 @@
-﻿diffalign.models.common.MultiLayerPerceptron
+diffalign.models.common.MultiLayerPerceptron
 ============================================
 
 .. currentmodule:: diffalign.models.common

@@ -1,3 +1,5 @@
+BindingRMSD
+===========
 .. autosummary::
    :toctree: generated
    :recursive:

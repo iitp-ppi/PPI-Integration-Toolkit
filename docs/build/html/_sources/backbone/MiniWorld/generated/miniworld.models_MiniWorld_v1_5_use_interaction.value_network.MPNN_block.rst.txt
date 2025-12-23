@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.MPNN\_block
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.MPNN\_block
 ===============================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.value_network
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.MPNN\_block
       ~MPNN_block.get_extra_state
       ~MPNN_block.get_parameter
       ~MPNN_block.get_submodule
-      ~MPNN_block.graph_state_dict
       ~MPNN_block.half
       ~MPNN_block.ipu
-      ~MPNN_block.load_graph_state_dict
       ~MPNN_block.load_state_dict
       ~MPNN_block.modules
       ~MPNN_block.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.MPNN\_block
    
       ~MPNN_block.T_destination
       ~MPNN_block.call_super_init
-      ~MPNN_block.device
       ~MPNN_block.dump_patches
       ~MPNN_block.training
    

@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.MiniWorld.MiniWorldModule
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.MiniWorld.MiniWorldModule
 ==============================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.MiniWorld
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.MiniWorld.MiniWorldModule
       ~MiniWorldModule.get_extra_state
       ~MiniWorldModule.get_parameter
       ~MiniWorldModule.get_submodule
-      ~MiniWorldModule.graph_state_dict
       ~MiniWorldModule.half
       ~MiniWorldModule.ipu
-      ~MiniWorldModule.load_graph_state_dict
       ~MiniWorldModule.load_state_dict
       ~MiniWorldModule.modules
       ~MiniWorldModule.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.MiniWorld.MiniWorldModule
    
       ~MiniWorldModule.T_destination
       ~MiniWorldModule.call_super_init
-      ~MiniWorldModule.device
       ~MiniWorldModule.dump_patches
       ~MiniWorldModule.training
    

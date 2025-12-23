@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.MSAPairStr2MSA
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.MSAPairStr2MSA
 =================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.MSAPairStr2MS
       ~MSAPairStr2MSA.get_extra_state
       ~MSAPairStr2MSA.get_parameter
       ~MSAPairStr2MSA.get_submodule
-      ~MSAPairStr2MSA.graph_state_dict
       ~MSAPairStr2MSA.half
       ~MSAPairStr2MSA.ipu
-      ~MSAPairStr2MSA.load_graph_state_dict
       ~MSAPairStr2MSA.load_state_dict
       ~MSAPairStr2MSA.modules
       ~MSAPairStr2MSA.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.MSAPairStr2MS
    
       ~MSAPairStr2MSA.T_destination
       ~MSAPairStr2MSA.call_super_init
-      ~MSAPairStr2MSA.device
       ~MSAPairStr2MSA.dump_patches
       ~MSAPairStr2MSA.training
    

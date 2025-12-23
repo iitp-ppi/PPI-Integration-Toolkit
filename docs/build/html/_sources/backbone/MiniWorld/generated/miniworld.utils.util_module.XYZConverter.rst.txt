@@ -1,4 +1,4 @@
-miniworld.utils.util\_module.XYZConverter
+﻿miniworld.utils.util\_module.XYZConverter
 =========================================
 
 .. currentmodule:: miniworld.utils.util_module
@@ -34,10 +34,8 @@ miniworld.utils.util\_module.XYZConverter
       ~XYZConverter.get_submodule
       ~XYZConverter.get_tor_mask
       ~XYZConverter.get_torsions
-      ~XYZConverter.graph_state_dict
       ~XYZConverter.half
       ~XYZConverter.ipu
-      ~XYZConverter.load_graph_state_dict
       ~XYZConverter.load_state_dict
       ~XYZConverter.modules
       ~XYZConverter.named_buffers
@@ -76,7 +74,6 @@ miniworld.utils.util\_module.XYZConverter
    
       ~XYZConverter.T_destination
       ~XYZConverter.call_super_init
-      ~XYZConverter.device
       ~XYZConverter.dump_patches
       ~XYZConverter.training
    

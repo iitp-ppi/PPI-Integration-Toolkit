@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Templ\_emb
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Templ\_emb
 ==========================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Templ\_emb
       ~Templ_emb.get_extra_state
       ~Templ_emb.get_parameter
       ~Templ_emb.get_submodule
-      ~Templ_emb.graph_state_dict
       ~Templ_emb.half
       ~Templ_emb.ipu
-      ~Templ_emb.load_graph_state_dict
       ~Templ_emb.load_state_dict
       ~Templ_emb.modules
       ~Templ_emb.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Templ\_emb
    
       ~Templ_emb.T_destination
       ~Templ_emb.call_super_init
-      ~Templ_emb.device
       ~Templ_emb.dump_patches
       ~Templ_emb.training
    

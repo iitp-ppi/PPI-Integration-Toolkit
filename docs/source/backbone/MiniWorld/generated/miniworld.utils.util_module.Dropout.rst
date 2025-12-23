@@ -1,4 +1,4 @@
-miniworld.utils.util\_module.Dropout
+﻿miniworld.utils.util\_module.Dropout
 ====================================
 
 .. currentmodule:: miniworld.utils.util_module
@@ -31,10 +31,8 @@ miniworld.utils.util\_module.Dropout
       ~Dropout.get_extra_state
       ~Dropout.get_parameter
       ~Dropout.get_submodule
-      ~Dropout.graph_state_dict
       ~Dropout.half
       ~Dropout.ipu
-      ~Dropout.load_graph_state_dict
       ~Dropout.load_state_dict
       ~Dropout.modules
       ~Dropout.named_buffers
@@ -73,7 +71,6 @@ miniworld.utils.util\_module.Dropout
    
       ~Dropout.T_destination
       ~Dropout.call_super_init
-      ~Dropout.device
       ~Dropout.dump_patches
       ~Dropout.training
    

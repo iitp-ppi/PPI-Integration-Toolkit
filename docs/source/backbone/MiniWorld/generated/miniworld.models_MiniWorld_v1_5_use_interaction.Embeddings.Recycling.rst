@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Recycling
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Recycling
 =========================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Embeddings
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Recycling
       ~Recycling.get_extra_state
       ~Recycling.get_parameter
       ~Recycling.get_submodule
-      ~Recycling.graph_state_dict
       ~Recycling.half
       ~Recycling.ipu
-      ~Recycling.load_graph_state_dict
       ~Recycling.load_state_dict
       ~Recycling.modules
       ~Recycling.named_buffers
@@ -73,7 +71,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Embeddings.Recycling
    
       ~Recycling.T_destination
       ~Recycling.call_super_init
-      ~Recycling.device
       ~Recycling.dump_patches
       ~Recycling.training
    

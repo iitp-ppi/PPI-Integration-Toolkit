@@ -31,10 +31,8 @@ promptbind.models.egnn.MCAttEGNN
       ~MCAttEGNN.get_extra_state
       ~MCAttEGNN.get_parameter
       ~MCAttEGNN.get_submodule
-      ~MCAttEGNN.graph_state_dict
       ~MCAttEGNN.half
       ~MCAttEGNN.ipu
-      ~MCAttEGNN.load_graph_state_dict
       ~MCAttEGNN.load_state_dict
       ~MCAttEGNN.modules
       ~MCAttEGNN.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.egnn.MCAttEGNN
    
       ~MCAttEGNN.T_destination
       ~MCAttEGNN.call_super_init
-      ~MCAttEGNN.device
       ~MCAttEGNN.dump_patches
       ~MCAttEGNN.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.pair\_transition.PairTransition
+﻿deepfold.modules.pair\_transition.PairTransition
 ================================================
 
 .. currentmodule:: deepfold.modules.pair_transition
@@ -31,10 +31,8 @@ deepfold.modules.pair\_transition.PairTransition
       ~PairTransition.get_extra_state
       ~PairTransition.get_parameter
       ~PairTransition.get_submodule
-      ~PairTransition.graph_state_dict
       ~PairTransition.half
       ~PairTransition.ipu
-      ~PairTransition.load_graph_state_dict
       ~PairTransition.load_state_dict
       ~PairTransition.modules
       ~PairTransition.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.pair\_transition.PairTransition
    
       ~PairTransition.T_destination
       ~PairTransition.call_super_init
-      ~PairTransition.device
       ~PairTransition.dump_patches
       ~PairTransition.training
    

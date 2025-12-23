@@ -31,10 +31,8 @@ promptbind.models.cross\_att.RowAttentionBlock
       ~RowAttentionBlock.get_extra_state
       ~RowAttentionBlock.get_parameter
       ~RowAttentionBlock.get_submodule
-      ~RowAttentionBlock.graph_state_dict
       ~RowAttentionBlock.half
       ~RowAttentionBlock.ipu
-      ~RowAttentionBlock.load_graph_state_dict
       ~RowAttentionBlock.load_state_dict
       ~RowAttentionBlock.modules
       ~RowAttentionBlock.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.cross\_att.RowAttentionBlock
    
       ~RowAttentionBlock.T_destination
       ~RowAttentionBlock.call_super_init
-      ~RowAttentionBlock.device
       ~RowAttentionBlock.dump_patches
       ~RowAttentionBlock.inf
       ~RowAttentionBlock.training

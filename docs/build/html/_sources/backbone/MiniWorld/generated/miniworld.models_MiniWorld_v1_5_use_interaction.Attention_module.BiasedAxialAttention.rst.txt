@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.BiasedAxialAttention
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.BiasedAxialAttention
 ===========================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.BiasedAxi
       ~BiasedAxialAttention.get_extra_state
       ~BiasedAxialAttention.get_parameter
       ~BiasedAxialAttention.get_submodule
-      ~BiasedAxialAttention.graph_state_dict
       ~BiasedAxialAttention.half
       ~BiasedAxialAttention.ipu
-      ~BiasedAxialAttention.load_graph_state_dict
       ~BiasedAxialAttention.load_state_dict
       ~BiasedAxialAttention.modules
       ~BiasedAxialAttention.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.BiasedAxi
    
       ~BiasedAxialAttention.T_destination
       ~BiasedAxialAttention.call_super_init
-      ~BiasedAxialAttention.device
       ~BiasedAxialAttention.dump_patches
       ~BiasedAxialAttention.training
    

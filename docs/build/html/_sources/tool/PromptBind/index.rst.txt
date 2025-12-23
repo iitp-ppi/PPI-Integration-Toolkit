@@ -1,3 +1,5 @@
+PromptBind
+==========
 .. autosummary::
    :toctree: generated
    :recursive:

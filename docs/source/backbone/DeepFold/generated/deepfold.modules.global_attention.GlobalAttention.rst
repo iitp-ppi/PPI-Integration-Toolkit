@@ -1,4 +1,4 @@
-deepfold.modules.global\_attention.GlobalAttention
+﻿deepfold.modules.global\_attention.GlobalAttention
 ==================================================
 
 .. currentmodule:: deepfold.modules.global_attention
@@ -31,10 +31,8 @@ deepfold.modules.global\_attention.GlobalAttention
       ~GlobalAttention.get_extra_state
       ~GlobalAttention.get_parameter
       ~GlobalAttention.get_submodule
-      ~GlobalAttention.graph_state_dict
       ~GlobalAttention.half
       ~GlobalAttention.ipu
-      ~GlobalAttention.load_graph_state_dict
       ~GlobalAttention.load_state_dict
       ~GlobalAttention.modules
       ~GlobalAttention.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.global\_attention.GlobalAttention
    
       ~GlobalAttention.T_destination
       ~GlobalAttention.call_super_init
-      ~GlobalAttention.device
       ~GlobalAttention.dump_patches
       ~GlobalAttention.training
    

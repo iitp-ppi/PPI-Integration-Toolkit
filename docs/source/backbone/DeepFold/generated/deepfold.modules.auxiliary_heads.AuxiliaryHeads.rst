@@ -1,4 +1,4 @@
-deepfold.modules.auxiliary\_heads.AuxiliaryHeads
+﻿deepfold.modules.auxiliary\_heads.AuxiliaryHeads
 ================================================
 
 .. currentmodule:: deepfold.modules.auxiliary_heads
@@ -31,10 +31,8 @@ deepfold.modules.auxiliary\_heads.AuxiliaryHeads
       ~AuxiliaryHeads.get_extra_state
       ~AuxiliaryHeads.get_parameter
       ~AuxiliaryHeads.get_submodule
-      ~AuxiliaryHeads.graph_state_dict
       ~AuxiliaryHeads.half
       ~AuxiliaryHeads.ipu
-      ~AuxiliaryHeads.load_graph_state_dict
       ~AuxiliaryHeads.load_state_dict
       ~AuxiliaryHeads.modules
       ~AuxiliaryHeads.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.auxiliary\_heads.AuxiliaryHeads
    
       ~AuxiliaryHeads.T_destination
       ~AuxiliaryHeads.call_super_init
-      ~AuxiliaryHeads.device
       ~AuxiliaryHeads.dump_patches
       ~AuxiliaryHeads.training
    

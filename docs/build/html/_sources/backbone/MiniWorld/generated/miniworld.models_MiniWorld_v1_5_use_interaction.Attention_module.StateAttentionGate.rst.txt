@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.StateAttentionGate
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.StateAttentionGate
 =========================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Attention_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.StateAtte
       ~StateAttentionGate.get_extra_state
       ~StateAttentionGate.get_parameter
       ~StateAttentionGate.get_submodule
-      ~StateAttentionGate.graph_state_dict
       ~StateAttentionGate.half
       ~StateAttentionGate.ipu
-      ~StateAttentionGate.load_graph_state_dict
       ~StateAttentionGate.load_state_dict
       ~StateAttentionGate.modules
       ~StateAttentionGate.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Attention\_module.StateAtte
    
       ~StateAttentionGate.T_destination
       ~StateAttentionGate.call_super_init
-      ~StateAttentionGate.device
       ~StateAttentionGate.dump_patches
       ~StateAttentionGate.training
    

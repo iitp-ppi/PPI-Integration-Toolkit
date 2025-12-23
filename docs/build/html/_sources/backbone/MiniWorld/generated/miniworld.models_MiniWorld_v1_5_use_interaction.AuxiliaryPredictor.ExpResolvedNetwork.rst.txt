@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.ExpResolvedNetwork
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.ExpResolvedNetwork
 ==========================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.ExpResol
       ~ExpResolvedNetwork.get_extra_state
       ~ExpResolvedNetwork.get_parameter
       ~ExpResolvedNetwork.get_submodule
-      ~ExpResolvedNetwork.graph_state_dict
       ~ExpResolvedNetwork.half
       ~ExpResolvedNetwork.ipu
-      ~ExpResolvedNetwork.load_graph_state_dict
       ~ExpResolvedNetwork.load_state_dict
       ~ExpResolvedNetwork.modules
       ~ExpResolvedNetwork.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.ExpResol
    
       ~ExpResolvedNetwork.T_destination
       ~ExpResolvedNetwork.call_super_init
-      ~ExpResolvedNetwork.device
       ~ExpResolvedNetwork.dump_patches
       ~ExpResolvedNetwork.training
    

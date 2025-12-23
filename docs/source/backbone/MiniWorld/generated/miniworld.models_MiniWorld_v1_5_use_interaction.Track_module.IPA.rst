@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IPA
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IPA
 ======================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -34,11 +34,9 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IPA
       ~IPA.get_extra_state
       ~IPA.get_parameter
       ~IPA.get_submodule
-      ~IPA.graph_state_dict
       ~IPA.half
       ~IPA.inverse_RT
       ~IPA.ipu
-      ~IPA.load_graph_state_dict
       ~IPA.load_state_dict
       ~IPA.modules
       ~IPA.named_buffers
@@ -78,7 +76,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IPA
    
       ~IPA.T_destination
       ~IPA.call_super_init
-      ~IPA.device
       ~IPA.dump_patches
       ~IPA.training
    

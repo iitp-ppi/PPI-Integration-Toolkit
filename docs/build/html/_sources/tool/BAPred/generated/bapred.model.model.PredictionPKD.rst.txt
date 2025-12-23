@@ -31,10 +31,8 @@ bapred.model.model.PredictionPKD
       ~PredictionPKD.get_extra_state
       ~PredictionPKD.get_parameter
       ~PredictionPKD.get_submodule
-      ~PredictionPKD.graph_state_dict
       ~PredictionPKD.half
       ~PredictionPKD.ipu
-      ~PredictionPKD.load_graph_state_dict
       ~PredictionPKD.load_state_dict
       ~PredictionPKD.modules
       ~PredictionPKD.named_buffers
@@ -73,7 +71,6 @@ bapred.model.model.PredictionPKD
    
       ~PredictionPKD.T_destination
       ~PredictionPKD.call_super_init
-      ~PredictionPKD.device
       ~PredictionPKD.dump_patches
       ~PredictionPKD.training
    

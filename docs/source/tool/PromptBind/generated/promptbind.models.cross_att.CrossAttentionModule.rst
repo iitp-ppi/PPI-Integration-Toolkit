@@ -31,10 +31,8 @@ promptbind.models.cross\_att.CrossAttentionModule
       ~CrossAttentionModule.get_extra_state
       ~CrossAttentionModule.get_parameter
       ~CrossAttentionModule.get_submodule
-      ~CrossAttentionModule.graph_state_dict
       ~CrossAttentionModule.half
       ~CrossAttentionModule.ipu
-      ~CrossAttentionModule.load_graph_state_dict
       ~CrossAttentionModule.load_state_dict
       ~CrossAttentionModule.modules
       ~CrossAttentionModule.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.cross\_att.CrossAttentionModule
    
       ~CrossAttentionModule.T_destination
       ~CrossAttentionModule.call_super_init
-      ~CrossAttentionModule.device
       ~CrossAttentionModule.dump_patches
       ~CrossAttentionModule.training
    

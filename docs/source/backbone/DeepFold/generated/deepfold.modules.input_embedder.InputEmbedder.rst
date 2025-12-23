@@ -1,4 +1,4 @@
-deepfold.modules.input\_embedder.InputEmbedder
+﻿deepfold.modules.input\_embedder.InputEmbedder
 ==============================================
 
 .. currentmodule:: deepfold.modules.input_embedder
@@ -31,10 +31,8 @@ deepfold.modules.input\_embedder.InputEmbedder
       ~InputEmbedder.get_extra_state
       ~InputEmbedder.get_parameter
       ~InputEmbedder.get_submodule
-      ~InputEmbedder.graph_state_dict
       ~InputEmbedder.half
       ~InputEmbedder.ipu
-      ~InputEmbedder.load_graph_state_dict
       ~InputEmbedder.load_state_dict
       ~InputEmbedder.modules
       ~InputEmbedder.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.input\_embedder.InputEmbedder
    
       ~InputEmbedder.T_destination
       ~InputEmbedder.call_super_init
-      ~InputEmbedder.device
       ~InputEmbedder.dump_patches
       ~InputEmbedder.training
    

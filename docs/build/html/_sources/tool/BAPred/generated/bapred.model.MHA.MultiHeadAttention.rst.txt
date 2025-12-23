@@ -31,10 +31,8 @@ bapred.model.MHA.MultiHeadAttention
       ~MultiHeadAttention.get_extra_state
       ~MultiHeadAttention.get_parameter
       ~MultiHeadAttention.get_submodule
-      ~MultiHeadAttention.graph_state_dict
       ~MultiHeadAttention.half
       ~MultiHeadAttention.ipu
-      ~MultiHeadAttention.load_graph_state_dict
       ~MultiHeadAttention.load_state_dict
       ~MultiHeadAttention.modules
       ~MultiHeadAttention.named_buffers
@@ -73,7 +71,6 @@ bapred.model.MHA.MultiHeadAttention
    
       ~MultiHeadAttention.T_destination
       ~MultiHeadAttention.call_super_init
-      ~MultiHeadAttention.device
       ~MultiHeadAttention.dump_patches
       ~MultiHeadAttention.training
    

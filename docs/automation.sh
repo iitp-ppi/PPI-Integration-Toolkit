@@ -16,13 +16,13 @@ conda activate ppi-toolkit
 #sphinx-apidoc -d 8 -o docs/source/backbone/MiniWorld backbone/MiniWorld
 #sphinx-apidoc -d 8 -o docs/source/backbone/RoseTTAFold2 backbone/RoseTTAFold2
 
-sphinx-apidoc -d 8 -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
-sphinx-apidoc -d 8 -o docs/source/tool/PromptBind tool/PromptBind
-sphinx-apidoc -d 8 -o docs/source/tool/DiffAlign tool/DiffAlign/diffalign
-sphinx-apidoc -d 8 -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
-sphinx-apidoc -d 8 -o docs/source/tool/BAPred tool/BAPred/bapred
-sphinx-apidoc -d 8 -o docs/source/tool/BindingRMSD tool/BindingRMSD/bindingrmsd
-sphinx-apidoc -d 8 -o docs/source/tool/SwinSite tool/SwinSite
+#sphinx-apidoc -d 8 -o docs/source/tool/BIS-ProteinStructure-libraries tool/BIS-ProteinStructure-libraries
+#sphinx-apidoc -d 8 -o docs/source/tool/PromptBind tool/PromptBind
+#sphinx-apidoc -d 8 -o docs/source/tool/DiffAlign tool/DiffAlign/diffalign
+#sphinx-apidoc -d 8 -o docs/source/tool/gd_dl tool/galaxydock_dl/src/gd_dl
+#sphinx-apidoc -d 8 -o docs/source/tool/BAPred tool/BAPred/bapred
+#sphinx-apidoc -d 8 -o docs/source/tool/BindingRMSD tool/BindingRMSD/bindingrmsd
+#sphinx-apidoc -d 8 -o docs/source/tool/SwinSite tool/SwinSite
 
 cd docs
 make html

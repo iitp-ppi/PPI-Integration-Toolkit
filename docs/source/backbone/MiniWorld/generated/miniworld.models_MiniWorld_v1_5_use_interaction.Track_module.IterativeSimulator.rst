@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterativeSimulator
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterativeSimulator
 =====================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.Track_module
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterativeSimu
       ~IterativeSimulator.get_extra_state
       ~IterativeSimulator.get_parameter
       ~IterativeSimulator.get_submodule
-      ~IterativeSimulator.graph_state_dict
       ~IterativeSimulator.half
       ~IterativeSimulator.ipu
-      ~IterativeSimulator.load_graph_state_dict
       ~IterativeSimulator.load_state_dict
       ~IterativeSimulator.modules
       ~IterativeSimulator.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.Track\_module.IterativeSimu
    
       ~IterativeSimulator.T_destination
       ~IterativeSimulator.call_super_init
-      ~IterativeSimulator.device
       ~IterativeSimulator.dump_patches
       ~IterativeSimulator.training
    

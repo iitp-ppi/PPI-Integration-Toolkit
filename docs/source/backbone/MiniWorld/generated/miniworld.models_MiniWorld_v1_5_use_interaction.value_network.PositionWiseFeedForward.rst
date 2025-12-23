@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.PositionWiseFeedForward
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.PositionWiseFeedForward
 ===========================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.value_network
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.PositionWise
       ~PositionWiseFeedForward.get_extra_state
       ~PositionWiseFeedForward.get_parameter
       ~PositionWiseFeedForward.get_submodule
-      ~PositionWiseFeedForward.graph_state_dict
       ~PositionWiseFeedForward.half
       ~PositionWiseFeedForward.ipu
-      ~PositionWiseFeedForward.load_graph_state_dict
       ~PositionWiseFeedForward.load_state_dict
       ~PositionWiseFeedForward.modules
       ~PositionWiseFeedForward.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.value\_network.PositionWise
    
       ~PositionWiseFeedForward.T_destination
       ~PositionWiseFeedForward.call_super_init
-      ~PositionWiseFeedForward.device
       ~PositionWiseFeedForward.dump_patches
       ~PositionWiseFeedForward.training
    

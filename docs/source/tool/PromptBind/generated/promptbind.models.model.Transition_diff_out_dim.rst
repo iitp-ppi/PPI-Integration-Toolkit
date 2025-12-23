@@ -31,10 +31,8 @@ promptbind.models.model.Transition\_diff\_out\_dim
       ~Transition_diff_out_dim.get_extra_state
       ~Transition_diff_out_dim.get_parameter
       ~Transition_diff_out_dim.get_submodule
-      ~Transition_diff_out_dim.graph_state_dict
       ~Transition_diff_out_dim.half
       ~Transition_diff_out_dim.ipu
-      ~Transition_diff_out_dim.load_graph_state_dict
       ~Transition_diff_out_dim.load_state_dict
       ~Transition_diff_out_dim.modules
       ~Transition_diff_out_dim.named_buffers
@@ -73,7 +71,6 @@ promptbind.models.model.Transition\_diff\_out\_dim
    
       ~Transition_diff_out_dim.T_destination
       ~Transition_diff_out_dim.call_super_init
-      ~Transition_diff_out_dim.device
       ~Transition_diff_out_dim.dump_patches
       ~Transition_diff_out_dim.training
    

@@ -1,4 +1,4 @@
-deepfold.modules.extra\_msa\_embedder.ExtraMSAEmbedder
+﻿deepfold.modules.extra\_msa\_embedder.ExtraMSAEmbedder
 ======================================================
 
 .. currentmodule:: deepfold.modules.extra_msa_embedder
@@ -31,10 +31,8 @@ deepfold.modules.extra\_msa\_embedder.ExtraMSAEmbedder
       ~ExtraMSAEmbedder.get_extra_state
       ~ExtraMSAEmbedder.get_parameter
       ~ExtraMSAEmbedder.get_submodule
-      ~ExtraMSAEmbedder.graph_state_dict
       ~ExtraMSAEmbedder.half
       ~ExtraMSAEmbedder.ipu
-      ~ExtraMSAEmbedder.load_graph_state_dict
       ~ExtraMSAEmbedder.load_state_dict
       ~ExtraMSAEmbedder.modules
       ~ExtraMSAEmbedder.named_buffers
@@ -73,7 +71,6 @@ deepfold.modules.extra\_msa\_embedder.ExtraMSAEmbedder
    
       ~ExtraMSAEmbedder.T_destination
       ~ExtraMSAEmbedder.call_super_init
-      ~ExtraMSAEmbedder.device
       ~ExtraMSAEmbedder.dump_patches
       ~ExtraMSAEmbedder.training
    

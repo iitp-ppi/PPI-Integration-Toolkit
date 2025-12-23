@@ -1,4 +1,4 @@
-﻿diffalign.models.encoder.cross\_attention.CrossAttention
+diffalign.models.encoder.cross\_attention.CrossAttention
 ========================================================
 
 .. currentmodule:: diffalign.models.encoder.cross_attention

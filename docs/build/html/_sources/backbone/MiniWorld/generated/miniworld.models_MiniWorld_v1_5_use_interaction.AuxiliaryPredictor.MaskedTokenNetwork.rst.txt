@@ -1,4 +1,4 @@
-miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.MaskedTokenNetwork
+﻿miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.MaskedTokenNetwork
 ==========================================================================================
 
 .. currentmodule:: miniworld.models_MiniWorld_v1_5_use_interaction.AuxiliaryPredictor
@@ -31,10 +31,8 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.MaskedTo
       ~MaskedTokenNetwork.get_extra_state
       ~MaskedTokenNetwork.get_parameter
       ~MaskedTokenNetwork.get_submodule
-      ~MaskedTokenNetwork.graph_state_dict
       ~MaskedTokenNetwork.half
       ~MaskedTokenNetwork.ipu
-      ~MaskedTokenNetwork.load_graph_state_dict
       ~MaskedTokenNetwork.load_state_dict
       ~MaskedTokenNetwork.modules
       ~MaskedTokenNetwork.named_buffers
@@ -74,7 +72,6 @@ miniworld.models\_MiniWorld\_v1\_5\_use\_interaction.AuxiliaryPredictor.MaskedTo
    
       ~MaskedTokenNetwork.T_destination
       ~MaskedTokenNetwork.call_super_init
-      ~MaskedTokenNetwork.device
       ~MaskedTokenNetwork.dump_patches
       ~MaskedTokenNetwork.training
    
