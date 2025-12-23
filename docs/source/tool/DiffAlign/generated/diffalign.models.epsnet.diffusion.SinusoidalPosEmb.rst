@@ -1,4 +1,4 @@
-diffalign.models.epsnet.diffusion.SinusoidalPosEmb
+﻿diffalign.models.epsnet.diffusion.SinusoidalPosEmb
 ==================================================
 
 .. currentmodule:: diffalign.models.epsnet.diffusion
@@ -31,10 +31,8 @@ diffalign.models.epsnet.diffusion.SinusoidalPosEmb
       ~SinusoidalPosEmb.get_extra_state
       ~SinusoidalPosEmb.get_parameter
       ~SinusoidalPosEmb.get_submodule
-      ~SinusoidalPosEmb.graph_state_dict
       ~SinusoidalPosEmb.half
       ~SinusoidalPosEmb.ipu
-      ~SinusoidalPosEmb.load_graph_state_dict
       ~SinusoidalPosEmb.load_state_dict
       ~SinusoidalPosEmb.modules
       ~SinusoidalPosEmb.named_buffers
@@ -73,7 +71,6 @@ diffalign.models.epsnet.diffusion.SinusoidalPosEmb
    
       ~SinusoidalPosEmb.T_destination
       ~SinusoidalPosEmb.call_super_init
-      ~SinusoidalPosEmb.device
       ~SinusoidalPosEmb.dump_patches
       ~SinusoidalPosEmb.training
    

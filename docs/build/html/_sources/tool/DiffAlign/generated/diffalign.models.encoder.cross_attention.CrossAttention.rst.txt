@@ -1,4 +1,4 @@
-diffalign.models.encoder.cross\_attention.CrossAttention
+﻿diffalign.models.encoder.cross\_attention.CrossAttention
 ========================================================
 
 .. currentmodule:: diffalign.models.encoder.cross_attention
@@ -32,10 +32,8 @@ diffalign.models.encoder.cross\_attention.CrossAttention
       ~CrossAttention.get_extra_state
       ~CrossAttention.get_parameter
       ~CrossAttention.get_submodule
-      ~CrossAttention.graph_state_dict
       ~CrossAttention.half
       ~CrossAttention.ipu
-      ~CrossAttention.load_graph_state_dict
       ~CrossAttention.load_state_dict
       ~CrossAttention.modules
       ~CrossAttention.named_buffers
@@ -75,7 +73,6 @@ diffalign.models.encoder.cross\_attention.CrossAttention
    
       ~CrossAttention.T_destination
       ~CrossAttention.call_super_init
-      ~CrossAttention.device
       ~CrossAttention.dump_patches
       ~CrossAttention.training
    

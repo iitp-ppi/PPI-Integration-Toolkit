@@ -1,4 +1,4 @@
-diffalign.models.encoder.cross\_attention.CrossGraphAligner
+﻿diffalign.models.encoder.cross\_attention.CrossGraphAligner
 ===========================================================
 
 .. currentmodule:: diffalign.models.encoder.cross_attention
@@ -31,11 +31,9 @@ diffalign.models.encoder.cross\_attention.CrossGraphAligner
       ~CrossGraphAligner.get_extra_state
       ~CrossGraphAligner.get_parameter
       ~CrossGraphAligner.get_submodule
-      ~CrossGraphAligner.graph_state_dict
       ~CrossGraphAligner.half
       ~CrossGraphAligner.ipu
       ~CrossGraphAligner.knn_q2r_edges
-      ~CrossGraphAligner.load_graph_state_dict
       ~CrossGraphAligner.load_state_dict
       ~CrossGraphAligner.modules
       ~CrossGraphAligner.named_buffers
@@ -74,7 +72,6 @@ diffalign.models.encoder.cross\_attention.CrossGraphAligner
    
       ~CrossGraphAligner.T_destination
       ~CrossGraphAligner.call_super_init
-      ~CrossGraphAligner.device
       ~CrossGraphAligner.dump_patches
       ~CrossGraphAligner.training
    

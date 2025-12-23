@@ -1,4 +1,4 @@
-diffalign.models.encoder.edge.MLPEdgeEncoder
+﻿diffalign.models.encoder.edge.MLPEdgeEncoder
 ============================================
 
 .. currentmodule:: diffalign.models.encoder.edge
@@ -31,10 +31,8 @@ diffalign.models.encoder.edge.MLPEdgeEncoder
       ~MLPEdgeEncoder.get_extra_state
       ~MLPEdgeEncoder.get_parameter
       ~MLPEdgeEncoder.get_submodule
-      ~MLPEdgeEncoder.graph_state_dict
       ~MLPEdgeEncoder.half
       ~MLPEdgeEncoder.ipu
-      ~MLPEdgeEncoder.load_graph_state_dict
       ~MLPEdgeEncoder.load_state_dict
       ~MLPEdgeEncoder.modules
       ~MLPEdgeEncoder.named_buffers
@@ -73,7 +71,6 @@ diffalign.models.encoder.edge.MLPEdgeEncoder
    
       ~MLPEdgeEncoder.T_destination
       ~MLPEdgeEncoder.call_super_init
-      ~MLPEdgeEncoder.device
       ~MLPEdgeEncoder.dump_patches
       ~MLPEdgeEncoder.out_channels
       ~MLPEdgeEncoder.training

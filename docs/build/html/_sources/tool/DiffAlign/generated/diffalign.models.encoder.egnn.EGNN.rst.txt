@@ -1,4 +1,4 @@
-diffalign.models.encoder.egnn.EGNN
+﻿diffalign.models.encoder.egnn.EGNN
 ==================================
 
 .. currentmodule:: diffalign.models.encoder.egnn
@@ -31,10 +31,8 @@ diffalign.models.encoder.egnn.EGNN
       ~EGNN.get_extra_state
       ~EGNN.get_parameter
       ~EGNN.get_submodule
-      ~EGNN.graph_state_dict
       ~EGNN.half
       ~EGNN.ipu
-      ~EGNN.load_graph_state_dict
       ~EGNN.load_state_dict
       ~EGNN.modules
       ~EGNN.named_buffers
@@ -73,7 +71,6 @@ diffalign.models.encoder.egnn.EGNN
    
       ~EGNN.T_destination
       ~EGNN.call_super_init
-      ~EGNN.device
       ~EGNN.dump_patches
       ~EGNN.training
    

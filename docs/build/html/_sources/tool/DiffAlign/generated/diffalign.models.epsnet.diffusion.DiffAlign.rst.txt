@@ -1,4 +1,4 @@
-diffalign.models.epsnet.diffusion.DiffAlign
+﻿diffalign.models.epsnet.diffusion.DiffAlign
 ===========================================
 
 .. currentmodule:: diffalign.models.epsnet.diffusion
@@ -32,10 +32,8 @@ diffalign.models.epsnet.diffusion.DiffAlign
       ~DiffAlign.get_extra_state
       ~DiffAlign.get_parameter
       ~DiffAlign.get_submodule
-      ~DiffAlign.graph_state_dict
       ~DiffAlign.half
       ~DiffAlign.ipu
-      ~DiffAlign.load_graph_state_dict
       ~DiffAlign.load_state_dict
       ~DiffAlign.modules
       ~DiffAlign.named_buffers
@@ -74,7 +72,6 @@ diffalign.models.epsnet.diffusion.DiffAlign
    
       ~DiffAlign.T_destination
       ~DiffAlign.call_super_init
-      ~DiffAlign.device
       ~DiffAlign.dump_patches
       ~DiffAlign.training
    

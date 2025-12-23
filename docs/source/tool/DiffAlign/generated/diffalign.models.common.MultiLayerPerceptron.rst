@@ -1,4 +1,4 @@
-diffalign.models.common.MultiLayerPerceptron
+﻿diffalign.models.common.MultiLayerPerceptron
 ============================================
 
 .. currentmodule:: diffalign.models.common
@@ -31,10 +31,8 @@ diffalign.models.common.MultiLayerPerceptron
       ~MultiLayerPerceptron.get_extra_state
       ~MultiLayerPerceptron.get_parameter
       ~MultiLayerPerceptron.get_submodule
-      ~MultiLayerPerceptron.graph_state_dict
       ~MultiLayerPerceptron.half
       ~MultiLayerPerceptron.ipu
-      ~MultiLayerPerceptron.load_graph_state_dict
       ~MultiLayerPerceptron.load_state_dict
       ~MultiLayerPerceptron.modules
       ~MultiLayerPerceptron.named_buffers
@@ -73,7 +71,6 @@ diffalign.models.common.MultiLayerPerceptron
    
       ~MultiLayerPerceptron.T_destination
       ~MultiLayerPerceptron.call_super_init
-      ~MultiLayerPerceptron.device
       ~MultiLayerPerceptron.dump_patches
       ~MultiLayerPerceptron.training
    

@@ -1,3 +1,6 @@
+MiniWorld
+========
+
 .. autosummary::
    :toctree: generated
    :recursive:

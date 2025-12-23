@@ -1,4 +1,4 @@
-diffalign.models.encoder.egnn.E\_GCL
+﻿diffalign.models.encoder.egnn.E\_GCL
 ====================================
 
 .. currentmodule:: diffalign.models.encoder.egnn
@@ -34,10 +34,8 @@ diffalign.models.encoder.egnn.E\_GCL
       ~E_GCL.get_extra_state
       ~E_GCL.get_parameter
       ~E_GCL.get_submodule
-      ~E_GCL.graph_state_dict
       ~E_GCL.half
       ~E_GCL.ipu
-      ~E_GCL.load_graph_state_dict
       ~E_GCL.load_state_dict
       ~E_GCL.modules
       ~E_GCL.named_buffers
@@ -77,7 +75,6 @@ diffalign.models.encoder.egnn.E\_GCL
    
       ~E_GCL.T_destination
       ~E_GCL.call_super_init
-      ~E_GCL.device
       ~E_GCL.dump_patches
       ~E_GCL.training
    
