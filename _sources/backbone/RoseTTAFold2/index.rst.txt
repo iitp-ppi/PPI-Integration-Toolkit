@@ -1,4 +1,4 @@
-MiniWorld
+RoseTTAFold2
 ========
 
 .. autosummary::
@@ -6,4 +6,4 @@ MiniWorld
    :recursive:
    :caption: API Reference
 
-   miniworld
+   rosettafold2

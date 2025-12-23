@@ -1,4 +1,4 @@
-gd\_dl.rerank\_model.Cgc\_block
+﻿gd\_dl.rerank\_model.Cgc\_block
 ===============================
 
 .. currentmodule:: gd_dl.rerank_model
@@ -31,10 +31,8 @@ gd\_dl.rerank\_model.Cgc\_block
       ~Cgc_block.get_extra_state
       ~Cgc_block.get_parameter
       ~Cgc_block.get_submodule
-      ~Cgc_block.graph_state_dict
       ~Cgc_block.half
       ~Cgc_block.ipu
-      ~Cgc_block.load_graph_state_dict
       ~Cgc_block.load_state_dict
       ~Cgc_block.modules
       ~Cgc_block.named_buffers
@@ -73,7 +71,6 @@ gd\_dl.rerank\_model.Cgc\_block
    
       ~Cgc_block.T_destination
       ~Cgc_block.call_super_init
-      ~Cgc_block.device
       ~Cgc_block.dump_patches
       ~Cgc_block.training
    

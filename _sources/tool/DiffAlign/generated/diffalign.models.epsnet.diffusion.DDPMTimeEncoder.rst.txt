@@ -1,4 +1,4 @@
-diffalign.models.epsnet.diffusion.DDPMTimeEncoder
+﻿diffalign.models.epsnet.diffusion.DDPMTimeEncoder
 =================================================
 
 .. currentmodule:: diffalign.models.epsnet.diffusion
@@ -31,10 +31,8 @@ diffalign.models.epsnet.diffusion.DDPMTimeEncoder
       ~DDPMTimeEncoder.get_extra_state
       ~DDPMTimeEncoder.get_parameter
       ~DDPMTimeEncoder.get_submodule
-      ~DDPMTimeEncoder.graph_state_dict
       ~DDPMTimeEncoder.half
       ~DDPMTimeEncoder.ipu
-      ~DDPMTimeEncoder.load_graph_state_dict
       ~DDPMTimeEncoder.load_state_dict
       ~DDPMTimeEncoder.modules
       ~DDPMTimeEncoder.named_buffers
@@ -73,7 +71,6 @@ diffalign.models.epsnet.diffusion.DDPMTimeEncoder
    
       ~DDPMTimeEncoder.T_destination
       ~DDPMTimeEncoder.call_super_init
-      ~DDPMTimeEncoder.device
       ~DDPMTimeEncoder.dump_patches
       ~DDPMTimeEncoder.training
    
