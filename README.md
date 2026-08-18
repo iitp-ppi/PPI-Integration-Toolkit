@@ -10,7 +10,6 @@ conda env create --file environment.yml
 
 conda activate ppi-toolkit
 ```
-
 ## Document
 [API Document](https://iitp-ppi.github.io/PPI-Integration-Toolkit/)
 
